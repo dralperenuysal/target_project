@@ -1,0 +1,3 @@
+Organism Scientific Name	Organism Common Name	Organism Qualifier	Taxonomy id	Assembly Name	Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
+Staphylococcus aureus		isolate: Trinidad&Tobago_2020-009_371M, strain: CC239-MRSA-III(var.)	1280	ASM3025273v1	GCA_030252735.1	GenBank	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	3093943	3121265	2023-06-12	3180	PRJNA978032	SAMN35540728
+Staphylococcus aureus		isolate: Trinidad&Tobago_2020-009_371M, strain: CC239-MRSA-III(var.)	1280	ASM3025273v1	GCF_030252735.1	RefSeq	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	3093943	3121265	2023-06-12	3179	PRJNA978032	SAMN35540728
