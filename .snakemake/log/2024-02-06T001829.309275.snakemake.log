@@ -1,0 +1,73 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+all            1
+barrnap        3
+total          4
+
+Select jobs to execute...
+
+[Tue Feb  6 00:18:30 2024]
+rule barrnap:
+    input: resource/genome/hi_genome.fasta
+    output: output/barrnap/hi_rrna_count.gff
+    jobid: 1
+    reason: Missing output files: output/barrnap/hi_rrna_count.gff
+    wildcards: genome=hi
+    resources: tmpdir=/tmp
+
+barrnap --kingdom bac --quiet resource/genome/hi_genome.fasta > output/barrnap/hi_rrna_count.gff
+Activating conda environment: .snakemake/conda/a17438eb
+[Tue Feb  6 00:18:32 2024]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Tue Feb  6 00:18:32 2024]
+rule barrnap:
+    input: resource/genome/sa_mrsa_genome.fasta
+    output: output/barrnap/sa_mrsa_rrna_count.gff
+    jobid: 3
+    reason: Missing output files: output/barrnap/sa_mrsa_rrna_count.gff
+    wildcards: genome=sa_mrsa
+    resources: tmpdir=/tmp
+
+barrnap --kingdom bac --quiet resource/genome/sa_mrsa_genome.fasta > output/barrnap/sa_mrsa_rrna_count.gff
+Activating conda environment: .snakemake/conda/a17438eb
+[Tue Feb  6 00:18:35 2024]
+Finished job 3.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Tue Feb  6 00:18:35 2024]
+rule barrnap:
+    input: resource/genome/pa_genome.fasta
+    output: output/barrnap/pa_rrna_count.gff
+    jobid: 2
+    reason: Missing output files: output/barrnap/pa_rrna_count.gff
+    wildcards: genome=pa
+    resources: tmpdir=/tmp
+
+barrnap --kingdom bac --quiet resource/genome/pa_genome.fasta > output/barrnap/pa_rrna_count.gff
+Activating conda environment: .snakemake/conda/a17438eb
+[Tue Feb  6 00:18:39 2024]
+Finished job 2.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Tue Feb  6 00:18:39 2024]
+localrule all:
+    input: output/barrnap/hi_rrna_count.gff, output/barrnap/pa_rrna_count.gff, output/barrnap/sa_mrsa_rrna_count.gff
+    jobid: 0
+    reason: Input files updated by another job: output/barrnap/pa_rrna_count.gff, output/barrnap/sa_mrsa_rrna_count.gff, output/barrnap/hi_rrna_count.gff
+    resources: tmpdir=/tmp
+
+[Tue Feb  6 00:18:39 2024]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2024-02-06T001829.309275.snakemake.log

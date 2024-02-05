@@ -1,1 +1,3 @@
 .idea/
+.snakemake
+/.snakemake/

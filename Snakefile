@@ -1,14 +1,14 @@
 rule all:
     input:
-        "output/barrnap/{wildcard}_barrnap.gff"
+        expand("output/barrnap/{genome}_rrna_count.gff", genome = ["hi", "pa", "sa_mrsa"])
 
 rule barrnap:
     input:
-        genome = "resource/{wildcard}/{genome}.fasta"
+        genome = "resource/genome/{genome}_genome.fasta"
     output:
         barrnap_gff = "output/barrnap/{genome}_rrna_count.gff"
 
     conda: "env/env.yaml"
 
     shell:
-        """barrnap --kingdom euk --quiet {input.genome} > {output.barrnap_gff}"""
+        """barrnap --kingdom bac --quiet {input.genome} > {output.barrnap_gff}"""

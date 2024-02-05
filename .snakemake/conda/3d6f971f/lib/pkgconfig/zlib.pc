@@ -1,0 +1,13 @@
+prefix=/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f
+exec_prefix=/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f
+libdir=/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f/lib
+sharedlibdir=/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f/lib
+includedir=/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
