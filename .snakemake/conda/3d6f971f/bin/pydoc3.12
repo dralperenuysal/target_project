@@ -1,5 +1,0 @@
-#!/home/alperen/PycharmProjects/target_project/.snakemake/conda/3d6f971f/bin/python3.12
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()
