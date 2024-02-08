@@ -1,0 +1,213 @@
+bless( {
+         'alignCol' => [
+                         {
+                           'name' => 'gi|367',
+                           'lfSeq' => undef,
+                           'rfSeq' => undef,
+                           'orient' => '+',
+                           'seq' => 'CCGATGGCAACGGCAACCCGATTGGCCAGGTCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'seqStart' => 1
+                         },
+                         {
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1,
+                           'name' => 'gi|366',
+                           'srcDiv' => '1.56',
+                           'rfSeq' => undef,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'seq' => 'CCGACGGCAACGGCAACCCGATTGGCCAGGTCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'rfSeq' => undef,
+                           'name' => 'gi|358',
+                           'srcDiv' => '3.12',
+                           'seq' => 'CCGACGGCAACGGCAACCCGATCGGCCAGGTCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'name' => 'gi|359',
+                           'srcDiv' => '4.69',
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'rfSeq' => undef,
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAACCCGATCGGCCAGGTCACCGCCGATGGCAGCGGCAACTGGAGCTTCAC'
+                         },
+                         {
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'name' => 'gi|362',
+                           'srcDiv' => '3.12',
+                           'seq' => 'CCGATGGCAACGGCAACCCGATTGGCCAGGTCACCGCCGACGGCAGCGGCAACTGGTCCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'seqStart' => 1,
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seq' => 'CCGATGGCAGCGGCAATCCGATCGGGCAGGTCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'orient' => '+',
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'rfSeq' => undef,
+                           'name' => 'gi|368',
+                           'srcDiv' => '6.25'
+                         },
+                         {
+                           'seqStart' => 1,
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAACCCGATCGGCCAGACCACCGCCGATGGCAGCGGCAACTGGAGCTTCAC',
+                           'srcDiv' => '7.81',
+                           'name' => 'gi|360',
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'rfSeq' => undef
+                         },
+                         {
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'srcDiv' => '7.81',
+                           'name' => 'gi|370',
+                           'rfSeq' => undef,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'seq' => 'CCGATGGCAACGGCAATCCCATCGGGCAGGTCACCGCCGATGGCAGCGGCAACTGGAGCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'rfSeq' => undef,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'srcDiv' => '9.38',
+                           'name' => 'gi|361',
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAACCCGATCGGCGAAACCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1
+                         },
+                         {
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'name' => 'gi|369',
+                           'srcDiv' => '7.81',
+                           'seq' => 'CCGACGGCAACGGTAACCCGATAGGGCAGGTCACCGCCGACGGCAGCGGCAACTGGACCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'orient' => '+',
+                           'seq' => 'CCGATGGCGGCGGCAACCCGATCGGCCAGGCCACCGCCGACGGCAGCGGCAACTGGACGTTCAC',
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'name' => 'gi|363',
+                           'srcDiv' => '9.38',
+                           'seqStart' => 1,
+                           'end' => 63,
+                           'lfSeq' => undef
+                         },
+                         {
+                           'name' => 'gi|364',
+                           'srcDiv' => '10.94',
+                           'rfSeq' => undef,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'orient' => '+',
+                           'seq' => 'CCGATGGCAACGGCAACCCGATCGGCGAGACCACCGCCGACGGCAGTGGTAACTGGACCTTCAC',
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1
+                         },
+                         {
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1,
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'rfSeq' => undef,
+                           'srcDiv' => '12.50',
+                           'name' => 'gi|365',
+                           'seq' => 'CCGATGGCAATGGCAATCCGATCGGCCAGACCCTTGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'orient' => '+'
+                         },
+                         {
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1,
+                           'rfSeq' => undef,
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'srcDiv' => '10.94',
+                           'name' => 'gi|372',
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAATCCGATCGCCGAGGTCACCGCCGACGGCAGCGGCAACTGGACCTACAC'
+                         },
+                         {
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'srcDiv' => '10.94',
+                           'name' => 'gi|371',
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAATCCGATCGCCGAGGTCACCGCCGACGGCAGCGGCAACTGGACCTACAC',
+                           'end' => 63,
+                           'lfSeq' => undef,
+                           'seqStart' => 1
+                         },
+                         {
+                           'srcDiv' => '14.06',
+                           'name' => 'gi|373',
+                           'rfSeq' => undef,
+                           'start' => 0,
+                           'seqEnd' => 64,
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAACGGCAATCCGATCGGCCAGACCAGCGCCGATGCCAACGGCAACTGGAGCTTCAC',
+                           'lfSeq' => undef,
+                           'end' => 63,
+                           'seqStart' => 1
+                         },
+                         {
+                           'orient' => '+',
+                           'seq' => 'CCGACGGCAATGGCAATCCGATCGGCCAGACCACCGCCGATGCCAACGGCAACTGGTCTTTCAC',
+                           'name' => 'gi|374',
+                           'srcDiv' => '18.75',
+                           'rfSeq' => undef,
+                           'seqEnd' => 64,
+                           'start' => 0,
+                           'seqStart' => 1,
+                           'lfSeq' => undef,
+                           'end' => 63
+                         },
+                         {
+                           'srcDiv' => '7.94',
+                           'end' => 63,
+                           'name' => 'gi|375',
+                           'start' => 1,
+                           'seqEnd' => 63,
+                           'seq' => 'CGATGCCGGCGGCAACCCGATAGGGCAGGTCACCGCCGACGGCAGCGGCAACTGGAGCTTCAC',
+                           'seqStart' => 1
+                         }
+                       ]
+       }, 'MultAln' )

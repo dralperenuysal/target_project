@@ -1,0 +1,55 @@
+
+
+Building a new DB, current time: 02/08/2024 22:15:01
+New DB name:   /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/sampleDB-2.fa.masked
+New DB title:  /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/sampleDB-2.fa.masked
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 47 sequences in 0.010623 seconds.
+
+
+
+
+Building a new DB, current time: 02/08/2024 22:15:17
+New DB name:   /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 16 sequences in 0.000345945 seconds.
+
+
+
+
+Building a new DB, current time: 02/08/2024 22:15:17
+New DB name:   /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-2.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-2.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000142097 seconds.
+
+
+
+
+Building a new DB, current time: 02/08/2024 22:15:17
+New DB name:   /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-3.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-3.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000137091 seconds.
+
+
+
+
+Building a new DB, current time: 02/08/2024 22:15:18
+New DB name:   /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-4.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/RM_88912.ThuFeb82214322024/round-2/family-40-cons-4.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000136852 seconds.
+
+
