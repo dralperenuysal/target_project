@@ -1,0 +1,121 @@
+
+
+Building a new DB, current time: 02/11/2024 00:35:40
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/sampleDB-2.fa.masked
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/sampleDB-2.fa.masked
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 47 sequences in 0.0119069 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:55
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18 sequences in 0.000305891 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-2.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-2.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000163078 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-3.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-3.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000117064 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-4.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-6-cons-4.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000137091 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 16 sequences in 0.00030303 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-2.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-2.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000118971 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-3.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-3.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000123978 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-4.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-4.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000117064 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-5.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-5.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000116825 seconds.
+
+
+
+
+Building a new DB, current time: 02/11/2024 00:35:56
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-6.fa
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/hi_rm/RM_18286.SunFeb110035142024/round-2/family-4-cons-6.fa
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 0.000121832 seconds.
+
+

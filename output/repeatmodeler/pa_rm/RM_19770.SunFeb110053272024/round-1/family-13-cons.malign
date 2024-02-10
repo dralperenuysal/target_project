@@ -1,0 +1,201 @@
+bless( {
+         'alignCol' => [
+                         {
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'rfSeq' => undef,
+                           'name' => 'gi|187',
+                           'seq' => 'CGGAAGGTCGCGTTGCGCCAG--CGGATTC----CGAGGTTCTTCA-GCG-CGCCGCTCTGGAACACG---TA-CT--GC----A--GT-TCGGTGTTG-CG----TTCCCA----TTC---GCG-----GCC-T--T--CG-CCGC---T-------CT----G--CC-----C----GG-------CGA----GT--------T--CG-A-CAT--------------TG-TC---G---C--C--CTTG-ACGTAG----CG-GGTCATGA-----AGG---TCAGGCCGGGAATGCC----GA----G-GCCGACG-AAGTCGTAGTCGTAGCGCAG-TTGCCAGGA',
+                           'orient' => '+'
+                         },
+                         {
+                           'seqEnd' => 209,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'srcDiv' => '13.88',
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'seq' => 'CGGTAGGTGATGTTGCGCCAT------TTCAAGGCGACGCTCTTCA-GCG-GTCCGCTCTGGATCACG---TA-GG--AC----A--GG-TCGGTGTTG-CG----CTCCCA----TTC---GCT-----GTC-G--T--CG-GCGC-----------------G--GC-----C----GG-------CGCCGC-GG--------T--CG-A------------------TG-TC---G---CGGC--CCTGTACATAG----CG-GGTCATGA-----GGT---TCAGGCCGGGCAGGCC----GA----G-GCCGGCG-AAGTCGTAGTCGTAGCGCAG-TTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|188',
+                           'end' => 350
+                         },
+                         {
+                           'seq' => 'CGGTAGGTGGCGTTGCGCAGG--CGCAGGC----TGAGGTCCTTGAAGCG--GCCGCTCTGCACGATG---TA-CT--TC----A--GC-TCGATGTCG-CG----CTCCCA----TTC---CTT-----GCC-C--T--CG-TCGC---C-------GTTG--G--CC-----A----GG-------CG-------------------G-A-TAT--------------GG-TC---G---C--C--GTTG-ACGTAG----CG-GGTCATGA-----AGC---TCAGGCCGGGCACGCC----GA----C-GCTG-CGCAGGTCGAAGTCGTAGCGCAG-TTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|186',
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'seqEnd' => 206,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'srcDiv' => '17.70',
+                           'end' => 350
+                         },
+                         {
+                           'orient' => '+',
+                           'seq' => 'CGGTAGGTAGCGTTGCGCCAGACCAG--CC----CCAGTCCCTTCA-GCG-CACCGCCCTGCAACACG---TA-GC--GC----A--GG-TCGCTGTCG-CG----TTCCCA----CTC---GCGACT--GCC-G--T--CG-GCGC---C-------CT--------T-----C----GG-------T-------T--------TCGCG-C-CAT--------------GG-CC---G---C-------TG-AAATAG----CG-CGTCATCA-----GGC---TCAGGCCGGGCACCCC----GA----GCGGCG-CG-AAGTCGCAGTCGTAGCGCAG-TTGCCAGGA',
+                           'name' => 'gi|190',
+                           'lfSeq' => undef,
+                           'srcDiv' => '17.22',
+                           'seqStart' => 1,
+                           'seqEnd' => 206,
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'end' => 350
+                         },
+                         {
+                           'seq' => 'CGGAAGGTGCCGTTGCGCAAC--TTGATCC----CCAGGTTCTTCA-ACGGCCCCGAT-TGCACCAGG---TA-G---GC----G--ATATCGGTGTCC-CG----CTCCCA----TTCCTTGCC-----GCG-C--C--CA-CCGC---C-------------G--TC-----C----AG--------AA----GG--------T--CG-A-TGT--------------GT-TC---G---C--C--ACGC-AGGTAG----CG-GCTCATGA-----ATG---TCAGGCCGGGCAGGCC----GA----T-GGCGGCG-AAGTCGTAGTCGTAGCGCAA-CTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|191',
+                           'seqStart' => 1,
+                           'lfSeq' => undef,
+                           'seqEnd' => 209,
+                           'srcDiv' => '22.97',
+                           'start' => 0,
+                           'rfSeq' => undef,
+                           'end' => 350
+                         },
+                         {
+                           'end' => 349,
+                           'seq' => 'CGGAAGGAGGCGTTCTTCCAG--GTGAAGC----CCAGGCCCTTGA-AGG-TGCCGTCCGGGATCACG---TA-GG--CC----A--GG-GAGATATCG-CG----TTCCCA----CTC---GC-------TC-TGGT--CG-CCGC-----------------G--------------GG-------CGG----TC--------T--TG-A-TCT--------------TG-TC---G---C--C--GCTC-AGGTAA----AT-GGTATTGA-----AGG---TCAGGCCCGGCACGCC----GA----C-GGTGGCG-AAGTCGTAGCCGTAGCGGAC-CTGCCAGG',
+                           'orient' => '+',
+                           'name' => 'gi|192',
+                           'lfSeq' => undef,
+                           'seqEnd' => 202,
+                           'srcDiv' => '27.40',
+                           'seqStart' => 1,
+                           'rfSeq' => undef,
+                           'start' => 0
+                         },
+                         {
+                           'end' => 350,
+                           'name' => 'gi|195',
+                           'seq' => 'GGTCGCGTTGCGCCAC--TTCACCC----CGAGGTTCTTCA-ACG-GGCCGCTCTGGAACACG---TA--G--GC----G--ATGTCCATGTCG-CG----TTCCCA----TTC---CTT-----GCC-T--T--CGCCCGA---G-------GT----G--GT-----C----AG-------C-A----GG--------T--CG-A-TGT--------------TG-TC---G---C--C--CTTG-ACGTAG----CG-GGTCATGA-----AGG---TCAGGCCGGGAATGCC----GA----C-GCCGGCG-AAGTTGTAGTCGTAGCGCGC-CTGCCAGGA',
+                           'orient' => '+',
+                           'start' => 5,
+                           'rfSeq' => 'GGTGCGCATGTAGACGCTGTTGGCATTCGAATAATCGGCGTCCCAGCCCTTGCCATAGCGGGTCATGAAGCTCAGCCCCGGCACGCCGAAGGCGGCCATGTCGAGGTCGTAGCGGAG',
+                           'seqStart' => 1,
+                           'lfSeq' => undef,
+                           'srcDiv' => '15.69',
+                           'seqEnd' => 204
+                         },
+                         {
+                           'end' => 247,
+                           'lfSeq' => undef,
+                           'seqStart' => 1,
+                           'seqEnd' => 117,
+                           'srcDiv' => '28.57',
+                           'start' => 5,
+                           'rfSeq' => undef,
+                           'seq' => 'GGTGGCCTGGCGCACG--CGGAACG----CCAGGTCCTTGG-CCG-CGCCACCCTGCACCACG---TA-CT--TG----A--CC-TCCACGTCG-CG----TTCCCA----------GCG-----GCC-C--T--GG----------------TT----G--GT-----C----AG-------CGG----GT--------T---G-C-CGT--------------TG-GC---G---T--C--',
+                           'orient' => '+',
+                           'name' => 'gi|196'
+                         },
+                         {
+                           'end' => 350,
+                           'start' => 6,
+                           'rfSeq' => undef,
+                           'lfSeq' => 'TG',
+                           'srcDiv' => '14.29',
+                           'seqStart' => 1,
+                           'seqEnd' => 200,
+                           'seq' => 'GTGGCGTTGCGCCAT--TTCACCC----CGAGGTTCTTCA-GCG-GCCCGCTCTGCACCACG---TAGCC--G-----A--GG-TCGGTGTTG-CG----TTCCCA----TTCCTTGCC-----GTCGT--T--GG-CCGC-----------------G--CC-----------G-------CGG----G------------CG-A-CGT--------------TG-TC---G---C--C--GGAG-ACGTAG----CG-GCTCATGA-----AGC---TCAGGCCGGGCAGGCC----GA----G-CGCGCCG-AAATCGTAGTCGTAGCGCAG-TTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|197'
+                         },
+                         {
+                           'end' => 350,
+                           'name' => 'gi|198',
+                           'seq' => 'GCGTTGCGCCAA--CGCAGGC----CGAGGTTCTTCA-GCG-GGCCGCTCTGGATTACG---TA-G---GC----GACGT-CCA-CGTCG-CG----TTCCCA----GGC---GCG-----GCC-G--T--CG-TCCA---T-------C-----G--CCTT---C----G----------------T--------C--CG-GGCAT--------------GG-GC---G---C--C--GCTG-GCGTAG----CG-GGCCATGG-----CGG---TCAGCCCGGGAATGCC----CA----G-GGCGACG-AAGTCGTAGTCGTAGCGCAG-TTGCCAGGA',
+                           'orient' => '+',
+                           'rfSeq' => undef,
+                           'start' => 9,
+                           'srcDiv' => '16.00',
+                           'lfSeq' => 'CGCTGGCTGGA',
+                           'seqStart' => 3,
+                           'seqEnd' => 199
+                         },
+                         {
+                           'name' => 'gi|189',
+                           'orient' => '+',
+                           'seq' => 'GTTGCGCCAG--CGGACGT----TGAGACGCTTGA-AGG-CGCCGCTCTGCAGCGTG---TA-GC--CC----A--GC-TCGCTCTCG-CG----TCCCCA----TTC---GCT-----GCC-G--T--CG-TCGG---TGA-----CT--------C-----C----GG-------CCA----G---------G--CGCA-CAT--------------GG-TC---G---C--C--ATGC-AGGTAG----CG-GGTCATGA-----AGG---TCAGGCCGGGTAGGCC----GA----G-GCCAACG-AAGTCGAAGTCGTAGCGCAG-TTGCCAGGA',
+                           'seqEnd' => 209,
+                           'lfSeq' => 'CGGTGGGTGGCCCAGCGCAG',
+                           'srcDiv' => '18.69',
+                           'seqStart' => 12,
+                           'start' => 11,
+                           'rfSeq' => undef,
+                           'end' => 350
+                         },
+                         {
+                           'end' => 350,
+                           'lfSeq' => 'GCTGCGCAGACGCAGGGT',
+                           'seqStart' => 21,
+                           'seqEnd' => 248,
+                           'srcDiv' => '16.92',
+                           'start' => 14,
+                           'rfSeq' => undef,
+                           'orient' => '+',
+                           'seq' => 'GCGC-AG--CGA---------GAGGTCCTTGG-CCG-GACCGCCCTGGACCACG---TA-CT--GC----A--GG-TCGAGGTCG-CG----TTCCCAGTGCTTG---GCGTTCTTGCC-G--T--CG-GCGC---TGTACCAGCC----G--CCGTAGCC----GGGGCTGTCCG-----GA--------T--CG-A-CCC--------------GGGTC---AGGTC--CAGCTTG-CCGC-G----CG-AGT-ACGAGGCCGAGGCGCTCAGGCCGGGTAGGCC----GA----G-GGCGACG-AAGTCGTAGTCGTATTGCAG-CTTCCAGGA',
+                           'name' => 'gi|194'
+                         },
+                         {
+                           'end' => 350,
+                           'lfSeq' => undef,
+                           'seqEnd' => 195,
+                           'seqStart' => 19,
+                           'srcDiv' => '25.00',
+                           'start' => 35,
+                           'rfSeq' => undef,
+                           'seq' => 'GAGGTCCTTGG-CCG-GACCGCTCTGCACCACG---TA-CT--GG----A-----CCTG-GTTGAAG----ATC--------TC---GCG-----CTC-C--T--TG-CCGT---TG------CT----GGTCT-----C----GG-------CGG----TC--------T--TG-A-TGT--------------TG-TC---G---C--C--GCGC-ACGTAGGCTACGCGGT----------AGG---TCAGGCCGGGCACGCC----GT----A-CTTGGCG-AAGTCCAGGGCGTAGCTGAC-CTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|199'
+                         },
+                         {
+                           'end' => 350,
+                           'rfSeq' => undef,
+                           'start' => 36,
+                           'lfSeq' => 'CGGTTGCTGGCGTGGTTGAGGCGCACGTTGAGCCGCGC',
+                           'seqStart' => 1,
+                           'srcDiv' => '21.23',
+                           'seqEnd' => 215,
+                           'seq' => 'AGGTCCTTGG-CCG-GACCGGACTGGACCACG---TA-CTTGGCTTCGA--GG-TTGGTTTCG-TGGTGCTTGCCA----TCC---TCG------CC-G--T--AG-CCGTAGTT-------CTTATAG--CC----------GA-------CGTTGTTGT--------C--AG-A-CATCTTGGTGCCATCGATG-TCCTTG---C--C--ATTG-ATATAG----CG-GACCATGA-----AAG---TCAGGCCGGGAACGCCATAGGA----G-GCT-----AGGTTCAGGTCGTAGCG-AGCCTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|201'
+                         },
+                         {
+                           'start' => 44,
+                           'rfSeq' => undef,
+                           'seqEnd' => 206,
+                           'lfSeq' => 'AGCGCAGGTCGAGGTCGCGCTCCCAGTGCTTGCCGCCGCTGCCCTGCAAGGGCCGGTAGCGGCCATCGGCGCCCAGTGGGTTGTAGG',
+                           'seqStart' => 39,
+                           'srcDiv' => '15.79',
+                           'seq' => 'CA-GCG-GACCGCTCTG---CACGGTGTAGCC--G-----A--GC-TCGACATCG-CG----CTCCCA----TTC-------------C-T--TGCCG-CCGC---TAC-----CG----G--CC-----TTGGTGG-------TGGC---GT--------T--CG-A--------------------------G---C--C--ATGG-CCGTAG----CG-GACCATGC-----CGA---TCAGGCCGGGCCAGCC----GA----G-GCCGACG-AAATCGTAGTCGTAGCGCAC-CTGCCAGGA',
+                           'orient' => '+',
+                           'name' => 'gi|193',
+                           'end' => 350
+                         },
+                         {
+                           'rfSeq' => undef,
+                           'start' => 138,
+                           'srcDiv' => '24.11',
+                           'lfSeq' => 'GGTGGCCTGGCGCACGCGGAACGCCAGGTCCTTGGCCGCGCCACCCTGCACCACGTACTTGACCTCCACGTCGCGTTCCCAGCGGCCCTGGTTGGTCAGCGGGTTGCCGTTGGCGTCGGTGCGCATGTAGACGCTGTTGGCATTCGAATAATCGGCGTCCCA',
+                           'seqStart' => 88,
+                           'seqEnd' => 205,
+                           'orient' => '+',
+                           'seq' => '--CG-CCGC---C-------------G--GC-----C----GG-------CGC----ATGGCTGCCGT--CG-A-TGG--------------CG-CG---G---C--C--GCTG-ACGTAA----CG-CGCCATGA-----AGC---TCAGCCCCGGCAGGCC----GAACGGG-GCC-----AGGTCGAGGTCGTAGCGGGC-CTGCCAGGA',
+                           'name' => 'gi|200',
+                           'end' => 350
+                         },
+                         {
+                           'seq' => '---G---C--C--CTTG-CCATAG----CG-GGTCATGA-----AGC---TCAGCCCCGGCACGCC----GA----A-GGCGGCC-ATGTCGAGGTCGTAGCGGAG-',
+                           'name' => 'gi|196',
+                           'start' => 235,
+                           'srcDiv' => '20.83',
+                           'end' => 341,
+                           'seqEnd' => 234,
+                           'seqStart' => 163
+                         }
+                       ]
+       }, 'MultAln' )

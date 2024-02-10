@@ -4,15 +4,12 @@ env= "env/env.yaml"
 rule all:
     input:
         expand("output/barrnap/{genome}_rrna_count.gff", genome = genomes),
-        expand("resource/rm_db/{genome}_db", genome = genomes),
-        expand("output/repeatmodeler/{genome}_rm", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm", genome=genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.fa", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.stk", genome = genomes),
         #expand("output/repeatmasker/{genome}_genome.fasta.masked",genome=genomes),
         #expand("output/repeatmasker/{genome}_genome.fasta.out",genome=genomes),
         #expand("output/repeatmasker/{genome}_genome.fasta.tbl",genome=genomes),
-        #expand("output/repeatmodeler/{genome}-families.fa",genome=genomes),
-        #expand("output/repeatmodeler/{genome}-families.stk",genome=genomes),
-        #expand("output/repeatmodeler/{genome}-rmod.log",genome=genomes)
-
 
 rule barrnap:
     input:
@@ -26,21 +23,34 @@ rule barrnap:
 
 rule build_database:
     input:
-        fasta = lambda wildcards: f"resource/genome/{wildcards.genome}_genome.fasta"
+        fasta = "resource/genome/{genome}_genome.fasta"
     output:
-        db = directory("database/{genome}")
-    #conda: env
-    script:
-        "scripts/build_db.py"
+        db = directory("output/repeatmodeler/{genome}_rm")
+    shell:
+        """
+        mkdir -p {output.db}
+        cd {output.db}
+        BuildDatabase -engine ncbi -name {wildcards.genome}_db ../../../{input.fasta}
+        """
 
 rule repeatmodeler:
-    input:
-        db = "database/{genome}.db"
     output:
-        rm_output = "output/repeatmodeler/{genome}_rm"
-    #conda: env
-    script:
-        "scripts/repeatmodeler.py"
+        fa = "output/repeatmodeler/{genome}_rm/{genome}_db-families.fa",
+        stk = "output/repeatmodeler/{genome}_rm/{genome}_db-families.stk"
+    params:
+        path = lambda wildcards: f"output/repeatmodeler/{wildcards.genome}_rm",
+        db = lambda wildcards: f"{wildcards.genome}_db"
+    shell:
+        """
+        cd {params.path}
+        RepeatModeler -database {db} -engine ncbi -pa 20
+        touch {output.fa}
+        """
+
+
+
+
+
 
 
 
