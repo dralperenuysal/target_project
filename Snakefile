@@ -4,12 +4,12 @@ env= "env/env.yaml"
 rule all:
     input:
         expand("output/barrnap/{genome}_rrna_count.gff", genome = genomes),
-        expand("resource/repeatmasker/{genome}_genome.fasta.masked",genome=genomes),
-        expand("resource/repeatmasker/{genome}_genome.fasta.out",genome=genomes),
-        expand("resource/repeatmasker/{genome}_genome.fasta.tbl",genome=genomes),
-        expand("resource/repeatmodeler/{genome}-families.fa",genome=genomes),
-        expand("resource/repeatmodeler/{genome}-families.stk",genome=genomes),
-        expand("resource/repeatmodeler/{genome}-rmod.log",genome=genomes)
+        expand("output/repeatmasker/{genome}_genome.fasta.masked",genome=genomes),
+        expand("output/repeatmasker/{genome}_genome.fasta.out",genome=genomes),
+        expand("output/repeatmasker/{genome}_genome.fasta.tbl",genome=genomes),
+        expand("output/repeatmodeler/{genome}-families.fa",genome=genomes),
+        expand("output/repeatmodeler/{genome}-families.stk",genome=genomes),
+        expand("output/repeatmodeler/{genome}-rmod.log",genome=genomes)
 
 
 rule barrnap:
@@ -21,13 +21,22 @@ rule barrnap:
     shell:
         """barrnap --kingdom bac --quiet {input.genome} > {output.barrnap_gff}"""
 
+rule builddatabase:
+    input:
+        genome = "resource/genome/{genome}_genome.fasta"
+    output: directory("resource/rm_db")
+    params:
+        db_name = "{genome}_db"
+    script:
+        "scripts/build_db.py"
+
 rule repeatmasker:
     input:
         genome = "resource/genome/{genome}_genome.fasta"
     output:
-        masked = "resource/repeatmasker/{genome}_genome.fasta.masked",
-        tbl = "resource/repeatmasker/{genome}_genome.fasta.tbl",
-        out = "resource/repeatmasker/{genome}_genome.fasta.out"
+        masked = "output/repeatmasker/{genome}_genome.fasta.masked",
+        tbl = "output/repeatmasker/{genome}_genome.fasta.tbl",
+        out = "output/repeatmasker/{genome}_genome.fasta.out"
     threads: 4
     script:
         "scripts/repeatmasker.py"
@@ -36,9 +45,9 @@ rule repeatmodeler:
     input:
         fasta= "resource/genome/{genome}_genome.fasta"
     output:
-        families_fa = "resource/repeatmodeler/{genome}-families.fa",
-        families_stk = "resource/repeatmodeler/{genome}-families.stk",
-        rmod_log = "resource/repeatmodeler/{genome}-rmod.log"
+        families_fa = "output/repeatmodeler/{genome}-families.fa",
+        families_stk = "output/repeatmodeler/{genome}-families.stk",
+        rmod_log = "output/repeatmodeler/{genome}-rmod.log"
     params:
         database_name = "{genome}",
         threads = 20, # Adjust the number of threads based on your system
