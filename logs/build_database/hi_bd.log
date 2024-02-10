@@ -1,0 +1,3 @@
+Building database resource/rm_db/hi_db/hi_db:
+  Reading resource/genome/hi_genome.fasta...
+Number of sequences (bp) added to database: 1 ( 1846259 bp )

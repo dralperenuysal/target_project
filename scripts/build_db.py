@@ -1,10 +1,11 @@
 from snakemake.shell import shell
 
-fasta = snakemake.input.genome
-output = snakemake.output[0]
-db_name = snakemake.params.db_name
+fasta = snakemake.input.fasta
+out = snakemake.output.db
 
-shell(f"""
-cd resource/rm_db
-BuildDatabase -name {db_name} -engine ncbi {fasta}
-""")
+# Command runs in the right directory
+shell(
+    f"""
+    BuildDatabase -name {out} -engine ncbi {fasta}
+    """
+)
