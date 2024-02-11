@@ -125,3 +125,7 @@ rule pangenome_analysis:
     script:
         "scripts/pangenome_analysis.py"
 
+rule eggnogmapper:
+    input:
+        
+
