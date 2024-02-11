@@ -4,7 +4,12 @@ env= "env/env.yaml"
 rule all:
     input:
         expand("output/barrnap/{genome}_rrna_count.gff", genome = genomes),
-        expand("output/repeatmodeler/{genome}_rm", genome=genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nhr", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nin", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nnd", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nni", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nog", genome = genomes),
+        expand("output/repeatmodeler/{genome}_rm/{genome}_db.nsq", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.fa", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.stk", genome = genomes),
         #expand("output/repeatmasker/{genome}_genome.fasta.masked",genome=genomes),
@@ -25,11 +30,18 @@ rule build_database:
     input:
         fasta = "resource/genome/{genome}_genome.fasta"
     output:
-        db = directory("output/repeatmodeler/{genome}_rm")
+        nhr = "output/repeatmodeler/{genome}_rm/{genome}_db.nhr",
+        nin = "output/repeatmodeler/{genome}_rm/{genome}_db.nin",
+        nnd = "output/repeatmodeler/{genome}_rm/{genome}_db.nnd",
+        nni = "output/repeatmodeler/{genome}_rm/{genome}_db.nni",
+        nog = "output/repeatmodeler/{genome}_rm/{genome}_db.nog",
+        nsq = "output/repeatmodeler/{genome}_rm/{genome}_db.nsq"
+    params:
+        db_path = "output/repeatmodeler/{genome}_rm"
     shell:
         """
-        mkdir -p {output.db}
-        cd {output.db}
+        mkdir -p {params.db_path}
+        cd {params.db_path}
         BuildDatabase -engine ncbi -name {wildcards.genome}_db ../../../{input.fasta}
         """
 
@@ -43,8 +55,7 @@ rule repeatmodeler:
     shell:
         """
         cd {params.path}
-        RepeatModeler -database {db} -engine ncbi -pa 20
-        touch {output.fa}
+        RepeatModeler -database {params.db} -engine ncbi -pa 20
         """
 
 
