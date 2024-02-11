@@ -12,9 +12,9 @@ rule all:
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nsq", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.fa", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.stk", genome = genomes),
-        #expand("output/repeatmasker/{genome}_genome.fasta.masked",genome=genomes),
-        #expand("output/repeatmasker/{genome}_genome.fasta.out",genome=genomes),
-        #expand("output/repeatmasker/{genome}_genome.fasta.tbl",genome=genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.masked",genome=genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.out",genome=genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.tbl",genome=genomes),
 
 rule barrnap:
     input:
@@ -58,10 +58,16 @@ rule repeatmodeler:
         RepeatModeler -database {params.db} -engine ncbi -pa 20
         """
 
-
-
-
-
-
-
-
+rule repeatmasker:
+    input:
+        fasta = lambda wildcards: f"resource/genome/{wildcards.genome}_genome.fasta"
+    output:
+        masked = "output/repeatmasker/{genome}_masked/{genome}_genome.fasta.masked",
+        out = "output/repeatmasker/{genome}_masked/{genome}_genome.fasta.out",
+        tbl = "output/repeatmasker/{genome}_masked/{genome}_genome.fasta.tbl"
+    params:
+        dir = lambda wildcards: f"output/repeatmasker/{wildcards.genome}_masked",
+        lib = rules.repeatmodeler.output.fa,
+    # conda: env
+    script:
+        "scripts/repeatmasker.py"
