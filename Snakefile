@@ -27,7 +27,10 @@ rule all:
         expand("output/quast/{genome}_quality", genome = genomes),
 
         # Annotation of the target genomes using prokka
-        expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes)
+        expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes),
+
+        # Pan-genome analysis using roary
+        "output/pangenome"
 
 rule barrnap:
     input:
@@ -109,4 +112,16 @@ rule genome_annotation:
         "logs/prokka/{genome}_prokka.log"
     script:
         "scripts/genome_annotation.py"
+
+rule pangenome_analysis:
+    input:
+        expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes),
+    output:
+        out = directory("output/pangenome")
+    conda: "env/roary.yaml"
+    threads: 12
+    log:
+        "logs/pangenome/pangenome.log"
+    script:
+        "scripts/pangenome_analysis.py"
 

@@ -7174,7 +7174,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_32 (length 182)
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_33 (length 224)
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_34 (length 41)
 
-FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::6 rRNA prames are not stanot standard. Correct the names to the standard format, eg "16S ribosomal RNA"
+FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::6 rRNA product names are not standard. Correct the names to the standard format, eg "16S ribosomal RNA"
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:588554-588631	PJKHBDOM_00580
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:627230-627307	PJKHBDOM_00619
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:633091-633168	PJKHBDOM_00631
