@@ -12,9 +12,10 @@ rule all:
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nsq", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.fa", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.stk", genome = genomes),
-        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.masked",genome=genomes),
-        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.out",genome=genomes),
-        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.tbl",genome=genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.masked", genome = genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.out", genome = genomes),
+        expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.tbl", genome = genomes),
+        expand("output/quast/{genome}_quality", genome = genomes)
 
 rule barrnap:
     input:
@@ -69,5 +70,15 @@ rule repeatmasker:
         dir = lambda wildcards: f"output/repeatmasker/{wildcards.genome}_masked",
         lib = rules.repeatmodeler.output.fa,
     # conda: env
-    script:
-        "scripts/repeatmasker.py"
+    script: "scripts/repeatmasker.py"
+
+rule quality_control:
+    input:
+        fasta = lambda wildcards: f"resource/genome/{wildcards.genome}_genome.fasta"
+    output:
+        out = directory("output/quast/{genome}_quality")
+    log:
+        "logs/quast/{genome}_quality.log"
+    conda: env
+    script: "scripts/quality_control.py"
+
