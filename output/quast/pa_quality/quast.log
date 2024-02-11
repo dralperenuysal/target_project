@@ -1,4 +1,4 @@
-/home/alperen/PycharmProjects/target_project/.snakemake/conda/f1fd0e887d42b4f4001b32e0203c837d_/bin/quast.py resource/genome/pa_genome.fasta -o output/quast/pa_quality
+/home/alperen/PycharmProjects/target_project/.snakemake/conda/627d134ed2926ff4c7ee75638388a89e_/bin/quast.py resource/genome/pa_genome.fasta -o output/quast/pa_quality
 
 Version: 5.2.0
 
@@ -7,7 +7,7 @@ System information:
   Python version: 3.10.13
   CPUs number: 20
 
-Started: 2024-02-11 15:29:34
+Started: 2024-02-11 15:56:33
 
 Logging to /home/alperen/PycharmProjects/target_project/output/quast/pa_quality/quast.log
 NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
@@ -21,7 +21,7 @@ Contigs:
   Pre-processing...
   resource/genome/pa_genome.fasta ==> pa_genome
 
-2024-02-11 15:29:35
+2024-02-11 15:56:35
 Running Basic statistics processor...
   Contig files: 
     pa_genome
@@ -39,14 +39,14 @@ Done.
 
 NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
 
-2024-02-11 15:29:35
+2024-02-11 15:56:36
 Creating large visual summaries...
 This may take a while: press Ctrl-C to skip this step..
   1 of 2: Creating PDF with all tables and plots...
   2 of 2: Creating Icarus viewers...
 Done
 
-2024-02-11 15:29:35
+2024-02-11 15:56:37
 RESULTS:
   Text versions of total report are saved to /home/alperen/PycharmProjects/target_project/output/quast/pa_quality/report.txt, report.tsv, and report.tex
   Text versions of transposed total report are saved to /home/alperen/PycharmProjects/target_project/output/quast/pa_quality/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
@@ -55,8 +55,8 @@ RESULTS:
   Icarus (contig browser) is saved to /home/alperen/PycharmProjects/target_project/output/quast/pa_quality/icarus.html
   Log is saved to /home/alperen/PycharmProjects/target_project/output/quast/pa_quality/quast.log
 
-Finished: 2024-02-11 15:29:35
-Elapsed time: 0:00:01.266108
+Finished: 2024-02-11 15:56:37
+Elapsed time: 0:00:03.312582
 NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
 
 Thank you for using QUAST!

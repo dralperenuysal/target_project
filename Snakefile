@@ -3,19 +3,31 @@ env= "env/env.yaml"
 
 rule all:
     input:
+        # barrnap output
         expand("output/barrnap/{genome}_rrna_count.gff", genome = genomes),
+
+        # Database building for RepeatModeler and RepeatMasker
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nhr", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nin", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nnd", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nni", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nog", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db.nsq", genome = genomes),
+
+        # RepeatModeler outputs
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.fa", genome = genomes),
         expand("output/repeatmodeler/{genome}_rm/{genome}_db-families.stk", genome = genomes),
+
+        # RepeatMasker output
         expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.masked", genome = genomes),
         expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.out", genome = genomes),
         expand("output/repeatmasker/{genome}_masked/{genome}_genome.fasta.tbl", genome = genomes),
-        expand("output/quast/{genome}_quality", genome = genomes)
+
+        # Quality Control with quast
+        expand("output/quast/{genome}_quality", genome = genomes),
+
+        # Annotation of the target genomes using prokka
+        expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes)
 
 rule barrnap:
     input:
@@ -80,5 +92,21 @@ rule quality_control:
     log:
         "logs/quast/{genome}_quality.log"
     conda: env
-    script: "scripts/quality_control.py"
+    script:
+        "scripts/quality_control.py"
+
+rule genome_annotation:
+    input:
+        fasta = lambda wildcards: f"resource/genome/{wildcards.genome}_genome.fasta"
+    output:
+        gff = "output/prokka_annotation/{genome}_prokka/{genome}.gff"
+    conda: env
+    params:
+        out = "output/prokka_annotation/{genome}_prokka",
+        cpus = 12,
+        prefix = lambda wildcards: f"{wildcards.genome}"
+    log:
+        "logs/prokka/{genome}_prokka.log"
+    script:
+        "scripts/genome_annotation.py"
 
