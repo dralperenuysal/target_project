@@ -30,7 +30,10 @@ rule all:
         expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes),
 
         # Pan-genome analysis using roary
-        "output/pangenome"
+        "output/pangenome",
+
+        # eggnog-mapper outputs
+        expand("output/eggnog/{genome}_eggnog", genome = genomes)
 
 rule barrnap:
     input:
@@ -125,7 +128,5 @@ rule pangenome_analysis:
     script:
         "scripts/pangenome_analysis.py"
 
-rule eggnogmapper:
-    input:
-        
+# rule eggnogmapper: This was done by using the eggnog.sh file.
 
