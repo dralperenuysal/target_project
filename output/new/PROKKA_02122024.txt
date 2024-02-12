@@ -1,0 +1,9 @@
+organism: Haemophilus influenzae strain 
+contigs: 1
+bases: 1846259
+CDS: 1768
+gene: 1848
+mRNA: 1848
+rRNA: 20
+tRNA: 59
+tmRNA: 1

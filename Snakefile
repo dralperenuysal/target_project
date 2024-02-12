@@ -1,4 +1,5 @@
 genomes = ["hi", "pa", "sa_mrsa"]
+genus_and_species = ["Haemophilus influenzae", "Pseudomonas aeruginosa", "Staphylococcus aureus"]
 env= "env/env.yaml"
 
 rule all:
@@ -110,7 +111,8 @@ rule genome_annotation:
     params:
         out = "output/prokka_annotation/{genome}_prokka",
         cpus = 12,
-        prefix = lambda wildcards: f"{wildcards.genome}"
+        prefix = lambda wildcards: f"{wildcards.genome}",
+        protein = lambda wildcards: f"resource/protein/{wildcards.genome}_protein.fasta"
     log:
         "logs/prokka/{genome}_prokka.log"
     script:
