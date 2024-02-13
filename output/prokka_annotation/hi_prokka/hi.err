@@ -12,19 +12,18 @@ DISC_FEATURE_COUNT:rRNA: 20 present
 DISC_FEATURE_COUNT:tmRNA: 1 present
 DISC_COUNT_NUCLEOTIDES:1 nucleotide Bioseqs are present
 OVERLAPPING_GENES:438 genes overlap another gene on the same strand.
-OVERLAPPING_CDS:8 coding regions overlap another coding region with a similar or identical name.
+OVERLAPPING_CDS:10 coding regions overlap another coding region with a similar or identical name.
 RNA_CDS_OVERLAP:1 coding regions overlap RNA features
-SUSPECT_PRODUCT_NAMES:4 product_names contain suspect phrase or characters
+SUSPECT_PRODUCT_NAMES:5 product_names contain suspect phrase or characters
 	May contain database identifier more appropriate in note; remove from product name
-		2 features contains three or more numbers together that may be identifiers more appropriate in note
+		1 features contains three or more numbers together that may be identifiers more appropriate in note
 	Use short product name instead of descriptive phrase
-		1 features Is longer than 100 characters. Remove descriptive phrases or synonyms from product names. Keep valid long product names, eg long enzyme names
+		1 features contains 'possibly'
 	use protein instead of gene as appropriate
-		1 features contains 'genes'
+		3 features contains 'gene'
 DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
 FATAL: DISC_SUSPECT_RRNA_PRODUCTS:2 rRNA product names contain suspect phrase
 FATAL: DISC_SHORT_RRNA:1 rRNA features are too short
-DISC_BAD_BACTERIAL_GENE_NAME:3 bacterial genes do not start with lowercase letters
 ONCALLER_COMMENT_PRESENT:1 comment descriptors were found (all same)
 SHORT_PROT_SEQUENCES:14 protein sequences are shorter than 50 aa.
 MISSING_GENOMEASSEMBLY_COMMENTS:1 bioseqs are missing GenomeAssembly structured comments
@@ -1824,25 +1823,25 @@ output/prokka_annotation/hi_prokka/hi:CP007470.1 (length 1846259)
 DiscRep_ALL:OVERLAPPING_GENES::438 genes overlap another gene on the same strand.
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00004	CP007470.1:3589-4308	OHDNGLAN_00004
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00005	CP007470.1:4305-4634	OHDNGLAN_00005
-output/prokka_annotation/hi_prokka/hi:Gene	pxpB	CP007470.1:9984-10625	OHDNGLAN_00010
-output/prokka_annotation/hi_prokka/hi:Gene	pxpC	CP007470.1:10622-11551	OHDNGLAN_00011
-output/prokka_annotation/hi_prokka/hi:Gene	pxpA	CP007470.1:11538-12275	OHDNGLAN_00012
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00010	CP007470.1:9984-10625	OHDNGLAN_00010
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00011	CP007470.1:10622-11551	OHDNGLAN_00011
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00012	CP007470.1:11538-12275	OHDNGLAN_00012
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00017	CP007470.1:c18874-18476	OHDNGLAN_00017
-output/prokka_annotation/hi_prokka/hi:Gene	erpA	CP007470.1:c19175-18831	OHDNGLAN_00018
-output/prokka_annotation/hi_prokka/hi:Gene	qseB	CP007470.1:29733-30398	OHDNGLAN_00031
-output/prokka_annotation/hi_prokka/hi:Gene	qseC	CP007470.1:30395-31750	OHDNGLAN_00032
-output/prokka_annotation/hi_prokka/hi:Gene	lptF	CP007470.1:35662-36765	OHDNGLAN_00035
-output/prokka_annotation/hi_prokka/hi:Gene	lptG	CP007470.1:36762-37838	OHDNGLAN_00036
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00018	CP007470.1:c19175-18831	OHDNGLAN_00018
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00031	CP007470.1:29733-30398	OHDNGLAN_00031
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00032	CP007470.1:30395-31750	OHDNGLAN_00032
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00035	CP007470.1:35662-36765	OHDNGLAN_00035
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00036	CP007470.1:36762-37838	OHDNGLAN_00036
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00039	CP007470.1:41403-42608	OHDNGLAN_00039
-output/prokka_annotation/hi_prokka/hi:Gene	lst	CP007470.1:42605-43519	OHDNGLAN_00040
-output/prokka_annotation/hi_prokka/hi:Gene	modB	CP007470.1:49021-49710	OHDNGLAN_00047
-output/prokka_annotation/hi_prokka/hi:Gene	btuD_1	CP007470.1:49697-50752	OHDNGLAN_00048
-output/prokka_annotation/hi_prokka/hi:Gene	rsxG	CP007470.1:c54355-53732	OHDNGLAN_00052
-output/prokka_annotation/hi_prokka/hi:Gene	rsxD	CP007470.1:c55431-54355	OHDNGLAN_00053
-output/prokka_annotation/hi_prokka/hi:Gene	aroA	CP007470.1:c81670-80372	OHDNGLAN_00069
-output/prokka_annotation/hi_prokka/hi:Gene	purU	CP007470.1:c82506-81670	OHDNGLAN_00070
-output/prokka_annotation/hi_prokka/hi:Gene	ilvI	CP007470.1:85210-86931	OHDNGLAN_00073
-output/prokka_annotation/hi_prokka/hi:Gene	ilvH	CP007470.1:86931-87422	OHDNGLAN_00074
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00040	CP007470.1:42605-43519	OHDNGLAN_00040
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00047	CP007470.1:49021-49710	OHDNGLAN_00047
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00048	CP007470.1:49697-50752	OHDNGLAN_00048
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00052	CP007470.1:c54355-53732	OHDNGLAN_00052
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00053	CP007470.1:c55431-54355	OHDNGLAN_00053
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00069	CP007470.1:c81670-80372	OHDNGLAN_00069
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00070	CP007470.1:c82506-81670	OHDNGLAN_00070
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00073	CP007470.1:85210-86931	OHDNGLAN_00073
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00074	CP007470.1:86931-87422	OHDNGLAN_00074
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00080	CP007470.1:c92463-92365	OHDNGLAN_00080
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00081	CP007470.1:c92624-92406	OHDNGLAN_00081
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00092	CP007470.1:102475-102921	OHDNGLAN_00092
@@ -1850,43 +1849,43 @@ output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00093	CP007470.1:102921-1030
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00094	CP007470.1:103109-103768	OHDNGLAN_00094
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00095	CP007470.1:103768-103944	OHDNGLAN_00095
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00098	CP007470.1:105892-106362	OHDNGLAN_00098
-output/prokka_annotation/hi_prokka/hi:Gene	prmC	CP007470.1:106362-107240	OHDNGLAN_00099
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00099	CP007470.1:106362-107240	OHDNGLAN_00099
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00100	CP007470.1:107240-108043	OHDNGLAN_00100
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00102	CP007470.1:108972-109919	OHDNGLAN_00102
-output/prokka_annotation/hi_prokka/hi:Gene	lolC	CP007470.1:109919-111100	OHDNGLAN_00103
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00103	CP007470.1:109919-111100	OHDNGLAN_00103
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00106	CP007470.1:113562-114209	OHDNGLAN_00106
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00107	CP007470.1:114197-114979	OHDNGLAN_00107
-output/prokka_annotation/hi_prokka/hi:Gene	lolD	CP007470.1:115712-116395	OHDNGLAN_00109
-output/prokka_annotation/hi_prokka/hi:Gene	lolE	CP007470.1:116395-117645	OHDNGLAN_00110
-output/prokka_annotation/hi_prokka/hi:Gene	kefG	CP007470.1:121112-121720	OHDNGLAN_00114
-output/prokka_annotation/hi_prokka/hi:Gene	ycdY	CP007470.1:121720-122274	OHDNGLAN_00115
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00109	CP007470.1:115712-116395	OHDNGLAN_00109
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00110	CP007470.1:116395-117645	OHDNGLAN_00110
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00114	CP007470.1:121112-121720	OHDNGLAN_00114
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00115	CP007470.1:121720-122274	OHDNGLAN_00115
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00118	CP007470.1:c125655-124858	OHDNGLAN_00118
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00119	CP007470.1:c126356-125655	OHDNGLAN_00119
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00120	CP007470.1:c127231-126353	OHDNGLAN_00120
-output/prokka_annotation/hi_prokka/hi:Gene	thiK	CP007470.1:c128034-127231	OHDNGLAN_00121
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00121	CP007470.1:c128034-127231	OHDNGLAN_00121
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00134	CP007470.1:142229-142627	OHDNGLAN_00134
-output/prokka_annotation/hi_prokka/hi:Gene	uup_1	CP007470.1:142624-143184	OHDNGLAN_00135
-output/prokka_annotation/hi_prokka/hi:Gene	thiL	CP007470.1:146585-147571	OHDNGLAN_00140
-output/prokka_annotation/hi_prokka/hi:Gene	pgpA	CP007470.1:147568-148059	OHDNGLAN_00141
-output/prokka_annotation/hi_prokka/hi:Gene	rhtC	CP007470.1:148059-148688	OHDNGLAN_00142
-output/prokka_annotation/hi_prokka/hi:Gene	ftsK	CP007470.1:160197-160397	OHDNGLAN_00156
-output/prokka_annotation/hi_prokka/hi:Gene	cobB	CP007470.1:160394-161239	OHDNGLAN_00157
-output/prokka_annotation/hi_prokka/hi:Gene	stp	CP007470.1:161239-162000	OHDNGLAN_00158
-output/prokka_annotation/hi_prokka/hi:Gene	recB	CP007470.1:168146-171781	OHDNGLAN_00166
-output/prokka_annotation/hi_prokka/hi:Gene	recD	CP007470.1:171781-173703	OHDNGLAN_00167
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00135	CP007470.1:142624-143184	OHDNGLAN_00135
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00140	CP007470.1:146585-147571	OHDNGLAN_00140
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00141	CP007470.1:147568-148059	OHDNGLAN_00141
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00142	CP007470.1:148059-148688	OHDNGLAN_00142
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00156	CP007470.1:160197-160397	OHDNGLAN_00156
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00157	CP007470.1:160394-161239	OHDNGLAN_00157
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00158	CP007470.1:161239-162000	OHDNGLAN_00158
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00166	CP007470.1:168146-171781	OHDNGLAN_00166
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00167	CP007470.1:171781-173703	OHDNGLAN_00167
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00171	CP007470.1:177059-177784	OHDNGLAN_00171
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00172	CP007470.1:177781-177918	OHDNGLAN_00172
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00190	CP007470.1:191909-192439	OHDNGLAN_00190
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00191	CP007470.1:192393-192899	OHDNGLAN_00191
-output/prokka_annotation/hi_prokka/hi:Gene	sspA	CP007470.1:203283-203921	OHDNGLAN_00206
-output/prokka_annotation/hi_prokka/hi:Gene	sspB	CP007470.1:203921-204373	OHDNGLAN_00207
-output/prokka_annotation/hi_prokka/hi:Gene	ispA	CP007470.1:c207218-206328	OHDNGLAN_00209
-output/prokka_annotation/hi_prokka/hi:Gene	xseB	CP007470.1:c207472-207218	OHDNGLAN_00210
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00206	CP007470.1:203283-203921	OHDNGLAN_00206
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00207	CP007470.1:203921-204373	OHDNGLAN_00207
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00209	CP007470.1:c207218-206328	OHDNGLAN_00209
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00210	CP007470.1:c207472-207218	OHDNGLAN_00210
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00212	CP007470.1:209103-209423	OHDNGLAN_00212
-output/prokka_annotation/hi_prokka/hi:Gene	truC	CP007470.1:209417-210136	OHDNGLAN_00213
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00213	CP007470.1:209417-210136	OHDNGLAN_00213
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00214	CP007470.1:210129-210287	OHDNGLAN_00214
-output/prokka_annotation/hi_prokka/hi:Gene	trpA	CP007470.1:c213247-212441	OHDNGLAN_00218
-output/prokka_annotation/hi_prokka/hi:Gene	trpB	CP007470.1:c214443-213247	OHDNGLAN_00219
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00218	CP007470.1:c213247-212441	OHDNGLAN_00218
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00219	CP007470.1:c214443-213247	OHDNGLAN_00219
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00235	CP007470.1:c225654-225223	OHDNGLAN_00235
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00236	CP007470.1:c225986-225651	OHDNGLAN_00236
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00241	CP007470.1:228653-229321	OHDNGLAN_00241
@@ -1902,22 +1901,22 @@ output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00254	CP007470.1:236354-2366
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00255	CP007470.1:236610-236852	OHDNGLAN_00255
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00257	CP007470.1:237177-237689	OHDNGLAN_00257
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00258	CP007470.1:237676-239019	OHDNGLAN_00258
-output/prokka_annotation/hi_prokka/hi:Gene	pyrD	CP007470.1:242043-243062	OHDNGLAN_00262
-output/prokka_annotation/hi_prokka/hi:Gene	yciV	CP007470.1:243062-243886	OHDNGLAN_00263
-output/prokka_annotation/hi_prokka/hi:Gene	phoB	CP007470.1:264746-265441	OHDNGLAN_00287
-output/prokka_annotation/hi_prokka/hi:Gene	phoR	CP007470.1:265438-266715	OHDNGLAN_00288
-output/prokka_annotation/hi_prokka/hi:Gene	mukB	CP007470.1:c275196-270664	OHDNGLAN_00292
-output/prokka_annotation/hi_prokka/hi:Gene	mukE	CP007470.1:c275930-275196	OHDNGLAN_00293
-output/prokka_annotation/hi_prokka/hi:Gene	putP	CP007470.1:312770-314284	OHDNGLAN_00317
-output/prokka_annotation/hi_prokka/hi:Gene	cmoB	CP007470.1:314281-315246	OHDNGLAN_00318
-output/prokka_annotation/hi_prokka/hi:Gene	potA	CP007470.1:318933-320051	OHDNGLAN_00323
-output/prokka_annotation/hi_prokka/hi:Gene	potB	CP007470.1:320035-320895	OHDNGLAN_00324
-output/prokka_annotation/hi_prokka/hi:Gene	ydcV	CP007470.1:320895-321665	OHDNGLAN_00325
-output/prokka_annotation/hi_prokka/hi:Gene	csdA	CP007470.1:328208-329407	OHDNGLAN_00332
-output/prokka_annotation/hi_prokka/hi:Gene	csdE	CP007470.1:329404-329784	OHDNGLAN_00333
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00262	CP007470.1:242043-243062	OHDNGLAN_00262
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00263	CP007470.1:243062-243886	OHDNGLAN_00263
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00287	CP007470.1:264746-265441	OHDNGLAN_00287
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00288	CP007470.1:265438-266715	OHDNGLAN_00288
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00292	CP007470.1:c275196-270664	OHDNGLAN_00292
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00293	CP007470.1:c275930-275196	OHDNGLAN_00293
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00317	CP007470.1:312770-314284	OHDNGLAN_00317
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00318	CP007470.1:314281-315246	OHDNGLAN_00318
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00323	CP007470.1:318933-320051	OHDNGLAN_00323
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00324	CP007470.1:320035-320895	OHDNGLAN_00324
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00325	CP007470.1:320895-321665	OHDNGLAN_00325
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00332	CP007470.1:328208-329407	OHDNGLAN_00332
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00333	CP007470.1:329404-329784	OHDNGLAN_00333
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00334	CP007470.1:329775-330572	OHDNGLAN_00334
-output/prokka_annotation/hi_prokka/hi:Gene	truB	CP007470.1:c333622-332702	OHDNGLAN_00337
-output/prokka_annotation/hi_prokka/hi:Gene	rbfA	CP007470.1:c334008-333622	OHDNGLAN_00338
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00337	CP007470.1:c333622-332702	OHDNGLAN_00337
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00338	CP007470.1:c334008-333622	OHDNGLAN_00338
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00339	CP007470.1:334172-335842	OHDNGLAN_00339
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00340	CP007470.1:335835-337184	OHDNGLAN_00340
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00341	CP007470.1:337181-337813	OHDNGLAN_00341
@@ -1942,222 +1941,222 @@ output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00381	CP007470.1:c365501-364
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00382	CP007470.1:c365715-365494	OHDNGLAN_00382
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00383	CP007470.1:c365926-365717	OHDNGLAN_00383
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00384	CP007470.1:c366432-365926	OHDNGLAN_00384
-output/prokka_annotation/hi_prokka/hi:Gene	folC	CP007470.1:c389755-388442	OHDNGLAN_00403
-output/prokka_annotation/hi_prokka/hi:Gene	accD	CP007470.1:c390638-389748	OHDNGLAN_00404
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00403	CP007470.1:c389755-388442	OHDNGLAN_00403
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00404	CP007470.1:c390638-389748	OHDNGLAN_00404
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00407	CP007470.1:c395993-395820	OHDNGLAN_00407
-output/prokka_annotation/hi_prokka/hi:Gene	tmcA	CP007470.1:c397960-395990	OHDNGLAN_00408
-output/prokka_annotation/hi_prokka/hi:Gene	lapB	CP007470.1:c435153-433960	OHDNGLAN_00440
-output/prokka_annotation/hi_prokka/hi:Gene	lapA	CP007470.1:c435446-435153	OHDNGLAN_00441
-output/prokka_annotation/hi_prokka/hi:Gene	lpoA	CP007470.1:446559-448286	OHDNGLAN_00452
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00408	CP007470.1:c397960-395990	OHDNGLAN_00408
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00440	CP007470.1:c435153-433960	OHDNGLAN_00440
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00441	CP007470.1:c435446-435153	OHDNGLAN_00441
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00452	CP007470.1:446559-448286	OHDNGLAN_00452
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00453	CP007470.1:448286-448645	OHDNGLAN_00453
-output/prokka_annotation/hi_prokka/hi:Gene	yebS	CP007470.1:465071-466321	OHDNGLAN_00466
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00466	CP007470.1:465071-466321	OHDNGLAN_00466
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00467	CP007470.1:466305-468950	OHDNGLAN_00467
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00479	CP007470.1:c486815-486099	OHDNGLAN_00479
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00480	CP007470.1:c487728-486805	OHDNGLAN_00480
-output/prokka_annotation/hi_prokka/hi:Gene	lolB	CP007470.1:492742-493371	OHDNGLAN_00487
-output/prokka_annotation/hi_prokka/hi:Gene	ispE	CP007470.1:493371-494324	OHDNGLAN_00488
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00487	CP007470.1:492742-493371	OHDNGLAN_00487
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00488	CP007470.1:493371-494324	OHDNGLAN_00488
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00495	CP007470.1:c502568-502224	OHDNGLAN_00495
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00496	CP007470.1:c502813-502565	OHDNGLAN_00496
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00501	CP007470.1:c507333-506701	OHDNGLAN_00501
-output/prokka_annotation/hi_prokka/hi:Gene	cbiM	CP007470.1:c507953-507333	OHDNGLAN_00502
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00502	CP007470.1:c507953-507333	OHDNGLAN_00502
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00503	CP007470.1:c508441-507953	OHDNGLAN_00503
-output/prokka_annotation/hi_prokka/hi:Gene	sapA	CP007470.1:522213-523907	OHDNGLAN_00522
-output/prokka_annotation/hi_prokka/hi:Gene	sapB_1	CP007470.1:523907-524872	OHDNGLAN_00523
-output/prokka_annotation/hi_prokka/hi:Gene	sapC	CP007470.1:524862-525749	OHDNGLAN_00524
-output/prokka_annotation/hi_prokka/hi:Gene	sapD	CP007470.1:525753-526802	OHDNGLAN_00525
-output/prokka_annotation/hi_prokka/hi:Gene	sapF	CP007470.1:526802-527611	OHDNGLAN_00526
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00522	CP007470.1:522213-523907	OHDNGLAN_00522
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00523	CP007470.1:523907-524872	OHDNGLAN_00523
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00524	CP007470.1:524862-525749	OHDNGLAN_00524
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00525	CP007470.1:525753-526802	OHDNGLAN_00525
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00526	CP007470.1:526802-527611	OHDNGLAN_00526
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00527	CP007470.1:527623-528639	OHDNGLAN_00527
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00528	CP007470.1:528585-528815	OHDNGLAN_00528
-output/prokka_annotation/hi_prokka/hi:Gene	mtnN	CP007470.1:c536520-535831	OHDNGLAN_00534
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00534	CP007470.1:c536520-535831	OHDNGLAN_00534
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00535	CP007470.1:c537224-536517	OHDNGLAN_00535
-output/prokka_annotation/hi_prokka/hi:Gene	recJ	CP007470.1:c538944-537217	OHDNGLAN_00536
-output/prokka_annotation/hi_prokka/hi:Gene	argR	CP007470.1:544047-544502	OHDNGLAN_00541
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00536	CP007470.1:c538944-537217	OHDNGLAN_00536
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00541	CP007470.1:544047-544502	OHDNGLAN_00541
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00542	CP007470.1:544502-545392	OHDNGLAN_00542
-output/prokka_annotation/hi_prokka/hi:Gene	sucD	CP007470.1:c557060-556179	OHDNGLAN_00553
-output/prokka_annotation/hi_prokka/hi:Gene	sucC	CP007470.1:c558229-557060	OHDNGLAN_00554
-output/prokka_annotation/hi_prokka/hi:Gene	rlmM	CP007470.1:c559356-558265	OHDNGLAN_00555
-output/prokka_annotation/hi_prokka/hi:Gene	gcvA	CP007470.1:c560242-559349	OHDNGLAN_00556
-output/prokka_annotation/hi_prokka/hi:Gene	queC	CP007470.1:562098-562781	OHDNGLAN_00559
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00553	CP007470.1:c557060-556179	OHDNGLAN_00553
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00554	CP007470.1:c558229-557060	OHDNGLAN_00554
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00555	CP007470.1:c559356-558265	OHDNGLAN_00555
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00556	CP007470.1:c560242-559349	OHDNGLAN_00556
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00559	CP007470.1:562098-562781	OHDNGLAN_00559
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00560	CP007470.1:562774-563199	OHDNGLAN_00560
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00562	CP007470.1:564081-564458	OHDNGLAN_00562
-output/prokka_annotation/hi_prokka/hi:Gene	uvrD	CP007470.1:564442-566625	OHDNGLAN_00563
-output/prokka_annotation/hi_prokka/hi:Gene	artQ	CP007470.1:573829-574494	OHDNGLAN_00572
-output/prokka_annotation/hi_prokka/hi:Gene	artM	CP007470.1:574494-575177	OHDNGLAN_00573
-output/prokka_annotation/hi_prokka/hi:Gene	menF_1	CP007470.1:578960-579946	OHDNGLAN_00579
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00563	CP007470.1:564442-566625	OHDNGLAN_00563
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00572	CP007470.1:573829-574494	OHDNGLAN_00572
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00573	CP007470.1:574494-575177	OHDNGLAN_00573
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00579	CP007470.1:578960-579946	OHDNGLAN_00579
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00580	CP007470.1:579946-580512	OHDNGLAN_00580
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00589	CP007470.1:589651-590067	OHDNGLAN_00589
-output/prokka_annotation/hi_prokka/hi:Gene	hemH	CP007470.1:590064-591035	OHDNGLAN_00590
-output/prokka_annotation/hi_prokka/hi:Gene	cydD_1	CP007470.1:593058-594818	OHDNGLAN_00593
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00590	CP007470.1:590064-591035	OHDNGLAN_00590
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00593	CP007470.1:593058-594818	OHDNGLAN_00593
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00594	CP007470.1:594818-596545	OHDNGLAN_00594
-output/prokka_annotation/hi_prokka/hi:Gene	ftsQ	CP007470.1:c610696-609932	OHDNGLAN_00609
-output/prokka_annotation/hi_prokka/hi:Gene	ddlB	CP007470.1:c611616-610696	OHDNGLAN_00610
-output/prokka_annotation/hi_prokka/hi:Gene	mraY	CP007470.1:c618034-616952	OHDNGLAN_00615
-output/prokka_annotation/hi_prokka/hi:Gene	murF	CP007470.1:c619401-618028	OHDNGLAN_00616
-output/prokka_annotation/hi_prokka/hi:Gene	oppD	CP007470.1:632205-633176	OHDNGLAN_00628
-output/prokka_annotation/hi_prokka/hi:Gene	oppF	CP007470.1:633173-634171	OHDNGLAN_00629
-output/prokka_annotation/hi_prokka/hi:Gene	ccmH	CP007470.1:c656856-656395	OHDNGLAN_00651
-output/prokka_annotation/hi_prokka/hi:Gene	dsbE_1	CP007470.1:c657401-656856	OHDNGLAN_00652
-output/prokka_annotation/hi_prokka/hi:Gene	ccmF_1	CP007470.1:c659488-657542	OHDNGLAN_00653
-output/prokka_annotation/hi_prokka/hi:Gene	ccmE	CP007470.1:c660006-659485	OHDNGLAN_00654
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00609	CP007470.1:c610696-609932	OHDNGLAN_00609
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00610	CP007470.1:c611616-610696	OHDNGLAN_00610
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00615	CP007470.1:c618034-616952	OHDNGLAN_00615
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00616	CP007470.1:c619401-618028	OHDNGLAN_00616
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00628	CP007470.1:632205-633176	OHDNGLAN_00628
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00629	CP007470.1:633173-634171	OHDNGLAN_00629
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00651	CP007470.1:c656856-656395	OHDNGLAN_00651
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00652	CP007470.1:c657401-656856	OHDNGLAN_00652
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00653	CP007470.1:c659488-657542	OHDNGLAN_00653
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00654	CP007470.1:c660006-659485	OHDNGLAN_00654
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00655	CP007470.1:c660206-660003	OHDNGLAN_00655
-output/prokka_annotation/hi_prokka/hi:Gene	mlaF	CP007470.1:663741-664535	OHDNGLAN_00660
-output/prokka_annotation/hi_prokka/hi:Gene	mlaE	CP007470.1:664532-665317	OHDNGLAN_00661
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00660	CP007470.1:663741-664535	OHDNGLAN_00660
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00661	CP007470.1:664532-665317	OHDNGLAN_00661
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00667	CP007470.1:668659-669432	OHDNGLAN_00667
-output/prokka_annotation/hi_prokka/hi:Gene	tcyB	CP007470.1:669416-670132	OHDNGLAN_00668
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00668	CP007470.1:669416-670132	OHDNGLAN_00668
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00677	CP007470.1:677641-678015	OHDNGLAN_00677
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00678	CP007470.1:678012-681923	OHDNGLAN_00678
-output/prokka_annotation/hi_prokka/hi:Gene	nrfB	CP007470.1:683778-684428	OHDNGLAN_00680
-output/prokka_annotation/hi_prokka/hi:Gene	ydhX	CP007470.1:684425-685102	OHDNGLAN_00681
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00680	CP007470.1:683778-684428	OHDNGLAN_00680
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00681	CP007470.1:684425-685102	OHDNGLAN_00681
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00682	CP007470.1:685099-686064	OHDNGLAN_00682
-output/prokka_annotation/hi_prokka/hi:Gene	lpxB	CP007470.1:690107-691279	OHDNGLAN_00687
-output/prokka_annotation/hi_prokka/hi:Gene	rnhB	CP007470.1:691272-691865	OHDNGLAN_00688
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00687	CP007470.1:690107-691279	OHDNGLAN_00687
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00688	CP007470.1:691272-691865	OHDNGLAN_00688
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00689	CP007470.1:692081-694216	OHDNGLAN_00689
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00690	CP007470.1:694206-696980	OHDNGLAN_00690
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00695	CP007470.1:c701126-700764	OHDNGLAN_00695
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00696	CP007470.1:c702210-701101	OHDNGLAN_00696
-output/prokka_annotation/hi_prokka/hi:Gene	dmsB_1	CP007470.1:704895-705263	OHDNGLAN_00698
-output/prokka_annotation/hi_prokka/hi:Gene	dmsB_2	CP007470.1:705260-705511	OHDNGLAN_00699
-output/prokka_annotation/hi_prokka/hi:Gene	dmsD	CP007470.1:706464-707075	OHDNGLAN_00701
-output/prokka_annotation/hi_prokka/hi:Gene	napF_1	CP007470.1:707075-707575	OHDNGLAN_00702
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00698	CP007470.1:704895-705263	OHDNGLAN_00698
+output/prokka_annotation/hi_prokka/hi:Gene	dmsB	CP007470.1:705260-705511	OHDNGLAN_00699
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00701	CP007470.1:706464-707075	OHDNGLAN_00701
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00702	CP007470.1:707075-707575	OHDNGLAN_00702
 output/prokka_annotation/hi_prokka/hi:Gene	metH_1	CP007470.1:707682-708101	OHDNGLAN_00703
 output/prokka_annotation/hi_prokka/hi:Gene	metH_2	CP007470.1:708098-709546	OHDNGLAN_00704
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00708	CP007470.1:c715177-714629	OHDNGLAN_00708
-output/prokka_annotation/hi_prokka/hi:Gene	corA	CP007470.1:c716121-715174	OHDNGLAN_00709
-output/prokka_annotation/hi_prokka/hi:Gene	thiQ	CP007470.1:c722134-721487	OHDNGLAN_00714
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00709	CP007470.1:c716121-715174	OHDNGLAN_00709
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00714	CP007470.1:c722134-721487	OHDNGLAN_00714
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00715	CP007470.1:c723734-722118	OHDNGLAN_00715
-output/prokka_annotation/hi_prokka/hi:Gene	ispH	CP007470.1:c726444-725500	OHDNGLAN_00718
-output/prokka_annotation/hi_prokka/hi:Gene	lspA	CP007470.1:c726956-726441	OHDNGLAN_00719
-output/prokka_annotation/hi_prokka/hi:Gene	yidC	CP007470.1:c733958-732333	OHDNGLAN_00723
-output/prokka_annotation/hi_prokka/hi:Gene	yidD	CP007470.1:c734218-733958	OHDNGLAN_00724
-output/prokka_annotation/hi_prokka/hi:Gene	rnpA	CP007470.1:c734541-734182	OHDNGLAN_00725
-output/prokka_annotation/hi_prokka/hi:Gene	yaaA	CP007470.1:757562-758338	OHDNGLAN_00739
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00718	CP007470.1:c726444-725500	OHDNGLAN_00718
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00719	CP007470.1:c726956-726441	OHDNGLAN_00719
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00723	CP007470.1:c733958-732333	OHDNGLAN_00723
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00724	CP007470.1:c734218-733958	OHDNGLAN_00724
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00725	CP007470.1:c734541-734182	OHDNGLAN_00725
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00739	CP007470.1:757562-758338	OHDNGLAN_00739
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00740	CP007470.1:758280-758912	OHDNGLAN_00740
-output/prokka_annotation/hi_prokka/hi:Gene	fis	CP007470.1:c761091-760792	OHDNGLAN_00743
-output/prokka_annotation/hi_prokka/hi:Gene	dusB	CP007470.1:c762146-761085	OHDNGLAN_00744
-output/prokka_annotation/hi_prokka/hi:Gene	panF	CP007470.1:c766164-764710	OHDNGLAN_00748
-output/prokka_annotation/hi_prokka/hi:Gene	yhdT	CP007470.1:c766418-766161	OHDNGLAN_00749
-output/prokka_annotation/hi_prokka/hi:Gene	nagZ	CP007470.1:778823-779878	OHDNGLAN_00762
-output/prokka_annotation/hi_prokka/hi:Gene	rlmC	CP007470.1:779871-781046	OHDNGLAN_00763
-output/prokka_annotation/hi_prokka/hi:Gene	crp_1	CP007470.1:c782085-781411	OHDNGLAN_00764
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00743	CP007470.1:c761091-760792	OHDNGLAN_00743
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00744	CP007470.1:c762146-761085	OHDNGLAN_00744
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00748	CP007470.1:c766164-764710	OHDNGLAN_00748
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00749	CP007470.1:c766418-766161	OHDNGLAN_00749
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00762	CP007470.1:778823-779878	OHDNGLAN_00762
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00763	CP007470.1:779871-781046	OHDNGLAN_00763
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00764	CP007470.1:c782085-781411	OHDNGLAN_00764
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00765	CP007470.1:c782321-782070	OHDNGLAN_00765
-output/prokka_annotation/hi_prokka/hi:Gene	vapB2	CP007470.1:788026-788259	OHDNGLAN_00773
-output/prokka_annotation/hi_prokka/hi:Gene	vapC	CP007470.1:788259-788657	OHDNGLAN_00774
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00773	CP007470.1:788026-788259	OHDNGLAN_00773
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00774	CP007470.1:788259-788657	OHDNGLAN_00774
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00781	CP007470.1:c797701-797405	OHDNGLAN_00781
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00782	CP007470.1:c798368-797685	OHDNGLAN_00782
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00783	CP007470.1:c799099-798383	OHDNGLAN_00783
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00784	CP007470.1:c799611-799099	OHDNGLAN_00784
-output/prokka_annotation/hi_prokka/hi:Gene	ccmF_2	CP007470.1:800723-802630	OHDNGLAN_00786
-output/prokka_annotation/hi_prokka/hi:Gene	dsbE_2	CP007470.1:802630-803160	OHDNGLAN_00787
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00786	CP007470.1:800723-802630	OHDNGLAN_00786
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00787	CP007470.1:802630-803160	OHDNGLAN_00787
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00788	CP007470.1:803157-804299	OHDNGLAN_00788
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00789	CP007470.1:804296-805501	OHDNGLAN_00789
-output/prokka_annotation/hi_prokka/hi:Gene	holA	CP007470.1:c816894-815860	OHDNGLAN_00801
-output/prokka_annotation/hi_prokka/hi:Gene	lptE	CP007470.1:c817397-816894	OHDNGLAN_00802
-output/prokka_annotation/hi_prokka/hi:Gene	tadA	CP007470.1:c836870-836349	OHDNGLAN_00818
-output/prokka_annotation/hi_prokka/hi:Gene	thyA	CP007470.1:c837721-836870	OHDNGLAN_00819
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00801	CP007470.1:c816894-815860	OHDNGLAN_00801
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00802	CP007470.1:c817397-816894	OHDNGLAN_00802
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00818	CP007470.1:c836870-836349	OHDNGLAN_00818
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00819	CP007470.1:c837721-836870	OHDNGLAN_00819
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00821	CP007470.1:c839340-838546	OHDNGLAN_00821
-output/prokka_annotation/hi_prokka/hi:Gene	rppH	CP007470.1:c839930-839340	OHDNGLAN_00822
-output/prokka_annotation/hi_prokka/hi:Gene	yacG	CP007470.1:c852314-852108	OHDNGLAN_00832
-output/prokka_annotation/hi_prokka/hi:Gene	coaE	CP007470.1:c852927-852307	OHDNGLAN_00833
-output/prokka_annotation/hi_prokka/hi:Gene	hsrA	CP007470.1:c893806-892418	OHDNGLAN_00866
-output/prokka_annotation/hi_prokka/hi:Gene	mobB	CP007470.1:c894318-893803	OHDNGLAN_00867
-output/prokka_annotation/hi_prokka/hi:Gene	rseC	CP007470.1:c895174-894740	OHDNGLAN_00868
-output/prokka_annotation/hi_prokka/hi:Gene	rsmJ	CP007470.1:c895941-895168	OHDNGLAN_00869
-output/prokka_annotation/hi_prokka/hi:Gene	trmA	CP007470.1:c897014-895923	OHDNGLAN_00870
-output/prokka_annotation/hi_prokka/hi:Gene	frdA	CP007470.1:906204-908003	OHDNGLAN_00882
-output/prokka_annotation/hi_prokka/hi:Gene	frdB	CP007470.1:907996-908766	OHDNGLAN_00883
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00822	CP007470.1:c839930-839340	OHDNGLAN_00822
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00832	CP007470.1:c852314-852108	OHDNGLAN_00832
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00833	CP007470.1:c852927-852307	OHDNGLAN_00833
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00866	CP007470.1:c893806-892418	OHDNGLAN_00866
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00867	CP007470.1:c894318-893803	OHDNGLAN_00867
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00868	CP007470.1:c895174-894740	OHDNGLAN_00868
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00869	CP007470.1:c895941-895168	OHDNGLAN_00869
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00870	CP007470.1:c897014-895923	OHDNGLAN_00870
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00882	CP007470.1:906204-908003	OHDNGLAN_00882
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00883	CP007470.1:907996-908766	OHDNGLAN_00883
 output/prokka_annotation/hi_prokka/hi:Gene	mtgA	CP007470.1:c910417-909677	OHDNGLAN_00886
-output/prokka_annotation/hi_prokka/hi:Gene	trpR	CP007470.1:c910709-910404	OHDNGLAN_00887
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00887	CP007470.1:c910709-910404	OHDNGLAN_00887
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00890	CP007470.1:c913321-912857	OHDNGLAN_00890
-output/prokka_annotation/hi_prokka/hi:Gene	yciB	CP007470.1:c913878-913321	OHDNGLAN_00891
-output/prokka_annotation/hi_prokka/hi:Gene	rpsQ	CP007470.1:c948497-948240	OHDNGLAN_00933
-output/prokka_annotation/hi_prokka/hi:Gene	rpmC	CP007470.1:c948688-948497	OHDNGLAN_00934
-output/prokka_annotation/hi_prokka/hi:Gene	rplP	CP007470.1:c949098-948688	OHDNGLAN_00935
-output/prokka_annotation/hi_prokka/hi:Gene	rplW	CP007470.1:c951620-951321	OHDNGLAN_00940
-output/prokka_annotation/hi_prokka/hi:Gene	rplD	CP007470.1:c952219-951617	OHDNGLAN_00941
-output/prokka_annotation/hi_prokka/hi:Gene	nadR	CP007470.1:964276-965499	OHDNGLAN_00956
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00891	CP007470.1:c913878-913321	OHDNGLAN_00891
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00933	CP007470.1:c948497-948240	OHDNGLAN_00933
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00934	CP007470.1:c948688-948497	OHDNGLAN_00934
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00935	CP007470.1:c949098-948688	OHDNGLAN_00935
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00940	CP007470.1:c951620-951321	OHDNGLAN_00940
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00941	CP007470.1:c952219-951617	OHDNGLAN_00941
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00956	CP007470.1:964276-965499	OHDNGLAN_00956
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00957	CP007470.1:965496-966176	OHDNGLAN_00957
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00961	CP007470.1:c968128-967856	OHDNGLAN_00961
-output/prokka_annotation/hi_prokka/hi:Gene	mutY	CP007470.1:c969242-968106	OHDNGLAN_00962
-output/prokka_annotation/hi_prokka/hi:Gene	envC	CP007470.1:970568-971800	OHDNGLAN_00965
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00962	CP007470.1:c969242-968106	OHDNGLAN_00962
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00965	CP007470.1:970568-971800	OHDNGLAN_00965
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_00966	CP007470.1:971800-972642	OHDNGLAN_00966
-output/prokka_annotation/hi_prokka/hi:Gene	metN	CP007470.1:1019182-1020219	OHDNGLAN_01002
-output/prokka_annotation/hi_prokka/hi:Gene	metI_1	CP007470.1:1020209-1020898	OHDNGLAN_01003
-output/prokka_annotation/hi_prokka/hi:Gene	recG	CP007470.1:c1056328-1054247	OHDNGLAN_01036
-output/prokka_annotation/hi_prokka/hi:Gene	spoT	CP007470.1:c1058439-1056325	OHDNGLAN_01037
-output/prokka_annotation/hi_prokka/hi:Gene	fdoH	CP007470.1:1068465-1069403	OHDNGLAN_01047
-output/prokka_annotation/hi_prokka/hi:Gene	fdnI	CP007470.1:1069396-1070112	OHDNGLAN_01048
-output/prokka_annotation/hi_prokka/hi:Gene	rimI	CP007470.1:c1071596-1071129	OHDNGLAN_01050
-output/prokka_annotation/hi_prokka/hi:Gene	holD	CP007470.1:c1071976-1071572	OHDNGLAN_01051
-output/prokka_annotation/hi_prokka/hi:Gene	era	CP007470.1:c1074046-1073138	OHDNGLAN_01053
-output/prokka_annotation/hi_prokka/hi:Gene	rnc	CP007470.1:c1074726-1074043	OHDNGLAN_01054
-output/prokka_annotation/hi_prokka/hi:Gene	citE	CP007470.1:c1086375-1085500	OHDNGLAN_01063
-output/prokka_annotation/hi_prokka/hi:Gene	citD	CP007470.1:c1086659-1086372	OHDNGLAN_01064
-output/prokka_annotation/hi_prokka/hi:Gene	mrdB	CP007470.1:c1093173-1092058	OHDNGLAN_01071
-output/prokka_annotation/hi_prokka/hi:Gene	mrdA	CP007470.1:c1095118-1093163	OHDNGLAN_01072
-output/prokka_annotation/hi_prokka/hi:Gene	mreC	CP007470.1:1100997-1102052	OHDNGLAN_01078
-output/prokka_annotation/hi_prokka/hi:Gene	mreD	CP007470.1:1102052-1102540	OHDNGLAN_01079
-output/prokka_annotation/hi_prokka/hi:Gene	rluA_2	CP007470.1:c1104902-1104228	OHDNGLAN_01082
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01002	CP007470.1:1019182-1020219	OHDNGLAN_01002
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01003	CP007470.1:1020209-1020898	OHDNGLAN_01003
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01036	CP007470.1:c1056328-1054247	OHDNGLAN_01036
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01037	CP007470.1:c1058439-1056325	OHDNGLAN_01037
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01047	CP007470.1:1068465-1069403	OHDNGLAN_01047
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01048	CP007470.1:1069396-1070112	OHDNGLAN_01048
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01050	CP007470.1:c1071596-1071129	OHDNGLAN_01050
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01051	CP007470.1:c1071976-1071572	OHDNGLAN_01051
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01053	CP007470.1:c1074046-1073138	OHDNGLAN_01053
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01054	CP007470.1:c1074726-1074043	OHDNGLAN_01054
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01063	CP007470.1:c1086375-1085500	OHDNGLAN_01063
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01064	CP007470.1:c1086659-1086372	OHDNGLAN_01064
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01071	CP007470.1:c1093173-1092058	OHDNGLAN_01071
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01072	CP007470.1:c1095118-1093163	OHDNGLAN_01072
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01078	CP007470.1:1100997-1102052	OHDNGLAN_01078
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01079	CP007470.1:1102052-1102540	OHDNGLAN_01079
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01082	CP007470.1:c1104902-1104228	OHDNGLAN_01082
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01083	CP007470.1:c1105966-1104902	OHDNGLAN_01083
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01114	CP007470.1:c1139530-1139186	OHDNGLAN_01114
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01115	CP007470.1:c1139963-1139523	OHDNGLAN_01115
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01136	CP007470.1:1159470-1160990	OHDNGLAN_01136
-output/prokka_annotation/hi_prokka/hi:Gene	fbpC2	CP007470.1:1160977-1162047	OHDNGLAN_01137
-output/prokka_annotation/hi_prokka/hi:Gene	mltA	CP007470.1:1194704-1195813	OHDNGLAN_01164
-output/prokka_annotation/hi_prokka/hi:Gene	tcdA	CP007470.1:1195798-1196583	OHDNGLAN_01165
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01137	CP007470.1:1160977-1162047	OHDNGLAN_01137
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01164	CP007470.1:1194704-1195813	OHDNGLAN_01164
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01165	CP007470.1:1195798-1196583	OHDNGLAN_01165
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01179	CP007470.1:1206869-1208044	OHDNGLAN_01179
-output/prokka_annotation/hi_prokka/hi:Gene	sotB	CP007470.1:1208044-1209252	OHDNGLAN_01180
-output/prokka_annotation/hi_prokka/hi:Gene	ybbH	CP007470.1:c1218743-1217877	OHDNGLAN_01190
-output/prokka_annotation/hi_prokka/hi:Gene	nanK	CP007470.1:c1219638-1218736	OHDNGLAN_01191
-output/prokka_annotation/hi_prokka/hi:Gene	hflC	CP007470.1:c1226451-1225564	OHDNGLAN_01197
-output/prokka_annotation/hi_prokka/hi:Gene	hflK	CP007470.1:c1227671-1226451	OHDNGLAN_01198
-output/prokka_annotation/hi_prokka/hi:Gene	nqrB	CP007470.1:1239982-1241217	OHDNGLAN_01212
-output/prokka_annotation/hi_prokka/hi:Gene	nqrC	CP007470.1:1241210-1241944	OHDNGLAN_01213
-output/prokka_annotation/hi_prokka/hi:Gene	nqrD	CP007470.1:1241944-1242570	OHDNGLAN_01214
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01180	CP007470.1:1208044-1209252	OHDNGLAN_01180
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01190	CP007470.1:c1218743-1217877	OHDNGLAN_01190
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01191	CP007470.1:c1219638-1218736	OHDNGLAN_01191
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01197	CP007470.1:c1226451-1225564	OHDNGLAN_01197
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01198	CP007470.1:c1227671-1226451	OHDNGLAN_01198
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01212	CP007470.1:1239982-1241217	OHDNGLAN_01212
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01213	CP007470.1:1241210-1241944	OHDNGLAN_01213
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01214	CP007470.1:1241944-1242570	OHDNGLAN_01214
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01223	CP007470.1:c1249920-1249693	OHDNGLAN_01223
-output/prokka_annotation/hi_prokka/hi:Gene	pe	CP007470.1:c1250344-1249862	OHDNGLAN_01224
-output/prokka_annotation/hi_prokka/hi:Gene	rpsP	CP007470.1:c1278183-1277935	OHDNGLAN_01251
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01224	CP007470.1:c1250344-1249862	OHDNGLAN_01224
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01251	CP007470.1:c1278183-1277935	OHDNGLAN_01251
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01252	CP007470.1:c1278331-1278149	OHDNGLAN_01252
-output/prokka_annotation/hi_prokka/hi:Gene	oppA_2	CP007470.1:c1288273-1286729	OHDNGLAN_01260
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01260	CP007470.1:c1288273-1286729	OHDNGLAN_01260
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01261	CP007470.1:c1288628-1288266	OHDNGLAN_01261
-output/prokka_annotation/hi_prokka/hi:Gene	secF	CP007470.1:c1328575-1327598	OHDNGLAN_01294
-output/prokka_annotation/hi_prokka/hi:Gene	secD	CP007470.1:c1330433-1328550	OHDNGLAN_01295
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01294	CP007470.1:c1328575-1327598	OHDNGLAN_01294
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01295	CP007470.1:c1330433-1328550	OHDNGLAN_01295
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01297	CP007470.1:c1331125-1330904	OHDNGLAN_01297
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01298	CP007470.1:c1331640-1331122	OHDNGLAN_01298
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01314	CP007470.1:c1348689-1348201	OHDNGLAN_01314
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01315	CP007470.1:c1349161-1348643	OHDNGLAN_01315
-output/prokka_annotation/hi_prokka/hi:Gene	dusC	CP007470.1:c1364901-1363969	OHDNGLAN_01328
-output/prokka_annotation/hi_prokka/hi:Gene	djlA	CP007470.1:c1365767-1364901	OHDNGLAN_01329
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01328	CP007470.1:c1364901-1363969	OHDNGLAN_01328
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01329	CP007470.1:c1365767-1364901	OHDNGLAN_01329
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01339	CP007470.1:c1372202-1371393	OHDNGLAN_01339
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01340	CP007470.1:c1372684-1372199	OHDNGLAN_01340
-output/prokka_annotation/hi_prokka/hi:Gene	copA	CP007470.1:c1387626-1385458	OHDNGLAN_01351
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01351	CP007470.1:c1387626-1385458	OHDNGLAN_01351
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01352	CP007470.1:c1387807-1387601	OHDNGLAN_01352
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01359	CP007470.1:c1391709-1391017	OHDNGLAN_01359
-output/prokka_annotation/hi_prokka/hi:Gene	gspF	CP007470.1:c1392923-1391706	OHDNGLAN_01360
-output/prokka_annotation/hi_prokka/hi:Gene	epsE	CP007470.1:c1394314-1392920	OHDNGLAN_01361
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01360	CP007470.1:c1392923-1391706	OHDNGLAN_01360
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01361	CP007470.1:c1394314-1392920	OHDNGLAN_01361
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01362	CP007470.1:c1394760-1394311	OHDNGLAN_01362
-output/prokka_annotation/hi_prokka/hi:Gene	rsmE	CP007470.1:1398558-1399295	OHDNGLAN_01366
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01366	CP007470.1:1398558-1399295	OHDNGLAN_01366
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01367	CP007470.1:1399292-1399852	OHDNGLAN_01367
-output/prokka_annotation/hi_prokka/hi:Gene	yqgF	CP007470.1:1399852-1400289	OHDNGLAN_01368
-output/prokka_annotation/hi_prokka/hi:Gene	proC	CP007470.1:1401294-1402109	OHDNGLAN_01370
-output/prokka_annotation/hi_prokka/hi:Gene	hcaT	CP007470.1:1402109-1403275	OHDNGLAN_01371
-output/prokka_annotation/hi_prokka/hi:Gene	vapB1	CP007470.1:1411643-1411879	OHDNGLAN_01382
-output/prokka_annotation/hi_prokka/hi:Gene	vapC1	CP007470.1:1411876-1412280	OHDNGLAN_01383
-output/prokka_annotation/hi_prokka/hi:Gene	recO	CP007470.1:1419634-1420344	OHDNGLAN_01393
-output/prokka_annotation/hi_prokka/hi:Gene	rlmD	CP007470.1:1420344-1421519	OHDNGLAN_01394
-output/prokka_annotation/hi_prokka/hi:Gene	glnB	CP007470.1:1425017-1425355	OHDNGLAN_01398
-output/prokka_annotation/hi_prokka/hi:Gene	tqsA	CP007470.1:1425355-1426401	OHDNGLAN_01399
-output/prokka_annotation/hi_prokka/hi:Gene	napF_2	CP007470.1:1430095-1430625	OHDNGLAN_01403
-output/prokka_annotation/hi_prokka/hi:Gene	napD	CP007470.1:1430618-1430899	OHDNGLAN_01404
-output/prokka_annotation/hi_prokka/hi:Gene	napF_3	CP007470.1:1433474-1434313	OHDNGLAN_01406
-output/prokka_annotation/hi_prokka/hi:Gene	napH	CP007470.1:1434313-1435176	OHDNGLAN_01407
-output/prokka_annotation/hi_prokka/hi:Gene	ssuB	CP007470.1:1441112-1441834	OHDNGLAN_01414
-output/prokka_annotation/hi_prokka/hi:Gene	ribX	CP007470.1:1441831-1442568	OHDNGLAN_01415
-output/prokka_annotation/hi_prokka/hi:Gene	mntB_1	CP007470.1:c1445106-1444291	OHDNGLAN_01418
-output/prokka_annotation/hi_prokka/hi:Gene	mntB_2	CP007470.1:c1445947-1445099	OHDNGLAN_01419
-output/prokka_annotation/hi_prokka/hi:Gene	btuD_3	CP007470.1:c1446871-1445951	OHDNGLAN_01420
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01368	CP007470.1:1399852-1400289	OHDNGLAN_01368
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01370	CP007470.1:1401294-1402109	OHDNGLAN_01370
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01371	CP007470.1:1402109-1403275	OHDNGLAN_01371
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01382	CP007470.1:1411643-1411879	OHDNGLAN_01382
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01383	CP007470.1:1411876-1412280	OHDNGLAN_01383
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01393	CP007470.1:1419634-1420344	OHDNGLAN_01393
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01394	CP007470.1:1420344-1421519	OHDNGLAN_01394
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01398	CP007470.1:1425017-1425355	OHDNGLAN_01398
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01399	CP007470.1:1425355-1426401	OHDNGLAN_01399
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01403	CP007470.1:1430095-1430625	OHDNGLAN_01403
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01404	CP007470.1:1430618-1430899	OHDNGLAN_01404
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01406	CP007470.1:1433474-1434313	OHDNGLAN_01406
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01407	CP007470.1:1434313-1435176	OHDNGLAN_01407
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01414	CP007470.1:1441112-1441834	OHDNGLAN_01414
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01415	CP007470.1:1441831-1442568	OHDNGLAN_01415
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01418	CP007470.1:c1445106-1444291	OHDNGLAN_01418
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01419	CP007470.1:c1445947-1445099	OHDNGLAN_01419
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01420	CP007470.1:c1446871-1445951	OHDNGLAN_01420
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01421	CP007470.1:c1447752-1446871	OHDNGLAN_01421
-output/prokka_annotation/hi_prokka/hi:Gene	iscX	CP007470.1:c1455788-1455594	OHDNGLAN_01430
-output/prokka_annotation/hi_prokka/hi:Gene	fdx	CP007470.1:c1456129-1455788	OHDNGLAN_01431
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01430	CP007470.1:c1455788-1455594	OHDNGLAN_01430
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01431	CP007470.1:c1456129-1455788	OHDNGLAN_01431
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01440	CP007470.1:c1463760-1463302	OHDNGLAN_01440
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01441	CP007470.1:c1464359-1463757	OHDNGLAN_01441
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01442	CP007470.1:c1466723-1464375	OHDNGLAN_01442
@@ -2195,80 +2194,82 @@ output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01484	CP007470.1:c1494124-14
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01498	CP007470.1:1502471-1502776	OHDNGLAN_01498
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01499	CP007470.1:1502773-1503066	OHDNGLAN_01499
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01502	CP007470.1:1505324-1505968	OHDNGLAN_01502
-output/prokka_annotation/hi_prokka/hi:Gene	ssb_2	CP007470.1:1505968-1506402	OHDNGLAN_01503
-output/prokka_annotation/hi_prokka/hi:Gene	rdgC_2	CP007470.1:1507666-1508562	OHDNGLAN_01505
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01503	CP007470.1:1505968-1506402	OHDNGLAN_01503
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01505	CP007470.1:1507666-1508562	OHDNGLAN_01505
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01506	CP007470.1:1508559-1508804	OHDNGLAN_01506
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01507	CP007470.1:1508801-1509160	OHDNGLAN_01507
-output/prokka_annotation/hi_prokka/hi:Gene	ogt	CP007470.1:1534493-1535032	OHDNGLAN_01535
-output/prokka_annotation/hi_prokka/hi:Gene	mutH	CP007470.1:1535029-1535700	OHDNGLAN_01536
-output/prokka_annotation/hi_prokka/hi:Gene	tilS	CP007470.1:c1536989-1535697	OHDNGLAN_01537
-output/prokka_annotation/hi_prokka/hi:Gene	pdxY	CP007470.1:c1537855-1536989	OHDNGLAN_01538
-output/prokka_annotation/hi_prokka/hi:Gene	znuB	CP007470.1:c1539749-1538964	OHDNGLAN_01540
-output/prokka_annotation/hi_prokka/hi:Gene	znuC	CP007470.1:c1540555-1539749	OHDNGLAN_01541
-output/prokka_annotation/hi_prokka/hi:Gene	thiM	CP007470.1:1548658-1549449	OHDNGLAN_01549
-output/prokka_annotation/hi_prokka/hi:Gene	thiD	CP007470.1:1549442-1550251	OHDNGLAN_01550
-output/prokka_annotation/hi_prokka/hi:Gene	thiE	CP007470.1:1550262-1550942	OHDNGLAN_01551
-output/prokka_annotation/hi_prokka/hi:Gene	yhjE_2	CP007470.1:1550926-1552230	OHDNGLAN_01552
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01535	CP007470.1:1534493-1535032	OHDNGLAN_01535
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01536	CP007470.1:1535029-1535700	OHDNGLAN_01536
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01537	CP007470.1:c1536989-1535697	OHDNGLAN_01537
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01538	CP007470.1:c1537855-1536989	OHDNGLAN_01538
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01540	CP007470.1:c1539749-1538964	OHDNGLAN_01540
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01541	CP007470.1:c1540555-1539749	OHDNGLAN_01541
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01549	CP007470.1:1548658-1549449	OHDNGLAN_01549
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01550	CP007470.1:1549442-1550251	OHDNGLAN_01550
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01551	CP007470.1:1550262-1550942	OHDNGLAN_01551
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01552	CP007470.1:1550926-1552230	OHDNGLAN_01552
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01569	CP007470.1:c1568513-1568100	OHDNGLAN_01569
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01570	CP007470.1:c1569031-1568510	OHDNGLAN_01570
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01571	CP007470.1:c1569528-1569028	OHDNGLAN_01571
-output/prokka_annotation/hi_prokka/hi:Gene	tmk	CP007470.1:c1590495-1589836	OHDNGLAN_01591
-output/prokka_annotation/hi_prokka/hi:Gene	mltG	CP007470.1:c1591528-1590485	OHDNGLAN_01592
-output/prokka_annotation/hi_prokka/hi:Gene	hisA	CP007470.1:1608489-1609238	OHDNGLAN_01609
-output/prokka_annotation/hi_prokka/hi:Gene	hisF	CP007470.1:1609220-1609996	OHDNGLAN_01610
-output/prokka_annotation/hi_prokka/hi:Gene	hisI	CP007470.1:1609996-1610661	OHDNGLAN_01611
-output/prokka_annotation/hi_prokka/hi:Gene	yqaB	CP007470.1:1620545-1621147	OHDNGLAN_01625
-output/prokka_annotation/hi_prokka/hi:Gene	yqaA	CP007470.1:1621147-1621620	OHDNGLAN_01626
-output/prokka_annotation/hi_prokka/hi:Gene	ureF	CP007470.1:c1672201-1671494	OHDNGLAN_01669
-output/prokka_annotation/hi_prokka/hi:Gene	ureE	CP007470.1:c1672743-1672186	OHDNGLAN_01670
-output/prokka_annotation/hi_prokka/hi:Gene	priB	CP007470.1:c1678616-1678290	OHDNGLAN_01678
-output/prokka_annotation/hi_prokka/hi:Gene	rpsF	CP007470.1:c1678980-1678603	OHDNGLAN_01679
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01591	CP007470.1:c1590495-1589836	OHDNGLAN_01591
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01592	CP007470.1:c1591528-1590485	OHDNGLAN_01592
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01609	CP007470.1:1608489-1609238	OHDNGLAN_01609
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01610	CP007470.1:1609220-1609996	OHDNGLAN_01610
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01611	CP007470.1:1609996-1610661	OHDNGLAN_01611
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01625	CP007470.1:1620545-1621147	OHDNGLAN_01625
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01626	CP007470.1:1621147-1621620	OHDNGLAN_01626
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01669	CP007470.1:c1672201-1671494	OHDNGLAN_01669
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01670	CP007470.1:c1672743-1672186	OHDNGLAN_01670
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01678	CP007470.1:c1678616-1678290	OHDNGLAN_01678
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01679	CP007470.1:c1678980-1678603	OHDNGLAN_01679
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01681	CP007470.1:1679610-1680287	OHDNGLAN_01681
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01682	CP007470.1:1680280-1681311	OHDNGLAN_01682
-output/prokka_annotation/hi_prokka/hi:Gene	fabR	CP007470.1:c1702867-1702250	OHDNGLAN_01703
-output/prokka_annotation/hi_prokka/hi:Gene	oxyR	CP007470.1:c1703772-1702867	OHDNGLAN_01704
-output/prokka_annotation/hi_prokka/hi:Gene	dauR	CP007470.1:1705846-1706511	OHDNGLAN_01708
-output/prokka_annotation/hi_prokka/hi:Gene	tusD	CP007470.1:1706511-1706891	OHDNGLAN_01709
-output/prokka_annotation/hi_prokka/hi:Gene	tusC	CP007470.1:1706888-1707247	OHDNGLAN_01710
-output/prokka_annotation/hi_prokka/hi:Gene	yigL	CP007470.1:1728872-1729690	OHDNGLAN_01726
-output/prokka_annotation/hi_prokka/hi:Gene	crcB	CP007470.1:1729690-1730076	OHDNGLAN_01727
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01703	CP007470.1:c1702867-1702250	OHDNGLAN_01703
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01704	CP007470.1:c1703772-1702867	OHDNGLAN_01704
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01708	CP007470.1:1705846-1706511	OHDNGLAN_01708
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01709	CP007470.1:1706511-1706891	OHDNGLAN_01709
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01710	CP007470.1:1706888-1707247	OHDNGLAN_01710
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01726	CP007470.1:1728872-1729690	OHDNGLAN_01726
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01727	CP007470.1:1729690-1730076	OHDNGLAN_01727
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01735	CP007470.1:1738745-1738930	OHDNGLAN_01735
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01736	CP007470.1:1738923-1739345	OHDNGLAN_01736
-output/prokka_annotation/hi_prokka/hi:Gene	fmt	CP007470.1:1740145-1741101	OHDNGLAN_01738
-output/prokka_annotation/hi_prokka/hi:Gene	rsmB	CP007470.1:1741101-1742456	OHDNGLAN_01739
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01738	CP007470.1:1740145-1741101	OHDNGLAN_01738
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01739	CP007470.1:1741101-1742456	OHDNGLAN_01739
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01752	CP007470.1:1750399-1750686	OHDNGLAN_01752
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01753	CP007470.1:1750683-1750859	OHDNGLAN_01753
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01773	CP007470.1:c1769266-1769054	OHDNGLAN_01773
-output/prokka_annotation/hi_prokka/hi:Gene	coaD	CP007470.1:c1769733-1769263	OHDNGLAN_01774
-output/prokka_annotation/hi_prokka/hi:Gene	waaA	CP007470.1:c1771013-1769730	OHDNGLAN_01775
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01774	CP007470.1:c1769733-1769263	OHDNGLAN_01774
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01775	CP007470.1:c1771013-1769730	OHDNGLAN_01775
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01783	CP007470.1:c1777598-1777302	OHDNGLAN_01783
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01784	CP007470.1:c1777773-1777591	OHDNGLAN_01784
-output/prokka_annotation/hi_prokka/hi:Gene	cydD_2	CP007470.1:1781359-1783104	OHDNGLAN_01786
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01786	CP007470.1:1781359-1783104	OHDNGLAN_01786
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01787	CP007470.1:1783097-1784755	OHDNGLAN_01787
-output/prokka_annotation/hi_prokka/hi:Gene	mioC	CP007470.1:1786289-1786729	OHDNGLAN_01790
-output/prokka_annotation/hi_prokka/hi:Gene	dtd	CP007470.1:1786726-1787160	OHDNGLAN_01791
-output/prokka_annotation/hi_prokka/hi:Gene	ispF	CP007470.1:c1787940-1787464	OHDNGLAN_01792
-output/prokka_annotation/hi_prokka/hi:Gene	ispD	CP007470.1:c1788614-1787937	OHDNGLAN_01793
-output/prokka_annotation/hi_prokka/hi:Gene	ftsB	CP007470.1:c1788892-1788614	OHDNGLAN_01794
-output/prokka_annotation/hi_prokka/hi:Gene	xerC_2	CP007470.1:c1791986-1791099	OHDNGLAN_01797
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01790	CP007470.1:1786289-1786729	OHDNGLAN_01790
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01791	CP007470.1:1786726-1787160	OHDNGLAN_01791
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01792	CP007470.1:c1787940-1787464	OHDNGLAN_01792
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01793	CP007470.1:c1788614-1787937	OHDNGLAN_01793
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01794	CP007470.1:c1788892-1788614	OHDNGLAN_01794
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01797	CP007470.1:c1791986-1791099	OHDNGLAN_01797
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01798	CP007470.1:c1792420-1791980	OHDNGLAN_01798
-output/prokka_annotation/hi_prokka/hi:Gene	glpB	CP007470.1:c1800438-1799140	OHDNGLAN_01805
-output/prokka_annotation/hi_prokka/hi:Gene	glpA	CP007470.1:c1802119-1800428	OHDNGLAN_01806
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01805	CP007470.1:c1800438-1799140	OHDNGLAN_01805
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01806	CP007470.1:c1802119-1800428	OHDNGLAN_01806
 output/prokka_annotation/hi_prokka/hi:Gene	glpF_1	CP007470.1:1805282-1805476	OHDNGLAN_01809
 output/prokka_annotation/hi_prokka/hi:Gene	glpF_2	CP007470.1:1805422-1806075	OHDNGLAN_01810
-output/prokka_annotation/hi_prokka/hi:Gene	selA	CP007470.1:1824913-1826298	OHDNGLAN_01827
-output/prokka_annotation/hi_prokka/hi:Gene	selB	CP007470.1:1826295-1828154	OHDNGLAN_01828
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01827	CP007470.1:1824913-1826298	OHDNGLAN_01827
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01828	CP007470.1:1826295-1828154	OHDNGLAN_01828
 output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01830	CP007470.1:1829147-1829443	OHDNGLAN_01830
-output/prokka_annotation/hi_prokka/hi:Gene	yafQ	CP007470.1:1829443-1829751	OHDNGLAN_01831
+output/prokka_annotation/hi_prokka/hi:Gene	OHDNGLAN_01831	CP007470.1:1829443-1829751	OHDNGLAN_01831
 
-DiscRep_ALL:OVERLAPPING_CDS::8 coding regions overlap another coding region with a similar or identical name.
-DiscRep_SUB:OVERLAPPING_CDS::8 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
-output/prokka_annotation/hi_prokka/hi:CDS	Anaerobic dimethyl sulfoxide reductase chain B	CP007470.1:704895-705263	OHDNGLAN_00698
-output/prokka_annotation/hi_prokka/hi:CDS	Anaerobic dimethyl sulfoxide reductase chain B	CP007470.1:705260-705511	OHDNGLAN_00699
+DiscRep_ALL:OVERLAPPING_CDS::10 coding regions overlap another coding region with a similar or identical name.
+DiscRep_SUB:OVERLAPPING_CDS::10 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
+output/prokka_annotation/hi_prokka/hi:CDS	Glutathione import ATP-binding protein GsiA	CP007470.1:525753-526802	OHDNGLAN_00525
+output/prokka_annotation/hi_prokka/hi:CDS	Glutathione import ATP-binding protein GsiA	CP007470.1:526802-527611	OHDNGLAN_00526
+output/prokka_annotation/hi_prokka/hi:CDS	Glutathione import ATP-binding protein GsiA	CP007470.1:632205-633176	OHDNGLAN_00628
+output/prokka_annotation/hi_prokka/hi:CDS	Glutathione import ATP-binding protein GsiA	CP007470.1:633173-634171	OHDNGLAN_00629
 output/prokka_annotation/hi_prokka/hi:CDS	Methionine synthase	CP007470.1:707682-708101	OHDNGLAN_00703
 output/prokka_annotation/hi_prokka/hi:CDS	Methionine synthase	CP007470.1:708098-709546	OHDNGLAN_00704
-output/prokka_annotation/hi_prokka/hi:CDS	Manganese transport system membrane protein MntB	CP007470.1:c1445106-1444291	OHDNGLAN_01418
-output/prokka_annotation/hi_prokka/hi:CDS	Manganese transport system membrane protein MntB	CP007470.1:c1445947-1445099	OHDNGLAN_01419
+output/prokka_annotation/hi_prokka/hi:CDS	Manganese transport system membrane protein mntB	CP007470.1:c1445106-1444291	OHDNGLAN_01418
+output/prokka_annotation/hi_prokka/hi:CDS	Manganese transport system membrane protein mntB	CP007470.1:c1445947-1445099	OHDNGLAN_01419
 output/prokka_annotation/hi_prokka/hi:CDS	Glycerol uptake facilitator protein	CP007470.1:1805282-1805476	OHDNGLAN_01809
 output/prokka_annotation/hi_prokka/hi:CDS	Glycerol uptake facilitator protein	CP007470.1:1805422-1806075	OHDNGLAN_01810
 
@@ -2278,34 +2279,30 @@ DiscRep_SUB:RNA_CDS_OVERLAP::1 coding regions overlap RNAs on the opposite stran
 output/prokka_annotation/hi_prokka/hi:CDS	hypothetical protein	CP007470.1:c346383-346213	OHDNGLAN_00347
 output/prokka_annotation/hi_prokka/hi:tmRNA	transfer-messenger RNA, SsrA	CP007470.1:346250-346615	OHDNGLAN_00348
 
-DiscRep_ALL:SUSPECT_PRODUCT_NAMES::4 product_names contain suspect phrase or characters
+DiscRep_ALL:SUSPECT_PRODUCT_NAMES::5 product_names contain suspect phrase or characters
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::May contain database identifier more appropriate in note; remove from product name
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::2 features contains three or more numbers together that may be identifiers more appropriate in note
-output/prokka_annotation/hi_prokka/hi:CDS	Putative type-1 restriction enzyme specificity protein MG438	CP007470.1:1292653-1293789	OHDNGLAN_01264
-output/prokka_annotation/hi_prokka/hi:CDS	Type I restriction enzyme EcoR124II R protein	CP007470.1:1295949-1299032	OHDNGLAN_01268
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains three or more numbers together that may be identifiers more appropriate in note
+output/prokka_annotation/hi_prokka/hi:CDS	M.Hin477I	CP007470.1:692081-694216	OHDNGLAN_00689
 
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Use short product name instead of descriptive phrase
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features Is longer than 100 characters. Remove descriptive phrases or synonyms from product names. Keep valid long product names, eg long enzyme names
-output/prokka_annotation/hi_prokka/hi:CDS	GalNAc-alpha-(1->4)-GalNAc-alpha-(1->3)-diNAcBac-PP-undecaprenol alpha-1,4-N-acetyl-D-galactosaminyltransferase	CP007470.1:43521-44582	OHDNGLAN_00041
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'possibly'
+output/prokka_annotation/hi_prokka/hi:CDS	Zn-ribbon-containing, possibly nucleic-acid-binding protein	CP007470.1:329775-330572	OHDNGLAN_00334
 
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::use protein instead of gene as appropriate
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'genes'
-output/prokka_annotation/hi_prokka/hi:CDS	Hydrogen peroxide-inducible genes activator	CP007470.1:c1703772-1702867	OHDNGLAN_01704
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::3 features contains 'gene'
+output/prokka_annotation/hi_prokka/hi:CDS	Gene 25-like lysozyme	CP007470.1:c356351-355980	OHDNGLAN_00362
+output/prokka_annotation/hi_prokka/hi:CDS	Invasion gene expression up-regulator, SirB	CP007470.1:c398348-397965	OHDNGLAN_00409
+output/prokka_annotation/hi_prokka/hi:CDS	putative pilus gene cluster hypervariable junction protein	CP007470.1:c502568-502224	OHDNGLAN_00495
 
 DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
 
-FATAL: DiscRep_ALL:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA product names contain suspect phrase
+FATAL: DiscRep_ALL:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA prames contain susain suspect phrase
 FATAL: DiscRep_SUB:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA product names contains 'partial'
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1-2055	OHDNGLAN_00001
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1845203-1846259	OHDNGLAN_01848
 
 FATAL: DiscRep_ALL:DISC_SHORT_RRNA::1 rRNA features are too short
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1845203-1846259	OHDNGLAN_01848
-
-DiscRep_ALL:DISC_BAD_BACTERIAL_GENE_NAME::3 bacterial genes do not start with lowercase letters
-output/prokka_annotation/hi_prokka/hi:Gene	SIRT5	CP007470.1:156906-157616	OHDNGLAN_00152
-output/prokka_annotation/hi_prokka/hi:Gene	COQ5	CP007470.1:c830254-829490	OHDNGLAN_00812
-output/prokka_annotation/hi_prokka/hi:Gene	PGdx	CP007470.1:1703895-1704620	OHDNGLAN_01705
 
 DiscRep_ALL:ONCALLER_COMMENT_PRESENT::1 comment descriptors were found (all same)
 output/prokka_annotation/hi_prokka/hi:CP007470.1:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka

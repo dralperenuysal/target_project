@@ -13,23 +13,20 @@ DISC_FEATURE_COUNT:repeat_region: 1 present
 DISC_FEATURE_COUNT:tmRNA: 1 present
 DISC_COUNT_NUCLEOTIDES:2 nucleotide Bioseqs are present
 OVERLAPPING_GENES:824 genes overlap another gene on the same strand.
-OVERLAPPING_CDS:24 coding regions overlap another coding region with a similar or identical name.
-SUSPECT_PRODUCT_NAMES:28 product_names contain suspect phrase or characters
+OVERLAPPING_CDS:32 coding regions overlap another coding region with a similar or identical name.
+SUSPECT_PRODUCT_NAMES:14 product_names contain suspect phrase or characters
+	Putative Typo
+		6 features starts with 'hypothetical protein' but not equals 'hypothetical protein'
 	Suspicious phrase; should this be nonfunctional?
 		1 features contains 'truncat'
-	May contain database identifier more appropriate in note; remove from product name
-		4 features contains three or more numbers together that may be identifiers more appropriate in note
-		2 features Contains underscore
 	FATAL: Remove organism from product name
-		17 features contains 'staphylococcal'
+		6 features contains 'staphylococcal'
 	use protein instead of gene as appropriate
-		2 features contains 'gene'
-		2 features contains 'genes'
+		1 features contains 'gene'
 FIND_BADLEN_TRNAS:1 tRNAs are too long
 DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
 FATAL: DISC_SUSPECT_RRNA_PRODUCTS:6 rRNA product names contain suspect phrase
 FATAL: DISC_SHORT_RRNA:6 rRNA features are too short
-DISC_BAD_BACTERIAL_GENE_NAME:6 bacterial genes do not start with lowercase letters
 ONCALLER_COMMENT_PRESENT:2 comment descriptors were found (all same)
 SHORT_PROT_SEQUENCES:76 protein sequences are shorter than 50 aa.
 MISSING_GENOMEASSEMBLY_COMMENTS:2 bioseqs are missing GenomeAssembly structured comments
@@ -3090,7 +3087,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_34 (length 41)
 DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all same)
 DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::2 sources have 'strain' for strain
 DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all same)
-DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::2 sources have 'Genus species' for taxname
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::2 sources have 'Staphylococcus aureus' for taxname
 DiscRep_ALL:DISC_FEATURE_COUNT::gene: 3122 present
 DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 3042 present
 DiscRep_ALL:DISC_FEATURE_COUNT::mRNA: 3122 present
@@ -3104,11 +3101,11 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1 (length 27322)
 
 DiscRep_ALL:OVERLAPPING_GENES::824 genes overlap another gene on the same strand.
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00003	CP127019.1:3679-3915	PJKHBDOM_00003
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recF_1	CP127019.1:3912-5024	PJKHBDOM_00004
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00004	CP127019.1:3912-5024	PJKHBDOM_00004
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00010	CP127019.1:14713-15408	PJKHBDOM_00010
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00011	CP127019.1:15405-15734	PJKHBDOM_00011
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gdpP	CP127019.1:18310-20277	PJKHBDOM_00014
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplI	CP127019.1:20274-20720	PJKHBDOM_00015
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00014	CP127019.1:18310-20277	PJKHBDOM_00014
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00015	CP127019.1:20274-20720	PJKHBDOM_00015
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00027	CP127019.1:34240-34383	PJKHBDOM_00027
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00028	CP127019.1:34376-35578	PJKHBDOM_00028
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00034	CP127019.1:c38802-38710	PJKHBDOM_00034
@@ -3119,14 +3116,14 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00047	CP127019.1:5
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00048	CP127019.1:52574-52945	PJKHBDOM_00048
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00049	CP127019.1:52942-54585	PJKHBDOM_00049
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00050	CP127019.1:54539-54655	PJKHBDOM_00050
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xerC_1	CP127019.1:59041-60126	PJKHBDOM_00058
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xerC_2	CP127019.1:60123-62015	PJKHBDOM_00059
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cadC_1	CP127019.1:62585-62950	PJKHBDOM_00061
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cadA_1	CP127019.1:62943-65357	PJKHBDOM_00062
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecI	CP127019.1:c71899-71696	PJKHBDOM_00071
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecR1_1	CP127019.1:c73224-71899	PJKHBDOM_00072
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecR1_2	CP127019.1:c73657-73163	PJKHBDOM_00073
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecA_1	CP127019.1:73757-75637	PJKHBDOM_00074
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00058	CP127019.1:59041-60126	PJKHBDOM_00058
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00059	CP127019.1:60123-62015	PJKHBDOM_00059
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00061	CP127019.1:62585-62950	PJKHBDOM_00061
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00062	CP127019.1:62943-65357	PJKHBDOM_00062
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00071	CP127019.1:c71899-71696	PJKHBDOM_00071
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00072	CP127019.1:c73224-71899	PJKHBDOM_00072
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecR1	CP127019.1:c73657-73163	PJKHBDOM_00073
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecA	CP127019.1:73757-75637	PJKHBDOM_00074
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pbp	CP127019.1:75634-75762	PJKHBDOM_00075
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00095	CP127019.1:c92098-91775	PJKHBDOM_00095
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00096	CP127019.1:c92297-92091	PJKHBDOM_00096
@@ -3135,67 +3132,67 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00100	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00104	CP127019.1:c99395-97608	PJKHBDOM_00104
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00105	CP127019.1:c99682-99395	PJKHBDOM_00105
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00108	CP127019.1:101845-103545	PJKHBDOM_00108
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mcrC	CP127019.1:103538-104578	PJKHBDOM_00109
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfhA	CP127019.1:c136347-135349	PJKHBDOM_00134
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfiZ_1	CP127019.1:c137339-136344	PJKHBDOM_00135
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnA	CP127019.1:138578-139558	PJKHBDOM_00137
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnB	CP127019.1:139555-140565	PJKHBDOM_00138
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnC	CP127019.1:140586-142340	PJKHBDOM_00139
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnD	CP127019.1:142333-143589	PJKHBDOM_00140
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnE	CP127019.1:143579-145315	PJKHBDOM_00141
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnF	CP127019.1:145296-147074	PJKHBDOM_00142
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	garL	CP127019.1:147049-147825	PJKHBDOM_00143
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sbnH	CP127019.1:147825-149027	PJKHBDOM_00144
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	wbgU	CP127019.1:151948-152919	PJKHBDOM_00148
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00109	CP127019.1:103538-104578	PJKHBDOM_00109
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00134	CP127019.1:c136347-135349	PJKHBDOM_00134
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00135	CP127019.1:c137339-136344	PJKHBDOM_00135
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00137	CP127019.1:138578-139558	PJKHBDOM_00137
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00138	CP127019.1:139555-140565	PJKHBDOM_00138
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00139	CP127019.1:140586-142340	PJKHBDOM_00139
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00140	CP127019.1:142333-143589	PJKHBDOM_00140
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00141	CP127019.1:143579-145315	PJKHBDOM_00141
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00142	CP127019.1:145296-147074	PJKHBDOM_00142
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00143	CP127019.1:147049-147825	PJKHBDOM_00143
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00144	CP127019.1:147825-149027	PJKHBDOM_00144
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00148	CP127019.1:151948-152919	PJKHBDOM_00148
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00149	CP127019.1:152882-153571	PJKHBDOM_00149
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	wbnH	CP127019.1:153781-154947	PJKHBDOM_00150
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00150	CP127019.1:153781-154947	PJKHBDOM_00150
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00151	CP127019.1:154928-156166	PJKHBDOM_00151
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00152	CP127019.1:156156-157586	PJKHBDOM_00152
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	phnE_1	CP127019.1:c165540-164725	PJKHBDOM_00160
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	phnE_2	CP127019.1:c166337-165537	PJKHBDOM_00161
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00160	CP127019.1:c165540-164725	PJKHBDOM_00160
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00161	CP127019.1:c166337-165537	PJKHBDOM_00161
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00163	CP127019.1:c167979-167326	PJKHBDOM_00163
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00164	CP127019.1:c168283-167936	PJKHBDOM_00164
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pglF	CP127019.1:179244-181067	PJKHBDOM_00173
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	capD	CP127019.1:181057-182085	PJKHBDOM_00174
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00173	CP127019.1:179244-181067	PJKHBDOM_00173
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00174	CP127019.1:181057-182085	PJKHBDOM_00174
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00177	CP127019.1:184338-185417	PJKHBDOM_00177
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00178	CP127019.1:185410-186804	PJKHBDOM_00178
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dapH_1	CP127019.1:186801-187358	PJKHBDOM_00179
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	epsL	CP127019.1:189855-190412	PJKHBDOM_00182
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fcl	CP127019.1:190412-191299	PJKHBDOM_00183
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00179	CP127019.1:186801-187358	PJKHBDOM_00179
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00182	CP127019.1:189855-190412	PJKHBDOM_00182
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00183	CP127019.1:190412-191299	PJKHBDOM_00183
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00194	CP127019.1:200191-201165	PJKHBDOM_00194
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00195	CP127019.1:201162-201620	PJKHBDOM_00195
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ssuC	CP127019.1:201572-201922	PJKHBDOM_00196
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00204	CP127019.1:c215749-215546	PJKHBDOM_00204
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	argB	CP127019.1:c216516-215746	PJKHBDOM_00205
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00205	CP127019.1:c216516-215746	PJKHBDOM_00205
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00214	CP127019.1:227107-228147	PJKHBDOM_00214
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	murQ	CP127019.1:228147-229043	PJKHBDOM_00215
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00215	CP127019.1:228147-229043	PJKHBDOM_00215
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00216	CP127019.1:229055-230509	PJKHBDOM_00216
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ybbH_1	CP127019.1:230509-231387	PJKHBDOM_00217
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00217	CP127019.1:230509-231387	PJKHBDOM_00217
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00221	CP127019.1:237727-238452	PJKHBDOM_00221
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dppB	CP127019.1:238416-239159	PJKHBDOM_00222
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00222	CP127019.1:238416-239159	PJKHBDOM_00222
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00226	CP127019.1:c244730-244524	PJKHBDOM_00226
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	azoR	CP127019.1:c245328-244702	PJKHBDOM_00227
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00227	CP127019.1:c245328-244702	PJKHBDOM_00227
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00238	CP127019.1:c257914-257156	PJKHBDOM_00238
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00239	CP127019.1:c259463-257907	PJKHBDOM_00239
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00240	CP127019.1:c260428-259460	PJKHBDOM_00240
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00261	CP127019.1:288746-290842	PJKHBDOM_00261
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gatA_1	CP127019.1:290827-291294	PJKHBDOM_00262
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tarI2	CP127019.1:295897-296613	PJKHBDOM_00268
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tarJ'	CP127019.1:296606-297631	PJKHBDOM_00269
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tarI1	CP127019.1:301762-302478	PJKHBDOM_00273
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tarJ	CP127019.1:302444-303496	PJKHBDOM_00274
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lrgA	CP127019.1:310638-311081	PJKHBDOM_00280
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lrgB	CP127019.1:311074-311775	PJKHBDOM_00281
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00262	CP127019.1:290827-291294	PJKHBDOM_00262
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00268	CP127019.1:295897-296613	PJKHBDOM_00268
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00269	CP127019.1:296606-297631	PJKHBDOM_00269
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00273	CP127019.1:301762-302478	PJKHBDOM_00273
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00274	CP127019.1:302444-303496	PJKHBDOM_00274
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00280	CP127019.1:310638-311081	PJKHBDOM_00280
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00281	CP127019.1:311074-311775	PJKHBDOM_00281
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00296	CP127019.1:c329129-328209	PJKHBDOM_00296
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00297	CP127019.1:c330292-329126	PJKHBDOM_00297
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	esaA	CP127019.1:333730-336759	PJKHBDOM_00301
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00301	CP127019.1:333730-336759	PJKHBDOM_00301
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00302	CP127019.1:336759-337217	PJKHBDOM_00302
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	esaB	CP127019.1:337189-337431	PJKHBDOM_00303
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00303	CP127019.1:337189-337431	PJKHBDOM_00303
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00309	CP127019.1:345643-346287	PJKHBDOM_00309
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00310	CP127019.1:346287-346742	PJKHBDOM_00310
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00311	CP127019.1:346735-347193	PJKHBDOM_00311
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	RBKS	CP127019.1:363021-364139	PJKHBDOM_00334
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	psuG	CP127019.1:364114-365037	PJKHBDOM_00335
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00334	CP127019.1:363021-364139	PJKHBDOM_00334
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00335	CP127019.1:364114-365037	PJKHBDOM_00335
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00352	CP127019.1:379971-380285	PJKHBDOM_00352
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00353	CP127019.1:380285-381052	PJKHBDOM_00353
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00369	CP127019.1:389129-389530	PJKHBDOM_00369
@@ -3220,23 +3217,23 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00399	CP127019.1:4
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00400	CP127019.1:411297-411629	PJKHBDOM_00400
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00401	CP127019.1:411629-412006	PJKHBDOM_00401
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00407	CP127019.1:416247-416684	PJKHBDOM_00407
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lytO	CP127019.1:416665-418110	PJKHBDOM_00408
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00408	CP127019.1:416665-418110	PJKHBDOM_00408
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00414	CP127019.1:423018-423818	PJKHBDOM_00414
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00415	CP127019.1:423808-424752	PJKHBDOM_00415
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00416	CP127019.1:424730-425752	PJKHBDOM_00416
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00433	CP127019.1:441183-441344	PJKHBDOM_00433
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	efeN	CP127019.1:441341-442570	PJKHBDOM_00434
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00434	CP127019.1:441341-442570	PJKHBDOM_00434
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00435	CP127019.1:442551-444263	PJKHBDOM_00435
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00439	CP127019.1:446027-446230	PJKHBDOM_00439
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00440	CP127019.1:446227-446940	PJKHBDOM_00440
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	btuD_1	CP127019.1:446965-447807	PJKHBDOM_00441
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00441	CP127019.1:446965-447807	PJKHBDOM_00441
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00442	CP127019.1:447807-448436	PJKHBDOM_00442
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	metE	CP127019.1:c454762-452534	PJKHBDOM_00446
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yitJ	CP127019.1:c456600-454759	PJKHBDOM_00447
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	metC	CP127019.1:c457729-456569	PJKHBDOM_00448
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	metI	CP127019.1:c458829-457726	PJKHBDOM_00449
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xpt	CP127019.1:480926-481504	PJKHBDOM_00480
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pucK	CP127019.1:481504-482772	PJKHBDOM_00481
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00446	CP127019.1:c454762-452534	PJKHBDOM_00446
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00447	CP127019.1:c456600-454759	PJKHBDOM_00447
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00448	CP127019.1:c457729-456569	PJKHBDOM_00448
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00449	CP127019.1:c458829-457726	PJKHBDOM_00449
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00480	CP127019.1:480926-481504	PJKHBDOM_00480
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00481	CP127019.1:481504-482772	PJKHBDOM_00481
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00487	CP127019.1:c487951-487721	PJKHBDOM_00487
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00488	CP127019.1:c488514-487948	PJKHBDOM_00488
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00492	CP127019.1:c493862-492840	PJKHBDOM_00492
@@ -3248,104 +3245,104 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00501	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00505	CP127019.1:c506747-506526	PJKHBDOM_00505
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00506	CP127019.1:c507034-506744	PJKHBDOM_00506
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00507	CP127019.1:c508215-507031	PJKHBDOM_00507
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rep	CP127019.1:c513309-511516	PJKHBDOM_00512
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recF_2	CP127019.1:c515495-513306	PJKHBDOM_00513
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00512	CP127019.1:c513309-511516	PJKHBDOM_00512
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00513	CP127019.1:c515495-513306	PJKHBDOM_00513
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00514	CP127019.1:c516480-515629	PJKHBDOM_00514
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00515	CP127019.1:c516826-516455	PJKHBDOM_00515
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00519	CP127019.1:c519904-519665	PJKHBDOM_00519
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00520	CP127019.1:c520037-519885	PJKHBDOM_00520
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hsdM_1	CP127019.1:533314-534870	PJKHBDOM_00533
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00533	CP127019.1:533314-534870	PJKHBDOM_00533
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00534	CP127019.1:534863-536074	PJKHBDOM_00534
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lpl2_3	CP127019.1:542039-542899	PJKHBDOM_00542
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00542	CP127019.1:542039-542899	PJKHBDOM_00542
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00543	CP127019.1:542889-544217	PJKHBDOM_00543
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00544	CP127019.1:544214-544537	PJKHBDOM_00544
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mccA	CP127019.1:557142-558107	PJKHBDOM_00556
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mccB	CP127019.1:558091-559233	PJKHBDOM_00557
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00556	CP127019.1:557142-558107	PJKHBDOM_00556
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00557	CP127019.1:558091-559233	PJKHBDOM_00557
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00563	CP127019.1:564033-564428	PJKHBDOM_00563
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00564	CP127019.1:564406-564903	PJKHBDOM_00564
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00565	CP127019.1:c565854-565072	PJKHBDOM_00565
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00566	CP127019.1:c566963-565851	PJKHBDOM_00566
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfiC	CP127019.1:594721-595446	PJKHBDOM_00587
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00587	CP127019.1:594721-595446	PJKHBDOM_00587
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00588	CP127019.1:595439-595687	PJKHBDOM_00588
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pth	CP127019.1:608250-608822	PJKHBDOM_00603
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mfd	CP127019.1:608822-612328	PJKHBDOM_00604
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00603	CP127019.1:608250-608822	PJKHBDOM_00603
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00604	CP127019.1:608822-612328	PJKHBDOM_00604
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00605	CP127019.1:612318-613844	PJKHBDOM_00605
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00606	CP127019.1:613844-615037	PJKHBDOM_00606
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00607	CP127019.1:615034-615297	PJKHBDOM_00607
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tilS	CP127019.1:616393-617688	PJKHBDOM_00610
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hpt	CP127019.1:617675-618232	PJKHBDOM_00611
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	folP	CP127019.1:623019-623828	PJKHBDOM_00615
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	folB	CP127019.1:623806-624171	PJKHBDOM_00616
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	folK	CP127019.1:624168-624644	PJKHBDOM_00617
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mcsA	CP127019.1:638724-639290	PJKHBDOM_00639
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mcsB	CP127019.1:639277-640287	PJKHBDOM_00640
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cysE	CP127019.1:648104-648784	PJKHBDOM_00645
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cysS	CP127019.1:648768-650168	PJKHBDOM_00646
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mrnC	CP127019.1:650161-650565	PJKHBDOM_00647
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00610	CP127019.1:616393-617688	PJKHBDOM_00610
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00611	CP127019.1:617675-618232	PJKHBDOM_00611
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00615	CP127019.1:623019-623828	PJKHBDOM_00615
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00616	CP127019.1:623806-624171	PJKHBDOM_00616
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00617	CP127019.1:624168-624644	PJKHBDOM_00617
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00639	CP127019.1:638724-639290	PJKHBDOM_00639
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00640	CP127019.1:639277-640287	PJKHBDOM_00640
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00645	CP127019.1:648104-648784	PJKHBDOM_00645
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00646	CP127019.1:648768-650168	PJKHBDOM_00646
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00647	CP127019.1:650161-650565	PJKHBDOM_00647
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00648	CP127019.1:650573-651319	PJKHBDOM_00648
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yacP	CP127019.1:651319-651843	PJKHBDOM_00649
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00649	CP127019.1:651319-651843	PJKHBDOM_00649
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00654	CP127019.1:654240-654368	PJKHBDOM_00654
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplA	CP127019.1:654361-655053	PJKHBDOM_00655
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dck	CP127019.1:c679645-678983	PJKHBDOM_00673
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dgk	CP127019.1:c680300-679638	PJKHBDOM_00674
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yhfS	CP127019.1:707471-708610	PJKHBDOM_00693
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00655	CP127019.1:654361-655053	PJKHBDOM_00655
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00673	CP127019.1:c679645-678983	PJKHBDOM_00673
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00674	CP127019.1:c680300-679638	PJKHBDOM_00674
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00693	CP127019.1:707471-708610	PJKHBDOM_00693
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00694	CP127019.1:708585-708950	PJKHBDOM_00694
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rclA	CP127019.1:c724395-723073	PJKHBDOM_00711
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00711	CP127019.1:c724395-723073	PJKHBDOM_00711
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00712	CP127019.1:c724822-724382	PJKHBDOM_00712
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00723	CP127019.1:733810-734445	PJKHBDOM_00723
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00724	CP127019.1:734411-734656	PJKHBDOM_00724
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ywiB	CP127019.1:741562-741990	PJKHBDOM_00732
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	argS	CP127019.1:741987-743648	PJKHBDOM_00733
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hdl IVa	CP127019.1:747091-747810	PJKHBDOM_00737
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rutD	CP127019.1:747794-748594	PJKHBDOM_00738
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mrpA	CP127019.1:754951-757353	PJKHBDOM_00747
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mrpB	CP127019.1:757340-757765	PJKHBDOM_00748
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mrpC	CP127019.1:757762-758106	PJKHBDOM_00749
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhD1_1	CP127019.1:758093-759592	PJKHBDOM_00750
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mrpE	CP127019.1:759593-760075	PJKHBDOM_00751
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00732	CP127019.1:741562-741990	PJKHBDOM_00732
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00733	CP127019.1:741987-743648	PJKHBDOM_00733
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00737	CP127019.1:747091-747810	PJKHBDOM_00737
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00738	CP127019.1:747794-748594	PJKHBDOM_00738
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00747	CP127019.1:754951-757353	PJKHBDOM_00747
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00748	CP127019.1:757340-757765	PJKHBDOM_00748
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00749	CP127019.1:757762-758106	PJKHBDOM_00749
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00750	CP127019.1:758093-759592	PJKHBDOM_00750
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00751	CP127019.1:759593-760075	PJKHBDOM_00751
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00752	CP127019.1:760072-760350	PJKHBDOM_00752
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00753	CP127019.1:760350-760787	PJKHBDOM_00753
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mntA	CP127019.1:c764992-764063	PJKHBDOM_00755
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mntB_1	CP127019.1:c765825-764989	PJKHBDOM_00756
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mntB_2	CP127019.1:c766562-765819	PJKHBDOM_00757
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tarB	CP127019.1:771273-772376	PJKHBDOM_00763
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tagX	CP127019.1:772373-773434	PJKHBDOM_00764
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	feuB	CP127019.1:781516-782520	PJKHBDOM_00771
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	feuC	CP127019.1:782517-783533	PJKHBDOM_00772
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dhaL	CP127019.1:784777-785361	PJKHBDOM_00774
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dhaM	CP127019.1:785354-785716	PJKHBDOM_00775
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	graR_1	CP127019.1:791569-792243	PJKHBDOM_00782
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	graS_1	CP127019.1:792236-793276	PJKHBDOM_00783
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bceA_1	CP127019.1:793369-794181	PJKHBDOM_00784
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bceB_1	CP127019.1:794171-796060	PJKHBDOM_00785
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00755	CP127019.1:c764992-764063	PJKHBDOM_00755
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00756	CP127019.1:c765825-764989	PJKHBDOM_00756
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00757	CP127019.1:c766562-765819	PJKHBDOM_00757
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00763	CP127019.1:771273-772376	PJKHBDOM_00763
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00764	CP127019.1:772373-773434	PJKHBDOM_00764
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00771	CP127019.1:781516-782520	PJKHBDOM_00771
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00772	CP127019.1:782517-783533	PJKHBDOM_00772
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00774	CP127019.1:784777-785361	PJKHBDOM_00774
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00775	CP127019.1:785354-785716	PJKHBDOM_00775
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00782	CP127019.1:791569-792243	PJKHBDOM_00782
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00783	CP127019.1:792236-793276	PJKHBDOM_00783
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00784	CP127019.1:793369-794181	PJKHBDOM_00784
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00785	CP127019.1:794171-796060	PJKHBDOM_00785
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00792	CP127019.1:804357-805073	PJKHBDOM_00792
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00793	CP127019.1:805073-805546	PJKHBDOM_00793
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	setC	CP127019.1:807723-809015	PJKHBDOM_00796
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00796	CP127019.1:807723-809015	PJKHBDOM_00796
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00797	CP127019.1:809012-809500	PJKHBDOM_00797
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cydD	CP127019.1:815505-817085	PJKHBDOM_00807
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00807	CP127019.1:815505-817085	PJKHBDOM_00807
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00808	CP127019.1:817082-818755	PJKHBDOM_00808
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ydjF	CP127019.1:831125-831889	PJKHBDOM_00822
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lacC_1	CP127019.1:831886-832806	PJKHBDOM_00823
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	saeS	CP127019.1:c841132-840077	PJKHBDOM_00829
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	saeR	CP127019.1:c841818-841132	PJKHBDOM_00830
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00822	CP127019.1:831125-831889	PJKHBDOM_00822
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00823	CP127019.1:831886-832806	PJKHBDOM_00823
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00829	CP127019.1:c841132-840077	PJKHBDOM_00829
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00830	CP127019.1:c841818-841132	PJKHBDOM_00830
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00831	CP127019.1:c842266-841793	PJKHBDOM_00831
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpG_1	CP127019.1:846168-846761	PJKHBDOM_00837
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	menF	CP127019.1:846745-847896	PJKHBDOM_00838
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00837	CP127019.1:846168-846761	PJKHBDOM_00837
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00838	CP127019.1:846745-847896	PJKHBDOM_00838
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00839	CP127019.1:847896-848504	PJKHBDOM_00839
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pxpB_1	CP127019.1:848864-849574	PJKHBDOM_00840
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pxpC_1	CP127019.1:849558-850562	PJKHBDOM_00841
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recQ_1	CP127019.1:855142-856584	PJKHBDOM_00844
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00840	CP127019.1:848864-849574	PJKHBDOM_00840
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00841	CP127019.1:849558-850562	PJKHBDOM_00841
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recQ	CP127019.1:855142-856584	PJKHBDOM_00844
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00845	CP127019.1:856584-856922	PJKHBDOM_00845
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	btuD_2	CP127019.1:857144-858121	PJKHBDOM_00846
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00846	CP127019.1:857144-858121	PJKHBDOM_00846
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00847	CP127019.1:858114-859628	PJKHBDOM_00847
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nrdI_1	CP127019.1:867719-868117	PJKHBDOM_00855
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nrdE_1	CP127019.1:868080-870185	PJKHBDOM_00856
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yclN	CP127019.1:871940-872953	PJKHBDOM_00858
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yclO	CP127019.1:872940-873896	PJKHBDOM_00859
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yclP	CP127019.1:873893-874654	PJKHBDOM_00860
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	comFA	CP127019.1:888563-889645	PJKHBDOM_00875
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00855	CP127019.1:867719-868117	PJKHBDOM_00855
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00856	CP127019.1:868080-870185	PJKHBDOM_00856
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00858	CP127019.1:871940-872953	PJKHBDOM_00858
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00859	CP127019.1:872940-873896	PJKHBDOM_00859
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00860	CP127019.1:873893-874654	PJKHBDOM_00860
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00875	CP127019.1:888563-889645	PJKHBDOM_00875
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00876	CP127019.1:889638-890312	PJKHBDOM_00876
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfbR	CP127019.1:896718-897386	PJKHBDOM_00881
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00881	CP127019.1:896718-897386	PJKHBDOM_00881
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00882	CP127019.1:897383-897619	PJKHBDOM_00882
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00890	CP127019.1:908877-909788	PJKHBDOM_00890
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00891	CP127019.1:909785-910780	PJKHBDOM_00891
@@ -3353,10 +3350,10 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00912	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00913	CP127019.1:c930929-930759	PJKHBDOM_00913
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ssp_1	CP127019.1:937862-938572	PJKHBDOM_00918
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ssp_2	CP127019.1:938560-938883	PJKHBDOM_00919
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rnmV_2	CP127019.1:952191-952577	PJKHBDOM_00941
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00941	CP127019.1:952191-952577	PJKHBDOM_00941
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00942	CP127019.1:952570-952866	PJKHBDOM_00942
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	metN2	CP127019.1:953116-954141	PJKHBDOM_00943
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	metP_2	CP127019.1:954134-954829	PJKHBDOM_00944
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00943	CP127019.1:953116-954141	PJKHBDOM_00943
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00944	CP127019.1:954134-954829	PJKHBDOM_00944
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00949	CP127019.1:c959193-958774	PJKHBDOM_00949
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00950	CP127019.1:c959506-959141	PJKHBDOM_00950
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00952	CP127019.1:959870-960142	PJKHBDOM_00952
@@ -3371,163 +3368,163 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00966	CP127019.1:9
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00967	CP127019.1:968350-968868	PJKHBDOM_00967
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00968	CP127019.1:968865-969293	PJKHBDOM_00968
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00969	CP127019.1:969280-970059	PJKHBDOM_00969
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	csd	CP127019.1:974469-975710	PJKHBDOM_00974
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sufU	CP127019.1:975700-976164	PJKHBDOM_00975
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00974	CP127019.1:974469-975710	PJKHBDOM_00974
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00975	CP127019.1:975700-976164	PJKHBDOM_00975
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00986	CP127019.1:986046-986480	PJKHBDOM_00986
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yutF	CP127019.1:986480-987259	PJKHBDOM_00987
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dltA	CP127019.1:988831-990288	PJKHBDOM_00990
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	patA	CP127019.1:990285-991499	PJKHBDOM_00991
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dltC	CP127019.1:991517-991753	PJKHBDOM_00992
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dltD	CP127019.1:991750-992925	PJKHBDOM_00993
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhG1	CP127019.1:c1003105-1002749	PJKHBDOM_01004
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhF1	CP127019.1:c1003376-1003083	PJKHBDOM_01005
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhE1	CP127019.1:c1003855-1003376	PJKHBDOM_01006
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhD1_2	CP127019.1:c1005353-1003857	PJKHBDOM_01007
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhC1	CP127019.1:c1005675-1005346	PJKHBDOM_01008
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhB1	CP127019.1:c1006115-1005687	PJKHBDOM_01009
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhA1	CP127019.1:c1008513-1006108	PJKHBDOM_01010
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	argH	CP127019.1:c1017870-1016491	PJKHBDOM_01018
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	argG	CP127019.1:c1019065-1017860	PJKHBDOM_01019
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	leuA_1	CP127019.1:1040840-1041985	PJKHBDOM_01035
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00987	CP127019.1:986480-987259	PJKHBDOM_00987
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00990	CP127019.1:988831-990288	PJKHBDOM_00990
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00991	CP127019.1:990285-991499	PJKHBDOM_00991
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00992	CP127019.1:991517-991753	PJKHBDOM_00992
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00993	CP127019.1:991750-992925	PJKHBDOM_00993
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01004	CP127019.1:c1003105-1002749	PJKHBDOM_01004
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01005	CP127019.1:c1003376-1003083	PJKHBDOM_01005
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01006	CP127019.1:c1003855-1003376	PJKHBDOM_01006
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01007	CP127019.1:c1005353-1003857	PJKHBDOM_01007
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01008	CP127019.1:c1005675-1005346	PJKHBDOM_01008
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01009	CP127019.1:c1006115-1005687	PJKHBDOM_01009
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01010	CP127019.1:c1008513-1006108	PJKHBDOM_01010
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01018	CP127019.1:c1017870-1016491	PJKHBDOM_01018
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01019	CP127019.1:c1019065-1017860	PJKHBDOM_01019
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01035	CP127019.1:1040840-1041985	PJKHBDOM_01035
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01036	CP127019.1:1041969-1042610	PJKHBDOM_01036
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01037	CP127019.1:1042603-1043721	PJKHBDOM_01037
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01038	CP127019.1:1043705-1044220	PJKHBDOM_01038
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	oppB	CP127019.1:1048568-1049494	PJKHBDOM_01044
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	oppC	CP127019.1:1049494-1050564	PJKHBDOM_01045
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	oppD_1	CP127019.1:1050581-1051663	PJKHBDOM_01046
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	oppF_1	CP127019.1:1051653-1052594	PJKHBDOM_01047
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	oppF_2	CP127019.1:1057235-1058215	PJKHBDOM_01051
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gsiC	CP127019.1:1058208-1059170	PJKHBDOM_01052
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nadK	CP127019.1:1069388-1070197	PJKHBDOM_01065
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01044	CP127019.1:1048568-1049494	PJKHBDOM_01044
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01045	CP127019.1:1049494-1050564	PJKHBDOM_01045
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01046	CP127019.1:1050581-1051663	PJKHBDOM_01046
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01047	CP127019.1:1051653-1052594	PJKHBDOM_01047
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01051	CP127019.1:1057235-1058215	PJKHBDOM_01051
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01052	CP127019.1:1058208-1059170	PJKHBDOM_01052
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01065	CP127019.1:1069388-1070197	PJKHBDOM_01065
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01066	CP127019.1:1070194-1071048	PJKHBDOM_01066
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ltaA	CP127019.1:c1081452-1080262	PJKHBDOM_01074
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ugtP	CP127019.1:c1082605-1081430	PJKHBDOM_01075
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	murE	CP127019.1:1083038-1084519	PJKHBDOM_01076
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01074	CP127019.1:c1081452-1080262	PJKHBDOM_01074
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01075	CP127019.1:c1082605-1081430	PJKHBDOM_01075
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01076	CP127019.1:1083038-1084519	PJKHBDOM_01076
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01077	CP127019.1:1084503-1084763	PJKHBDOM_01077
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	prfC	CP127019.1:1084763-1086325	PJKHBDOM_01078
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01078	CP127019.1:1084763-1086325	PJKHBDOM_01078
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01092	CP127019.1:1099852-1100172	PJKHBDOM_01092
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01093	CP127019.1:1100169-1100810	PJKHBDOM_01093
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pchA	CP127019.1:1107466-1108827	PJKHBDOM_01103
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	menD	CP127019.1:1108814-1110487	PJKHBDOM_01104
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	menH	CP127019.1:1110474-1111277	PJKHBDOM_01105
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	menB	CP127019.1:1111270-1112091	PJKHBDOM_01106
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	qoxD	CP127019.1:c1128761-1128471	PJKHBDOM_01119
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	qoxC	CP127019.1:c1129363-1128758	PJKHBDOM_01120
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	qoxB	CP127019.1:c1131341-1129353	PJKHBDOM_01121
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	qoxA	CP127019.1:c1132441-1131341	PJKHBDOM_01122
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purE	CP127019.1:1135196-1135678	PJKHBDOM_01125
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purK	CP127019.1:1135665-1136789	PJKHBDOM_01126
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purC	CP127019.1:1136793-1137497	PJKHBDOM_01127
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purS	CP127019.1:1137497-1137760	PJKHBDOM_01128
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purQ	CP127019.1:1137762-1138433	PJKHBDOM_01129
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purL	CP127019.1:1138426-1140615	PJKHBDOM_01130
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purF	CP127019.1:1140594-1142078	PJKHBDOM_01131
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	purM	CP127019.1:1142071-1143099	PJKHBDOM_01132
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ecfT_1	CP127019.1:c1147501-1146695	PJKHBDOM_01136
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ykoD_1	CP127019.1:c1148894-1147494	PJKHBDOM_01137
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ythA	CP127019.1:1156651-1158012	PJKHBDOM_01146
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ythB	CP127019.1:1158009-1159028	PJKHBDOM_01147
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rnj1	CP127019.1:c1161869-1160172	PJKHBDOM_01149
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01103	CP127019.1:1107466-1108827	PJKHBDOM_01103
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01104	CP127019.1:1108814-1110487	PJKHBDOM_01104
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01105	CP127019.1:1110474-1111277	PJKHBDOM_01105
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01106	CP127019.1:1111270-1112091	PJKHBDOM_01106
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01119	CP127019.1:c1128761-1128471	PJKHBDOM_01119
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01120	CP127019.1:c1129363-1128758	PJKHBDOM_01120
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01121	CP127019.1:c1131341-1129353	PJKHBDOM_01121
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01122	CP127019.1:c1132441-1131341	PJKHBDOM_01122
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01125	CP127019.1:1135196-1135678	PJKHBDOM_01125
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01126	CP127019.1:1135665-1136789	PJKHBDOM_01126
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01127	CP127019.1:1136793-1137497	PJKHBDOM_01127
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01128	CP127019.1:1137497-1137760	PJKHBDOM_01128
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01129	CP127019.1:1137762-1138433	PJKHBDOM_01129
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01130	CP127019.1:1138426-1140615	PJKHBDOM_01130
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01131	CP127019.1:1140594-1142078	PJKHBDOM_01131
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01132	CP127019.1:1142071-1143099	PJKHBDOM_01132
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01136	CP127019.1:c1147501-1146695	PJKHBDOM_01136
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01137	CP127019.1:c1148894-1147494	PJKHBDOM_01137
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01146	CP127019.1:1156651-1158012	PJKHBDOM_01146
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01147	CP127019.1:1158009-1159028	PJKHBDOM_01147
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01149	CP127019.1:c1161869-1160172	PJKHBDOM_01149
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01150	CP127019.1:c1162087-1161869	PJKHBDOM_01150
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	potA	CP127019.1:1170306-1171400	PJKHBDOM_01159
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	potB	CP127019.1:1171393-1172190	PJKHBDOM_01160
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ydcV	CP127019.1:1172196-1173005	PJKHBDOM_01161
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	potD	CP127019.1:1173005-1174078	PJKHBDOM_01162
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	isdC	CP127019.1:1201501-1202184	PJKHBDOM_01189
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01159	CP127019.1:1170306-1171400	PJKHBDOM_01159
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01160	CP127019.1:1171393-1172190	PJKHBDOM_01160
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01161	CP127019.1:1172196-1173005	PJKHBDOM_01161
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01162	CP127019.1:1173005-1174078	PJKHBDOM_01162
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01189	CP127019.1:1201501-1202184	PJKHBDOM_01189
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01190	CP127019.1:1202184-1203260	PJKHBDOM_01190
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	isdE	CP127019.1:1203257-1204135	PJKHBDOM_01191
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pheS	CP127019.1:1207756-1208814	PJKHBDOM_01196
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pheT	CP127019.1:1208814-1211216	PJKHBDOM_01197
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	frdA	CP127019.1:1221208-1222974	PJKHBDOM_01207
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	frdB	CP127019.1:1222974-1223789	PJKHBDOM_01208
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01191	CP127019.1:1203257-1204135	PJKHBDOM_01191
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01196	CP127019.1:1207756-1208814	PJKHBDOM_01196
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01197	CP127019.1:1208814-1211216	PJKHBDOM_01197
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01207	CP127019.1:1221208-1222974	PJKHBDOM_01207
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01208	CP127019.1:1222974-1223789	PJKHBDOM_01208
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01210	CP127019.1:1224837-1225424	PJKHBDOM_01210
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01211	CP127019.1:1225417-1225920	PJKHBDOM_01211
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01223	CP127019.1:1235191-1235337	PJKHBDOM_01223
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01224	CP127019.1:1235321-1235518	PJKHBDOM_01224
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yggS	CP127019.1:1261037-1261711	PJKHBDOM_01250
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sepF	CP127019.1:1261708-1262271	PJKHBDOM_01251
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01250	CP127019.1:1261037-1261711	PJKHBDOM_01250
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01251	CP127019.1:1261708-1262271	PJKHBDOM_01251
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01253	CP127019.1:1262656-1263312	PJKHBDOM_01253
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01254	CP127019.1:1263309-1263461	PJKHBDOM_01254
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lspA	CP127019.1:1268987-1269478	PJKHBDOM_01259
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rluD_1	CP127019.1:1269478-1270395	PJKHBDOM_01260
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	carA_2	CP127019.1:1275050-1276150	PJKHBDOM_01265
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	carB	CP127019.1:1276143-1279316	PJKHBDOM_01266
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pyrF	CP127019.1:1279423-1280118	PJKHBDOM_01267
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pyrE	CP127019.1:1280118-1280729	PJKHBDOM_01268
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gmk	CP127019.1:1284044-1284667	PJKHBDOM_01272
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rpoZ	CP127019.1:1284667-1284885	PJKHBDOM_01273
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	coaBC	CP127019.1:1285101-1286300	PJKHBDOM_01274
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	priA	CP127019.1:1286300-1288708	PJKHBDOM_01275
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	def1	CP127019.1:1292163-1292651	PJKHBDOM_01279
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fmt	CP127019.1:1292644-1293579	PJKHBDOM_01280
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rsmB	CP127019.1:1293576-1294883	PJKHBDOM_01281
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	stp	CP127019.1:1295987-1296730	PJKHBDOM_01283
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	prkC	CP127019.1:1296727-1298721	PJKHBDOM_01284
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fapR	CP127019.1:1306617-1307189	PJKHBDOM_01292
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	plsX	CP127019.1:1307173-1308180	PJKHBDOM_01293
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fabD	CP127019.1:1308173-1309099	PJKHBDOM_01294
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fabG	CP127019.1:1309092-1309826	PJKHBDOM_01295
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	smc_1	CP127019.1:1311295-1314861	PJKHBDOM_01298
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ftsY	CP127019.1:1314861-1316111	PJKHBDOM_01299
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01259	CP127019.1:1268987-1269478	PJKHBDOM_01259
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01260	CP127019.1:1269478-1270395	PJKHBDOM_01260
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01265	CP127019.1:1275050-1276150	PJKHBDOM_01265
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01266	CP127019.1:1276143-1279316	PJKHBDOM_01266
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01267	CP127019.1:1279423-1280118	PJKHBDOM_01267
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01268	CP127019.1:1280118-1280729	PJKHBDOM_01268
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01272	CP127019.1:1284044-1284667	PJKHBDOM_01272
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01273	CP127019.1:1284667-1284885	PJKHBDOM_01273
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01274	CP127019.1:1285101-1286300	PJKHBDOM_01274
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01275	CP127019.1:1286300-1288708	PJKHBDOM_01275
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01279	CP127019.1:1292163-1292651	PJKHBDOM_01279
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01280	CP127019.1:1292644-1293579	PJKHBDOM_01280
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01281	CP127019.1:1293576-1294883	PJKHBDOM_01281
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01283	CP127019.1:1295987-1296730	PJKHBDOM_01283
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01284	CP127019.1:1296727-1298721	PJKHBDOM_01284
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01292	CP127019.1:1306617-1307189	PJKHBDOM_01292
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01293	CP127019.1:1307173-1308180	PJKHBDOM_01293
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01294	CP127019.1:1308173-1309099	PJKHBDOM_01294
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01295	CP127019.1:1309092-1309826	PJKHBDOM_01295
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01298	CP127019.1:1311295-1314861	PJKHBDOM_01298
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01299	CP127019.1:1314861-1316111	PJKHBDOM_01299
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01300	CP127019.1:1316098-1316430	PJKHBDOM_01300
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rimM	CP127019.1:1318721-1319224	PJKHBDOM_01303
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trmD	CP127019.1:1319224-1319961	PJKHBDOM_01304
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rbgA	CP127019.1:1323665-1324549	PJKHBDOM_01307
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rnhB	CP127019.1:1324533-1325300	PJKHBDOM_01308
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xerC_5	CP127019.1:1335289-1336185	PJKHBDOM_01317
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hslV	CP127019.1:1336182-1336727	PJKHBDOM_01318
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01303	CP127019.1:1318721-1319224	PJKHBDOM_01303
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01304	CP127019.1:1319224-1319961	PJKHBDOM_01304
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01307	CP127019.1:1323665-1324549	PJKHBDOM_01307
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01308	CP127019.1:1324533-1325300	PJKHBDOM_01308
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01317	CP127019.1:1335289-1336185	PJKHBDOM_01317
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01318	CP127019.1:1336182-1336727	PJKHBDOM_01318
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01332	CP127019.1:1354299-1354583	PJKHBDOM_01332
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplGA	CP127019.1:1354580-1354897	PJKHBDOM_01333
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01333	CP127019.1:1354580-1354897	PJKHBDOM_01333
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01343	CP127019.1:1367960-1369225	PJKHBDOM_01343
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01344	CP127019.1:1369225-1371216	PJKHBDOM_01344
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mutL_1	CP127019.1:1387804-1388970	PJKHBDOM_01360
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mutL_2	CP127019.1:1388943-1389812	PJKHBDOM_01361
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01360	CP127019.1:1387804-1388970	PJKHBDOM_01360
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01361	CP127019.1:1388943-1389812	PJKHBDOM_01361
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01375	CP127019.1:1403914-1404042	PJKHBDOM_01375
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01376	CP127019.1:1404029-1404241	PJKHBDOM_01376
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01385	CP127019.1:1409768-1410034	PJKHBDOM_01385
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01386	CP127019.1:1410031-1410168	PJKHBDOM_01386
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lnrL_2	CP127019.1:1415433-1416332	PJKHBDOM_01395
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01395	CP127019.1:1415433-1416332	PJKHBDOM_01395
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01396	CP127019.1:1416301-1417032	PJKHBDOM_01396
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01397	CP127019.1:1417036-1418127	PJKHBDOM_01397
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	desR	CP127019.1:1418124-1418726	PJKHBDOM_01398
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	parE	CP127019.1:1452015-1454006	PJKHBDOM_01429
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	parC	CP127019.1:1454006-1456408	PJKHBDOM_01430
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01398	CP127019.1:1418124-1418726	PJKHBDOM_01398
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01429	CP127019.1:1452015-1454006	PJKHBDOM_01429
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01430	CP127019.1:1454006-1456408	PJKHBDOM_01430
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01439	CP127019.1:c1467665-1467468	PJKHBDOM_01439
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tyrC	CP127019.1:c1468548-1467649	PJKHBDOM_01440
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpE	CP127019.1:1470236-1471642	PJKHBDOM_01442
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpG_2	CP127019.1:1471639-1472205	PJKHBDOM_01443
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpC	CP127019.1:1473211-1473993	PJKHBDOM_01445
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpF	CP127019.1:1473990-1474625	PJKHBDOM_01446
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpB	CP127019.1:1474618-1475832	PJKHBDOM_01447
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	trpA	CP127019.1:1475825-1476553	PJKHBDOM_01448
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nikE	CP127019.1:c1482211-1481510	PJKHBDOM_01453
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nikD	CP127019.1:c1482980-1482204	PJKHBDOM_01454
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nikC	CP127019.1:c1483794-1482964	PJKHBDOM_01455
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nikB	CP127019.1:c1484773-1483787	PJKHBDOM_01456
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	btuD_3	CP127019.1:c1489172-1488228	PJKHBDOM_01460
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pstA	CP127019.1:c1490043-1489126	PJKHBDOM_01461
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	alr1_1	CP127019.1:1502537-1503616	PJKHBDOM_01473
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lysA	CP127019.1:1503613-1504878	PJKHBDOM_01474
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	arlS	CP127019.1:c1521436-1520081	PJKHBDOM_01490
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	arlR	CP127019.1:c1522092-1521433	PJKHBDOM_01491
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01442	CP127019.1:1470236-1471642	PJKHBDOM_01442
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01443	CP127019.1:1471639-1472205	PJKHBDOM_01443
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01445	CP127019.1:1473211-1473993	PJKHBDOM_01445
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01446	CP127019.1:1473990-1474625	PJKHBDOM_01446
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01447	CP127019.1:1474618-1475832	PJKHBDOM_01447
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01448	CP127019.1:1475825-1476553	PJKHBDOM_01448
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01453	CP127019.1:c1482211-1481510	PJKHBDOM_01453
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01454	CP127019.1:c1482980-1482204	PJKHBDOM_01454
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01455	CP127019.1:c1483794-1482964	PJKHBDOM_01455
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01456	CP127019.1:c1484773-1483787	PJKHBDOM_01456
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01460	CP127019.1:c1489172-1488228	PJKHBDOM_01460
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01461	CP127019.1:c1490043-1489126	PJKHBDOM_01461
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01473	CP127019.1:1502537-1503616	PJKHBDOM_01473
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01474	CP127019.1:1503613-1504878	PJKHBDOM_01474
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01490	CP127019.1:c1521436-1520081	PJKHBDOM_01490
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01491	CP127019.1:c1522092-1521433	PJKHBDOM_01491
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01498	CP127019.1:c1528147-1527914	PJKHBDOM_01498
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	crr	CP127019.1:c1528647-1528147	PJKHBDOM_01499
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	msrB	CP127019.1:c1529087-1528659	PJKHBDOM_01500
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	msrA2	CP127019.1:c1529613-1529080	PJKHBDOM_01501
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gpsB	CP127019.1:c1582713-1582321	PJKHBDOM_01521
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01499	CP127019.1:c1528647-1528147	PJKHBDOM_01499
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01500	CP127019.1:c1529087-1528659	PJKHBDOM_01500
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01501	CP127019.1:c1529613-1529080	PJKHBDOM_01501
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01521	CP127019.1:c1582713-1582321	PJKHBDOM_01521
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01522	CP127019.1:c1583242-1582679	PJKHBDOM_01522
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01523	CP127019.1:c1583636-1583235	PJKHBDOM_01523
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recU	CP127019.1:1584074-1584751	PJKHBDOM_01524
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ponA	CP127019.1:1584748-1586931	PJKHBDOM_01525
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nth_2	CP127019.1:c1588502-1587843	PJKHBDOM_01527
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dnaD	CP127019.1:c1589178-1588492	PJKHBDOM_01528
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	birA	CP127019.1:c1594808-1593837	PJKHBDOM_01531
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cca	CP127019.1:c1595997-1594795	PJKHBDOM_01532
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01524	CP127019.1:1584074-1584751	PJKHBDOM_01524
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01525	CP127019.1:1584748-1586931	PJKHBDOM_01525
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01527	CP127019.1:c1588502-1587843	PJKHBDOM_01527
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01528	CP127019.1:c1589178-1588492	PJKHBDOM_01528
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01531	CP127019.1:c1594808-1593837	PJKHBDOM_01531
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01532	CP127019.1:c1595997-1594795	PJKHBDOM_01532
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01536	CP127019.1:c1599378-1598791	PJKHBDOM_01536
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01537	CP127019.1:c1599955-1599368	PJKHBDOM_01537
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ebpS_1	CP127019.1:c1618191-1616884	PJKHBDOM_01555
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ebpS_2	CP127019.1:c1618345-1618163	PJKHBDOM_01556
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recQ_2	CP127019.1:c1619877-1618498	PJKHBDOM_01557
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01557	CP127019.1:c1619877-1618498	PJKHBDOM_01557
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01558	CP127019.1:c1620820-1619867	PJKHBDOM_01558
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01562	CP127019.1:c1623559-1623353	PJKHBDOM_01562
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01563	CP127019.1:c1624490-1623552	PJKHBDOM_01563
@@ -3539,11 +3536,11 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01573	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01574	CP127019.1:c1632969-1632679	PJKHBDOM_01574
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01575	CP127019.1:c1634552-1632969	PJKHBDOM_01575
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01576	CP127019.1:c1635385-1634561	PJKHBDOM_01576
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	smc_2	CP127019.1:c1641585-1635385	PJKHBDOM_01577
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01577	CP127019.1:c1641585-1635385	PJKHBDOM_01577
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01583	CP127019.1:c1644227-1643826	PJKHBDOM_01583
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01584	CP127019.1:c1644556-1644224	PJKHBDOM_01584
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01586	CP127019.1:c1646123-1644915	PJKHBDOM_01586
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	clpP_2	CP127019.1:c1646862-1646110	PJKHBDOM_01587
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	clpP	CP127019.1:c1646862-1646110	PJKHBDOM_01587
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01588	CP127019.1:c1648084-1646846	PJKHBDOM_01588
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01589	CP127019.1:c1649780-1648089	PJKHBDOM_01589
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01590	CP127019.1:c1650075-1649770	PJKHBDOM_01590
@@ -3563,62 +3560,62 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01614	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01615	CP127019.1:c1664472-1664110	PJKHBDOM_01615
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01631	CP127019.1:c1673600-1671555	PJKHBDOM_01631
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01632	CP127019.1:c1674504-1673575	PJKHBDOM_01632
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	srrB	CP127019.1:c1676500-1674749	PJKHBDOM_01633
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	srrA	CP127019.1:c1677206-1676481	PJKHBDOM_01634
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rluB	CP127019.1:c1678076-1677339	PJKHBDOM_01635
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	scpB	CP127019.1:c1678611-1678069	PJKHBDOM_01636
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	scpA	CP127019.1:c1679359-1678604	PJKHBDOM_01637
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bfmBAB	CP127019.1:c1699922-1698939	PJKHBDOM_01658
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bfmBAA	CP127019.1:c1700914-1699922	PJKHBDOM_01659
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01633	CP127019.1:c1676500-1674749	PJKHBDOM_01633
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01634	CP127019.1:c1677206-1676481	PJKHBDOM_01634
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01635	CP127019.1:c1678076-1677339	PJKHBDOM_01635
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01636	CP127019.1:c1678611-1678069	PJKHBDOM_01636
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01637	CP127019.1:c1679359-1678604	PJKHBDOM_01637
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01658	CP127019.1:c1699922-1698939	PJKHBDOM_01658
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01659	CP127019.1:c1700914-1699922	PJKHBDOM_01659
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01663	CP127019.1:c1705962-1705081	PJKHBDOM_01663
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xseB	CP127019.1:c1706170-1705940	PJKHBDOM_01664
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xseA	CP127019.1:c1707500-1706163	PJKHBDOM_01665
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cfiB	CP127019.1:c1709698-1708343	PJKHBDOM_01668
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	accB_1	CP127019.1:c1710162-1709698	PJKHBDOM_01669
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gcvPB	CP127019.1:c1716473-1715001	PJKHBDOM_01676
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gcvPA	CP127019.1:c1717812-1716466	PJKHBDOM_01677
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01664	CP127019.1:c1706170-1705940	PJKHBDOM_01664
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01665	CP127019.1:c1707500-1706163	PJKHBDOM_01665
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01668	CP127019.1:c1709698-1708343	PJKHBDOM_01668
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01669	CP127019.1:c1710162-1709698	PJKHBDOM_01669
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01676	CP127019.1:c1716473-1715001	PJKHBDOM_01676
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01677	CP127019.1:c1717812-1716466	PJKHBDOM_01677
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01681	CP127019.1:c1720553-1720254	PJKHBDOM_01681
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01682	CP127019.1:c1720986-1720540	PJKHBDOM_01682
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	comGC	CP127019.1:c1721275-1720964	PJKHBDOM_01683
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01683	CP127019.1:c1721275-1720964	PJKHBDOM_01683
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01684	CP127019.1:c1722359-1721289	PJKHBDOM_01684
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	comGA	CP127019.1:c1723305-1722331	PJKHBDOM_01685
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01685	CP127019.1:c1723305-1722331	PJKHBDOM_01685
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01686	CP127019.1:c1723980-1723357	PJKHBDOM_01686
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01687	CP127019.1:c1724306-1723977	PJKHBDOM_01687
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	glcK	CP127019.1:c1725292-1724306	PJKHBDOM_01688
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01688	CP127019.1:c1725292-1724306	PJKHBDOM_01688
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01689	CP127019.1:c1725492-1725289	PJKHBDOM_01689
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	glpG	CP127019.1:c1726936-1725473	PJKHBDOM_01690
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	zur	CP127019.1:c1731439-1731029	PJKHBDOM_01695
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	znuB	CP127019.1:c1732298-1731426	PJKHBDOM_01696
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01690	CP127019.1:c1726936-1725473	PJKHBDOM_01690
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01695	CP127019.1:c1731439-1731029	PJKHBDOM_01695
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01696	CP127019.1:c1732298-1731426	PJKHBDOM_01696
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01733	CP127019.1:c1769589-1769005	PJKHBDOM_01733
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nadD	CP127019.1:c1770148-1769579	PJKHBDOM_01734
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pxpA	CP127019.1:c1780384-1779632	PJKHBDOM_01747
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	accC	CP127019.1:c1781745-1780384	PJKHBDOM_01748
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pxpC_2	CP127019.1:c1783220-1782210	PJKHBDOM_01750
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pxpB_2	CP127019.1:c1783944-1783210	PJKHBDOM_01751
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	udk	CP127019.1:c1785397-1784774	PJKHBDOM_01753
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01734	CP127019.1:c1770148-1769579	PJKHBDOM_01734
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01747	CP127019.1:c1780384-1779632	PJKHBDOM_01747
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01748	CP127019.1:c1781745-1780384	PJKHBDOM_01748
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01750	CP127019.1:c1783220-1782210	PJKHBDOM_01750
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01751	CP127019.1:c1783944-1783210	PJKHBDOM_01751
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01753	CP127019.1:c1785397-1784774	PJKHBDOM_01753
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01754	CP127019.1:c1786665-1785397	PJKHBDOM_01754
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	iscS_1	CP127019.1:c1798362-1797304	PJKHBDOM_01764
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	iscS_2	CP127019.1:c1798447-1798316	PJKHBDOM_01765
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01764	CP127019.1:c1798362-1797304	PJKHBDOM_01764
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	iscS	CP127019.1:c1798447-1798316	PJKHBDOM_01765
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01774	CP127019.1:c1808033-1807158	PJKHBDOM_01774
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dtd	CP127019.1:c1808482-1808030	PJKHBDOM_01775
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	queA	CP127019.1:c1819164-1818121	PJKHBDOM_01782
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ruvB_2	CP127019.1:c1820152-1819148	PJKHBDOM_01783
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01775	CP127019.1:c1808482-1808030	PJKHBDOM_01775
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01782	CP127019.1:c1819164-1818121	PJKHBDOM_01782
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01783	CP127019.1:c1820152-1819148	PJKHBDOM_01783
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01790	CP127019.1:c1824542-1824012	PJKHBDOM_01790
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mreC	CP127019.1:c1825384-1824542	PJKHBDOM_01791
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xerC_7	CP127019.1:c1832694-1830802	PJKHBDOM_01799
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	xerC_8	CP127019.1:c1833776-1832691	PJKHBDOM_01800
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dnaI	CP127019.1:c1860078-1859137	PJKHBDOM_01823
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	dnaB	CP127019.1:c1861457-1860057	PJKHBDOM_01824
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01791	CP127019.1:c1825384-1824542	PJKHBDOM_01791
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01799	CP127019.1:c1832694-1830802	PJKHBDOM_01799
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01800	CP127019.1:c1833776-1832691	PJKHBDOM_01800
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01823	CP127019.1:c1860078-1859137	PJKHBDOM_01823
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01824	CP127019.1:c1861457-1860057	PJKHBDOM_01824
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01836	CP127019.1:c1877532-1876705	PJKHBDOM_01836
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01837	CP127019.1:c1878356-1877529	PJKHBDOM_01837
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	accA	CP127019.1:c1882957-1882013	PJKHBDOM_01840
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	accD	CP127019.1:c1883814-1882957	PJKHBDOM_01841
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	thiI	CP127019.1:c1901558-1900335	PJKHBDOM_01855
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	iscS_3	CP127019.1:c1902724-1901558	PJKHBDOM_01856
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01840	CP127019.1:c1882957-1882013	PJKHBDOM_01840
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01841	CP127019.1:c1883814-1882957	PJKHBDOM_01841
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01855	CP127019.1:c1901558-1900335	PJKHBDOM_01855
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01856	CP127019.1:c1902724-1901558	PJKHBDOM_01856
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01862	CP127019.1:1907809-1908969	PJKHBDOM_01862
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	serA	CP127019.1:1908956-1910560	PJKHBDOM_01863
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rsuA	CP127019.1:c1948887-1948192	PJKHBDOM_01892
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	murJ	CP127019.1:c1950545-1948884	PJKHBDOM_01893
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01863	CP127019.1:1908956-1910560	PJKHBDOM_01863
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01892	CP127019.1:c1948887-1948192	PJKHBDOM_01892
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01893	CP127019.1:c1950545-1948884	PJKHBDOM_01893
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01895	CP127019.1:c1958360-1952337	PJKHBDOM_01895
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01896	CP127019.1:c1958898-1958320	PJKHBDOM_01896
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01900	CP127019.1:1963553-1964506	PJKHBDOM_01900
@@ -3626,44 +3623,44 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01901	CP127019.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01904	CP127019.1:c1966331-1966107	PJKHBDOM_01904
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01905	CP127019.1:c1966819-1966328	PJKHBDOM_01905
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01915	CP127019.1:1975207-1975521	PJKHBDOM_01915
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	arsB	CP127019.1:1975521-1976813	PJKHBDOM_01916
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	crcB_1	CP127019.1:1983432-1983797	PJKHBDOM_01926
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	crcB_2	CP127019.1:1983794-1984147	PJKHBDOM_01927
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01916	CP127019.1:1975521-1976813	PJKHBDOM_01916
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01926	CP127019.1:1983432-1983797	PJKHBDOM_01926
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01927	CP127019.1:1983794-1984147	PJKHBDOM_01927
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01935	CP127019.1:c1993230-1992460	PJKHBDOM_01935
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ytkD	CP127019.1:c1993744-1993211	PJKHBDOM_01936
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01936	CP127019.1:c1993744-1993211	PJKHBDOM_01936
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01957	CP127019.1:c2012605-2011406	PJKHBDOM_01957
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hsdM_2	CP127019.1:c2014154-2012598	PJKHBDOM_01958
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01958	CP127019.1:c2014154-2012598	PJKHBDOM_01958
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01966	CP127019.1:c2022134-2021436	PJKHBDOM_01966
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01967	CP127019.1:c2022892-2022131	PJKHBDOM_01967
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bcrA_1	CP127019.1:c2023581-2022889	PJKHBDOM_01968
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nisC	CP127019.1:c2026765-2025521	PJKHBDOM_01971
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01968	CP127019.1:c2023581-2022889	PJKHBDOM_01968
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01971	CP127019.1:c2026765-2025521	PJKHBDOM_01971
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01972	CP127019.1:c2027426-2026758	PJKHBDOM_01972
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01994	CP127019.1:c2042776-2041553	PJKHBDOM_01994
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ecsA	CP127019.1:c2043509-2042769	PJKHBDOM_01995
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yhaM	CP127019.1:c2048091-2047150	PJKHBDOM_02000
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01995	CP127019.1:c2043509-2042769	PJKHBDOM_01995
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02000	CP127019.1:c2048091-2047150	PJKHBDOM_02000
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02001	CP127019.1:c2051024-2048088	PJKHBDOM_02001
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cpdA_1	CP127019.1:c2052210-2051014	PJKHBDOM_02002
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tcyC_1	CP127019.1:c2064893-2064165	PJKHBDOM_02016
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mltF	CP127019.1:c2066337-2064880	PJKHBDOM_02017
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfhH	CP127019.1:c2090904-2090590	PJKHBDOM_02065
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recX	CP127019.1:c2091700-2090882	PJKHBDOM_02066
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	vraR	CP127019.1:c2100765-2100136	PJKHBDOM_02077
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	vraS	CP127019.1:c2101798-2100755	PJKHBDOM_02078
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02002	CP127019.1:c2052210-2051014	PJKHBDOM_02002
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02016	CP127019.1:c2064893-2064165	PJKHBDOM_02016
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02017	CP127019.1:c2066337-2064880	PJKHBDOM_02017
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02065	CP127019.1:c2090904-2090590	PJKHBDOM_02065
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02066	CP127019.1:c2091700-2090882	PJKHBDOM_02066
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02077	CP127019.1:c2100765-2100136	PJKHBDOM_02077
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02078	CP127019.1:c2101798-2100755	PJKHBDOM_02078
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02079	CP127019.1:c2102496-2101795	PJKHBDOM_02079
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gatB_2	CP127019.1:c2116740-2115538	PJKHBDOM_02092
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gatB_3	CP127019.1:c2116966-2116709	PJKHBDOM_02093
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pcrA	CP127019.1:c2126145-2123953	PJKHBDOM_02099
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pcrB	CP127019.1:c2126834-2126142	PJKHBDOM_02100
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gatB_1	CP127019.1:c2116740-2115538	PJKHBDOM_02092
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gatB_2	CP127019.1:c2116966-2116709	PJKHBDOM_02093
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02099	CP127019.1:c2126145-2123953	PJKHBDOM_02099
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02100	CP127019.1:c2126834-2126142	PJKHBDOM_02100
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02105	CP127019.1:c2131562-2131389	PJKHBDOM_02105
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02106	CP127019.1:c2132145-2131543	PJKHBDOM_02106
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nadE	CP127019.1:c2133237-2132416	PJKHBDOM_02107
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pncB2	CP127019.1:c2134744-2133230	PJKHBDOM_02108
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02107	CP127019.1:c2133237-2132416	PJKHBDOM_02107
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02108	CP127019.1:c2134744-2133230	PJKHBDOM_02108
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02121	CP127019.1:c2148495-2147653	PJKHBDOM_02121
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02122	CP127019.1:c2149049-2148492	PJKHBDOM_02122
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02125	CP127019.1:c2151123-2150383	PJKHBDOM_02125
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bcrA_2	CP127019.1:c2151995-2151123	PJKHBDOM_02126
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02126	CP127019.1:c2151995-2151123	PJKHBDOM_02126
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02127	CP127019.1:c2152672-2151992	PJKHBDOM_02127
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	btuD_5	CP127019.1:c2153569-2152673	PJKHBDOM_02128
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02128	CP127019.1:c2153569-2152673	PJKHBDOM_02128
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02129	CP127019.1:c2154021-2153566	PJKHBDOM_02129
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02142	CP127019.1:c2166460-2166308	PJKHBDOM_02142
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02143	CP127019.1:c2170235-2166453	PJKHBDOM_02143
@@ -3687,20 +3684,20 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02179	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02180	CP127019.1:c2195400-2194771	PJKHBDOM_02180
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02206	CP127019.1:c2213994-2213404	PJKHBDOM_02206
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02207	CP127019.1:c2214203-2213991	PJKHBDOM_02207
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	agrB	CP127019.1:2221847-2222470	PJKHBDOM_02216
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02216	CP127019.1:2221847-2222470	PJKHBDOM_02216
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02217	CP127019.1:2222467-2222607	PJKHBDOM_02217
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	scrK	CP127019.1:c2225986-2225027	PJKHBDOM_02221
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	scrB	CP127019.1:c2227467-2225983	PJKHBDOM_02222
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02221	CP127019.1:c2225986-2225027	PJKHBDOM_02221
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02222	CP127019.1:c2227467-2225983	PJKHBDOM_02222
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02227	CP127019.1:c2232888-2231350	PJKHBDOM_02227
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02228	CP127019.1:c2233459-2232878	PJKHBDOM_02228
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02229	CP127019.1:c2233682-2233551	PJKHBDOM_02229
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02230	CP127019.1:c2234254-2233661	PJKHBDOM_02230
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02231	CP127019.1:c2234630-2234238	PJKHBDOM_02231
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02239	CP127019.1:c2241679-2241233	PJKHBDOM_02239
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nrdI_2	CP127019.1:c2242104-2241679	PJKHBDOM_02240
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02240	CP127019.1:c2242104-2241679	PJKHBDOM_02240
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02244	CP127019.1:c2244247-2243645	PJKHBDOM_02244
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02245	CP127019.1:c2244477-2244247	PJKHBDOM_02245
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cmoA	CP127019.1:c2246761-2246075	PJKHBDOM_02249
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02249	CP127019.1:c2246761-2246075	PJKHBDOM_02249
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02250	CP127019.1:c2246942-2246751	PJKHBDOM_02250
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02251	CP127019.1:c2247546-2246935	PJKHBDOM_02251
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02252	CP127019.1:c2247739-2247509	PJKHBDOM_02252
@@ -3708,7 +3705,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02253	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02254	CP127019.1:c2248318-2248013	PJKHBDOM_02254
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02255	CP127019.1:c2248586-2248299	PJKHBDOM_02255
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02256	CP127019.1:c2248845-2248579	PJKHBDOM_02256
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	satA	CP127019.1:c2265231-2264689	PJKHBDOM_02275
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02275	CP127019.1:c2265231-2264689	PJKHBDOM_02275
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	aadK	CP127019.1:c2265827-2265228	PJKHBDOM_02276
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02280	CP127019.1:c2268533-2268264	PJKHBDOM_02280
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02281	CP127019.1:c2268957-2268517	PJKHBDOM_02281
@@ -3717,7 +3714,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02283	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02284	CP127019.1:c2270332-2269811	PJKHBDOM_02284
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02285	CP127019.1:c2270982-2270332	PJKHBDOM_02285
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02286	CP127019.1:c2271302-2270982	PJKHBDOM_02286
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	apaH	CP127019.1:c2272017-2271292	PJKHBDOM_02287
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02287	CP127019.1:c2272017-2271292	PJKHBDOM_02287
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02288	CP127019.1:c2272238-2272017	PJKHBDOM_02288
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02289	CP127019.1:c2272434-2272258	PJKHBDOM_02289
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02290	CP127019.1:c2272969-2272427	PJKHBDOM_02290
@@ -3751,203 +3748,211 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02375	CP127019.1:2
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02376	CP127019.1:2349883-2350395	PJKHBDOM_02376
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02378	CP127019.1:2350798-2352459	PJKHBDOM_02378
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02379	CP127019.1:2352459-2352986	PJKHBDOM_02379
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tsaD	CP127019.1:c2364863-2363838	PJKHBDOM_02388
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rimI	CP127019.1:c2365320-2364856	PJKHBDOM_02389
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tsaB	CP127019.1:c2365955-2365293	PJKHBDOM_02390
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tsaE	CP127019.1:c2366430-2365936	PJKHBDOM_02391
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ilvB	CP127019.1:2368624-2370393	PJKHBDOM_02393
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02388	CP127019.1:c2364863-2363838	PJKHBDOM_02388
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02389	CP127019.1:c2365320-2364856	PJKHBDOM_02389
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02390	CP127019.1:c2365955-2365293	PJKHBDOM_02390
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02391	CP127019.1:c2366430-2365936	PJKHBDOM_02391
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02393	CP127019.1:2368624-2370393	PJKHBDOM_02393
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02394	CP127019.1:2370393-2370647	PJKHBDOM_02394
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02406	CP127019.1:c2384458-2384003	PJKHBDOM_02406
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yhgF	CP127019.1:c2386601-2384451	PJKHBDOM_02407
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sigB	CP127019.1:c2387805-2387035	PJKHBDOM_02408
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rsbW	CP127019.1:c2388259-2387780	PJKHBDOM_02409
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mazF	CP127019.1:c2390418-2390056	PJKHBDOM_02412
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mazE	CP127019.1:c2390585-2390415	PJKHBDOM_02413
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02407	CP127019.1:c2386601-2384451	PJKHBDOM_02407
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02408	CP127019.1:c2387805-2387035	PJKHBDOM_02408
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02409	CP127019.1:c2388259-2387780	PJKHBDOM_02409
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02412	CP127019.1:c2390418-2390056	PJKHBDOM_02412
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02413	CP127019.1:c2390585-2390415	PJKHBDOM_02413
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02416	CP127019.1:c2392741-2392247	PJKHBDOM_02416
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02417	CP127019.1:c2394308-2392725	PJKHBDOM_02417
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02418	CP127019.1:c2394780-2394301	PJKHBDOM_02418
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	kdpD	CP127019.1:2399490-2402219	PJKHBDOM_02422
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	kdpE	CP127019.1:2402219-2402914	PJKHBDOM_02423
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	thiM	CP127019.1:c2415856-2415065	PJKHBDOM_02435
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	thiD	CP127019.1:c2416670-2415840	PJKHBDOM_02436
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tenA	CP127019.1:c2417352-2416663	PJKHBDOM_02437
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	atpH	CP127019.1:c2427378-2426839	PJKHBDOM_02449
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	atpF	CP127019.1:c2427899-2427378	PJKHBDOM_02450
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ptpB	CP127019.1:c2433744-2433325	PJKHBDOM_02458
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ywlC	CP127019.1:c2434814-2433741	PJKHBDOM_02459
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	prmC	CP127019.1:c2435707-2434871	PJKHBDOM_02460
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	prfA	CP127019.1:c2436770-2435694	PJKHBDOM_02461
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02422	CP127019.1:2399490-2402219	PJKHBDOM_02422
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02423	CP127019.1:2402219-2402914	PJKHBDOM_02423
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02435	CP127019.1:c2415856-2415065	PJKHBDOM_02435
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02436	CP127019.1:c2416670-2415840	PJKHBDOM_02436
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02437	CP127019.1:c2417352-2416663	PJKHBDOM_02437
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02449	CP127019.1:c2427378-2426839	PJKHBDOM_02449
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02450	CP127019.1:c2427899-2427378	PJKHBDOM_02450
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02458	CP127019.1:c2433744-2433325	PJKHBDOM_02458
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02459	CP127019.1:c2434814-2433741	PJKHBDOM_02459
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02460	CP127019.1:c2435707-2434871	PJKHBDOM_02460
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02461	CP127019.1:c2436770-2435694	PJKHBDOM_02461
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02475	CP127019.1:c2452242-2451049	PJKHBDOM_02475
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	abgB	CP127019.1:c2453426-2452242	PJKHBDOM_02476
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mtlF	CP127019.1:2478435-2478869	PJKHBDOM_02498
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mtlD	CP127019.1:2478869-2479975	PJKHBDOM_02499
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fecD	CP127019.1:c2510722-2509754	PJKHBDOM_02525
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfiZ_2	CP127019.1:c2511750-2510719	PJKHBDOM_02526
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02476	CP127019.1:c2453426-2452242	PJKHBDOM_02476
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02498	CP127019.1:2478435-2478869	PJKHBDOM_02498
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02499	CP127019.1:2478869-2479975	PJKHBDOM_02499
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02525	CP127019.1:c2510722-2509754	PJKHBDOM_02525
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02526	CP127019.1:c2511750-2510719	PJKHBDOM_02526
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02529	CP127019.1:c2515971-2514214	PJKHBDOM_02529
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02530	CP127019.1:c2517151-2515958	PJKHBDOM_02530
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02532	CP127019.1:2519686-2520486	PJKHBDOM_02532
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02533	CP127019.1:2520483-2520803	PJKHBDOM_02533
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02566	CP127019.1:c2554270-2553977	PJKHBDOM_02566
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02567	CP127019.1:c2555364-2554267	PJKHBDOM_02567
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ecfA2	CP127019.1:c2559460-2558696	PJKHBDOM_02572
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ecfA1	CP127019.1:c2560377-2559457	PJKHBDOM_02573
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	secY_1	CP127019.1:c2565521-2564229	PJKHBDOM_02581
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplO	CP127019.1:c2565961-2565521	PJKHBDOM_02582
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rpmC	CP127019.1:c2570099-2569890	PJKHBDOM_02593
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplP	CP127019.1:c2570523-2570089	PJKHBDOM_02594
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplW	CP127019.1:c2573071-2572796	PJKHBDOM_02599
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rplD	CP127019.1:c2573694-2573071	PJKHBDOM_02600
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02572	CP127019.1:c2559460-2558696	PJKHBDOM_02572
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02573	CP127019.1:c2560377-2559457	PJKHBDOM_02573
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02581	CP127019.1:c2565521-2564229	PJKHBDOM_02581
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02582	CP127019.1:c2565961-2565521	PJKHBDOM_02582
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02593	CP127019.1:c2570099-2569890	PJKHBDOM_02593
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02594	CP127019.1:c2570523-2570089	PJKHBDOM_02594
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02599	CP127019.1:c2573071-2572796	PJKHBDOM_02599
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02600	CP127019.1:c2573694-2573071	PJKHBDOM_02600
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02614	CP127019.1:2589837-2590277	PJKHBDOM_02614
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yfcJ	CP127019.1:2590270-2591481	PJKHBDOM_02615
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02615	CP127019.1:2590270-2591481	PJKHBDOM_02615
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02621	CP127019.1:c2595456-2594971	PJKHBDOM_02621
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	moeA	CP127019.1:c2596712-2595453	PJKHBDOM_02622
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureB	CP127019.1:2609144-2609554	PJKHBDOM_02637
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureC	CP127019.1:2609551-2611266	PJKHBDOM_02638
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureE	CP127019.1:2611279-2611731	PJKHBDOM_02639
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureF	CP127019.1:2611724-2612413	PJKHBDOM_02640
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureG	CP127019.1:2612426-2613040	PJKHBDOM_02641
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ureD1	CP127019.1:2613040-2613876	PJKHBDOM_02642
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02622	CP127019.1:c2596712-2595453	PJKHBDOM_02622
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02637	CP127019.1:2609144-2609554	PJKHBDOM_02637
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02638	CP127019.1:2609551-2611266	PJKHBDOM_02638
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02639	CP127019.1:2611279-2611731	PJKHBDOM_02639
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02640	CP127019.1:2611724-2612413	PJKHBDOM_02640
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02641	CP127019.1:2612426-2613040	PJKHBDOM_02641
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02642	CP127019.1:2613040-2613876	PJKHBDOM_02642
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02657	CP127019.1:c2628359-2627886	PJKHBDOM_02657
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02658	CP127019.1:c2631397-2628359	PJKHBDOM_02658
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02667	CP127019.1:2639994-2640350	PJKHBDOM_02667
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02668	CP127019.1:2640347-2640532	PJKHBDOM_02668
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hutI	CP127019.1:c2652972-2651734	PJKHBDOM_02680
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hutU	CP127019.1:c2654633-2652972	PJKHBDOM_02681
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yhaP	CP127019.1:c2663598-2662366	PJKHBDOM_02690
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lnrL_3	CP127019.1:c2664490-2663591	PJKHBDOM_02691
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02680	CP127019.1:c2652972-2651734	PJKHBDOM_02680
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02681	CP127019.1:c2654633-2652972	PJKHBDOM_02681
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02690	CP127019.1:c2663598-2662366	PJKHBDOM_02690
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02691	CP127019.1:c2664490-2663591	PJKHBDOM_02691
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02697	CP127019.1:2670074-2670583	PJKHBDOM_02697
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02698	CP127019.1:2670580-2670999	PJKHBDOM_02698
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hrtA_2	CP127019.1:c2683066-2682401	PJKHBDOM_02710
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02710	CP127019.1:c2683066-2682401	PJKHBDOM_02710
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02711	CP127019.1:c2684121-2683066	PJKHBDOM_02711
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hssR	CP127019.1:2684257-2684931	PJKHBDOM_02712
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hssS	CP127019.1:2684924-2686297	PJKHBDOM_02713
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02712	CP127019.1:2684257-2684931	PJKHBDOM_02712
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02713	CP127019.1:2684924-2686297	PJKHBDOM_02713
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02714	CP127019.1:2686460-2686903	PJKHBDOM_02714
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02715	CP127019.1:2686900-2687355	PJKHBDOM_02715
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02739	CP127019.1:2713982-2714188	PJKHBDOM_02739
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mta	CP127019.1:2714167-2714907	PJKHBDOM_02740
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	narX	CP127019.1:c2718048-2717371	PJKHBDOM_02744
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02740	CP127019.1:2714167-2714907	PJKHBDOM_02740
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02744	CP127019.1:c2718048-2717371	PJKHBDOM_02744
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02745	CP127019.1:c2718631-2718041	PJKHBDOM_02745
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	narH	CP127019.1:c2720168-2718609	PJKHBDOM_02746
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	narG	CP127019.1:c2723847-2720158	PJKHBDOM_02747
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nasF	CP127019.1:c2725133-2724156	PJKHBDOM_02748
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nasE	CP127019.1:c2725438-2725124	PJKHBDOM_02749
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yoeB	CP127019.1:c2733715-2733449	PJKHBDOM_02757
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yefM	CP127019.1:c2733966-2733715	PJKHBDOM_02758
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tcyC_2	CP127019.1:c2737552-2736821	PJKHBDOM_02762
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tcyB	CP127019.1:c2738268-2737549	PJKHBDOM_02763
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02746	CP127019.1:c2720168-2718609	PJKHBDOM_02746
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02747	CP127019.1:c2723847-2720158	PJKHBDOM_02747
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02748	CP127019.1:c2725133-2724156	PJKHBDOM_02748
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02749	CP127019.1:c2725438-2725124	PJKHBDOM_02749
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02757	CP127019.1:c2733715-2733449	PJKHBDOM_02757
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02758	CP127019.1:c2733966-2733715	PJKHBDOM_02758
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02762	CP127019.1:c2737552-2736821	PJKHBDOM_02762
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02763	CP127019.1:c2738268-2737549	PJKHBDOM_02763
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02764	CP127019.1:c2739028-2738249	PJKHBDOM_02764
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02777	CP127019.1:c2751267-2750152	PJKHBDOM_02777
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bioB	CP127019.1:c2752252-2751245	PJKHBDOM_02778
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bioK	CP127019.1:c2753612-2752254	PJKHBDOM_02779
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bioD	CP127019.1:c2754276-2753590	PJKHBDOM_02780
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	opuCD	CP127019.1:c2777683-2776988	PJKHBDOM_02797
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	opuCC	CP127019.1:c2778624-2777683	PJKHBDOM_02798
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	opuCB	CP127019.1:c2779276-2778641	PJKHBDOM_02799
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	opuCA	CP127019.1:c2780544-2779273	PJKHBDOM_02800
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fetB	CP127019.1:c2787966-2787190	PJKHBDOM_02805
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	fetA	CP127019.1:c2788621-2787959	PJKHBDOM_02806
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02778	CP127019.1:c2752252-2751245	PJKHBDOM_02778
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02779	CP127019.1:c2753612-2752254	PJKHBDOM_02779
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02780	CP127019.1:c2754276-2753590	PJKHBDOM_02780
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02797	CP127019.1:c2777683-2776988	PJKHBDOM_02797
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02798	CP127019.1:c2778624-2777683	PJKHBDOM_02798
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02799	CP127019.1:c2779276-2778641	PJKHBDOM_02799
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02800	CP127019.1:c2780544-2779273	PJKHBDOM_02800
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02805	CP127019.1:c2787966-2787190	PJKHBDOM_02805
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02806	CP127019.1:c2788621-2787959	PJKHBDOM_02806
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02808	CP127019.1:c2790566-2790300	PJKHBDOM_02808
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02809	CP127019.1:c2790823-2790566	PJKHBDOM_02809
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntF	CP127019.1:c2796504-2795755	PJKHBDOM_02815
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntD	CP127019.1:c2797312-2796497	PJKHBDOM_02816
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntC	CP127019.1:c2798178-2797309	PJKHBDOM_02817
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntB	CP127019.1:c2799110-2798175	PJKHBDOM_02818
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntM	CP127019.1:c2802165-2800864	PJKHBDOM_02820
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cntL	CP127019.1:c2802976-2802158	PJKHBDOM_02821
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02815	CP127019.1:c2796504-2795755	PJKHBDOM_02815
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02816	CP127019.1:c2797312-2796497	PJKHBDOM_02816
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02817	CP127019.1:c2798178-2797309	PJKHBDOM_02817
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02818	CP127019.1:c2799110-2798175	PJKHBDOM_02818
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02820	CP127019.1:c2802165-2800864	PJKHBDOM_02820
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02821	CP127019.1:c2802976-2802158	PJKHBDOM_02821
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02830	CP127019.1:2810969-2811250	PJKHBDOM_02830
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02831	CP127019.1:2811237-2811371	PJKHBDOM_02831
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ydhC	CP127019.1:c2847981-2846818	PJKHBDOM_02858
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pchR	CP127019.1:c2848432-2847974	PJKHBDOM_02859
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cidB	CP127019.1:c2876540-2875851	PJKHBDOM_02887
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cidA	CP127019.1:c2876928-2876533	PJKHBDOM_02888
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02858	CP127019.1:c2847981-2846818	PJKHBDOM_02858
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02859	CP127019.1:c2848432-2847974	PJKHBDOM_02859
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02887	CP127019.1:c2876540-2875851	PJKHBDOM_02887
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02888	CP127019.1:c2876928-2876533	PJKHBDOM_02888
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02892	CP127019.1:c2879985-2879896	PJKHBDOM_02892
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02893	CP127019.1:c2880269-2879982	PJKHBDOM_02893
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ldhD_2	CP127019.1:c2900239-2899211	PJKHBDOM_02907
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bacF	CP127019.1:c2901386-2900232	PJKHBDOM_02908
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	crtP	CP127019.1:c2906859-2905366	PJKHBDOM_02912
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02907	CP127019.1:c2900239-2899211	PJKHBDOM_02907
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02908	CP127019.1:c2901386-2900232	PJKHBDOM_02908
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02912	CP127019.1:c2906859-2905366	PJKHBDOM_02912
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02913	CP127019.1:c2907304-2906852	PJKHBDOM_02913
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02921	CP127019.1:c2916229-2915801	PJKHBDOM_02921
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02922	CP127019.1:c2917016-2916195	PJKHBDOM_02922
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02924	CP127019.1:2917465-2918022	PJKHBDOM_02924
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cpnA	CP127019.1:2918015-2918719	PJKHBDOM_02925
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02925	CP127019.1:2918015-2918719	PJKHBDOM_02925
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02927	CP127019.1:2919847-2920128	PJKHBDOM_02927
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02928	CP127019.1:2920076-2920678	PJKHBDOM_02928
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02930	CP127019.1:c2923161-2921815	PJKHBDOM_02930
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02931	CP127019.1:c2924255-2923149	PJKHBDOM_02931
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02933	CP127019.1:c2926102-2925287	PJKHBDOM_02933
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02934	CP127019.1:c2927537-2926095	PJKHBDOM_02934
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hin_1	CP127019.1:c2928102-2927509	PJKHBDOM_02935
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	blaI	CP127019.1:c2928746-2928366	PJKHBDOM_02936
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	blaR1	CP127019.1:c2930397-2928736	PJKHBDOM_02937
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02935	CP127019.1:c2928102-2927509	PJKHBDOM_02935
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02936	CP127019.1:c2928746-2928366	PJKHBDOM_02936
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02937	CP127019.1:c2930397-2928736	PJKHBDOM_02937
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02942	CP127019.1:c2934385-2933339	PJKHBDOM_02942
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	infB_2	CP127019.1:c2936222-2934375	PJKHBDOM_02943
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02943	CP127019.1:c2936222-2934375	PJKHBDOM_02943
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02953	CP127019.1:c2944793-2944497	PJKHBDOM_02953
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02954	CP127019.1:c2945152-2944781	PJKHBDOM_02954
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	panC	CP127019.1:c2953928-2953077	PJKHBDOM_02964
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	panB	CP127019.1:c2954739-2953921	PJKHBDOM_02965
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02964	CP127019.1:c2953928-2953077	PJKHBDOM_02964
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02965	CP127019.1:c2954739-2953921	PJKHBDOM_02965
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02982	CP127019.1:c2975437-2974901	PJKHBDOM_02982
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nrdD	CP127019.1:c2977284-2975434	PJKHBDOM_02983
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bceB_2	CP127019.1:c2986272-2984272	PJKHBDOM_02990
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	yxdL	CP127019.1:c2987024-2986269	PJKHBDOM_02991
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	graS_2	CP127019.1:c2988073-2987132	PJKHBDOM_02992
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	graR_2	CP127019.1:c2988695-2988030	PJKHBDOM_02993
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02983	CP127019.1:c2977284-2975434	PJKHBDOM_02983
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02990	CP127019.1:c2986272-2984272	PJKHBDOM_02990
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02991	CP127019.1:c2987024-2986269	PJKHBDOM_02991
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02992	CP127019.1:c2988073-2987132	PJKHBDOM_02992
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_02993	CP127019.1:c2988695-2988030	PJKHBDOM_02993
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	aur_1	CP127019.1:c3003529-3002276	PJKHBDOM_03006
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	aur_2	CP127019.1:c3003806-3003516	PJKHBDOM_03007
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gtfB	CP127019.1:c3020210-3018852	PJKHBDOM_03017
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	gtfA_3	CP127019.1:c3021711-3020203	PJKHBDOM_03018
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	secA1_2	CP127019.1:c3024119-3021729	PJKHBDOM_03019
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03017	CP127019.1:c3020210-3018852	PJKHBDOM_03017
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03018	CP127019.1:c3021711-3020203	PJKHBDOM_03018
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03019	CP127019.1:c3024119-3021729	PJKHBDOM_03019
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03020	CP127019.1:c3025068-3024109	PJKHBDOM_03020
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	asp2	CP127019.1:c3026617-3025046	PJKHBDOM_03021
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	asp1	CP127019.1:c3028157-3026604	PJKHBDOM_03022
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03021	CP127019.1:c3026617-3025046	PJKHBDOM_03021
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03022	CP127019.1:c3028157-3026604	PJKHBDOM_03022
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03027	CP127019.1:3036771-3037283	PJKHBDOM_03027
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03028	CP127019.1:3037270-3037572	PJKHBDOM_03028
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ywqE_2	CP127019.1:c3040837-3040070	PJKHBDOM_03033
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ywqD_2	CP127019.1:c3041523-3040834	PJKHBDOM_03034
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	icaA	CP127019.1:3043772-3045010	PJKHBDOM_03037
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	icaD	CP127019.1:3044974-3045279	PJKHBDOM_03038
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	icaB	CP127019.1:3045255-3046148	PJKHBDOM_03039
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03033	CP127019.1:c3040837-3040070	PJKHBDOM_03033
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03034	CP127019.1:c3041523-3040834	PJKHBDOM_03034
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03037	CP127019.1:3043772-3045010	PJKHBDOM_03037
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03038	CP127019.1:3044974-3045279	PJKHBDOM_03038
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03039	CP127019.1:3045255-3046148	PJKHBDOM_03039
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	icaC	CP127019.1:3046135-3047046	PJKHBDOM_03040
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_2	CP127019.1:c3048867-3047599	PJKHBDOM_03041
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_3	CP127019.1:c3049630-3048830	PJKHBDOM_03042
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_1	CP127019.1:c3048867-3047599	PJKHBDOM_03041
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_2	CP127019.1:c3049630-3048830	PJKHBDOM_03042
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisI	CP127019.1:c3051350-3050718	PJKHBDOM_03044
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisF	CP127019.1:c3052105-3051347	PJKHBDOM_03045
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisA	CP127019.1:c3052806-3052102	PJKHBDOM_03046
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisH	CP127019.1:c3053377-3052799	PJKHBDOM_03047
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisB	CP127019.1:c3053952-3053374	PJKHBDOM_03048
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisC_3	CP127019.1:c3054934-3053921	PJKHBDOM_03049
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisD	CP127019.1:c3056200-3054950	PJKHBDOM_03050
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisG	CP127019.1:c3056807-3056193	PJKHBDOM_03051
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ykoC	CP127019.1:c3060566-3059733	PJKHBDOM_03055
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ykoD_2	CP127019.1:c3062275-3060563	PJKHBDOM_03056
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bceA_2	CP127019.1:3078296-3079054	PJKHBDOM_03071
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	bceB_3	CP127019.1:3079044-3080924	PJKHBDOM_03072
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	rsmG	CP127019.1:c3089652-3088933	PJKHBDOM_03084
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnmG	CP127019.1:c3091529-3089652	PJKHBDOM_03085
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cadC_3	CP127020.1:15833-16201	PJKHBDOM_03110
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	cadA_2	CP127020.1:16194-18377	PJKHBDOM_03111
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	resA	CP127020.1:20809-21294	PJKHBDOM_03115
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03046	CP127019.1:c3052806-3052102	PJKHBDOM_03046
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03047	CP127019.1:c3053377-3052799	PJKHBDOM_03047
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03048	CP127019.1:c3053952-3053374	PJKHBDOM_03048
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03049	CP127019.1:c3054934-3053921	PJKHBDOM_03049
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03050	CP127019.1:c3056200-3054950	PJKHBDOM_03050
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03051	CP127019.1:c3056807-3056193	PJKHBDOM_03051
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03055	CP127019.1:c3060566-3059733	PJKHBDOM_03055
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03056	CP127019.1:c3062275-3060563	PJKHBDOM_03056
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03071	CP127019.1:3078296-3079054	PJKHBDOM_03071
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03072	CP127019.1:3079044-3080924	PJKHBDOM_03072
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03084	CP127019.1:c3089652-3088933	PJKHBDOM_03084
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03085	CP127019.1:c3091529-3089652	PJKHBDOM_03085
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03110	CP127020.1:15833-16201	PJKHBDOM_03110
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03111	CP127020.1:16194-18377	PJKHBDOM_03111
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03115	CP127020.1:20809-21294	PJKHBDOM_03115
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03116	CP127020.1:21291-21971	PJKHBDOM_03116
 
-DiscRep_ALL:OVERLAPPING_CDS::24 coding regions overlap another coding region with a similar or identical name.
-DiscRep_SUB:OVERLAPPING_CDS::24 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Tyrosine recombinase XerC	CP127019.1:59041-60126	PJKHBDOM_00058
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Tyrosine recombinase XerC	CP127019.1:60123-62015	PJKHBDOM_00059
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Phosphate-import permease protein PhnE	CP127019.1:c165540-164725	PJKHBDOM_00160
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Phosphate-import permease protein PhnE	CP127019.1:c166337-165537	PJKHBDOM_00161
+DiscRep_ALL:OVERLAPPING_CDS::32 coding regions overlap another coding region with a similar or identical name.
+DiscRep_SUB:OVERLAPPING_CDS::32 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	recombinase family protein	CP127019.1:c41274-39646	PJKHBDOM_00036
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	recombinase family protein	CP127019.1:c42632-41271	PJKHBDOM_00037
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	tyrosine-type recombinase/integrase	CP127019.1:59041-60126	PJKHBDOM_00058
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	site-specific integrase	CP127019.1:60123-62015	PJKHBDOM_00059
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	YibE/F family protein	CP127019.1:c565854-565072	PJKHBDOM_00565
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	YibE/F family protein	CP127019.1:c566963-565851	PJKHBDOM_00566
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	deoxynucleoside kinase	CP127019.1:c679645-678983	PJKHBDOM_00673
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	deoxynucleoside kinase	CP127019.1:c680300-679638	PJKHBDOM_00674
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Extracellular matrix protein-binding protein emp	CP127019.1:937862-938572	PJKHBDOM_00918
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Extracellular matrix protein-binding protein emp	CP127019.1:938560-938883	PJKHBDOM_00919
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	DNA mismatch repair protein MutL	CP127019.1:1387804-1388970	PJKHBDOM_01360
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	DNA mismatch repair protein MutL	CP127019.1:1388943-1389812	PJKHBDOM_01361
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:960133-960300	PJKHBDOM_00953
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:960293-960502	PJKHBDOM_00954
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:963895-964179	PJKHBDOM_00959
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:964176-964817	PJKHBDOM_00960
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Elastin-binding protein EbpS	CP127019.1:c1618191-1616884	PJKHBDOM_01555
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Elastin-binding protein EbpS	CP127019.1:c1618345-1618163	PJKHBDOM_01556
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Cysteine desulfurase IscS	CP127019.1:c1798362-1797304	PJKHBDOM_01764
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Cysteine desulfurase IscS	CP127019.1:c1798447-1798316	PJKHBDOM_01765
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Tyrosine recombinase XerC	CP127019.1:c1832694-1830802	PJKHBDOM_01799
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Tyrosine recombinase XerC	CP127019.1:c1833776-1832691	PJKHBDOM_01800
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Putative fluoride ion transporter CrcB	CP127019.1:1983432-1983797	PJKHBDOM_01926
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Putative fluoride ion transporter CrcB	CP127019.1:1983794-1984147	PJKHBDOM_01927
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	site-specific integrase	CP127019.1:c1832694-1830802	PJKHBDOM_01799
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	tyrosine-type recombinase/integrase	CP127019.1:c1833776-1832691	PJKHBDOM_01800
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	CP127019.1:c2116740-2115538	PJKHBDOM_02092
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	CP127019.1:c2116966-2116709	PJKHBDOM_02093
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	AAA family ATPase	CP127019.1:c2194823-2193456	PJKHBDOM_02179
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	AAA family ATPase	CP127019.1:c2195400-2194771	PJKHBDOM_02180
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	PH domain-containing protein	CP127019.1:c2392741-2392247	PJKHBDOM_02416
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	PH domain-containing protein	CP127019.1:c2394308-2392725	PJKHBDOM_02417
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	helicase	CP127019.1:c2554270-2553977	PJKHBDOM_02566
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	helicase	CP127019.1:c2555364-2554267	PJKHBDOM_02567
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase	CP127019.1:2919847-2920128	PJKHBDOM_02927
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase	CP127019.1:2920076-2920678	PJKHBDOM_02928
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Zinc metalloproteinase aureolysin	CP127019.1:c3003529-3002276	PJKHBDOM_03006
@@ -3955,50 +3960,32 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Zinc metalloproteinase aureo
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Lipase 1	CP127019.1:c3048867-3047599	PJKHBDOM_03041
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Lipase 1	CP127019.1:c3049630-3048830	PJKHBDOM_03042
 
-DiscRep_ALL:SUSPECT_PRODUCT_NAMES::28 product_names contain suspect phrase or characters
+DiscRep_ALL:SUSPECT_PRODUCT_NAMES::14 product_names contain suspect phrase or characters
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Putative Typo
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::6 features starts with 'hypothetical protein' but not equals 'hypothetical protein'
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c6651-6478	PJKHBDOM_03097
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c7392-7246	PJKHBDOM_03098
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c7585-7397	PJKHBDOM_03099
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c10749-10189	PJKHBDOM_03103
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c13903-13565	PJKHBDOM_03107
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c25621-25073	PJKHBDOM_03120
+
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Suspicious phrase; should this be nonfunctional?
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'truncat'
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Group 2 truncated hemoglobin YjbI	CP127019.1:c1067489-1067124	PJKHBDOM_01061
-
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::May contain database identifier more appropriate in note; remove from product name
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::4 features contains three or more numbers together that may be identifiers more appropriate in note
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative oxidoreductase/MSMEI_2347	CP127019.1:838051-838890	PJKHBDOM_00827
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Vegetative protein 296	CP127019.1:972188-972949	PJKHBDOM_00972
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative oxidoreductase/MSMEI_2347	CP127019.1:c2540563-2539715	PJKHBDOM_02554
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Putative transposon Tn552 DNA-invertase bin3	CP127020.1:c14757-14149	PJKHBDOM_03108
-
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::2 features Contains underscore
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative oxidoreductase/MSMEI_2347	CP127019.1:838051-838890	PJKHBDOM_00827
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative oxidoreductase/MSMEI_2347	CP127019.1:c2540563-2539715	PJKHBDOM_02554
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated hemoglobin YjbI	CP127019.1:c1067489-1067124	PJKHBDOM_01061
 
 FATAL: DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Remove organism from product name
-DiscRep_SUB:DISC_PRODUCT_NAME_QUICKFIX::17 features contains 'staphylococcal'
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal complement inhibitor	CP127019.1:c266636-266292	PJKHBDOM_00245
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 1	CP127019.1:522256-522936	PJKHBDOM_00523
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 4	CP127019.1:523222-523917	PJKHBDOM_00524
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 3	CP127019.1:524208-525266	PJKHBDOM_00525
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 4	CP127019.1:525631-526557	PJKHBDOM_00526
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 5	CP127019.1:526921-527625	PJKHBDOM_00527
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 4	CP127019.1:528071-528766	PJKHBDOM_00528
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 7	CP127019.1:529187-529882	PJKHBDOM_00529
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 7	CP127019.1:530225-530923	PJKHBDOM_00530
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 7	CP127019.1:531303-532001	PJKHBDOM_00531
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 10	CP127019.1:532367-533050	PJKHBDOM_00532
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal superantigen-like 5	CP127019.1:536457-537134	PJKHBDOM_00535
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal complement inhibitor	CP127019.1:1229596-1229946	PJKHBDOM_01217
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal complement inhibitor	CP127019.1:c2160702-2160352	PJKHBDOM_02134
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal secretory antigen ssaA2	CP127019.1:2618565-2619368	PJKHBDOM_02647
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Staphylococcal secretory antigen SsaA	CP127019.1:c2908288-2907521	PJKHBDOM_02914
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Immunodominant staphylococcal antigen B	CP127019.1:c3004747-3004220	PJKHBDOM_03008
+DiscRep_SUB:DISC_PRODUCT_NAME_QUICKFIX::6 features contains 'staphylococcal'
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal protein A	CP127019.1:c133843-132527	PJKHBDOM_00132
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin-like toxin X	CP127019.1:466503-467114	PJKHBDOM_00462
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type K	CP127019.1:c957848-957120	PJKHBDOM_00947
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type 26	CP127019.1:c1775136-1774384	PJKHBDOM_01741
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type A	CP127019.1:c2165172-2164399	PJKHBDOM_02139
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	immunodominant staphylococcal antigen IsaB	CP127019.1:c3004747-3004220	PJKHBDOM_03008
 
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::use protein instead of gene as appropriate
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::2 features contains 'gene'
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Accessory gene regulator protein B	CP127019.1:2221847-2222470	PJKHBDOM_02216
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Accessory gene regulator protein A	CP127019.1:2223944-2224660	PJKHBDOM_02220
-
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::2 features contains 'genes'
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Central glycolytic genes regulator	CP127019.1:916114-917127	PJKHBDOM_00898
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	GlcA/glcB genes antiterminator	CP127019.1:1458618-1459469	PJKHBDOM_01432
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'gene'
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	accessory gene regulator AgrB	CP127019.1:2221847-2222470	PJKHBDOM_02216
 
 DiscRep_ALL:FIND_BADLEN_TRNAS::1 tRNAs are too long
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:tRNA	Gln	CP127019.1:c2597013-2596921	PJKHBDOM_02623
@@ -4021,14 +4008,6 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:c2072248-2072171	PJKHBDOM_02048
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:c2377958-2377881	PJKHBDOM_02401
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:c2494509-2494432	PJKHBDOM_02513
-
-DiscRep_ALL:DISC_BAD_BACTERIAL_GENE_NAME::6 bacterial genes do not start with lowercase letters
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	COQ5_1	CP127019.1:c87005-86343	PJKHBDOM_00090
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	COQ5_2	CP127019.1:c318983-318222	PJKHBDOM_00286
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	RBKS	CP127019.1:363021-364139	PJKHBDOM_00334
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	COQ5_3	CP127019.1:c1828119-1827457	PJKHBDOM_01795
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	IMPDH	CP127019.1:c1891406-1890108	PJKHBDOM_01845
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	MroQ	CP127019.1:2217056-2217799	PJKHBDOM_02211
 
 DiscRep_ALL:ONCALLER_COMMENT_PRESENT::2 comment descriptors were found (all same)
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127019.1:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka

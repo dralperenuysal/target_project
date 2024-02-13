@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "proteins",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "resource/protein/sa_mrsa_protein.fasta",
+  "number-of-letters": 831306,
+  "number-of-sequences": 2948,
+  "last-updated": "2024-02-13T18:18:00",
+  "number-of-volumes": 1,
+  "bytes-total": 1332805,
+  "bytes-to-cache": 857959,
+  "files": [
+    "proteins.pdb",
+    "proteins.phr",
+    "proteins.pin",
+    "proteins.pot",
+    "proteins.psq",
+    "proteins.ptf",
+    "proteins.pto"
+  ]
+}

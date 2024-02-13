@@ -1,4 +1,4 @@
-organism: Genus species strain 
+organism: Pseudomonas aeruginosa strain 
 contigs: 1
 bases: 6264404
 CDS: 5704

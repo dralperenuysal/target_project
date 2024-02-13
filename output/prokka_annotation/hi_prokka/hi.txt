@@ -1,4 +1,4 @@
-organism: Genus species strain 
+organism: Haemophilus influenzae strain 
 contigs: 1
 bases: 1846259
 CDS: 1768

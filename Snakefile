@@ -1,5 +1,9 @@
 genomes = ["hi", "pa", "sa_mrsa"]
-genus_and_species = ["Haemophilus influenzae", "Pseudomonas aeruginosa", "Staphylococcus aureus"]
+species = {
+    "hi": "Haemophilus influenzae",
+    "pa": "Pseudomonas aeruginosa",
+    "sa_mrsa": "Staphylococcus aureus"
+}
 env= "env/env.yaml"
 
 rule all:
@@ -34,7 +38,7 @@ rule all:
         "output/pangenome",
 
         # eggnog-mapper outputs
-        expand("output/eggnog/{genome}_eggnog", genome = genomes)
+        # expand("output/eggnog/{genome}_eggnog", genome = genomes)
 
 rule barrnap:
     input:
@@ -112,7 +116,9 @@ rule genome_annotation:
         out = "output/prokka_annotation/{genome}_prokka",
         cpus = 12,
         prefix = lambda wildcards: f"{wildcards.genome}",
-        protein = lambda wildcards: f"resource/protein/{wildcards.genome}_protein.fasta"
+        protein = lambda wildcards: f"resource/protein/{wildcards.genome}_protein.fasta",
+        genus = lambda wildcards: species[wildcards.genome].split(" ")[0],
+        species = lambda wildcards: species[wildcards.genome].split(" ")[1]
     log:
         "logs/prokka/{genome}_prokka.log"
     script:
