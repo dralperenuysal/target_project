@@ -37,8 +37,8 @@ rule all:
         # Pan-genome analysis using roary
         "output/pangenome",
 
-        # eggnog-mapper outputs
-        # expand("output/eggnog/{genome}_eggnog", genome = genomes)
+        # OrthoFinder outputs
+        "output/orthofinder"
 
 rule barrnap:
     input:
@@ -136,5 +136,17 @@ rule pangenome_analysis:
     script:
         "scripts/pangenome_analysis.py"
 
-# rule eggnogmapper: This was done by using the eggnog.sh file.
+rule orthofinder:
+    input:
+        "resource/protein"
+    output:
+        directory("output/orthofinder")
+    threads: 4
+    params:
+        numberofanalysis = 2
+    conda: env
+    log:
+        "logs/orthofinder/orthofinder.log"
+    script:
+        "scripts/orthofinder.py"
 

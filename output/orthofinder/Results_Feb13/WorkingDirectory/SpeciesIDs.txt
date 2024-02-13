@@ -1,0 +1,3 @@
+0: hi_protein.fasta
+1: pa_protein.fasta
+2: sa_mrsa_protein.fasta

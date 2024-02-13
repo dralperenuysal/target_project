@@ -2296,7 +2296,7 @@ output/prokka_annotation/hi_prokka/hi:CDS	putative pilus gene cluster hypervaria
 
 DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
 
-FATAL: DiscRep_ALL:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA prames contain susain suspect phrase
+FATAL: DiscRep_ALL:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA product names contain suspect phrase
 FATAL: DiscRep_SUB:DISC_SUSPECT_RRNA_PRODUCTS::2 rRNA product names contains 'partial'
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1-2055	OHDNGLAN_00001
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1845203-1846259	OHDNGLAN_01848
