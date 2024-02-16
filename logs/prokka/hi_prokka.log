@@ -1,644 +1,644 @@
-[22:25:45] This is prokka 1.14.6
-[22:25:45] Written by Torsten Seemann <torsten.seemann@gmail.com>
-[22:25:45] Homepage is https://github.com/tseemann/prokka
-[22:25:45] Local time is Tue Feb 13 22:25:45 2024
-[22:25:45] You are alperen
-[22:25:45] Operating system is linux
-[22:25:45] You have BioPerl 1.7.8
-Argument "1.7.8" isn't numeric in numeric lt (<) at /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/prokka line 259.
-[22:25:45] System has 20 cores.
-[22:25:45] Will use maximum of 12 cores.
-[22:25:45] Annotating as >>> Bacteria <<<
-[22:25:45] Generating locus_tag from 'resource/genome/hi_genome.fasta' contents.
-[22:25:45] Setting --locustag OHDNGLAN from MD5 81d705a780b5fdab18534078ba3ef148
-[22:25:45] Re-using existing --outdir output/prokka_annotation/hi_prokka
-[22:25:45] Using filename prefix: hi.XXX
-[22:25:45] Setting HMMER_NCPU=1
-[22:25:45] Writing log to: output/prokka_annotation/hi_prokka/hi.log
-[22:25:45] Command: /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/prokka --outdir output/prokka_annotation/hi_prokka --force --cpus 12 --prefix hi --genus Haemophilus --species influenzae --addgenes --addmrna --metagenome --proteins resource/protein/hi_protein.fasta resource/genome/hi_genome.fasta
-[22:25:45] Appending to PATH: /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin
-[22:25:45] Looking for 'aragorn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/aragorn
-[22:25:45] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
-[22:25:45] Looking for 'barrnap' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/barrnap
-[22:25:45] Determined barrnap version is 000009 from 'barrnap 0.9'
-[22:25:45] Looking for 'blastp' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/blastp
-[22:25:45] Determined blastp version is 002015 from 'blastp: 2.15.0+'
-[22:25:45] Looking for 'cmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/cmpress
-[22:25:45] Determined cmpress version is 001001 from '# INFERNAL 1.1.4 (Dec 2020)'
-[22:25:45] Looking for 'cmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/cmscan
-[22:25:45] Determined cmscan version is 001001 from '# INFERNAL 1.1.4 (Dec 2020)'
-[22:25:45] Looking for 'egrep' - found /usr/bin/egrep
-[22:25:45] Looking for 'find' - found /usr/bin/find
-[22:25:45] Looking for 'grep' - found /usr/bin/grep
-[22:25:45] Looking for 'hmmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/hmmpress
-[22:25:45] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
-[22:25:45] Looking for 'hmmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/hmmscan
-[22:25:45] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
-[22:25:45] Looking for 'java' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/java
-[22:25:45] Looking for 'makeblastdb' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/makeblastdb
-[22:25:45] Determined makeblastdb version is 002015 from 'makeblastdb: 2.15.0+'
-[22:25:45] Looking for 'minced' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/minced
-[22:25:45] Determined minced version is 004002 from 'minced 0.4.2'
-[22:25:45] Looking for 'parallel' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/parallel
-[22:25:45] Determined parallel version is 20240122 from 'GNU parallel 20240122'
-[22:25:45] Looking for 'prodigal' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/prodigal
-[22:25:45] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
-[22:25:45] Looking for 'prokka-genbank_to_fasta_db' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/prokka-genbank_to_fasta_db
-[22:25:45] Looking for 'sed' - found /usr/bin/sed
-[22:25:45] Looking for 'tbl2asn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/bin/tbl2asn
-[22:25:45] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
-[22:25:45] Using genetic code table 11.
-[22:25:45] Loading and checking input file: resource/genome/hi_genome.fasta
-[22:25:45] Wrote 1 contigs totalling 1846259 bp.
-[22:25:45] Predicting tRNAs and tmRNAs
-[22:25:45] Running: aragorn -l -gc11  -w output\/prokka_annotation\/hi_prokka\/hi\.fna
-[22:25:46] 1 tRNA-Gly c[24075,24150] 34 (gcc)
-[22:25:46] 2 tRNA-Gly c[24175,24250] 34 (gcc)
-[22:25:46] 3 tRNA-Val [98751,98827] 35 (gac)
-[22:25:46] 4 tRNA-Leu [220353,220438] 35 (caa)
-[22:25:46] 5 tRNA-Met c[345745,345821] 35 (cat)
-[22:25:46] 6 tmRNA [346250,346615] 92,127 ANDEQYALAA**
-[22:25:46] 7 tRNA-Asn c[402858,402933] 34 (gtt)
-[22:25:46] 8 tRNA-Gln c[513124,513198] 33 (ttg)
-[22:25:46] 9 tRNA-Gln c[513246,513320] 33 (ttg)
-[22:25:46] 10 tRNA-Leu c[513349,513433] 35 (tag)
-[22:25:46] 11 tRNA-Met c[513439,513515] 35 (cat)
-[22:25:46] 12 tRNA-Met [815712,815788] 35 (cat)
-[22:25:46] 13 tRNA-Asn c[966377,966452] 34 (gtt)
-[22:25:46] 14 tRNA-Phe c[966455,966530] 34 (gaa)
-[22:25:46] 15 tRNA-Ala c[1016256,1016331] 34 (tgc)
-[22:25:46] 16 tRNA-Ile c[1016417,1016493] 35 (gat)
-[22:25:46] 17 tRNA-Arg c[1033916,1033992] 35 (tct)
-[22:25:46] 18 tRNA-Pro c[1034040,1034116] 35 (tgg)
-[22:25:46] 19 tRNA-Trp c[1045591,1045666] 34 (cca)
-[22:25:46] 20 tRNA-Asp c[1045695,1045771] 35 (gtc)
-[22:25:46] 21 tRNA-Ala c[1049826,1049901] 34 (tgc)
-[22:25:46] 22 tRNA-Ile c[1049987,1050063] 35 (gat)
-[22:25:46] 23 tRNA-Ser [1106869,1106958] 35 (tga)
-[22:25:46] 24 tRNA-Gly [1150084,1150159] 34 (gcc)
-[22:25:46] 25 tRNA-Cys [1150166,1150239] 33 (gca)
-[22:25:46] 26 tRNA-Leu [1150267,1150353] 35 (taa)
-[22:25:46] 27 tRNA-Lys [1150404,1150479] 34 (ttt)
-[22:25:46] 28 tRNA-Glu c[1189824,1189899] 35 (ttc)
-[22:25:46] 29 tRNA-Pro c[1191748,1191824] 35 (tgg)
-[22:25:46] 30 tRNA-His c[1191846,1191921] 34 (gtg)
-[22:25:46] 31 tRNA-Arg c[1191948,1192024] 35 (ccg)
-[22:25:46] 32 tRNA-Met c[1194441,1194517] 35 (cat)
-[22:25:46] 33 tRNA-Gly [1202917,1202992] 34 (gcc)
-[22:25:46] 34 tRNA-Leu [1202997,1203083] 35 (taa)
-[22:25:46] 35 tRNA-Lys [1203134,1203209] 34 (ttt)
-[22:25:46] 36 tRNA-Asp c[1211245,1211321] 35 (gtc)
-[22:25:46] 37 tRNA-Asp c[1211345,1211421] 35 (gtc)
-[22:25:46] 38 tRNA-Glu c[1306524,1306599] 35 (ttc)
-[22:25:46] 39 tRNA-Ser c[1347929,1348018] 35 (gga)
-[22:25:46] 40 tRNA-Ala c[1367372,1367447] 34 (ggc)
-[22:25:46] 41 tRNA-Val [1369141,1369216] 34 (tac)
-[22:25:46] 42 tRNA-Val [1369260,1369335] 34 (tac)
-[22:25:46] 43 tRNA-Val [1369394,1369469] 34 (tac)
-[22:25:46] 44 tRNA-Val [1369522,1369597] 34 (tac)
-[22:25:46] 45 tRNA-Ser c[1415854,1415943] 35 (tga)
-[22:25:46] 46 tRNA-Trp c[1487165,1487238] 33 (cca)
-[22:25:46] 47 tRNA-Lys c[1512622,1512697] 34 (ctt)
-[22:25:46] 48 tRNA-Lys c[1512721,1512796] 34 (ttt)
-[22:25:46] 49 tRNA-Leu [1577620,1577705] 35 (gag)
-[22:25:46] 50 tRNA-Glu [1734668,1734743] 35 (ttc)
-[22:25:46] 51 tRNA-Thr [1748208,1748283] 34 (tgt)
-[22:25:46] 52 tRNA-Tyr [1748313,1748397] 35 (gta)
-[22:25:46] 53 tRNA-Gly [1748440,1748514] 34 (tcc)
-[22:25:46] 54 tRNA-Thr [1748518,1748593] 34 (ggt)
-[22:25:46] 55 tRNA-Arg c[1758519,1758595] 35 (acg)
-[22:25:46] 56 tRNA-Arg c[1758653,1758729] 35 (acg)
-[22:25:46] 57 tRNA-Ser c[1758750,1758843] 36 (gct)
-[22:25:46] 58 tRNA-SeC c[1824748,1824843] 36 (tca)
-[22:25:46] 59 tRNA-Ile [1844559,1844635] 35 (gat)
-[22:25:46] 60 tRNA-Ala [1844721,1844796] 34 (tgc)
-[22:25:46] Found 60 tRNAs
-[22:25:46] Predicting Ribosomal RNAs
-[22:25:46] Running Barrnap with 12 threads
-[22:25:49] 1 CP007470.1 1 23S ribosomal RNA (partial)
-[22:25:49] 2 CP007470.1 2302 5S ribosomal RNA
-[22:25:49] 3 CP007470.1 1012382 5S ribosomal RNA
-[22:25:49] 4 CP007470.1 1012738 23S ribosomal RNA
-[22:25:49] 5 CP007470.1 1016574 16S ribosomal RNA
-[22:25:49] 6 CP007470.1 1045787 5S ribosomal RNA
-[22:25:49] 7 CP007470.1 1045952 5S ribosomal RNA
-[22:25:49] 8 CP007470.1 1046308 23S ribosomal RNA
-[22:25:49] 9 CP007470.1 1050144 16S ribosomal RNA
-[22:25:49] 10 CP007470.1 1186348 5S ribosomal RNA
-[22:25:49] 11 CP007470.1 1186660 23S ribosomal RNA
-[22:25:49] 12 CP007470.1 1190032 16S ribosomal RNA
-[22:25:49] 13 CP007470.1 1302784 5S ribosomal RNA
-[22:25:49] 14 CP007470.1 1303142 23S ribosomal RNA
-[22:25:49] 15 CP007470.1 1306732 16S ribosomal RNA
-[22:25:49] 16 CP007470.1 1733000 16S ribosomal RNA
-[22:25:49] 17 CP007470.1 1735016 23S ribosomal RNA
-[22:25:49] 18 CP007470.1 1738376 5S ribosomal RNA
-[22:25:49] 19 CP007470.1 1842943 16S ribosomal RNA
-[22:25:49] 20 CP007470.1 1845203 23S ribosomal RNA (partial)
-[22:25:49] Found 20 rRNAs
-[22:25:49] Skipping ncRNA search, enable with --rfam if desired.
-[22:25:49] Total of 79 tRNA + rRNA features
-[22:25:49] Searching for CRISPR repeats
-[22:25:49] Found 0 CRISPRs
-[22:25:49] Predicting coding sequences
-[22:25:49] Contigs total 1846259 bp, so using meta mode
-[22:25:49] Running: prodigal -i output\/prokka_annotation\/hi_prokka\/hi\.fna -c -m -g 11 -p meta -f sco -q
-[22:25:58] Excluding CDS which overlaps existing RNA (rRNA) at CP007470.1:1186804..1187238 on + strand
-[22:25:58] Excluding CDS which overlaps existing RNA (rRNA) at CP007470.1:1187222..1187404 on - strand
-[22:25:58] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1189632..1189901 on - strand
-[22:25:58] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1202905..1203084 on - strand
-[22:25:58] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1203145..1203270 on - strand
-[22:25:58] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1487164..1487286 on + strand
-[22:25:59] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1748482..1748655 on + strand
-[22:25:59] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1758473..1758649 on + strand
-[22:25:59] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1758646..1758837 on - strand
-[22:25:59] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1824742..1824867 on + strand
-[22:25:59] Found 1768 CDS
-[22:25:59] Connecting features back to sequences
-[22:25:59] Not using genus-specific database. Try --usegenus to enable it.
-[22:25:59] Preparing user-supplied primary BLAST annotation source: resource/protein/hi_protein.fasta
-[22:25:59] Guessed source was in fasta format.
-[22:25:59] Running: makeblastdb -dbtype prot -in resource\/protein\/hi_protein\.fasta -out output\/prokka_annotation\/hi_prokka\/proteins -logfile /dev/null
-[22:25:59] Using /inference source as 'hi_protein.fasta'
-[22:25:59] Annotating CDS, please be patient.
-[22:25:59] Will use 12 CPUs for similarity searching.
-[22:25:59] There are still 1768 unannotated CDS left (started with 1768)
-[22:25:59] Will use blast to search against output/prokka_annotation/hi_prokka/proteins with 12 CPUs
-[22:25:59] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.proteins\.tmp\.49260\.faa | parallel --gnu --plain -j 12 --block 23117 --recstart '>' --pipe blastp -query - -db output/prokka_annotation/hi_prokka/proteins -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.proteins\.tmp\.49260\.blast 2> /dev/null
-[22:26:04] Modify product: hypothetical protein NTHI477_00235 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00237 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00241 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00242 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00248 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00251 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00254 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00257 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00262 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00263 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00264 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00265 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00270 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00284 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00006 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00012 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00017 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00029 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00030 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00038 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00058 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00063 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00803 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00804 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00829 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00846 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00851 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00516 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00533 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00536 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00540 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00546 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00561 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00562 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00563 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00567 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00568 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00573 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00574 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00575 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00578 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00387 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00388 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00396 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00412 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00413 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00417 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00441 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01030 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01056 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01062 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01068 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01071 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01074 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01075 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01081 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00858 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00860 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00864 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00876 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00879 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00887 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00919 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01094 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01102 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01103 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01108 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01120 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01127 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01129 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01135 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01137 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00953 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00955 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00971 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_00982 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01011 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01192 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01195 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01204 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01208 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01209 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01230 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:04] Modify product: hypothetical protein NTHI477_01237 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01322 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01323 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01324 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01338 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01350 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01356 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01375 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01385 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01387 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01405 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01412 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01416 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01423 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01424 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01426 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01427 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01428 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01430 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01431 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01432 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01434 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01435 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01436 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01437 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01438 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01439 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01441 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01442 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01443 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01444 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01445 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01448 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01452 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01454 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01456 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01457 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01458 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01459 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01465 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01467 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01471 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01472 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01473 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01474 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01475 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01478 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01479 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01480 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01483 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01485 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01487 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01488 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01490 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01491 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00307 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00313 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00323 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00334 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00341 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00342 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00343 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00344 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00345 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00346 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00347 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00348 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00351 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00354 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00355 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00356 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00357 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00359 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00360 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00362 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00364 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00367 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00368 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00369 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00372 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00378 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01502 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01509 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01510 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01514 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01543 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01549 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01550 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01551 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01554 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01555 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01563 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01565 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01566 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01567 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01263 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01267 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01268 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01273 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01274 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01282 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01285 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01294 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01309 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01800 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01806 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01572 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01576 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01582 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01602 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01618 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01621 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01630 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01729 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01730 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01732 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01739 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01747 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01755 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01761 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01775 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01778 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01793 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01794 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01670 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01678 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01683 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01685 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01700 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01712 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_01713 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00725 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00726 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00735 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00741 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00751 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00767 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00768 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00769 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00770 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00775 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00779 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00784 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00785 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00660 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00661 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00662 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00676 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00682 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00692 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00696 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00703 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00448 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00450 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00456 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00467 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00468 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00469 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00472 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00485 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00492 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00493 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00496 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00510 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00145 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00148 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00149 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00154 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00167 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00177 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00181 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00183 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00184 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00186 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00187 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00188 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00189 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00193 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00204 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00206 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00215 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00218 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00220 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00223 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00224 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00225 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00226 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00227 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00228 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00229 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00230 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00232 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00233 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00076 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00079 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00085 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00087 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00088 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00089 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00091 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00093 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00098 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:05] Modify product: hypothetical protein NTHI477_00104 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00334 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00140 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00616 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00633 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00634 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00635 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00649 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Modify product: hypothetical protein NTHI477_00651 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
-[22:26:06] Cleaned 297 /product names
-[22:26:06] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.proteins.tmp.49260.faa
-[22:26:06] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.proteins.tmp.49260.blast
-[22:26:06] There are still 49 unannotated CDS left (started with 1768)
-[22:26:06] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/IS with 12 CPUs
-[22:26:06] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.IS\.tmp\.49260\.faa | parallel --gnu --plain -j 12 --block 254 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.IS\.tmp\.49260\.blast 2> /dev/null
-[22:26:07] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.IS.tmp.49260.faa
-[22:26:07] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.IS.tmp.49260.blast
-[22:26:07] There are still 48 unannotated CDS left (started with 1768)
-[22:26:07] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/AMR with 12 CPUs
-[22:26:07] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.AMR\.tmp\.49260\.faa | parallel --gnu --plain -j 12 --block 249 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/AMR -evalue 1e-300 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.AMR\.tmp\.49260\.blast 2> /dev/null
-[22:26:08] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.AMR.tmp.49260.faa
-[22:26:08] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.AMR.tmp.49260.blast
-[22:26:08] There are still 48 unannotated CDS left (started with 1768)
-[22:26:08] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/sprot with 12 CPUs
-[22:26:08] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.sprot\.tmp\.49260\.faa | parallel --gnu --plain -j 12 --block 249 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.sprot\.tmp\.49260\.blast 2> /dev/null
-[22:26:10] Modify product: UPF0597 protein YhaM => hypothetical protein
-[22:26:10] Modify product: UPF0597 protein YhaM => hypothetical protein
-[22:26:10] Cleaned 2 /product names
-[22:26:10] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.sprot.tmp.49260.faa
-[22:26:10] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.sprot.tmp.49260.blast
-[22:26:10] There are still 33 unannotated CDS left (started with 1768)
-[22:26:10] Will use hmmer3 to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/hmm/HAMAP.hmm with 12 CPUs
-[22:26:10] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.HAMAP\.hmm\.tmp\.49260\.faa | parallel --gnu --plain -j 12 --block 122 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /home/alperen/PycharmProjects/target_project/.snakemake/conda/a45f551ea8581c7efb5c5508a8027ae4_/db/hmm/HAMAP.hmm /dev/stdin > output\/prokka_annotation\/hi_prokka\/hi\.HAMAP\.hmm\.tmp\.49260\.hmmer3 2> /dev/null
-[22:26:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.HAMAP.hmm.tmp.49260.faa
-[22:26:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.HAMAP.hmm.tmp.49260.hmmer3
-[22:26:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.psq
-[22:26:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.phr
-[22:26:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.pin
-[22:26:11] Labelling remaining 33 proteins as 'hypothetical protein'
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 29304
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 100741
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 101738
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 158200
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 192393
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 194853
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 196545
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 220867
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 223836
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224017
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224503
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224739
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225223
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225651
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225989
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 228166
-[22:26:11] Possible /pseudo 'Bacteriophage Lambda NinG protein [Haemophilus influenzae]' at CP007470.1 position 231598
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 232667
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 248553
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 249149
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 249507
-[22:26:11] Possible /pseudo 'putative ferritin-1 [Haemophilus influenzae]' at CP007470.1 position 259973
-[22:26:11] Possible /pseudo 'Peptidase T' at CP007470.1 position 318020
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 347952
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 349635
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 350023
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 350901
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 351401
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 357460
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 358115
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 358545
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 361632
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 364139
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 364258
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 381180
-[22:26:11] Possible /pseudo 'Bicyclomycin resistance protein' at CP007470.1 position 412349
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 413599
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 486099
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 486805
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 508454
-[22:26:11] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 526802
-[22:26:11] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 569622
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 575725
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 576288
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 580552
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 588507
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 588775
-[22:26:11] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 633173
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 654857
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 655105
-[22:26:11] Possible /pseudo 'Cytochrome c-type biogenesis protein CcmH precursor [Haemophilus influenzae]' at CP007470.1 position 656395
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 677188
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 677641
-[22:26:11] Possible /pseudo 'Methionine synthase' at CP007470.1 position 708098
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 758280
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 797685
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 798383
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 799099
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 812996
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 836007
-[22:26:11] Possible /pseudo 'Anaerobic sulfatase-maturating enzyme' at CP007470.1 position 937195
-[22:26:11] Possible /pseudo 'Formate dehydrogenase, nitrate-inducible, major subunit precursor [Haemophilus influenzae]' at CP007470.1 position 1066037
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1107673
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1139523
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1317684
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1325376
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1372199
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1372687
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1387881
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1388161
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1388453
-[22:26:11] Possible /pseudo 'Manganese transport system membrane protein mntB [Haemophilus influenzae]' at CP007470.1 position 1445099
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1463757
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1467355
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1468784
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1470773
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1471084
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1474271
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1474753
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1475224
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1476284
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1476795
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1477959
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1478150
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1479159
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1479591
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1487271
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1487560
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1488481
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1489537
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1497842
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1498562
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1499642
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1502471
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1502773
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1508801
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1510866
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1528268
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1568510
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1569028
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1574112
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1583499
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1584848
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1738923
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1750683
-[22:26:11] Possible /pseudo 'Glycerol uptake facilitator protein' at CP007470.1 position 1805422
-[22:26:11] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1815139
-[22:26:11] Found 9 unique /gene codes.
-[22:26:11] Fixed 2 duplicate /gene - glpF_1 glpF_2
-[22:26:11] Fixed 2 duplicate /gene - pepT_1 pepT_2
-[22:26:11] Fixed 2 duplicate /gene - bcr_1 bcr_2
-[22:26:11] Fixed 2 duplicate /gene - metH_1 metH_2
-[22:26:11] Fixed 4 colliding /gene names.
-[22:26:11] Adding /locus_tag identifiers
-[22:26:12] Assigned 1848 locus_tags to CDS and RNA features.
-[22:26:12] Writing outputs to output/prokka_annotation/hi_prokka/
-[22:26:13] Generating annotation statistics file
-[22:26:13] Generating Genbank and Sequin files
-[22:26:13] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z output\/prokka_annotation\/hi_prokka\/hi\.err -i output\/prokka_annotation\/hi_prokka\/hi\.fsa 2> /dev/null
+[19:11:32] This is prokka 1.14.6
+[19:11:32] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[19:11:32] Homepage is https://github.com/tseemann/prokka
+[19:11:32] Local time is Thu Feb 15 19:11:32 2024
+[19:11:32] You are alperen
+[19:11:32] Operating system is linux
+[19:11:32] You have BioPerl 1.7.8
+Argument "1.7.8" isn't numeric in numeric lt (<) at /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/prokka line 259.
+[19:11:32] System has 20 cores.
+[19:11:32] Will use maximum of 12 cores.
+[19:11:32] Annotating as >>> Bacteria <<<
+[19:11:32] Generating locus_tag from 'resource/genome/hi_genome.fasta' contents.
+[19:11:32] Setting --locustag OHDNGLAN from MD5 81d705a780b5fdab18534078ba3ef148
+[19:11:32] Re-using existing --outdir output/prokka_annotation/hi_prokka
+[19:11:32] Using filename prefix: hi.XXX
+[19:11:32] Setting HMMER_NCPU=1
+[19:11:32] Writing log to: output/prokka_annotation/hi_prokka/hi.log
+[19:11:32] Command: /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/prokka --outdir output/prokka_annotation/hi_prokka --force --cpus 12 --prefix hi --genus Haemophilus --species influenzae --addgenes --addmrna --metagenome --proteins resource/protein/hi_protein.fasta resource/genome/hi_genome.fasta
+[19:11:32] Appending to PATH: /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin
+[19:11:32] Looking for 'aragorn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/aragorn
+[19:11:32] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
+[19:11:32] Looking for 'barrnap' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/barrnap
+[19:11:32] Determined barrnap version is 000009 from 'barrnap 0.9'
+[19:11:32] Looking for 'blastp' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/blastp
+[19:11:32] Determined blastp version is 002015 from 'blastp: 2.15.0+'
+[19:11:32] Looking for 'cmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/cmpress
+[19:11:32] Determined cmpress version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[19:11:32] Looking for 'cmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/cmscan
+[19:11:32] Determined cmscan version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[19:11:32] Looking for 'egrep' - found /usr/bin/egrep
+[19:11:32] Looking for 'find' - found /usr/bin/find
+[19:11:32] Looking for 'grep' - found /usr/bin/grep
+[19:11:32] Looking for 'hmmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/hmmpress
+[19:11:32] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[19:11:32] Looking for 'hmmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/hmmscan
+[19:11:32] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[19:11:32] Looking for 'java' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/java
+[19:11:32] Looking for 'makeblastdb' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/makeblastdb
+[19:11:32] Determined makeblastdb version is 002015 from 'makeblastdb: 2.15.0+'
+[19:11:32] Looking for 'minced' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/minced
+[19:11:32] Determined minced version is 004002 from 'minced 0.4.2'
+[19:11:32] Looking for 'parallel' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/parallel
+[19:11:32] Determined parallel version is 20240122 from 'GNU parallel 20240122'
+[19:11:32] Looking for 'prodigal' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/prodigal
+[19:11:32] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[19:11:32] Looking for 'prokka-genbank_to_fasta_db' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/prokka-genbank_to_fasta_db
+[19:11:32] Looking for 'sed' - found /usr/bin/sed
+[19:11:32] Looking for 'tbl2asn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/bin/tbl2asn
+[19:11:32] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
+[19:11:32] Using genetic code table 11.
+[19:11:32] Loading and checking input file: resource/genome/hi_genome.fasta
+[19:11:32] Wrote 1 contigs totalling 1846259 bp.
+[19:11:32] Predicting tRNAs and tmRNAs
+[19:11:32] Running: aragorn -l -gc11  -w output\/prokka_annotation\/hi_prokka\/hi\.fna
+[19:11:34] 1 tRNA-Gly c[24075,24150] 34 (gcc)
+[19:11:34] 2 tRNA-Gly c[24175,24250] 34 (gcc)
+[19:11:34] 3 tRNA-Val [98751,98827] 35 (gac)
+[19:11:34] 4 tRNA-Leu [220353,220438] 35 (caa)
+[19:11:34] 5 tRNA-Met c[345745,345821] 35 (cat)
+[19:11:34] 6 tmRNA [346250,346615] 92,127 ANDEQYALAA**
+[19:11:34] 7 tRNA-Asn c[402858,402933] 34 (gtt)
+[19:11:34] 8 tRNA-Gln c[513124,513198] 33 (ttg)
+[19:11:34] 9 tRNA-Gln c[513246,513320] 33 (ttg)
+[19:11:34] 10 tRNA-Leu c[513349,513433] 35 (tag)
+[19:11:34] 11 tRNA-Met c[513439,513515] 35 (cat)
+[19:11:34] 12 tRNA-Met [815712,815788] 35 (cat)
+[19:11:34] 13 tRNA-Asn c[966377,966452] 34 (gtt)
+[19:11:34] 14 tRNA-Phe c[966455,966530] 34 (gaa)
+[19:11:34] 15 tRNA-Ala c[1016256,1016331] 34 (tgc)
+[19:11:34] 16 tRNA-Ile c[1016417,1016493] 35 (gat)
+[19:11:34] 17 tRNA-Arg c[1033916,1033992] 35 (tct)
+[19:11:34] 18 tRNA-Pro c[1034040,1034116] 35 (tgg)
+[19:11:34] 19 tRNA-Trp c[1045591,1045666] 34 (cca)
+[19:11:34] 20 tRNA-Asp c[1045695,1045771] 35 (gtc)
+[19:11:34] 21 tRNA-Ala c[1049826,1049901] 34 (tgc)
+[19:11:34] 22 tRNA-Ile c[1049987,1050063] 35 (gat)
+[19:11:34] 23 tRNA-Ser [1106869,1106958] 35 (tga)
+[19:11:34] 24 tRNA-Gly [1150084,1150159] 34 (gcc)
+[19:11:34] 25 tRNA-Cys [1150166,1150239] 33 (gca)
+[19:11:34] 26 tRNA-Leu [1150267,1150353] 35 (taa)
+[19:11:34] 27 tRNA-Lys [1150404,1150479] 34 (ttt)
+[19:11:34] 28 tRNA-Glu c[1189824,1189899] 35 (ttc)
+[19:11:34] 29 tRNA-Pro c[1191748,1191824] 35 (tgg)
+[19:11:34] 30 tRNA-His c[1191846,1191921] 34 (gtg)
+[19:11:34] 31 tRNA-Arg c[1191948,1192024] 35 (ccg)
+[19:11:34] 32 tRNA-Met c[1194441,1194517] 35 (cat)
+[19:11:34] 33 tRNA-Gly [1202917,1202992] 34 (gcc)
+[19:11:34] 34 tRNA-Leu [1202997,1203083] 35 (taa)
+[19:11:34] 35 tRNA-Lys [1203134,1203209] 34 (ttt)
+[19:11:34] 36 tRNA-Asp c[1211245,1211321] 35 (gtc)
+[19:11:34] 37 tRNA-Asp c[1211345,1211421] 35 (gtc)
+[19:11:34] 38 tRNA-Glu c[1306524,1306599] 35 (ttc)
+[19:11:34] 39 tRNA-Ser c[1347929,1348018] 35 (gga)
+[19:11:34] 40 tRNA-Ala c[1367372,1367447] 34 (ggc)
+[19:11:34] 41 tRNA-Val [1369141,1369216] 34 (tac)
+[19:11:34] 42 tRNA-Val [1369260,1369335] 34 (tac)
+[19:11:34] 43 tRNA-Val [1369394,1369469] 34 (tac)
+[19:11:34] 44 tRNA-Val [1369522,1369597] 34 (tac)
+[19:11:34] 45 tRNA-Ser c[1415854,1415943] 35 (tga)
+[19:11:34] 46 tRNA-Trp c[1487165,1487238] 33 (cca)
+[19:11:34] 47 tRNA-Lys c[1512622,1512697] 34 (ctt)
+[19:11:34] 48 tRNA-Lys c[1512721,1512796] 34 (ttt)
+[19:11:34] 49 tRNA-Leu [1577620,1577705] 35 (gag)
+[19:11:34] 50 tRNA-Glu [1734668,1734743] 35 (ttc)
+[19:11:34] 51 tRNA-Thr [1748208,1748283] 34 (tgt)
+[19:11:34] 52 tRNA-Tyr [1748313,1748397] 35 (gta)
+[19:11:34] 53 tRNA-Gly [1748440,1748514] 34 (tcc)
+[19:11:34] 54 tRNA-Thr [1748518,1748593] 34 (ggt)
+[19:11:34] 55 tRNA-Arg c[1758519,1758595] 35 (acg)
+[19:11:34] 56 tRNA-Arg c[1758653,1758729] 35 (acg)
+[19:11:34] 57 tRNA-Ser c[1758750,1758843] 36 (gct)
+[19:11:34] 58 tRNA-SeC c[1824748,1824843] 36 (tca)
+[19:11:34] 59 tRNA-Ile [1844559,1844635] 35 (gat)
+[19:11:34] 60 tRNA-Ala [1844721,1844796] 34 (tgc)
+[19:11:34] Found 60 tRNAs
+[19:11:34] Predicting Ribosomal RNAs
+[19:11:34] Running Barrnap with 12 threads
+[19:11:36] 1 CP007470.1 1 23S ribosomal RNA (partial)
+[19:11:37] 2 CP007470.1 2302 5S ribosomal RNA
+[19:11:37] 3 CP007470.1 1012382 5S ribosomal RNA
+[19:11:37] 4 CP007470.1 1012738 23S ribosomal RNA
+[19:11:37] 5 CP007470.1 1016574 16S ribosomal RNA
+[19:11:37] 6 CP007470.1 1045787 5S ribosomal RNA
+[19:11:37] 7 CP007470.1 1045952 5S ribosomal RNA
+[19:11:37] 8 CP007470.1 1046308 23S ribosomal RNA
+[19:11:37] 9 CP007470.1 1050144 16S ribosomal RNA
+[19:11:37] 10 CP007470.1 1186348 5S ribosomal RNA
+[19:11:37] 11 CP007470.1 1186660 23S ribosomal RNA
+[19:11:37] 12 CP007470.1 1190032 16S ribosomal RNA
+[19:11:37] 13 CP007470.1 1302784 5S ribosomal RNA
+[19:11:37] 14 CP007470.1 1303142 23S ribosomal RNA
+[19:11:37] 15 CP007470.1 1306732 16S ribosomal RNA
+[19:11:37] 16 CP007470.1 1733000 16S ribosomal RNA
+[19:11:37] 17 CP007470.1 1735016 23S ribosomal RNA
+[19:11:37] 18 CP007470.1 1738376 5S ribosomal RNA
+[19:11:37] 19 CP007470.1 1842943 16S ribosomal RNA
+[19:11:37] 20 CP007470.1 1845203 23S ribosomal RNA (partial)
+[19:11:37] Found 20 rRNAs
+[19:11:37] Skipping ncRNA search, enable with --rfam if desired.
+[19:11:37] Total of 79 tRNA + rRNA features
+[19:11:37] Searching for CRISPR repeats
+[19:11:38] Found 0 CRISPRs
+[19:11:38] Predicting coding sequences
+[19:11:38] Contigs total 1846259 bp, so using meta mode
+[19:11:38] Running: prodigal -i output\/prokka_annotation\/hi_prokka\/hi\.fna -c -m -g 11 -p meta -f sco -q
+[19:11:52] Excluding CDS which overlaps existing RNA (rRNA) at CP007470.1:1186804..1187238 on + strand
+[19:11:52] Excluding CDS which overlaps existing RNA (rRNA) at CP007470.1:1187222..1187404 on - strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1189632..1189901 on - strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1202905..1203084 on - strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1203145..1203270 on - strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1487164..1487286 on + strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1748482..1748655 on + strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1758473..1758649 on + strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1758646..1758837 on - strand
+[19:11:52] Excluding CDS which overlaps existing RNA (tRNA) at CP007470.1:1824742..1824867 on + strand
+[19:11:52] Found 1768 CDS
+[19:11:52] Connecting features back to sequences
+[19:11:52] Not using genus-specific database. Try --usegenus to enable it.
+[19:11:52] Preparing user-supplied primary BLAST annotation source: resource/protein/hi_protein.fasta
+[19:11:52] Guessed source was in fasta format.
+[19:11:52] Running: makeblastdb -dbtype prot -in resource\/protein\/hi_protein\.fasta -out output\/prokka_annotation\/hi_prokka\/proteins -logfile /dev/null
+[19:11:53] Using /inference source as 'hi_protein.fasta'
+[19:11:53] Annotating CDS, please be patient.
+[19:11:53] Will use 12 CPUs for similarity searching.
+[19:11:53] There are still 1768 unannotated CDS left (started with 1768)
+[19:11:53] Will use blast to search against output/prokka_annotation/hi_prokka/proteins with 12 CPUs
+[19:11:53] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.proteins\.tmp\.48044\.faa | parallel --gnu --plain -j 12 --block 23117 --recstart '>' --pipe blastp -query - -db output/prokka_annotation/hi_prokka/proteins -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.proteins\.tmp\.48044\.blast 2> /dev/null
+[19:11:59] Modify product: hypothetical protein NTHI477_00660 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00661 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00662 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00676 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00682 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00692 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00696 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00703 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00387 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00388 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00396 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00412 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00413 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00417 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00441 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00725 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00726 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00735 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00741 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00751 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00767 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00768 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00769 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00770 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00775 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00779 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00784 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00785 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00235 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00237 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00241 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00242 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00248 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00251 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00254 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00257 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00262 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00263 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00264 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00265 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00270 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00284 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00076 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00079 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00085 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00087 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00088 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00089 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00091 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00093 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00098 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00104 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00334 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00140 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00006 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00012 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00017 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00029 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00030 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00038 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00058 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00063 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00516 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00533 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00536 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00540 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00546 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00561 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00562 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00563 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00567 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00568 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00573 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00574 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00575 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:11:59] Modify product: hypothetical protein NTHI477_00578 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00616 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00633 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00634 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00635 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00649 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00651 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00145 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00148 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00149 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00154 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00167 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00177 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00181 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00183 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00184 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00186 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00187 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00188 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00189 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00193 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00204 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00206 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00215 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00218 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00220 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00223 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00224 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00225 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00226 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00227 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00228 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00229 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00230 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00232 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00233 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00953 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00955 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00971 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00982 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01011 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01263 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01267 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01268 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01273 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01274 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01282 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01285 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01294 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01309 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00448 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00450 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00456 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00467 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00468 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00469 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00472 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00485 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00492 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00493 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00496 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00510 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01030 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01056 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01062 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01068 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01071 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01074 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01075 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01081 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00858 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00860 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00864 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00876 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00879 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00887 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_00919 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01322 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01323 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01324 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01337 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01338 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01350 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01356 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01375 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01385 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01387 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01800 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01806 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01405 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01412 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01416 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01423 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01424 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01426 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01427 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01428 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01430 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01431 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01432 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01434 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01435 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01436 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01437 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01438 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01439 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01441 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01442 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01443 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01444 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01445 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01448 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01452 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01454 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01456 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01457 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01458 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01459 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01465 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01467 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01471 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01472 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01473 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01474 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01475 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01478 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01479 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01480 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01483 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01485 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:00] Modify product: hypothetical protein NTHI477_01487 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01488 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01490 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01491 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01502 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01509 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01510 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01514 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01543 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01549 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01550 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01551 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01554 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01555 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01563 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01565 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01566 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01567 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01192 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01195 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01204 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01208 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01209 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01230 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01237 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00803 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00804 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00829 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00846 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00851 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00307 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00313 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00323 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00334 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00341 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00342 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00343 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00344 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00345 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00346 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00347 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00348 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00351 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00354 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00355 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00356 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00357 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00359 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00360 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00362 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00364 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00367 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00368 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00369 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00372 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_00378 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01729 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01730 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01732 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01739 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:01] Modify product: hypothetical protein NTHI477_01747 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01755 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01761 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01775 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01778 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01793 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01794 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01094 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01102 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01103 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01108 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01120 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01127 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01129 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01135 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01137 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01670 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01678 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01683 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01685 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01700 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01712 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01713 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01572 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01576 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01582 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01602 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01618 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01621 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Modify product: hypothetical protein NTHI477_01630 [Haemophilus influenzae] => hypothetical protein [Haemophilus influenzae]
+[19:12:02] Cleaned 297 /product names
+[19:12:02] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.proteins.tmp.48044.faa
+[19:12:02] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.proteins.tmp.48044.blast
+[19:12:02] There are still 49 unannotated CDS left (started with 1768)
+[19:12:02] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/IS with 12 CPUs
+[19:12:02] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.IS\.tmp\.48044\.faa | parallel --gnu --plain -j 12 --block 254 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.IS\.tmp\.48044\.blast 2> /dev/null
+[19:12:05] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.IS.tmp.48044.faa
+[19:12:05] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.IS.tmp.48044.blast
+[19:12:05] There are still 48 unannotated CDS left (started with 1768)
+[19:12:05] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/AMR with 12 CPUs
+[19:12:05] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.AMR\.tmp\.48044\.faa | parallel --gnu --plain -j 12 --block 249 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/AMR -evalue 1e-300 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.AMR\.tmp\.48044\.blast 2> /dev/null
+[19:12:08] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.AMR.tmp.48044.faa
+[19:12:08] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.AMR.tmp.48044.blast
+[19:12:08] There are still 48 unannotated CDS left (started with 1768)
+[19:12:08] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/sprot with 12 CPUs
+[19:12:08] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.sprot\.tmp\.48044\.faa | parallel --gnu --plain -j 12 --block 249 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/hi_prokka\/hi\.sprot\.tmp\.48044\.blast 2> /dev/null
+[19:12:11] Modify product: UPF0597 protein YhaM => hypothetical protein
+[19:12:11] Modify product: UPF0597 protein YhaM => hypothetical protein
+[19:12:11] Cleaned 2 /product names
+[19:12:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.sprot.tmp.48044.faa
+[19:12:11] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.sprot.tmp.48044.blast
+[19:12:11] There are still 33 unannotated CDS left (started with 1768)
+[19:12:11] Will use hmmer3 to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/hmm/HAMAP.hmm with 12 CPUs
+[19:12:11] Running: cat output\/prokka_annotation\/hi_prokka\/hi\.HAMAP\.hmm\.tmp\.48044\.faa | parallel --gnu --plain -j 12 --block 122 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /home/alperen/PycharmProjects/target_project/.snakemake/conda/1ed9ad9a973cd43b0177fb6b496b9372_/db/hmm/HAMAP.hmm /dev/stdin > output\/prokka_annotation\/hi_prokka\/hi\.HAMAP\.hmm\.tmp\.48044\.hmmer3 2> /dev/null
+[19:12:12] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.HAMAP.hmm.tmp.48044.faa
+[19:12:12] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.HAMAP.hmm.tmp.48044.hmmer3
+[19:12:12] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.psq
+[19:12:12] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.phr
+[19:12:12] Deleting unwanted file: output/prokka_annotation/hi_prokka/proteins.pin
+[19:12:12] Labelling remaining 33 proteins as 'hypothetical protein'
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 29304
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 100741
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 101738
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 158200
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 192393
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 194853
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 196545
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 220867
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 223836
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224017
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224503
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 224739
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225223
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225651
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 225989
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 228166
+[19:12:12] Possible /pseudo 'Bacteriophage Lambda NinG protein [Haemophilus influenzae]' at CP007470.1 position 231598
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 232667
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 248553
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 249149
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 249507
+[19:12:12] Possible /pseudo 'putative ferritin-1 [Haemophilus influenzae]' at CP007470.1 position 259973
+[19:12:12] Possible /pseudo 'Peptidase T' at CP007470.1 position 318020
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 347952
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 349635
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 350023
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 350901
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 351401
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 357460
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 358115
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 358545
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 361632
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 364139
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 364258
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 381180
+[19:12:12] Possible /pseudo 'Bicyclomycin resistance protein' at CP007470.1 position 412349
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 413599
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 486099
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 486805
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 508454
+[19:12:12] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 526802
+[19:12:12] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 569622
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 575725
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 576288
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 580552
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 588507
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 588775
+[19:12:12] Possible /pseudo 'Glutathione import ATP-binding protein GsiA [Haemophilus influenzae]' at CP007470.1 position 633173
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 654857
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 655105
+[19:12:12] Possible /pseudo 'Cytochrome c-type biogenesis protein CcmH precursor [Haemophilus influenzae]' at CP007470.1 position 656395
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 677188
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 677641
+[19:12:12] Possible /pseudo 'Methionine synthase' at CP007470.1 position 708098
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 758280
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 797685
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 798383
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 799099
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 812996
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 836007
+[19:12:12] Possible /pseudo 'Anaerobic sulfatase-maturating enzyme' at CP007470.1 position 937195
+[19:12:12] Possible /pseudo 'Formate dehydrogenase, nitrate-inducible, major subunit precursor [Haemophilus influenzae]' at CP007470.1 position 1066037
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1107673
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1139523
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1317684
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1325376
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1372199
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1372687
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1387881
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1388161
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1388453
+[19:12:12] Possible /pseudo 'Manganese transport system membrane protein mntB [Haemophilus influenzae]' at CP007470.1 position 1445099
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1463757
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1467355
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1468784
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1470773
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1471084
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1474271
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1474753
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1475224
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1476284
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1476795
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1477959
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1478150
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1479159
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1479591
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1487271
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1487560
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1488481
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1489537
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1497842
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1498562
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1499642
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1502471
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1502773
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1508801
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1510866
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1528268
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1568510
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1569028
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1574112
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1583499
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1584848
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1738923
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1750683
+[19:12:12] Possible /pseudo 'Glycerol uptake facilitator protein' at CP007470.1 position 1805422
+[19:12:12] Possible /pseudo 'hypothetical protein [Haemophilus influenzae]' at CP007470.1 position 1815139
+[19:12:12] Found 9 unique /gene codes.
+[19:12:12] Fixed 2 duplicate /gene - pepT_1 pepT_2
+[19:12:12] Fixed 2 duplicate /gene - metH_1 metH_2
+[19:12:12] Fixed 2 duplicate /gene - bcr_1 bcr_2
+[19:12:12] Fixed 2 duplicate /gene - glpF_1 glpF_2
+[19:12:12] Fixed 4 colliding /gene names.
+[19:12:12] Adding /locus_tag identifiers
+[19:12:12] Assigned 1848 locus_tags to CDS and RNA features.
+[19:12:12] Writing outputs to output/prokka_annotation/hi_prokka/
+[19:12:14] Generating annotation statistics file
+[19:12:14] Generating Genbank and Sequin files
+[19:12:14] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z output\/prokka_annotation\/hi_prokka\/hi\.err -i output\/prokka_annotation\/hi_prokka\/hi\.fsa 2> /dev/null
 [tbl2asn-forever] Found Prokka input, correcting dates in .gbf|.sqn files.
 [tbl2asn-forever] Correcting dates in output/prokka_annotation/hi_prokka/hi.gbf
 [tbl2asn-forever] Correcting dates in output/prokka_annotation/hi_prokka/hi.sqn
-[tbl2asn-forever] Dates changed from 01-JAN-2019 to 13-FEB-2024
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/errorsummary.val
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.dr
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.fixedproducts
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.ecn
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.val
-[22:26:18] Repairing broken .GBK output that tbl2asn produces...
-[22:26:18] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < output\/prokka_annotation\/hi_prokka\/hi\.gbf > output\/prokka_annotation\/hi_prokka\/hi\.gbk
-[22:26:18] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.gbf
-[22:26:18] Output files:
-[22:26:18] output/prokka_annotation/hi_prokka/hi.sqn
-[22:26:18] output/prokka_annotation/hi_prokka/hi.fsa
-[22:26:18] output/prokka_annotation/hi_prokka/hi.tbl
-[22:26:18] output/prokka_annotation/hi_prokka/hi.fna
-[22:26:18] output/prokka_annotation/hi_prokka/hi.tsv
-[22:26:18] output/prokka_annotation/hi_prokka/hi.log
-[22:26:18] output/prokka_annotation/hi_prokka/hi.err
-[22:26:18] output/prokka_annotation/hi_prokka/hi.gbk
-[22:26:18] output/prokka_annotation/hi_prokka/hi.gff
-[22:26:18] output/prokka_annotation/hi_prokka/hi.txt
-[22:26:18] output/prokka_annotation/hi_prokka/hi.faa
-[22:26:18] output/prokka_annotation/hi_prokka/hi.ffn
-[22:26:18] Annotation finished successfully.
-[22:26:18] Walltime used: 0.55 minutes
-[22:26:18] If you use this result please cite the Prokka paper:
-[22:26:18] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
-[22:26:18] Type 'prokka --citation' for more details.
-[22:26:18] Share and enjoy!
+[tbl2asn-forever] Dates changed from 01-JAN-2019 to 15-FEB-2024
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/errorsummary.val
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.dr
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.fixedproducts
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.ecn
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.val
+[19:12:21] Repairing broken .GBK output that tbl2asn produces...
+[19:12:21] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < output\/prokka_annotation\/hi_prokka\/hi\.gbf > output\/prokka_annotation\/hi_prokka\/hi\.gbk
+[19:12:21] Deleting unwanted file: output/prokka_annotation/hi_prokka/hi.gbf
+[19:12:21] Output files:
+[19:12:21] output/prokka_annotation/hi_prokka/hi.sqn
+[19:12:21] output/prokka_annotation/hi_prokka/hi.fsa
+[19:12:21] output/prokka_annotation/hi_prokka/hi.tbl
+[19:12:21] output/prokka_annotation/hi_prokka/hi.fna
+[19:12:21] output/prokka_annotation/hi_prokka/hi.tsv
+[19:12:21] output/prokka_annotation/hi_prokka/hi.log
+[19:12:21] output/prokka_annotation/hi_prokka/hi.err
+[19:12:21] output/prokka_annotation/hi_prokka/hi.gbk
+[19:12:21] output/prokka_annotation/hi_prokka/hi.gff
+[19:12:21] output/prokka_annotation/hi_prokka/hi.txt
+[19:12:21] output/prokka_annotation/hi_prokka/hi.faa
+[19:12:21] output/prokka_annotation/hi_prokka/hi.ffn
+[19:12:21] Annotation finished successfully.
+[19:12:21] Walltime used: 0.82 minutes
+[19:12:21] If you use this result please cite the Prokka paper:
+[19:12:21] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[19:12:21] Type 'prokka --citation' for more details.
+[19:12:21] Share and enjoy!

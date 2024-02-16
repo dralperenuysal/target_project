@@ -33,12 +33,16 @@ rule all:
 
         # Annotation of the target genomes using prokka
         expand("output/prokka_annotation/{genome}_prokka/{genome}.gff", genome = genomes),
+        expand("output/prokka_annotation/{genome}_prokka/{genome}.gbk", genome = genomes),
 
         # Pan-genome analysis using roary
         "output/pangenome",
 
         # OrthoFinder outputs
-        "output/orthofinder"
+        "output/orthofinder",
+
+        # AntiSmash outputs
+        expand("output/antismash/{genome}_antismash", genome = genomes)
 
 rule barrnap:
     input:
@@ -110,7 +114,8 @@ rule genome_annotation:
     input:
         fasta = lambda wildcards: f"resource/genome/{wildcards.genome}_genome.fasta"
     output:
-        gff = "output/prokka_annotation/{genome}_prokka/{genome}.gff"
+        gff = "output/prokka_annotation/{genome}_prokka/{genome}.gff",
+        gbk = "output/prokka_annotation/{genome}_prokka/{genome}.gbk"
     conda: env
     params:
         out = "output/prokka_annotation/{genome}_prokka",
@@ -149,4 +154,16 @@ rule orthofinder:
         "logs/orthofinder/orthofinder.log"
     script:
         "scripts/orthofinder.py"
+
+rule antismash:
+    input: rules.genome_annotation.output.gbk,
+    output: directory("output/antismash/{genome}_antismash"),
+    threads: 8,
+    params:
+        taxon = "bacteria",
+        genome = lambda wildcards: f"{wildcards.genome}",
+    conda: env,
+    log: "logs/antismash/{genome}_antismash.log",
+    script:
+        "scripts/antismash.py"
 

@@ -1,0 +1,757 @@
+LOCUS       AE004091.2             10831 bp    DNA     linear   UNK 15-FEB-2024
+DEFINITION  Pseudomonas aeruginosa strain strain.
+ACCESSION   AE004091
+VERSION     AE004091.2
+KEYWORDS    .
+SOURCE      Pseudomonas aeruginosa
+  ORGANISM  Pseudomonas aeruginosa Unclassified.
+            .
+COMMENT     Annotated using prokka 1.14.6 from
+            https://github.com/tseemann/prokka.
+            ##antiSMASH-Data-START##
+            Version      :: 7.1.0-d8a21783(changed)
+            Run date     :: 2024-02-15 20:29:28
+            NOTE: This is a single region extracted from a larger record!
+            Orig. start  :: 4584490
+            Orig. end    :: 4595321
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     protocluster    1..10831
+                     /aStool="rule-based-clusters"
+                     /category="RiPP"
+                     /contig_edge="False"
+                     /core_location="[5000:5831]"
+                     /cutoff="20000"
+                     /detection_rule="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /neighbourhood="5000"
+                     /product="RiPP-like"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      5001..5831
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /neighbourhood="5000"
+                     /product="RiPP-like"
+                     /protocluster_number="1"
+     cand_cluster    1..10831
+                     /candidate_cluster_number="1"
+                     /contig_edge="False"
+                     /detection_rules="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /kind="single"
+                     /product="RiPP-like"
+                     /protoclusters="1"
+                     /tool="antismash"
+     region          1..10831
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="False"
+                     /product="RiPP-like"
+                     /region_number="14"
+                     /rules="(strepbact or Antimicrobial14 or Bacteriocin_IId or
+                     BacteriocIIc_cy or Bacteriocin_II or Bacteriocin_IIi or
+                     Lactococcin or Antimicrobial17 or Lactococcin_972 or
+                     Bacteriocin_IIc or LcnG-beta or Cloacin or Linocin_M18 or
+                     TIGR03651 or TIGR03693 or TIGR03601 or TIGR03795 or
+                     TIGR03975 or DUF692 or TIGR01193 or (YcaO or TIGR03604))"
+                     /tool="antismash"
+     gene            complement(42..302)
+                     /locus_tag="BOLPKDDJ_04262"
+     mRNA            complement(42..302)
+                     /locus_tag="BOLPKDDJ_04262"
+                     /product="hypothetical protein"
+     CDS             complement(42..302)
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG04622.1"
+                     /locus_tag="BOLPKDDJ_04262"
+                     /product="hypothetical protein [Pseudomonas aeruginosa
+                     PAO1]"
+                     /transl_table=11
+                     /translation="MTRTLLATTLLAALALPAFAAQAAAPVPTESYRYGMPLDVHKVVA
+                     TQEQASTTCEIVDARMDYLDSAGKLHSLAYRKYASACSQGG"
+     PFAM_domain     complement(54..272)
+                     /aSDomain="DUF2790"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF10976.11"
+                     /description="Protein of unknown function (DUF2790)"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04262_5644"
+                     /evalue="1.40E-21"
+                     /label="BOLPKDDJ_04262"
+                     /locus_tag="BOLPKDDJ_04262"
+                     /protein_end="83"
+                     /protein_start="10"
+                     /score="76.3"
+                     /tool="antismash"
+                     /translation="LAALALPAFAAQAAAPVPTESYRYGMPLDVHKVVATQEQASTTCE
+                     IVDARMDYLDSAGKLHSLAYRKYASACS"
+     gene            659..1399
+                     /locus_tag="BOLPKDDJ_04263"
+     mRNA            659..1399
+                     /locus_tag="BOLPKDDJ_04263"
+                     /product="hypothetical protein"
+     CDS             659..1399
+                     /codon_start=1
+                     /gene_functions="regulatory (smcogs) SMCOG1008:response
+                     regulator (Score: 197.3; E-value: 4.2e-60)"
+                     /gene_kind="regulatory"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07488.1"
+                     /locus_tag="BOLPKDDJ_04263"
+                     /product="BfmR [Pseudomonas aeruginosa PAO1]"
+                     /transl_table=11
+                     /translation="MEHVDHILIVDDDREIRELVGNYLKKNGLRTTIVADGRQMRAFLE
+                     ANTVDLIVLDIMMPGDDGLLLCRELRVGKHKATPVLMLTARNDETDRIIGLEMGADDYL
+                     TKPFSARELLARINAVLRRTRMLPPNLTVSESSRLIGFGQWQLDTSARHLLDDAGTVVA
+                     LSGAEYRLLRVFLDHPQRVLSRDQLLNLTQGREADIFDRSIDLLVSRLRQRLGDDAREP
+                     EYIKTVRSEGYVFSLPVRLVEAHP"
+     PFAM_domain     677..1012
+                     /aSDomain="Response_reg"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF00072.27"
+                     /db_xref="GO:0000160"
+                     /description="Response regulator receiver domain"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04263_5645"
+                     /evalue="3.40E-30"
+                     /gene_ontologies="GO:0000160: phosphorelay signal
+                     transduction system"
+                     /label="BOLPKDDJ_04263"
+                     /locus_tag="BOLPKDDJ_04263"
+                     /protein_end="118"
+                     /protein_start="6"
+                     /score="104.6"
+                     /tool="antismash"
+                     /translation="ILIVDDDREIRELVGNYLKKNGLRTTIVADGRQMRAFLEANTVDL
+                     IVLDIMMPGDDGLLLCRELRVGKHKATPVLMLTARNDETDRIIGLEMGADDYLTKPFSA
+                     RELLARIN"
+     PFAM_domain     1136..1363
+                     /aSDomain="Trans_reg_C"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF00486.31"
+                     /db_xref="GO:0000160"
+                     /db_xref="GO:0003677"
+                     /db_xref="GO:0006355"
+                     /description="Transcriptional regulatory protein, C
+                     terminal"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04263_5646"
+                     /evalue="3.20E-21"
+                     /gene_ontologies="GO:0000160: phosphorelay signal
+                     transduction system"
+                     /gene_ontologies="GO:0003677: DNA binding"
+                     /gene_ontologies="GO:0006355: regulation of DNA-templated
+                     transcription"
+                     /label="BOLPKDDJ_04263"
+                     /locus_tag="BOLPKDDJ_04263"
+                     /protein_end="235"
+                     /protein_start="159"
+                     /score="75.3"
+                     /tool="antismash"
+                     /translation="TVVALSGAEYRLLRVFLDHPQRVLSRDQLLNLTQGREADIFDRSI
+                     DLLVSRLRQRLGDDAREPEYIKTVRSEGYVF"
+     gene            1396..2700
+                     /locus_tag="BOLPKDDJ_04264"
+     mRNA            1396..2700
+                     /locus_tag="BOLPKDDJ_04264"
+                     /product="hypothetical protein"
+     CDS             1396..2700
+                     /codon_start=1
+                     /gene_functions="regulatory (smcogs) SMCOG1003:sensor
+                     histidine kinase (Score: 155.1; E-value: 5.9e-47)"
+                     /gene_kind="regulatory"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07489.1"
+                     /locus_tag="BOLPKDDJ_04264"
+                     /product="BfmS [Pseudomonas aeruginosa PAO1]"
+                     /transl_table=11
+                     /translation="MKLAVPRPRSLAARLALILFAGLVLAYGLSFASQFYERYQTAKHM
+                     MLDSLEQDVAISVAMLDRLTPAEREAWLPRLERRTYRYRLDAGEPGQPLALADAPVAAH
+                     SIERALDGQYPLTLRTVADSRPHFQVLLRLRDGSPLTIDVTPAPVPLSGWLPLVLLVQL
+                     LLLLLCTGLAVRTAIGPLTRLVKAVEHLDPNRPAQPLAETGPREVAHAAAAFNAMQARI
+                     ADYLKERMQLLAAISHDLQTPITRMKLRVEFMDASSDRDKLWNDLEEMQHLVREGVAYA
+                     RSMHGSTETSCRVDLDAFLDSLVFDYQDSGKQVQLDGRTGAVIDTRPHALRRVLVNLVD
+                     NALKFAGAARLEVERRTDGGTRIQVLDNGPGIPAEELDEVLKPFYRVENSRNRDTGGTG
+                     LGLAIAQQLSLALGGRLTLANRAGGGLCARIELDP"
+     PFAM_domain     2380..2694
+                     /aSDomain="HATPase_c"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF02518.29"
+                     /description="Histidine kinase-, DNA gyrase B-, and
+                     HSP90-like ATPase"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04264_5647"
+                     /evalue="2.30E-21"
+                     /label="BOLPKDDJ_04264"
+                     /locus_tag="BOLPKDDJ_04264"
+                     /protein_end="433"
+                     /protein_start="328"
+                     /score="76.5"
+                     /tool="antismash"
+                     /translation="HALRRVLVNLVDNALKFAGAARLEVERRTDGGTRIQVLDNGPGIP
+                     AEELDEVLKPFYRVENSRNRDTGGTGLGLAIAQQLSLALGGRLTLANRAGGGLCARIEL
+                     D"
+     gene            2830..3459
+                     /locus_tag="BOLPKDDJ_04265"
+     mRNA            2830..3459
+                     /locus_tag="BOLPKDDJ_04265"
+                     /product="hypothetical protein"
+     CDS             2830..3459
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07490.1"
+                     /locus_tag="BOLPKDDJ_04265"
+                     /product="hypothetical protein [Pseudomonas aeruginosa
+                     PAO1]"
+                     /transl_table=11
+                     /translation="MTVPTSQSAWHGWRLFAVLAVAVLCMTALVLALQAQPVEGLRSAI
+                     RATARSSFALFLAAFLASSLATLVPGPGTRALLRERRYLGLAFAFSHAVHALLILAYWK
+                     LFPETFWSGRSVAANIPGSIGYLFILLLTLTSFRTPARLLGPRAWKALHSTGTWVLAGI
+                     FCLSFFKRIPMGGWYVLAFATIFSAIVLKLTAKLAVRLRRRDVQPA"
+     gene            3491..4000
+                     /locus_tag="BOLPKDDJ_04266"
+     mRNA            3491..4000
+                     /locus_tag="BOLPKDDJ_04266"
+                     /product="hypothetical protein"
+     CDS             3491..4000
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07491.1"
+                     /locus_tag="BOLPKDDJ_04266"
+                     /note="conserved hypothetical protein [Pseudomonas
+                     aeruginosa PAO1]"
+                     /product="hypothetical protein"
+                     /transl_table=11
+                     /translation="MQASDLRAWRRPFALLDRCGGWSADLSLRLFLAWEFFESGWEKWN
+                     GENWFGDIQSAFPFPFDRLPAAFNWELSLWAELLGALFLLLGLGTRLTALVLIVVTLVA
+                     TAAVHWPAEWSSLAELARGYSITDHGFGNFKLPAIYLAALLPLLLAGAGKLSLDHWLGR
+                     RLGLSR"
+     PFAM_domain     3563..3820
+                     /aSDomain="DoxX"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF07681.15"
+                     /description="DoxX"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04266_5648"
+                     /evalue="8.60E-21"
+                     /label="BOLPKDDJ_04266"
+                     /locus_tag="BOLPKDDJ_04266"
+                     /protein_end="110"
+                     /protein_start="24"
+                     /score="74.5"
+                     /tool="antismash"
+                     /translation="DLSLRLFLAWEFFESGWEKWNGENWFGDIQSAFPFPFDRLPAAFN
+                     WELSLWAELLGALFLLLGLGTRLTALVLIVVTLVATAAVHW"
+     gene            complement(4253..5008)
+                     /locus_tag="BOLPKDDJ_04267"
+     mRNA            complement(4253..5008)
+                     /locus_tag="BOLPKDDJ_04267"
+                     /product="hypothetical protein"
+     CDS             complement(4253..5008)
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07492.1"
+                     /locus_tag="BOLPKDDJ_04267"
+                     /product="hypothetical protein [Pseudomonas aeruginosa
+                     PAO1]"
+                     /transl_table=11
+                     /translation="MDERLRQQQFSLARHLRDPLGNAPPPDIEERRLRVYRELFYNAIE
+                     GLLASGFPRLRGLLGEQQWHGLVREFYREERSHTPLFTRIAGVFVDYLRQRGEYRPAWQ
+                     AELAHFEWSETRLYLAEPDDPPYRREGDLLDGVPLLSSLALPLGYRWPVHRLEEDVALA
+                     EAPAEPTLLLMHRDSSHRVHTARLTPLACRLLESLARRRLSGREHLAALALEARSAPGA
+                     LDAAGLELLAALRTQGVVLGTLERDWAGG"
+     PFAM_domain     complement(4730..4987)
+                     /aSDomain="DUF2063"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF09836.12"
+                     /description="Putative DNA-binding domain"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04267_5649"
+                     /evalue="3.90E-22"
+                     /label="BOLPKDDJ_04267"
+                     /locus_tag="BOLPKDDJ_04267"
+                     /protein_end="93"
+                     /protein_start="7"
+                     /score="78.4"
+                     /tool="antismash"
+                     /translation="QQFSLARHLRDPLGNAPPPDIEERRLRVYRELFYNAIEGLLASGF
+                     PRLRGLLGEQQWHGLVREFYREERSHTPLFTRIAGVFVDYL"
+     gene            complement(5001..5831)
+                     /locus_tag="BOLPKDDJ_04268"
+     mRNA            complement(5001..5831)
+                     /locus_tag="BOLPKDDJ_04268"
+                     /product="hypothetical protein"
+     CDS             complement(5001..5831)
+                     /codon_start=1
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     RiPP-like: DUF692"
+                     /gene_kind="biosynthetic"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07493.1"
+                     /locus_tag="BOLPKDDJ_04268"
+                     /note="conserved hypothetical protein [Pseudomonas
+                     aeruginosa PAO1]"
+                     /product="hypothetical protein"
+                     /sec_met_domain="DUF692 (E-value: 1.8e-125, bitscore:
+                     416.0, seeds: 7, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MTLIDNAAGLGLRRGLLPQLLAMAPGAVDFLECAPDNWIGVGGAF
+                     GADLERLVERIPLTCHGLSLSLGGSTPLDAAFIEQTRRFLVRHRVALYSEHLSYCSDDG
+                     HLYDLLPLPFTEAAVRHVAARIREAQERLERRIAVENISYYAAPYREMSEIEFVNAVLD
+                     EADCDLLLDVNNLFVNACNHGYDALDFLVRLPPGRVAAYHVAGHYDEAPDLKIDTHGAA
+                     VKPGVWALLGAAYRRFGVRPTLLERDFNYPPLGELLLEVEQIRQWQRDEGRRHG"
+     PFAM_domain     complement(5028..5810)
+                     /aSDomain="DUF692"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF05114.16"
+                     /description="Protein of unknown function (DUF692)"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04268_5650"
+                     /evalue="5.30E-98"
+                     /label="BOLPKDDJ_04268"
+                     /locus_tag="BOLPKDDJ_04268"
+                     /protein_end="268"
+                     /protein_start="7"
+                     /score="327.6"
+                     /tool="antismash"
+                     /translation="AGLGLRRGLLPQLLAMAPGAVDFLECAPDNWIGVGGAFGADLERL
+                     VERIPLTCHGLSLSLGGSTPLDAAFIEQTRRFLVRHRVALYSEHLSYCSDDGHLYDLLP
+                     LPFTEAAVRHVAARIREAQERLERRIAVENISYYAAPYREMSEIEFVNAVLDEADCDLL
+                     LDVNNLFVNACNHGYDALDFLVRLPPGRVAAYHVAGHYDEAPDLKIDTHGAAVKPGVWA
+                     LLGAAYRRFGVRPTLLERDFNYPPLGELLLEVEQIRQWQ"
+     gene            complement(5906..6373)
+                     /locus_tag="BOLPKDDJ_04269"
+     mRNA            complement(5906..6373)
+                     /locus_tag="BOLPKDDJ_04269"
+                     /product="hypothetical protein"
+     CDS             complement(5906..6373)
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07494.1"
+                     /locus_tag="BOLPKDDJ_04269"
+                     /product="hypothetical protein [Pseudomonas aeruginosa
+                     PAO1]"
+                     /transl_table=11
+                     /translation="MSVFDSRQKTSASLLGAVLVGGMLLGGSAFAVEPLGQGLQVAAAS
+                     AGEGKCGEGKCGSGGSAKTPAKAGAEGKCGEGKCGDASFARTDTDHDGKVSRAEFLAVA
+                     KDRAGEFDSIDSDHDGFISEAEAYEHLRKTYEANGKPMPAGLFSKLEQGQH"
+     PFAM_domain     complement(6065..6127)
+                     /aSDomain="EF-hand_5"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF13202.9"
+                     /db_xref="GO:0005509"
+                     /description="EF hand"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04269_5651"
+                     /evalue="1.60E-03"
+                     /gene_ontologies="GO:0005509: calcium ion binding"
+                     /label="BOLPKDDJ_04269"
+                     /locus_tag="BOLPKDDJ_04269"
+                     /protein_end="103"
+                     /protein_start="82"
+                     /score="18.0"
+                     /tool="antismash"
+                     /translation="SFARTDTDHDGKVSRAEFLAV"
+     gene            6697..7941
+                     /locus_tag="BOLPKDDJ_04270"
+     mRNA            6697..7941
+                     /locus_tag="BOLPKDDJ_04270"
+                     /product="hypothetical protein"
+     CDS             6697..7941
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07495.1"
+                     /locus_tag="BOLPKDDJ_04270"
+                     /product="cyclic di-GMP phosphodiesterase [Pseudomonas
+                     aeruginosa PAO1]"
+                     /transl_table=11
+                     /translation="MLKRIPVTQLRLGMFVQSLCGSWLDHPFWKRGGFLLDSQADLQRL
+                     RESAVKEVWIDASKGLDLPEEAAVSAAAVLPVTMPAGPSPARVALEEEIRHAALLCSRA
+                     KAAVVSMFRDARMGQAIDTAHASDLVDEISASVLRHPNALLSLVRLKTSDEYTYMHSVA
+                     VCALMIALARQLELPDPLVREAGLAGLLHDIGKMAVPDPILNKPGKLTDPEFGLVRRHP
+                     QNGARMLLDCRQVSALVVDVCLHHHERIDGTGYPFGLAQEQISLLARMGAVCDVYDAIT
+                     SDRPYKKGWNAAEAIRRMAEWNGHFDPQVFRAFVKAVGIYPVGALVRLESGRLGVVLEQ
+                     HGRSLLTPRVKVFFSARSKVPIPQQVVDLGRAGQTDRIVGFEPAEAWNFRNLDEMWTGL
+                     AKSTGSYFDAGTGNP"
+     PFAM_domain     6700..7071
+                     /aSDomain="DUF3391"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF11871.11"
+                     /description="Domain of unknown function (DUF3391)"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04270_5652"
+                     /evalue="5.50E-35"
+                     /label="BOLPKDDJ_04270"
+                     /locus_tag="BOLPKDDJ_04270"
+                     /protein_end="125"
+                     /protein_start="1"
+                     /score="121.0"
+                     /tool="antismash"
+                     /translation="LKRIPVTQLRLGMFVQSLCGSWLDHPFWKRGGFLLDSQADLQRLR
+                     ESAVKEVWIDASKGLDLPEEAAVSAAAVLPVTMPAGPSPARVALEEEIRHAALLCSRAK
+                     AAVVSMFRDARMGQAIDTAH"
+     PFAM_domain     7168..7533
+                     /aSDomain="HD"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF01966.25"
+                     /description="HD domain"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04270_5653"
+                     /evalue="6.30E-15"
+                     /label="BOLPKDDJ_04270"
+                     /locus_tag="BOLPKDDJ_04270"
+                     /protein_end="279"
+                     /protein_start="157"
+                     /score="55.6"
+                     /tool="antismash"
+                     /translation="YMHSVAVCALMIALARQLELPDPLVREAGLAGLLHDIGKMAVPDP
+                     ILNKPGKLTDPEFGLVRRHPQNGARMLLDCRQVSALVVDVCLHHHERIDGTGYPFGLAQ
+                     EQISLLARMGAVCDVYDA"
+     gene            8262..8483
+                     /locus_tag="BOLPKDDJ_04271"
+     mRNA            8262..8483
+                     /locus_tag="BOLPKDDJ_04271"
+                     /product="hypothetical protein"
+     CDS             8262..8483
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /locus_tag="BOLPKDDJ_04271"
+                     /product="hypothetical protein"
+                     /transl_table=11
+                     /translation="MLESEIVAARRAYAASLGVTLSGAISNADEPVHIRHAVSNSNHNP
+                     NASNRINLGRARAYKKRREEGDYFFIDT"
+     gene            complement(8500..9390)
+                     /locus_tag="BOLPKDDJ_04272"
+     mRNA            complement(8500..9390)
+                     /locus_tag="BOLPKDDJ_04272"
+                     /product="hypothetical protein"
+     CDS             complement(8500..9390)
+                     /codon_start=1
+                     /gene_functions="regulatory (smcogs) SMCOG1031:LysR family
+                     transcriptional regulator (Score: 236.7; E-value: 6.1e-72)"
+                     /gene_kind="regulatory"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07496.1"
+                     /locus_tag="BOLPKDDJ_04272"
+                     /product="transcriptional regulator AmpR [Pseudomonas
+                     aeruginosa PAO1]"
+                     /transl_table=11
+                     /translation="MVRPHLPLNALRAFEASARHLSFTRAAIELCVTQAAVSHQVKSLE
+                     ERLGVALFKRLPRGLMLTHEGESLLPVLCDSFDRIAGLLERFEGGHYRDVLTVGAVGTF
+                     TVGWLLPRLEDFQARHPFIDLRLSTHNNRVDIAAEGLDYAIRFGGGAWHGTEALALFEA
+                     PLTVLCCPEVAAQLHSPADLLQHTLLRSYRADEWPLWFQAAGLPAHAPLTRSIVFDTSL
+                     AMLEAARQGVGVALAPAAMFARQLASESIRRPFATEVSTGSYWLTRLQSRGETSAMLAF
+                     RGWLLEMAAVEARGR"
+     PFAM_domain     complement(8524..9120)
+                     /aSDomain="LysR_substrate"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF03466.23"
+                     /description="LysR substrate binding domain"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04272_5655"
+                     /evalue="9.30E-34"
+                     /label="BOLPKDDJ_04272"
+                     /locus_tag="BOLPKDDJ_04272"
+                     /protein_end="289"
+                     /protein_start="90"
+                     /score="116.8"
+                     /tool="antismash"
+                     /translation="HYRDVLTVGAVGTFTVGWLLPRLEDFQARHPFIDLRLSTHNNRVD
+                     IAAEGLDYAIRFGGGAWHGTEALALFEAPLTVLCCPEVAAQLHSPADLLQHTLLRSYRA
+                     DEWPLWFQAAGLPAHAPLTRSIVFDTSLAMLEAARQGVGVALAPAAMFARQLASESIRR
+                     PFATEVSTGSYWLTRLQSRGETSAMLAFRGWLLEMA"
+     PFAM_domain     complement(9190..9369)
+                     /aSDomain="HTH_1"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF00126.30"
+                     /db_xref="GO:0003700"
+                     /db_xref="GO:0006355"
+                     /description="Bacterial regulatory helix-turn-helix
+                     protein, lysR family"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04272_5654"
+                     /evalue="4.10E-20"
+                     /gene_ontologies="GO:0003700: DNA-binding transcription
+                     factor activity"
+                     /gene_ontologies="GO:0006355: regulation of DNA-templated
+                     transcription"
+                     /label="BOLPKDDJ_04272"
+                     /locus_tag="BOLPKDDJ_04272"
+                     /protein_end="67"
+                     /protein_start="7"
+                     /score="71.6"
+                     /tool="antismash"
+                     /translation="LNALRAFEASARHLSFTRAAIELCVTQAAVSHQVKSLEERLGVAL
+                     FKRLPRGLMLTHEGE"
+     gene            9539..10732
+                     /locus_tag="BOLPKDDJ_04273"
+     mRNA            9539..10732
+                     /locus_tag="BOLPKDDJ_04273"
+                     /product="hypothetical protein"
+     CDS             9539..10732
+                     /codon_start=1
+                     /gene_functions="resistance (resist) ClassC-AmpC (Score:
+                     557.6; E-value: 7.3e-170)"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1053:beta-lactamase (Score: 167.8; E-value: 5.5e-51)"
+                     /gene_kind="biosynthetic-additional"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /inference="similar to AA
+                     sequence:pa_protein.fasta:AAG07497.1"
+                     /locus_tag="BOLPKDDJ_04273"
+                     /product="beta-lactamase precursor [Pseudomonas aeruginosa
+                     PAO1]"
+                     /transl_table=11
+                     /translation="MRDTRFPCLCGIAASTLLFATTPAIAGEAPADRLKALVDAAVQPV
+                     MKANDIPGLAVAISLKGEPHYFSYGLASKEDGRRVTPETLFEIGSVSKTFTATLAGYAL
+                     TQDKMRLDDRASQHWPALQGSRFDGISLLDLATYTAGGLPLQFPDSVQKDQAQIRDYYR
+                     QWQPTYAPGSQRLYSNPSIGLFGYLAARSLGQPFERLMEQQVFPALGLEQTHLDVPEAA
+                     LAQYAQGYGKDDRPLRVGPGPLDAEGYGVKTSAADLLRFVDANLHPERLDRPWAQALDA
+                     THRGYYKVGDMTQGLGWEAYDWPISLKRLQAGNSTPMALQPHRIARLPAPQALEGQRLL
+                     NKTGSTNGFGAYVAFVPGRDLGLVILANRNYPNAERVKIAYAILSGLEQQGKVPLKR"
+     PFAM_domain     9650..10693
+                     /aSDomain="Beta-lactamase"
+                     /aSTool="fullhmmer"
+                     /database="35.0"
+                     /db_xref="PF00144.27"
+                     /description="Beta-lactamase"
+                     /detection="hmmscan"
+                     /domain_id="fullhmmer_BOLPKDDJ_04273_5656"
+                     /evalue="7.30E-80"
+                     /label="BOLPKDDJ_04273"
+                     /locus_tag="BOLPKDDJ_04273"
+                     /protein_end="385"
+                     /protein_start="37"
+                     /score="268.8"
+                     /tool="antismash"
+                     /translation="VDAAVQPVMKANDIPGLAVAISLKGEPHYFSYGLASKEDGRRVTP
+                     ETLFEIGSVSKTFTATLAGYALTQDKMRLDDRASQHWPALQGSRFDGISLLDLATYTAG
+                     GLPLQFPDSVQKDQAQIRDYYRQWQPTYAPGSQRLYSNPSIGLFGYLAARSLGQPFERL
+                     MEQQVFPALGLEQTHLDVPEAALAQYAQGYGKDDRPLRVGPGPLDAEGYGVKTSAADLL
+                     RFVDANLHPERLDRPWAQALDATHRGYYKVGDMTQGLGWEAYDWPISLKRLQAGNSTPM
+                     ALQPHRIARLPAPQALEGQRLLNKTGSTNGFGAYVAFVPGRDLGLVILANRNYPNAERV
+                     KIAYAILS"
+ORIGIN
+        1 ccgcgcgaca accggccgtg caggctctgg ccggcgcctg actagccgcc ctggctgcag
+       61 gcgctggcgt acttgcggta ggccagcgaa tgcagcttgc cggcggagtc taggtagtcc
+      121 atccgtgcat cgacgatctc gcaggtggtc gacgcctgtt cctgggtcgc caccaccttg
+      181 tgcacatcca gcggcatgcc gtagcggtag ctttcggtcg gtaccggtgc ggcggcctgg
+      241 gcggcgaacg cgggaagcgc aagcgcggcg agcagggtgg tggcgagcag ggtgcgagtc
+      301 atgggggatc tcctggcggc aggaccgcgt cggtggaagg cgacatgcct tcgtcgaggc
+      361 ctattccagg ccgcggagtt gtcccggatg tgtcgctgga atgcccgatt cgtcagccgc
+      421 tgtatcgccg ctgccggccg atacatggcc gtacattcgc cgccccgctc ccgccggacg
+      481 aatcgcgccc ggcgccatcc gtcgtctccc ccgttcgcga cagcgacaac cgggcttttt
+      541 tgcacgcccc ggtattcgcc ccggctccgg atacagtgca atacaaaccc cggcaggcaa
+      601 gcgccgcggg cgcggataca ctgcttgcaa gcacaccaac cgccacggga gccaggcaat
+      661 ggagcatgtc gatcacatcc tgatcgtcga cgatgaccgc gagattcgcg agctggtagg
+      721 caactacctg aagaagaacg gcctgcgcac caccatcgtc gccgatggcc ggcagatgcg
+      781 cgcgttcctc gaagccaaca cggtggacct gatcgtcctc gacatcatga tgcccggcga
+      841 cgacggcctg ctgctctgcc gcgagctgcg cgtcggcaag cacaaggcca cgccggtgct
+      901 gatgctcacc gcgcgcaacg acgagaccga ccgcatcatc ggcctggaga tgggcgccga
+      961 cgactacctg accaagccct tctccgcccg cgaactgctt gcccggatca acgccgtgct
+     1021 gcggcgtacg cggatgctgc cgccgaacct caccgtgagc gagagcagcc ggctgatcgg
+     1081 cttcggccag tggcaactgg acaccagcgc ccgccacctg ctcgacgacg ccggcaccgt
+     1141 ggtcgccctc agcggcgccg agtaccgcct gctgcgggtg ttcctcgatc atccgcaacg
+     1201 ggtactcagt cgcgaccagt tgctcaacct gacccagggc cgcgaggcgg acatcttcga
+     1261 ccgttccatc gacctgctgg tcagccgcct gcgccaacgc ctcggcgacg acgcccgcga
+     1321 accggagtac atcaagaccg tgcgcagcga gggctatgtg ttctcgctgc cggtgcgact
+     1381 ggtcgaggcc catccatgaa gctcgccgtg ccgcgcccgc gcagcctcgc cgcgcgcctg
+     1441 gcgctgatcc tcttcgccgg gctggtgctg gcctacgggc tgtccttcgc ctcgcagttc
+     1501 tacgagcgct accagaccgc gaagcacatg atgctcgaca gcctcgaaca ggacgtggcg
+     1561 atctcggtag ccatgctcga ccgcctgacg cccgccgagc gcgaggcctg gctgccgcgc
+     1621 ctggaacgac gcacctaccg ctatcgcctc gacgccggcg agcccggcca gccgctggcg
+     1681 ctggccgacg cgccggttgc cgcgcactcc atcgaacgcg ccctcgacgg tcaatacccg
+     1741 ctgaccctgc gcacggtggc cgacagccgt ccgcacttcc aggtcctcct gcgcctgcgc
+     1801 gacggcagcc cgctgaccat cgacgtcacg ccggccccgg tgccgctgtc cggctggctg
+     1861 ccgctggtac tgctggtgca gttgctcctg ctgctgctct gcaccggcct cgcggtgcgc
+     1921 accgccatcg gtccgctgac ccggctggtg aaggccgtgg aacatctcga tccgaatcgt
+     1981 ccggcacagc ctctcgcgga aaccggccca cgcgaagtgg cgcatgcggc ggcggccttc
+     2041 aatgccatgc aggcgcgcat cgccgactac ctcaaggagc gcatgcagtt gctcgcggcg
+     2101 atttcccacg acctgcagac gccgatcacg cggatgaagc tgcgcgtcga gttcatggac
+     2161 gcctccagcg acagggacaa gctgtggaac gatctcgaag agatgcagca cctggtccgc
+     2221 gaaggcgtgg cctatgcccg cagcatgcac ggcagcaccg aaaccagttg ccgggtggac
+     2281 ctcgacgcct tcctcgacag cctggtcttc gactaccagg acagcggcaa gcaggtacaa
+     2341 ctcgacggcc gtaccggcgc ggtgatcgac acccgtccgc acgccctgcg ccgggtgctg
+     2401 gtgaacctgg tcgacaatgc gctgaagttc gccggcgccg cgcgcctgga agtggaacgc
+     2461 cgtaccgatg gcggcacgcg aatccaggtg ctggacaatg gcccggggat tcccgccgag
+     2521 gaactcgacg aggtgctcaa gcccttctac cgggtggaaa actcgcgcaa tcgcgacacc
+     2581 ggtggcaccg gcctcggcct ggccatcgcg cagcagctga gcctggccct cggcggccgc
+     2641 ctgaccctgg ccaaccgcgc cggcggcggg ctttgcgcgc gcatcgagct ggacccctga
+     2701 ggcgcccgta cagagcgata cataaccgcc ctcggcggac acactgcgga taaacccgct
+     2761 tgcaacactc ctggccacgg gaagcggcgg cacatcgccg agccgctccc ggcaaccagg
+     2821 agccccacca tgaccgtccc aacctctcaa tccgcctggc acggctggcg actgttcgcc
+     2881 gtcctcgccg tcgccgtgct gtgcatgacc gccctcgtcc tggctctcca ggcgcaaccg
+     2941 gtggagggcc tgcgcagcgc catccgcgcc accgcgcgca gttccttcgc gctgttcctc
+     3001 gccgctttcc tcgcgtcctc gctggcgacc ctggtgcccg gcccggggac ccgcgcgctg
+     3061 ctccgtgaaa ggcgctacct gggcctggcc ttcgccttct cccacgcagt acacgccttg
+     3121 ctgatcctgg cctactggaa gctgttcccc gagacattct ggagcggccg ctcggtcgcg
+     3181 gcgaacatcc ccggctcgat cggctacctg ttcatcctgc tgctcaccct cacctccttc
+     3241 cgcaccccgg cccgactgct cggcccacgc gcctggaaag ccctgcactc gaccggcacc
+     3301 tgggtgctgg cgggcatctt ctgcctgtcg ttcttcaaac gcatccccat gggcggctgg
+     3361 tacgtactgg cgttcgccac gatcttctcc gccatcgtcc tcaagctcac cgccaagctc
+     3421 gccgtgcgct tgcgtcgtcg cgacgtacag ccggcctgac ccatccaccg ccctcaacga
+     3481 gacatcgatc atgcaagcat ccgacctgcg cgcctggcgc cgacccttcg ccctgctcga
+     3541 ccgctgcggc ggctggagcg ccgacctgtc cctgcgactg ttcctggcct gggagttctt
+     3601 cgagtccggt tgggaaaagt ggaacggcga gaactggttc ggcgatatcc agtcggcttt
+     3661 cccctttccc ttcgaccgcc tgcccgccgc cttcaactgg gaactgtcgc tgtgggccga
+     3721 actgctcggc gcgctgttcc tcctgctcgg cctcggtacc cgcctgaccg ccctggtgct
+     3781 gatcgtcgtc accctggtgg cgaccgccgc cgtacactgg ccggcggagt ggtcgagcct
+     3841 ggcggaactg gcccgcggct actcgatcac cgaccacggc ttcggcaatt tcaagctccc
+     3901 ggcgatctac ctggcggcgc tgctgccgct gctgttggcg ggggcgggga agctgagcct
+     3961 ggaccactgg ctcgggcggc gcctgggcct gtcccgctag gattcggcca gccacggaaa
+     4021 aaccccggaa cgcgatcgcc tccgggggtt ttcacagcaa gccagaacca tcccacccac
+     4081 cgcgtagggc gaatagcgcc aacggcgcta ttcgccgata caccggaccc accccggcgg
+     4141 ataaccgcaa gcggttatcc gccctacacc aagaccgtcc cacccaccac gtagggcgga
+     4201 tagcgccaaa ggcgctatcc gccgatgcat cgactccaca agggctgcgt cgtcatccgc
+     4261 ccgcccaatc gcgttccagg gttccgagca cgacaccctg ggtccgcaac gctgccagca
+     4321 actccagccc cgccgcgtcg agcgctccgg gcgcactccg cgcctcgagc gccagcgccg
+     4381 ccaggtgctc gcgcccgctc aggcgccgtc tcgccagcga ctccagcagg cggcaggcca
+     4441 gcggagtcag gcgcgcggta tgcacgcgat gcgaggaatc gcggtgcatc aacagcaggg
+     4501 tcggttccgc aggcgcttcg gcgagcgcga cgtcctcttc gagccgatgc accggccagc
+     4561 gatagcccag cggcagcgcc aggctcgaca gcagcggcac cccgtcgagc aggtcgcctt
+     4621 cacgccgata cggcggatcg tcgggctcgg ccaggtagag gcgcgtttcg ctccattcga
+     4681 agtgggccaa ctcggcttgc cacgccggcc gatactcgcc ccgctgccgc aggtagtcga
+     4741 cgaagacccc ggcgatacgg gtgaacaggg gggtatggct tctctcctcg cgatagaact
+     4801 cgcgcaccag gccatgccac tgctgctcgc caagcagccc gcgcaagcgc gggaagccgc
+     4861 tggcaaggag gccttcgatg gcgttgtaga acagctcgcg gtagacccgc aggcgacgtt
+     4921 cttcgatgtc cggcggcggc gcattgccaa gcgggtcgcg caggtgccgg gcgaggctga
+     4981 actgctgttg gcgcaggcgc tcatccatga cggcgtccct cgtcgcgttg ccattggcgg
+     5041 atctgctcca cttccagcag cagttcgccc agcggcggat agttgaagtc ccgctcgagc
+     5101 agggtcgggc gcacgccgaa gcgacgatag gcggctccga gcaaggccca gacgccgggc
+     5161 ttcacggcgg caccatgggt gtcgatcttc aggtccggcg cctcgtcgta gtgccccgcc
+     5221 acatggtagg cggcgacccg cccgggcggc agccggacga ggaagtcgag ggcgtcgtag
+     5281 ccgtggttgc aggcgttgac gaacaggttg ttgacgtcca gcaacaggtc gcagtcggcc
+     5341 tcgtcgagta ccgcgttgac gaactcgatc tcgctcatct cccggtacgg cgctgcatag
+     5401 taggaaatgt tctccaccgc gatgcgccgc tccaggcgct cctgcgcctc gcggatgcgc
+     5461 gccgcgacgt gacgcaccgc ggcctcggtg aacggcagcg gcaacagatc atagagatgg
+     5521 ccatcgtcgg aacagtagct gaggtgctcg ctgtacaacg cgacccggtg gcggacgagg
+     5581 aagcgtcggg tctgctcgat aaaggcggca tccagcggcg tggagccgcc gagggacagc
+     5641 gagagaccgt gacaggtcag tggaatgcgc tccaccaggc gctccaggtc ggcaccgaag
+     5701 gcaccgccga cgccgatcca gttgtccggc gcgcattcga ggaagtccac cgcgccgggc
+     5761 gccatcgcca gcagttgcgg aagcaggccg cgcctcaggc cgaggccggc ggcgttgtcg
+     5821 atcagggtca tgggatagct ccggaaacgg cgacgccccc gctttcccag gggaaagaga
+     5881 gggcgccgcc agggtgtgga aaggctcagt gctggccttg ctccagcttg ctgaacagcc
+     5941 cggcgggcat cggcttgccg ttggcctcgt aggtcttgcg caggtgttcg taggcctcgg
+     6001 cttcggaaat gaagccgtca tggtcgctat cgatgctgtc gaactcaccg gcacggtcct
+     6061 tggccaccgc gaggaactcg gcgcgcgaga ccttgccatc gtgatcggtg tcggttcggg
+     6121 caaaggaggc gtcgccgcac ttgccctccc cgcacttgcc ctcggcgccg gccttggccg
+     6181 gggtcttcgc ggagccgccg ctaccacact tgccttctcc gcacttgcct tcgccggcgc
+     6241 tcgccgccgc cacttgcagc ccctggccca gcggctcgac ggcgaacgcc gaaccgccga
+     6301 gcagcattcc ccccaccagt acggcaccga gcaggctggc ggaagtcttt tgacgcgaat
+     6361 cgaaaacgga catgcttctt ctccacagta aacgcggccg ggccgcaggc gcggcgctgg
+     6421 tgggcgccgg tacgaaccgg gcggcgggac cttctggggt cgtcccgggc gccgcggttc
+     6481 ggatgtggcc atttcgcctg ggagatgtat cgggggtgta tcgcccgaca cgtggatttg
+     6541 tacgccggag gtatcgaaac cgcgcatgga tacaaagcga tacgcaatcg agcgcgggca
+     6601 tgccgacgaa gtgccgggca tctctcactc ccgccggccc atctcggcta ccgttaggag
+     6661 acagccacct ggcccagtct cgaggtcgag cccatcgtgc tgaaacgcat tccggtaacc
+     6721 cagcttcgcc tcggtatgtt cgtccagagc ctttgcggct cgtggctgga ccacccgttc
+     6781 tggaaaagag gtggcttcct gctcgacagc caggccgacc tgcagcgcct gcgcgaaagc
+     6841 gccgtgaagg aggtctggat cgatgccagc aagggcctcg acctcccgga ggaagcggcg
+     6901 gtctcggccg ctgcggtcct gccggtcacc atgccggccg gcccttcgcc ggcgcgggtc
+     6961 gccctggagg aggaaatccg ccacgccgcc ctgctctgca gccgtgccaa ggccgccgtg
+     7021 gtcagcatgt tccgcgacgc gcgcatgggc caggccatcg ataccgcgca tgcatcggac
+     7081 ctggtggacg aaatctccgc ctcggtgctg cgccatccca acgcgctgct cagcctggta
+     7141 cggctgaaga cctcggatga atacacctac atgcattcgg tggcggtctg tgcgctgatg
+     7201 atcgccctcg cccgccagct cgaactgccc gacccgctgg tacgcgaggc ggggctggcc
+     7261 ggactgctgc acgacatcgg caagatggcg gtgcccgatc cgatcctgaa caagcccggc
+     7321 aagctcaccg acccggagtt cggcctggtt cgccggcatc cgcagaacgg cgcgcggatg
+     7381 ctgctcgatt gccgccaggt cagcgccctg gtggtggatg tctgcctgca ccaccacgag
+     7441 cgcatcgacg gcaccggcta ccccttcggc ctggcgcagg agcagatcag cctgctggcg
+     7501 cgaatgggcg cggtgtgcga cgtctacgac gcgatcacct ccgaccgtcc ctacaagaag
+     7561 ggctggaacg ccgccgaggc gatccgacgc atggccgaat ggaacgggca cttcgacccg
+     7621 caggtgttcc gcgccttcgt caaggcggtg ggcatctacc cggtcggcgc gctggtcagg
+     7681 ctggaaagcg ggcgcctcgg cgtggtcctc gaacaacacg gccgctcgct gctgacgcca
+     7741 cgggtcaagg tattcttctc ggcccgctcg aaggtgccga tcccgcagca ggtggtagac
+     7801 ctgggtaggg ccggacagac cgaccgaatc gtcggcttcg agccggcgga agcctggaac
+     7861 ttccgcaatc tcgacgagat gtggacggga ctggccaagt ccacgggctc ttatttcgac
+     7921 gcgggaaccg gaaatccgta gacgccttcc gcccgcaagc cgagcaccgc tcccgtaggg
+     7981 cgcataacgc gaagcgttat ccgccgtttc gccgcaatct ccgcctgctc cgcgttgctt
+     8041 taagcgcacc atcgtcgata ctgctggcaa tccgccgaca gttttcaaga ggccatatga
+     8101 gtccgctcct ggagacaatc gaagagcaca gcagaaatgg ctgtgctcca tccaaagcgt
+     8161 tgattgccct gtggtccgca ggcgccgacc tgagggtttc cccgaggaag gctggccgcc
+     8221 tatgcgaact tgccgtcgtt gccgcagcag ggaaagcagg catgctcgag agcgagatcg
+     8281 ttgcggcacg ccgggcctat gccgccagcc tgggagtgac gcttagcgga gcgatcagca
+     8341 acgccgacga gccggtccat atccgccacg ccgtcagcaa ttccaatcac aaccccaacg
+     8401 cctcaaaccg tatcaacctt gggagggccc gagcgtataa aaaaaggcgc gaggaaggtg
+     8461 attacttctt catcgacact tgaatcgcct gcataaccgt tatctccccc gcgcctcaac
+     8521 ggcagccatc tccagcaacc acccccggaa cgccagcatc gcgctggtct ccccccgcga
+     8581 ctgcaagcgc gtcagccagt agctgccggt actcacttcg gtggcgaacg gacgccggat
+     8641 gctctcgctg gccagttgcc gggcaaacat cgccgccggc gccagggcca cgccgacacc
+     8701 ctggcgggcc gcctcgagca tggccagcga ggtgtcgaag acgatgctcc gggtcagtgg
+     8761 cgcgtgcgcc ggcagtccgg ccgcctggaa ccacagcggc cactcgtcgg cgcggtagga
+     8821 gcgcagcagg gtgtgctgca gcaggtcggc gggactgtgc aactgggcgg cgacctccgg
+     8881 gcagcagagc accgtcagcg gcgcctcgaa caacgccagc gcctcggtgc cgtgccaggc
+     8941 gccgccgccg aagcggatcg cgtagtcgag cccctcggcg gcgatgtcga cgcggttgtt
+     9001 gtgggtggac aggcgcagat cgatgaaggg atggcgcgcc tggaagtcct ccagccgcgg
+     9061 cagcagccaa ccgaccgtga aggttccgac cgcgccgacg gtgagcacgt cccggtagtg
+     9121 gccaccctcg aaacgttcca gcaggccggc gatgcggtcg aaggagtcac acagcaccgg
+     9181 cagcaggctc tcgccctcgt gggtcagcat gaggccgcgc ggcagacgct tgaacagggc
+     9241 cacgccgaga cgctcctcga ggctcttcac ctggtggctg accgccgcct gggtcacgca
+     9301 cagctcgatg gccgcgcggg tgaagctcag gtgccgggcc gaagcttcga aggcgcgcag
+     9361 ggcgttcagc ggcaaatggg gtcgaaccaa tctctgctcc aaatttttct aatggctgcc
+     9421 gcgagtattc gtcgtttgcc gcaaatcctg cgcaagccta gattttcccc gcccgccgat
+     9481 caaggagcgc tcccggggcg gtttctcatg cagccaacga caaaggacgc caatcctcat
+     9541 gcgcgatacc agattcccct gcctgtgcgg catcgccgct tccacactgc tgttcgccac
+     9601 caccccggcc attgccggcg aggccccggc ggatcgcctg aaggcactgg tcgacgccgc
+     9661 cgtacaaccg gtgatgaagg ccaatgacat tccgggcctg gccgtagcca tcagcctgaa
+     9721 aggagaaccg cattacttca gctatgggct ggcctcgaaa gaggacggcc gccgggtgac
+     9781 gccggagacc ctgttcgaga tcggctcggt gagcaagacc ttcaccgcca ccctcgccgg
+     9841 ctatgccctg acccaggaca agatgcgcct cgacgaccgc gccagccagc actggccggc
+     9901 actgcagggc agccgcttcg acggcatcag cctgctcgac ctcgcgacct ataccgccgg
+     9961 cggcttgccg ctgcagttcc ccgactcggt gcagaaggac caggcacaga tccgcgacta
+    10021 ctaccgccag tggcagccga cctacgcgcc gggcagccag cgcctctatt ccaacccgag
+    10081 catcggcctg ttcggctatc tcgccgcgcg cagcctgggc cagccgttcg aacggctcat
+    10141 ggagcagcaa gtgttcccgg cactgggcct cgaacagacc cacctcgacg tgcccgaggc
+    10201 ggcgctggcg cagtacgccc agggctatgg caaggacgac cgcccgctac gggtcggtcc
+    10261 cggcccgctg gatgccgaag gctacggggt gaagaccagc gcggccgacc tgctgcgctt
+    10321 cgtcgatgcc aacctgcatc cggagcgcct ggacaggccc tgggcgcagg cgctcgatgc
+    10381 cacccatcgc ggttactaca aggtcggcga catgacccag ggcctgggct gggaagccta
+    10441 cgactggccg atctccctga agcgcctgca ggccggcaac tcgacgccga tggcgctgca
+    10501 accgcacagg atcgccaggc tgcccgcgcc acaggcgctg gagggccagc gcctgctgaa
+    10561 caagaccggt tccaccaacg gcttcggcgc ctacgtggcg ttcgtcccgg gccgcgacct
+    10621 gggcctggtg atcctggcca accgcaacta tcccaatgcc gagcgggtga agatcgccta
+    10681 cgccatcctc agcggcctgg agcagcaggg caaggtgccg ctgaagcgct gaagcgcgct
+    10741 cgcgagggcg acggagcgta gcggcgcggg acgccggtcc tggctatgat ggtgccatga
+    10801 gcgcttcccc gcccctccgc cagccctgcc c
+//
