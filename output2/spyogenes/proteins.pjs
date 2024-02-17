@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "proteins",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "resource/protein/spyogenes_protein.fasta",
+  "number-of-letters": 490533,
+  "number-of-sequences": 1600,
+  "last-updated": "2024-02-17T16:28:00",
+  "number-of-volumes": 1,
+  "bytes-total": 787245,
+  "bytes-to-cache": 505062,
+  "files": [
+    "proteins.pdb",
+    "proteins.phr",
+    "proteins.pin",
+    "proteins.pot",
+    "proteins.psq",
+    "proteins.ptf",
+    "proteins.pto"
+  ]
+}
