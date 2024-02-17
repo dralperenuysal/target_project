@@ -14,6 +14,6 @@ species = snakemake.params.species
 
 shell(
     f"""
-    prokka --outdir {out} --force --cpus {cpus} --prefix {prefix} --genus {genus} --species {species} --addgenes --addmrna --metagenome --proteins {protein} {fasta} &> {log}
+    prokka --outdir {out} --force --cpus {cpus} --prefix {prefix} --usegenus --genus {genus} --species {species} --addgenes --addmrna --metagenome --proteins {protein} {fasta} &> {log}
     """
 )
