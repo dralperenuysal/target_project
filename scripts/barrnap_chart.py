@@ -36,9 +36,15 @@ save_dir = "output/plots/barrnap/"
 save = [f"{save_dir}hi_barrnap_chart.png", f"{save_dir}pa_barrnap_chart.png", f"{save_dir}sa_mrsa_barrnap_chart.png"]
 organism = ["Haemophilus influenzae", "Pseudomonas aeruginosa", "Staphylococcus aureus"]
 
+
+# ------------------- P I E  C H A R T ------------------- #
+
 # Create the pie charts with a for loop
 for i in range(0,3):
     rRNA_pie(gff_df= process_gff(gff_files[i]), save_path = save[i], organism = organism[i])
+
+
+# ------------------- C O N C E T E N A T E ------------------- #
 
 # Read the data seperately
 hi_gff = process_gff(gff_files[0])
@@ -52,6 +58,9 @@ sa_mrsa_gff['organism'] = organism[2]
 
 # Concatenate the barrnap results
 concatenated_gff = pd.concat([hi_gff, pa_gff, sa_mrsa_gff], ignore_index=True, axis= 0)
+
+
+# ------------------- B A R  P L O T ------------------- #
 
 # Plotting
 # Plot the rRNA type in each organism in one graph
@@ -74,3 +83,37 @@ plt.title('Distribution of Status')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.savefig("output/plots/barrnap/rrNA_status.png")
+
+
+# ------------------- L I N E  P L O T ------------------- #
+
+# Renk paleti oluşturma
+colors = {'23S': 'red', '16S': 'green', '5S': 'blue'}
+
+# Yatay çizgileri çizme
+fig, ax = plt.subplots(figsize=(16, 9))
+
+# Organizmalar için y pozisyonları oluşturma
+org_positions = {org: i for i, org in enumerate(concatenated_gff['organism'].unique(), 1)}
+
+for _, row in concatenated_gff.iterrows():
+    # Organizmanın y pozisyonunu al
+    y = org_positions[row['organism']]
+    # rRNA tipine göre renk seç
+    color = colors.get(row['rRNA_type'], 'black')  # rRNA tipi renk paletinde yoksa siyah kullan
+    # Yatay çizgi çiz
+    ax.hlines(y, row['start'], row['end'], colors=color, lw=15)
+
+# Y-ekseni etiketlerini ayarlama
+ax.set_yticks(list(org_positions.values()))
+ax.set_yticklabels(list(org_positions.keys()))
+
+# Görselleştirme ayarları
+plt.xlabel('Genome Position')
+plt.title('rRNA Locations in Organisms')
+ax.set_xlim(0, concatenated_gff['end'].max() + 10000)  # X-ekseni limitlerini ayarlama
+plt.tight_layout()
+
+# Görseli kaydetme ve gösterme
+plt.savefig('output/plots/barrnap/rrna_locations.png')
+plt.show()
