@@ -1,4 +1,4 @@
-LOCUS       CP127019.1             33016 bp    DNA     linear   UNK 15-FEB-2024
+LOCUS       CP127019.1             33016 bp    DNA     linear   UNK 17-FEB-2024
 DEFINITION  Staphylococcus aureus strain strain.
 ACCESSION   CP127019
 VERSION     CP127019.1
@@ -9,8 +9,8 @@ SOURCE      Staphylococcus aureus
 COMMENT     Annotated using prokka 1.14.6 from
             https://github.com/tseemann/prokka.
             ##antiSMASH-Data-START##
-            Version      :: 7.1.0-d8a21783(changed)
-            Run date     :: 2024-02-15 20:39:58
+            Version      :: 7.1.0-b22c6419(changed)
+            Run date     :: 2024-02-17 11:27:32
             NOTE: This is a single region extracted from a larger record!
             Orig. start  :: 2500213
             Orig. end    :: 2533229

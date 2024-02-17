@@ -1,0 +1,271 @@
+ID   Genome standard; DNA; PRO; 1234 BP.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   feature         1..840
+FT                   /label=glpF_2
+FT                   /locus_tag=glpF_2
+FT   misc_feature    841..2428
+FT                   /label=group_101
+FT                   /locus_tag=group_101
+FT   misc_feature    2429..2779
+FT                   /label=group_102
+FT                   /locus_tag=group_102
+FT   misc_feature    2780..3418
+FT                   /label=group_103
+FT                   /locus_tag=group_103
+FT   misc_feature    3419..4639
+FT                   /label=group_106
+FT                   /locus_tag=group_106
+FT   misc_feature    4640..4996
+FT                   /label=group_109
+FT                   /locus_tag=group_109
+FT   misc_feature    4997..5425
+FT                   /label=group_110
+FT                   /locus_tag=group_110
+FT   misc_feature    5426..5818
+FT                   /label=group_111
+FT                   /locus_tag=group_111
+FT   misc_feature    5819..6760
+FT                   /label=group_132
+FT                   /locus_tag=group_132
+FT   misc_feature    6761..8431
+FT                   /label=group_137
+FT                   /locus_tag=group_137
+FT   misc_feature    8432..10345
+FT                   /label=group_138
+FT                   /locus_tag=group_138
+FT   misc_feature    10346..11233
+FT                   /label=group_139
+FT                   /locus_tag=group_139
+FT   misc_feature    11234..12427
+FT                   /label=group_140
+FT                   /locus_tag=group_140
+FT   misc_feature    12428..14065
+FT                   /label=group_141
+FT                   /locus_tag=group_141
+FT   misc_feature    14066..14407
+FT                   /label=group_142
+FT                   /locus_tag=group_142
+FT   misc_feature    14408..16411
+FT                   /label=group_143
+FT                   /locus_tag=group_143
+FT   misc_feature    16412..16549
+FT                   /label=group_144
+FT                   /locus_tag=group_144
+FT   misc_feature    16550..17899
+FT                   /label=group_145
+FT                   /locus_tag=group_145
+FT   misc_feature    17900..18355
+FT                   /label=group_146
+FT                   /locus_tag=group_146
+FT   misc_feature    18356..18592
+FT                   /label=group_147
+FT                   /locus_tag=group_147
+FT   misc_feature    18593..18763
+FT                   /label=group_148
+FT                   /locus_tag=group_148
+FT   misc_feature    18764..20074
+FT                   /label=group_149
+FT                   /locus_tag=group_149
+FT   misc_feature    20075..21028
+FT                   /label=group_150
+FT                   /locus_tag=group_150
+FT   misc_feature    21029..21769
+FT                   /label=group_151
+FT                   /locus_tag=group_151
+FT   misc_feature    21770..23119
+FT                   /label=group_152
+FT                   /locus_tag=group_152
+FT   misc_feature    23120..23377
+FT                   /label=group_153
+FT                   /locus_tag=group_153
+FT   misc_feature    23378..23767
+FT                   /label=group_154
+FT                   /locus_tag=group_154
+FT   misc_feature    23768..24769
+FT                   /label=group_155
+FT                   /locus_tag=group_155
+FT   misc_feature    24770..25390
+FT                   /label=group_156
+FT                   /locus_tag=group_156
+FT   misc_feature    25391..25780
+FT                   /label=group_157
+FT                   /locus_tag=group_157
+FT   misc_feature    25781..26137
+FT                   /label=group_158
+FT                   /locus_tag=group_158
+FT   misc_feature    26138..26254
+FT                   /label=group_159
+FT                   /locus_tag=group_159
+FT   misc_feature    26255..26758
+FT                   /label=group_160
+FT                   /locus_tag=group_160
+FT   misc_feature    26759..27130
+FT                   /label=group_161
+FT                   /locus_tag=group_161
+FT   misc_feature    27131..27544
+FT                   /label=group_162
+FT                   /locus_tag=group_162
+FT   misc_feature    27545..28252
+FT                   /label=group_163
+FT                   /locus_tag=group_163
+FT   misc_feature    28253..28585
+FT                   /label=group_164
+FT                   /locus_tag=group_164
+FT   misc_feature    28586..28861
+FT                   /label=group_165
+FT                   /locus_tag=group_165
+FT   misc_feature    28862..29686
+FT                   /label=group_166
+FT                   /locus_tag=group_166
+FT   misc_feature    29687..30289
+FT                   /label=group_167
+FT                   /locus_tag=group_167
+FT   misc_feature    30290..30925
+FT                   /label=group_168
+FT                   /locus_tag=group_168
+FT   misc_feature    30926..31003
+FT                   /label=group_169
+FT                   /locus_tag=group_169
+FT   misc_feature    31004..31219
+FT                   /label=group_170
+FT                   /locus_tag=group_170
+FT   misc_feature    31220..33064
+FT                   /label=group_171
+FT                   /locus_tag=group_171
+FT   misc_feature    33065..34210
+FT                   /label=group_172
+FT                   /locus_tag=group_172
+FT   misc_feature    34211..36016
+FT                   /label=group_173
+FT                   /locus_tag=group_173
+FT   misc_feature    36017..37072
+FT                   /label=group_176
+FT                   /locus_tag=group_176
+FT   misc_feature    37073..38473
+FT                   /label=group_177
+FT                   /locus_tag=group_177
+FT   misc_feature    38474..38710
+FT                   /label=group_178
+FT                   /locus_tag=group_178
+FT   misc_feature    38711..38893
+FT                   /label=group_179
+FT                   /locus_tag=group_179
+FT   misc_feature    38894..40129
+FT                   /label=group_180
+FT                   /locus_tag=group_180
+FT   misc_feature    40130..41266
+FT                   /label=group_181
+FT                   /locus_tag=group_181
+FT   misc_feature    41267..44107
+FT                   /label=group_182
+FT                   /locus_tag=group_182
+FT   misc_feature    44108..44197
+FT                   /label=group_183
+FT                   /locus_tag=group_183
+FT   misc_feature    44198..45412
+FT                   /label=group_187
+FT                   /locus_tag=group_187
+FT   misc_feature    45413..46675
+FT                   /label=group_188
+FT                   /locus_tag=group_188
+FT   misc_feature    46676..47734
+FT                   /label=group_189
+FT                   /locus_tag=group_189
+FT   misc_feature    47735..48073
+FT                   /label=group_190
+FT                   /locus_tag=group_190
+FT   misc_feature    48074..49201
+FT                   /label=group_191
+FT                   /locus_tag=group_191
+FT   misc_feature    49202..49588
+FT                   /label=group_192
+FT                   /locus_tag=group_192
+FT   misc_feature    49589..50803
+FT                   /label=group_193
+FT                   /locus_tag=group_193
+FT   misc_feature    50804..51904
+FT                   /label=group_194
+FT                   /locus_tag=group_194
+FT   misc_feature    51905..52180
+FT                   /label=group_195
+FT                   /locus_tag=group_195
+FT   misc_feature    52181..53618
+FT                   /label=group_196
+FT                   /locus_tag=group_196
+FT   misc_feature    53619..54995
+FT                   /label=group_197
+FT                   /locus_tag=group_197
+FT   misc_feature    54996..56540
+FT                   /label=group_198
+FT                   /locus_tag=group_198
+FT   misc_feature    56541..57077
+FT                   /label=group_199
+FT                   /locus_tag=group_199
+FT   misc_feature    57078..58427
+FT                   /label=group_200
+FT                   /locus_tag=group_200
+FT   misc_feature    58428..62690
+FT                   /label=group_201
+FT                   /locus_tag=group_201
+FT   misc_feature    62691..63122
+FT                   /label=group_202
+FT                   /locus_tag=group_202
+FT   misc_feature    63123..64286
+FT                   /label=group_203
+FT                   /locus_tag=group_203
+FT   misc_feature    64287..64502
+FT                   /label=group_204
+FT                   /locus_tag=group_204
+FT   misc_feature    64503..66149
+FT                   /label=group_205
+FT                   /locus_tag=group_205
+FT   misc_feature    66150..66380
+FT                   /label=group_206
+FT                   /locus_tag=group_206
+FT   misc_feature    66381..66599
+FT                   /label=group_207
+FT                   /locus_tag=group_207
+FT   misc_feature    66600..67274
+FT                   /label=group_208
+FT                   /locus_tag=group_208
+FT   misc_feature    67275..67745
+FT                   /label=group_209
+FT                   /locus_tag=group_209
+FT   misc_feature    67746..68120
+FT                   /label=group_210
+FT                   /locus_tag=group_210
+FT   misc_feature    68121..69056
+FT                   /label=group_211
+FT                   /locus_tag=group_211
+FT   misc_feature    69057..70067
+FT                   /label=group_212
+FT                   /locus_tag=group_212
+FT   misc_feature    70068..71135
+FT                   /label=group_213
+FT                   /locus_tag=group_213
+FT   misc_feature    71136..71222
+FT                   /label=group_214
+FT                   /locus_tag=group_214
+FT   misc_feature    71223..71300
+FT                   /label=group_215
+FT                   /locus_tag=group_215
+FT   misc_feature    71301..72821
+FT                   /label=group_221
+FT                   /locus_tag=group_221
+FT   misc_feature    72822..73463
+FT                   /label=group_222
+FT                   /locus_tag=group_222
+FT   misc_feature    73464..74657
+FT                   /label=group_51
+FT                   /locus_tag=group_51
+FT   misc_feature    74658..75851
+FT                   /label=group_52
+FT                   /locus_tag=group_52
+FT   misc_feature    75852..77975
+FT                   /label=group_55
+FT                   /locus_tag=group_55
+XX
+SQ   Sequence 1234 BP; 789 A; 1717 C; 1693 G; 691 T; 0 other;
+//

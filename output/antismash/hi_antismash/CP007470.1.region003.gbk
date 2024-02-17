@@ -1,4 +1,4 @@
-LOCUS       CP007470.1             10948 bp    DNA     linear   UNK 15-FEB-2024
+LOCUS       CP007470.1             10948 bp    DNA     linear   UNK 17-FEB-2024
 DEFINITION  Haemophilus influenzae strain strain.
 ACCESSION   CP007470
 VERSION     CP007470.1
@@ -9,8 +9,8 @@ SOURCE      Haemophilus influenzae
 COMMENT     Annotated using prokka 1.14.6 from
             https://github.com/tseemann/prokka.
             ##antiSMASH-Data-START##
-            Version      :: 7.1.0-d8a21783(changed)
-            Run date     :: 2024-02-15 20:13:08
+            Version      :: 7.1.0-b22c6419(changed)
+            Run date     :: 2024-02-17 11:32:51
             NOTE: This is a single region extracted from a larger record!
             Orig. start  :: 1473149
             Orig. end    :: 1484097

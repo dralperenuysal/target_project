@@ -1,0 +1,12 @@
+2024-02-17 00:23:48 : Started OrthoFinder version 2.5.5
+Command Line: /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/orthofinder -f resource/protein -t 4 -a 2 -og -o output/orthofinder
+
+WorkingDirectory_Base: output/orthofinder/Results_Feb17/WorkingDirectory/
+
+Species used: 
+0: hi_protein.fasta
+1: pa_protein.fasta
+2: sa_mrsa_protein.fasta
+
+FN_Orthogroups: output/orthofinder/Results_Feb17/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+2024-02-17 00:24:32 : OrthoFinder run completed

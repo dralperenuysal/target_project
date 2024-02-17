@@ -1,0 +1,11 @@
+
+
+Building a new DB, current time: 02/17/2024 11:17:37
+New DB name:   /home/alperen/PycharmProjects/target_project/output/repeatmodeler/sa_mrsa_rm/RM_140131.SatFeb171115292024/round-3/sampleDB-3.fa.masked
+New DB title:  /home/alperen/PycharmProjects/target_project/output/repeatmodeler/sa_mrsa_rm/RM_140131.SatFeb171115292024/round-3/sampleDB-3.fa.masked
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 3 sequences in 0.00123787 seconds.
+
+

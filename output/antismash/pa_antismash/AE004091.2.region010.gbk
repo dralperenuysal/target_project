@@ -1,4 +1,4 @@
-LOCUS       AE004091.2             47059 bp    DNA     linear   UNK 15-FEB-2024
+LOCUS       AE004091.2             47059 bp    DNA     linear   UNK 17-FEB-2024
 DEFINITION  Pseudomonas aeruginosa strain strain.
 ACCESSION   AE004091
 VERSION     AE004091.2
@@ -9,8 +9,8 @@ SOURCE      Pseudomonas aeruginosa
 COMMENT     Annotated using prokka 1.14.6 from
             https://github.com/tseemann/prokka.
             ##antiSMASH-Data-START##
-            Version      :: 7.1.0-d8a21783(changed)
-            Run date     :: 2024-02-15 20:29:28
+            Version      :: 7.1.0-b22c6419(changed)
+            Run date     :: 2024-02-17 01:03:45
             NOTE: This is a single region extracted from a larger record!
             Orig. start  :: 3710556
             Orig. end    :: 3757615

@@ -2538,8 +2538,8 @@ var recordData = [
      "terpene"
     ],
     "product_categories": [
-     "terpene",
-     "PKS"
+     "PKS",
+     "terpene"
     ],
     "cssClass": "hybrid",
     "anchor": "r1c7"
@@ -5097,8 +5097,8 @@ var all_regions = {
    "terpene"
   ],
   "product_categories": [
-   "terpene",
-   "PKS"
+   "PKS",
+   "terpene"
   ],
   "cssClass": "hybrid",
   "anchor": "r1c7"
