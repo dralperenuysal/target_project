@@ -63,7 +63,6 @@ plt.title('Distribution of rRNA Types in Organisms')
 plt.legend()
 plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for readability
 plt.tight_layout()  # Adjust layout to prevent crowding
-plt.show()
 plt.savefig("output/plots/barrnap/rrNA_counts.png")
 
 # Plot the partiality status of the rrNAs in each organism
@@ -74,5 +73,4 @@ plt.ylabel('Count of status')
 plt.title('Distribution of Status')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.show()
 plt.savefig("output/plots/barrnap/rrNA_status.png")
