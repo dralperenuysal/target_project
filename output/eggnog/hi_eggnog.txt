@@ -174,12 +174,10 @@ purM
 purN
 uspE
 fnr
-VY92_00435
 trpS
 rsbW
 prtR3
 ydaS
-ymfL
 Z012_06325
 Z012_11545
 xtmB
@@ -294,7 +292,6 @@ mdoB
 maeB
 Z012_10770
 rsuA
-VV2139
 yicG
 proA
 dnaJ
@@ -570,7 +567,6 @@ leuB
 leuA
 dprA
 yaaA
-Z012_03730
 pfkA
 smpB
 fis
@@ -708,7 +704,6 @@ slt
 yciI
 yciA
 ispZ
-Z012_09020
 mglC
 mglA
 mglB
@@ -946,7 +941,6 @@ ppa
 yjcD
 udk
 dcd
-Z012_02835
 sotB
 der
 dnaQ
@@ -1174,10 +1168,7 @@ iscR
 trmJ
 Z012_12235
 Z012_12225
-Z012_12220
-VY92_04125
 xkdO
-Z012_10450
 Z012_10455
 Z012_10460
 VY92_04060
@@ -1186,11 +1177,9 @@ xtmB
 relE
 Z012_05785
 Z012_06325
-ymfL
 cro
 prpA
 trpS
-VY92_00435
 recT
 ssb
 rdgC
@@ -1244,7 +1233,6 @@ yjaG
 nudC
 nfuA
 comF
-comC
 hofN
 hofM
 mrcA
@@ -1256,7 +1244,6 @@ secG
 fruA
 fruK
 fruB
-Z012_08620
 vapD
 ytfL
 VY92_10800

@@ -992,7 +992,6 @@ kdpB
 kdpC
 glsA
 rssA
-IV02_14570
 selD
 selU
 sulP
@@ -1078,7 +1077,6 @@ ppsA
 estX
 rraA
 zntB
-crfX
 cmpX
 sigX
 oprF
@@ -1440,7 +1438,6 @@ fpvA
 pvdI
 pvdI
 pvdI
-VPA0161
 psaA
 znuC
 znuB
@@ -2882,7 +2879,6 @@ rtcA
 ccpA
 gdhA
 fadL
-pra
 macA
 tolC
 macB_1
@@ -2945,7 +2941,6 @@ iutA
 can
 rimI
 tonB5
-IV02_13120
 IV02_13115
 IV02_13110
 fbpA
@@ -3086,7 +3081,6 @@ osmB
 yhjG
 bfr
 MA20_43580
-IV02_27335
 ycaD
 desA3
 desT

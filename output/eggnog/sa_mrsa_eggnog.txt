@@ -574,7 +574,6 @@ glcU
 XK27_04815
 cusA
 femX
-sarV
 moaA
 mobA
 moaD
@@ -667,7 +666,6 @@ tcyB
 tcyA
 gpmA
 yeaB
-bioX
 bioW
 bioF
 bioB
@@ -794,7 +792,6 @@ arcD
 argF
 arcA
 argR
-isaB
 mga
 manP
 manA
@@ -815,7 +812,6 @@ ywqD
 ywqC
 icaR
 pgaC
-icaD
 icaB
 hisA
 hisH
@@ -945,7 +941,6 @@ yleB
 sacX
 yleF
 hsdR
-cll
 oppD
 dppC
 ggt
@@ -1048,7 +1043,6 @@ rpsF
 ssb
 rpsR
 ydaS
-ydeH
 ahpF
 ahpC
 nfrA
@@ -1686,8 +1680,6 @@ oppF7
 oppD
 nikC
 dppB2
-icmF
-icmF
 pepF
 phoU
 pstB
@@ -1709,7 +1701,6 @@ xpaC
 yaaN
 brnQ
 yojN
-yozC
 sucB
 odhA
 arlS
@@ -1772,7 +1763,6 @@ lcdH_1
 yhfP
 hspX
 cbiX
-ydaT
 adcR
 tetR
 clfB
