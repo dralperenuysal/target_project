@@ -56,4 +56,24 @@ plot_categories(hi, column_name='cog', organism="H. influenzae")
 plot_categories(pa, column_name='cog', organism="P. aeuruginosa")
 plot_categories(sa_mrsa, column_name='cog', organism="MRSA")
 
+### -------------- COG CATEGORIEs ---------------------
 
+hicog = pd.DataFrame(hi.cog.value_counts())
+pacog = pd.DataFrame(pa.cog.value_counts())
+sa_mrsacog = pd.DataFrame(sa_mrsa.cog.value_counts())
+
+hi['organism'] = "H. influenzae"
+pa['organism'] = "P. aeuruginosa"
+sa_mrsa['organism'] = "MRSA"
+concat = pd.concat([hi, pa, sa_mrsa], axis=0)
+COG_counts = concat.groupby(['cog', 'organism']).size().unstack()
+COG_counts_sorted = COG_counts.sort_values(by = 'P. aeuruginosa', ascending=False)[:15]
+
+COG_counts_sorted.plot(kind='bar')
+plt.xlabel('COG')
+plt.ylabel('Count')
+plt.title('COG Catergory Distrubition among the organisms')
+plt.legend()
+plt.xticks(rotation = 1, ha= 'right', fontsize=11)
+plt.tight_layout()  # Adjust layout to prevent crowding
+plt.show()
