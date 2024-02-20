@@ -20,7 +20,10 @@ def eggnog_filtration(path, main_path, prefix):
                              'eggNOG free text desc.': 'description'})
     df.dropna(subset= ['cog', 'name'] ,inplace=True)
     df.name.to_csv(f"{main_path}/{prefix}_eggnog.txt", sep='\n', index=False, header=False)
+    cog_categories = df.cog.value_counts().reset_index().cog
+    cog_categories.to_csv(f"{main_path}/{prefix}_cognames.txt", sep='\n', index=False, header=False)
     return df
+
 
 hi = eggnog_filtration(path_hi, main_path, "hi")
 pa = eggnog_filtration(path_pa, main_path, "pa")
@@ -77,3 +80,6 @@ plt.legend()
 plt.xticks(rotation = 1, ha= 'right', fontsize=11)
 plt.tight_layout()  # Adjust layout to prevent crowding
 plt.show()
+
+desc_analysis = concat.groupby(by = ['description', 'organism']).size().unstack()
+desc_analysis.dropna(inplace = True)
