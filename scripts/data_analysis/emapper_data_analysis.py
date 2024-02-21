@@ -83,3 +83,6 @@ plt.show()
 
 desc_analysis = concat.groupby(by = ['description', 'organism']).size().unstack()
 desc_analysis.dropna(inplace = True)
+
+concat_stack = concat.groupby(by = ['organism', 'name']).size().unstack().T
+concat_stack.dropna(axis = 0, inplace = True)

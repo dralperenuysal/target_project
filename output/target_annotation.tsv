@@ -1,0 +1,34 @@
+gene	subject_id	n_of_mismatches	e_value	bit_score	name	number1	cog	mission	bacteria	NC_000964	medium	locus	gene_ontology	p
+accC	DEG10050338	3	0.0	915.0	DEG1005	16272909	COG0439I	acetyl-CoA carboxylase biotin carboxylase subunit	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0003989 GO:0005524 GO:0004075 GO:0046872 GO:0006633 GO:2001295	P43873
+alaS	DEG10050295	10	0.0	1785.0	DEG1005	16272755	COG0013J	alanyl-tRNA synthetase	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0004813 GO:0005524 GO:0000049 GO:0008270 GO:0006419	P43815
+dnaA	DEG10050351	134	5.11e-13	62.0	DEG1005	16272931	COG0593L	chromosomal replication initiation protein	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0005524 GO:0003688 GO:0006270 GO:0006275	P43742
+dnaA	DEG10050351	3	0.0	935.0	DEG1005	16272931	COG0593L	chromosomal replication initiation protein	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0005524 GO:0003688 GO:0006270 GO:0006275	P43742
+dnaN	DEG10050350	4	0.0	741.0	DEG1005	16272930	COG0592L	DNA polymerase III subunit beta	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0009360 GO:0008408 GO:0003677 GO:0003887	P43744
+fabD	DEG10050074	3	0.0	627.0	DEG1005	16272123	COG0331I	acyl carrier protein S-malonyltransferase	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0004314 GO:0006633	P43712
+ftsY	DEG10050261	8	0.0	813.0	DEG1005	16272709	COG0552U	cell division protein	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0031226 GO:0005525 GO:0003924 GO:0006614	P44870
+ftsY	DEG10050261	151	1.67e-39	142.0	DEG1005	16272709	COG0552U	cell division protein	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0031226 GO:0005525 GO:0003924 GO:0006614	P44870
+glnA	DEG10050312	8	0.0	964.0	DEG1005	16272805	COG0174E	glutamine synthetase	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005737 GO:0005524 GO:0004356 GO:0006542 GO:0009399	P43794
+guaA	DEG10050104	6	0.0	1068.0	DEG1005	16272185	COG0519F	bifunctional GMP synthase/glutamine amidotransferase protein	Haemophilus influenzae Rd KW20	NC_000907	Rich medium	-	GO:0005524 GO:0003922 GO:0016462 GO:0006541 GO:0006177	P44335
+accC	DEG10510455	193	2.41e-166	471.0	DEG1051	Protein_ID: AAG08233.1	-	biotin carboxylase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA4848	-	-
+accC	DEG10510455	249	1.12e-101	323.0	DEG1051	Protein_ID: AAG08233.1	-	biotin carboxylase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA4848	-	-
+alaS	DEG10510074	0	0.0	1782.0	DEG1051	Protein_ID: AAG04292.1	-	alanyl-tRNA synthetase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA0903	-	-
+dnaA	DEG10510001	0	0.0	1051.0	DEG1051	Protein_ID: AAG03391.1	-	chromosomal replication initiator protein DnaA	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA0001	-	-
+dnaN	DEG10510002	0	0.0	739.0	DEG1051	Protein_ID: AAG03392.1	-	DNA polymerase III, beta chain	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA0002	-	-
+fabD	DEG10510173	171	6.48e-35	123.0	DEG1051	Protein_ID: AAG06356.1	-	malonyl-CoA-[acyl-carrier-protein] transacylase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA2968	-	-
+ftsY	DEG10510024	0	0.0	895.0	DEG1051	Protein_ID: AAG03762.1	-	signal recognition particle receptor FtsY	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA0373	-	-
+glnA	DEG10510500	298	5.96e-31	119.0	DEG1051	Protein_ID: AAG08504.1	-	glutamine synthetase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA5119	-	-
+glnA	DEG10510500	255	3.8e-36	133.0	DEG1051	Protein_ID: AAG08504.1	-	glutamine synthetase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA5119	-	-
+guaA	DEG10510268	129	1.17e-14	65.9	DEG1051	Protein_ID: AAG07156.1	-	GMP synthase	Pseudomonas aeruginosa PAO1	AE004091	LB agar, MOPS-pyruvate agar and Cystic fibrosis sputum agar	locus_tag:PA3769	-	-
+accC	DEG10650013	234	6.56e-132	404.0	DEG1065	Protein_ID: WP_000756612.1	-	acetyl-CoA carboxylase biotin carboxylase subunit	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS08215	-	-
+accC	DEG10650013	150	7.95e-11	58.9	DEG1065	Protein_ID: WP_000756612.1	-	acetyl-CoA carboxylase biotin carboxylase subunit	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS08215	-	-
+accC	DEG10650013	1	0.0	928.0	DEG1065	Protein_ID: WP_000756612.1	-	acetyl-CoA carboxylase biotin carboxylase subunit	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS08215	-	-
+accC	DEG10650013	230	1.7e-147	422.0	DEG1065	Protein_ID: WP_000756612.1	-	acetyl-CoA carboxylase biotin carboxylase subunit	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS08215	-	-
+alaS	DEG10650007	3	0.0	1806.0	DEG1065	Protein_ID: WP_000734077.1	-	alanine--tRNA ligase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS08680	-	-
+dnaA	DEG10650027	0	0.0	928.0	DEG1065	Protein_ID: WP_001290430.1	-	chromosomal replication initiator protein DnaA	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS00005	-	-
+dnaN	DEG10650034	0	0.0	761.0	DEG1065	Protein_ID: WP_000969811.1	-	DNA polymerase III subunit beta	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS00010	-	-
+fabD	DEG10650038	3	0.0	625.0	DEG1065	Protein_ID: WP_000047355.1	-	ACP S-malonyltransferase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS06155	-	-
+ftsY	DEG10650053	4	0.0	841.0	DEG1065	Protein_ID: WP_000007675.1	-	signal recognition particle-docking protein FtsY	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS06185	-	-
+glnA	DEG10650062	1	0.0	929.0	DEG1065	Protein_ID: WP_001126604.1	-	type I glutamate--ammonia ligase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS06565	-	-
+guaA	DEG10650242	1	0.0	1049.0	DEG1065	Protein_ID: WP_000424963.1	-	glutamine-hydrolyzing GMP synthase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS02060	-	-
+guaA	DEG10650242	109	9.61e-15	65.5	DEG1065	Protein_ID: WP_000424963.1	-	glutamine-hydrolyzing GMP synthase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS02060	-	-
+guaA	DEG10650242	94	2.26e-13	61.2	DEG1065	Protein_ID: WP_000424963.1	-	glutamine-hydrolyzing GMP synthase	Staphylococcus aureus subsp. aureus MRSA252	NC_002952	MHBII medium	locus_tag:SAR_RS02060	-	-
