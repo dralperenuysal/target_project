@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from glob import glob
 
+""" Two different function was written to process *.gff files generated using barrnap package.
+    One was used to draw pie chart. """
+
 def process_gff(gff_path):
     # Read the *.gff
     gff_df = pd.read_csv(gff_path, sep='\t', comment='#', header=None,
@@ -145,3 +148,4 @@ plt.legend(title='rRNA Type/ Organism', bbox_to_anchor=(1.05, 1), loc='upper lef
 # Grafiği göster
 plt.tight_layout()
 plt.show()
+plt.savefig("output/plots/barrnap/barrnap_scatterplot.png")

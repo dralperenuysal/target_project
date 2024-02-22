@@ -1,9 +1,14 @@
 import pandas as pd
 
+""" Database of Essential Genes was used to identify essential genes. 
+    website: http://origin.tubic.org/deg/public/index.php
+    Cite: Y.T. Liang, H. Luo, Y. Lin, F. Gao (2024). Recent advances in the characterization of essential genes and development of a database of essential genes. iMeta, e157"""
+
+# Define the file paths.
 hi_path = "data/DEG/hi_deg.tsv"
 pa_path = "data/DEG/pa_deg.tsv"
 sa_mrsa_path = "data/DEG/sa_mrsa_deg.tsv"
-bacterial_annotation = "data/DEG/deg_annotation_p.tsv" # Downloaded from DEG database
+bacterial_annotation = "data/DEG/deg_annotation_p.tsv" # Downloaded from DEG database manually.
 
 # Read the genomes
 hi = pd.read_csv(hi_path, sep='\t', header= 'infer')
