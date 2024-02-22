@@ -4106,7 +4106,7 @@ output/prokka_annotation/hi_prokka/hi:CP007470.1_1766 (length 79)
 output/prokka_annotation/hi_prokka/hi:CP007470.1_1767 (length 206)
 output/prokka_annotation/hi_prokka/hi:CP007470.1_1768 (length 487)
 
-FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::2 rRNA product names are not standard. Correct the names to the standard format, eg "16S ribosomal RNA"
+FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::2 rRNA prames are not stanot standard. Correct the names to the standard format, eg "16S ribosomal RNA"
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1-2055	OHDNGLAN_00001
 output/prokka_annotation/hi_prokka/hi:rRNA	23S ribosomal RNA (partial)	CP007470.1:1845203-1846259	OHDNGLAN_01848
 

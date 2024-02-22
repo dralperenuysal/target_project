@@ -342,13 +342,17 @@
 			note	DUF927 domain-containing protein [Staphylococcus aureus]
 			product	hypothetical protein
 43816	43959	gene
+			gene	ccrB
 			locus_tag	PJKHBDOM_00039
 43816	43959	mRNA
+			gene	ccrB
 			locus_tag	PJKHBDOM_00039
 43816	43959	CDS
+			gene	ccrB
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005738212.1
 			locus_tag	PJKHBDOM_00039
-			product	hypothetical protein
+			product	cassette chromosome recombinase B
 44266	43907	gene
 			locus_tag	PJKHBDOM_00040
 44266	43907	mRNA
@@ -602,18 +606,14 @@
 			locus_tag	PJKHBDOM_00067
 			product	DsrE/DsrF/DrsH-like family protein [Staphylococcus aureus]
 68458	69396	gene
-			gene	gloB
 			locus_tag	PJKHBDOM_00068
 68458	69396	mRNA
-			gene	gloB
 			locus_tag	PJKHBDOM_00068
 68458	69396	CDS
-			EC_number	3.1.2.6
-			gene	gloB
 			inference	ab initio prediction:Prodigal:002006
-			inference	protein motif:HAMAP:MF_01374
+			inference	similar to AA sequence:RefSeq:YP_005738219.1
 			locus_tag	PJKHBDOM_00068
-			product	Hydroxyacylglutathione hydrolase
+			product	metallo-beta-lactamase family protein
 69532	69792	gene
 			locus_tag	PJKHBDOM_00069
 69532	69792	mRNA
@@ -624,18 +624,17 @@
 			locus_tag	PJKHBDOM_00069
 			product	rhodanese-like domain-containing protein [Staphylococcus aureus]
 71055	70024	gene
-			gene	nagC
+			gene	xylR
 			locus_tag	PJKHBDOM_00070
 71055	70024	mRNA
-			gene	nagC
+			gene	xylR
 			locus_tag	PJKHBDOM_00070
 71055	70024	CDS
-			db_xref	COG:COG1940
-			gene	nagC
+			gene	xylR
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P0AF20
+			inference	similar to AA sequence:RefSeq:YP_005743442.1
 			locus_tag	PJKHBDOM_00070
-			product	N-acetylglucosamine repressor
+			product	xylose operon repressor
 71899	71696	gene
 			locus_tag	PJKHBDOM_00071
 71899	71696	mRNA
@@ -663,34 +662,33 @@
 73657	73163	CDS
 			gene	mecR1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P0A0B0
+			inference	similar to AA sequence:RefSeq:YP_005738207.1
 			locus_tag	PJKHBDOM_00073
-			product	Methicillin resistance mecR1 protein
+			product	methicillin-resistance regulatory protein MecR1
 73757	75637	gene
-			gene	mecA
+			gene	mecA_1
 			locus_tag	PJKHBDOM_00074
 73757	75637	mRNA
-			gene	mecA
+			gene	mecA_1
 			locus_tag	PJKHBDOM_00074
 73757	75637	CDS
-			gene	mecA
+			gene	mecA_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:BARRGD:NG_047938.1
+			inference	similar to AA sequence:RefSeq:YP_005743439.1
 			locus_tag	PJKHBDOM_00074
-			product	PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA
+			product	penicillin-binding protein 2 prime
 75634	75762	gene
-			gene	pbp
+			gene	mecA_2
 			locus_tag	PJKHBDOM_00075
 75634	75762	mRNA
-			gene	pbp
+			gene	mecA_2
 			locus_tag	PJKHBDOM_00075
 75634	75762	CDS
-			db_xref	COG:COG0768
-			gene	pbp
+			gene	mecA_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P07944
+			inference	similar to AA sequence:RefSeq:YP_005743439.1
 			locus_tag	PJKHBDOM_00075
-			product	Beta-lactam-inducible penicillin-binding protein
+			product	penicillin-binding protein 2 prime
 76236	75808	gene
 			locus_tag	PJKHBDOM_00076
 76236	75808	mRNA
@@ -741,8 +739,9 @@
 			locus_tag	PJKHBDOM_00081
 79258	81447	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005738228.1
 			locus_tag	PJKHBDOM_00081
-			product	hypothetical protein
+			product	type I site-specific deoxyribonuclease restriction subunit
 82093	81527	gene
 			locus_tag	PJKHBDOM_00082
 82093	81527	mRNA
@@ -1397,13 +1396,17 @@
 			locus_tag	PJKHBDOM_00153
 			product	superoxide dismutase [Staphylococcus aureus]
 158822	159487	gene
+			gene	sasD
 			locus_tag	PJKHBDOM_00154
 158822	159487	mRNA
+			gene	sasD
 			locus_tag	PJKHBDOM_00154
 158822	159487	CDS
+			gene	sasD
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743506.1
 			locus_tag	PJKHBDOM_00154
-			product	hypothetical protein
+			product	cell wall surface anchor family protein
 160343	159588	gene
 			locus_tag	PJKHBDOM_00155
 160343	159588	mRNA
@@ -1477,21 +1480,29 @@
 			locus_tag	PJKHBDOM_00162
 			product	phosphonate ABC transporter ATP-binding protein [Staphylococcus aureus]
 167979	167326	gene
+			gene	phnD_1
 			locus_tag	PJKHBDOM_00163
 167979	167326	mRNA
+			gene	phnD_1
 			locus_tag	PJKHBDOM_00163
 167979	167326	CDS
+			gene	phnD_1
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743515.1
 			locus_tag	PJKHBDOM_00163
-			product	hypothetical protein
+			product	phosphate/phosphonate ABC transporter periplasmic protein
 168283	167936	gene
+			gene	phnD_2
 			locus_tag	PJKHBDOM_00164
 168283	167936	mRNA
+			gene	phnD_2
 			locus_tag	PJKHBDOM_00164
 168283	167936	CDS
+			gene	phnD_2
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743515.1
 			locus_tag	PJKHBDOM_00164
-			product	hypothetical protein
+			product	phosphate/phosphonate ABC transporter periplasmic protein
 168512	170056	gene
 			locus_tag	PJKHBDOM_00165
 168512	170056	mRNA
@@ -1768,21 +1779,18 @@
 			locus_tag	PJKHBDOM_00195
 201162	201620	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005738323.1
 			locus_tag	PJKHBDOM_00195
-			product	hypothetical protein
+			product	binding-protein-dependent transport system inner membrane protein
 201572	201922	gene
-			gene	ssuC
 			locus_tag	PJKHBDOM_00196
 201572	201922	mRNA
-			gene	ssuC
 			locus_tag	PJKHBDOM_00196
 201572	201922	CDS
-			db_xref	COG:COG0600
-			gene	ssuC
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P75851
+			inference	similar to AA sequence:RefSeq:YP_005743545.1
 			locus_tag	PJKHBDOM_00196
-			product	Putative aliphatic sulfonates transport permease protein SsuC
+			product	binding-protein-dependent transport system inner membrane protein
 201935	202966	gene
 			locus_tag	PJKHBDOM_00197
 201935	202966	mRNA
@@ -3106,31 +3114,23 @@
 			locus_tag	PJKHBDOM_00342
 			product	YjiH family protein [Staphylococcus aureus]
 373585	374892	gene
-			gene	lip2_1
 			locus_tag	PJKHBDOM_00343
 373585	374892	mRNA
-			gene	lip2_1
 			locus_tag	PJKHBDOM_00343
 373585	374892	CDS
-			EC_number	3.1.1.3
-			gene	lip2_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A7P2
+			inference	similar to AA sequence:RefSeq:YP_005743683.1
 			locus_tag	PJKHBDOM_00343
-			product	Lipase 2
+			product	lipase precursor
 374947	375522	gene
-			gene	lip2_2
 			locus_tag	PJKHBDOM_00344
 374947	375522	mRNA
-			gene	lip2_2
 			locus_tag	PJKHBDOM_00344
 374947	375522	CDS
-			EC_number	3.1.1.3
-			gene	lip2_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A7P2
+			inference	similar to AA sequence:RefSeq:YP_005743683.1
 			locus_tag	PJKHBDOM_00344
-			product	Lipase 2
+			product	lipase precursor
 376818	375613	gene
 			locus_tag	PJKHBDOM_00345
 376818	375613	mRNA
@@ -3325,8 +3325,9 @@
 			locus_tag	PJKHBDOM_00366
 388242	388532	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005740050.1
 			locus_tag	PJKHBDOM_00366
-			product	hypothetical protein
+			product	PVL phage protein
 388614	388871	gene
 			locus_tag	PJKHBDOM_00367
 388614	388871	mRNA
@@ -3626,8 +3627,9 @@
 			locus_tag	PJKHBDOM_00399
 409805	411256	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745185.1
 			locus_tag	PJKHBDOM_00399
-			product	hypothetical protein
+			product	phage protein
 411297	411629	gene
 			locus_tag	PJKHBDOM_00400
 411297	411629	mRNA
@@ -3917,26 +3919,23 @@
 			locus_tag	PJKHBDOM_00431
 			product	GNAT family protein [Staphylococcus aureus]
 440491	441147	gene
-			gene	efeM
 			locus_tag	PJKHBDOM_00432
 440491	441147	mRNA
-			gene	efeM
 			locus_tag	PJKHBDOM_00432
 440491	441147	CDS
-			db_xref	COG:COG2822
-			gene	efeM
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P39596
+			inference	similar to AA sequence:RefSeq:YP_005743706.1
 			locus_tag	PJKHBDOM_00432
-			product	putative iron uptake system component EfeM
+			product	imelysin
 441183	441344	gene
 			locus_tag	PJKHBDOM_00433
 441183	441344	mRNA
 			locus_tag	PJKHBDOM_00433
 441183	441344	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743706.1
 			locus_tag	PJKHBDOM_00433
-			product	hypothetical protein
+			product	imelysin
 441341	442570	gene
 			locus_tag	PJKHBDOM_00434
 441341	442570	mRNA
@@ -4191,8 +4190,9 @@
 			locus_tag	PJKHBDOM_00461
 466143	465985	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005738509.1
 			locus_tag	PJKHBDOM_00461
-			product	hypothetical protein
+			product	integrase
 466503	467114	gene
 			locus_tag	PJKHBDOM_00462
 466503	467114	mRNA
@@ -4395,16 +4395,18 @@
 			locus_tag	PJKHBDOM_00484
 486134	485910	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743774.1
 			locus_tag	PJKHBDOM_00484
-			product	hypothetical protein
+			product	integrase-like protein
 486996	486256	gene
 			locus_tag	PJKHBDOM_00485
 486996	486256	mRNA
 			locus_tag	PJKHBDOM_00485
 486996	486256	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743774.1
 			locus_tag	PJKHBDOM_00485
-			product	hypothetical protein
+			product	integrase-like protein
 487223	487023	gene
 			locus_tag	PJKHBDOM_00486
 487223	487023	mRNA
@@ -4430,8 +4432,9 @@
 			locus_tag	PJKHBDOM_00488
 488514	487948	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005743775.1
 			locus_tag	PJKHBDOM_00488
-			product	hypothetical protein
+			product	Sigma-70 Region 4 protein
 488901	489254	gene
 			locus_tag	PJKHBDOM_00489
 488901	489254	mRNA
@@ -4664,9 +4667,9 @@
 			locus_tag	PJKHBDOM_00514
 516480	515629	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISLgar5
+			inference	similar to AA sequence:RefSeq:YP_005743796.1
 			locus_tag	PJKHBDOM_00514
-			product	IS256 family transposase ISLgar5
+			product	transposase
 516826	516455	gene
 			locus_tag	PJKHBDOM_00515
 516826	516455	mRNA
@@ -5422,29 +5425,29 @@
 			locus_tag	PJKHBDOM_00598
 			product	septation regulator SpoVG [Staphylococcus aureus]
 604671	604976	gene
-			gene	glmU_1
+			gene	gcaD_1
 			locus_tag	PJKHBDOM_00599
 604671	604976	mRNA
-			gene	glmU_1
+			gene	gcaD_1
 			locus_tag	PJKHBDOM_00599
 604671	604976	CDS
-			gene	glmU_1
+			gene	gcaD_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A7B4
+			inference	similar to AA sequence:RefSeq:YP_005738615.1
 			locus_tag	PJKHBDOM_00599
-			product	Bifunctional protein GlmU
+			product	putative UDP-N-acetylglucosamine pyrophosphorylase
 605011	606024	gene
-			gene	glmU_2
+			gene	gcaD_2
 			locus_tag	PJKHBDOM_00600
 605011	606024	mRNA
-			gene	glmU_2
+			gene	gcaD_2
 			locus_tag	PJKHBDOM_00600
 605011	606024	CDS
-			gene	glmU_2
+			gene	gcaD_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A7B4
+			inference	similar to AA sequence:RefSeq:YP_005743881.1
 			locus_tag	PJKHBDOM_00600
-			product	Bifunctional protein GlmU
+			product	putative UDP-N-acetylglucosamine pyrophosphorylase
 606171	607136	gene
 			locus_tag	PJKHBDOM_00601
 606171	607136	mRNA
@@ -5714,31 +5717,23 @@
 			product	5S ribosomal RNA (partial)
 			score	5.8e-10
 634372	633728	gene
-			gene	gabR_1
 			locus_tag	PJKHBDOM_00632
 634372	633728	mRNA
-			gene	gabR_1
 			locus_tag	PJKHBDOM_00632
 634372	633728	CDS
-			db_xref	COG:COG1167
-			gene	gabR_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P94426
+			inference	similar to AA sequence:RefSeq:YP_005743900.1
 			locus_tag	PJKHBDOM_00632
-			product	HTH-type transcriptional regulatory protein GabR
+			product	putative GntR family transcriptional regulator
 635109	634414	gene
-			gene	gabR_2
 			locus_tag	PJKHBDOM_00633
 635109	634414	mRNA
-			gene	gabR_2
 			locus_tag	PJKHBDOM_00633
 635109	634414	CDS
-			db_xref	COG:COG1167
-			gene	gabR_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P94426
+			inference	similar to AA sequence:RefSeq:YP_005743900.1
 			locus_tag	PJKHBDOM_00633
-			product	HTH-type transcriptional regulatory protein GabR
+			product	putative GntR family transcriptional regulator
 635213	636100	gene
 			locus_tag	PJKHBDOM_00634
 635213	636100	mRNA
@@ -6157,9 +6152,9 @@
 			locus_tag	PJKHBDOM_00680
 690293	691159	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_00680
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 691762	695175	gene
 			locus_tag	PJKHBDOM_00681
 691762	695175	mRNA
@@ -6817,13 +6812,17 @@
 			locus_tag	PJKHBDOM_00751
 			product	Na+/H+ antiporter Mnh2 subunit E [Staphylococcus aureus]
 760072	760350	gene
+			gene	mnhF_1
 			locus_tag	PJKHBDOM_00752
 760072	760350	mRNA
+			gene	mnhF_1
 			locus_tag	PJKHBDOM_00752
 760072	760350	CDS
+			gene	mnhF_1
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744018.1
 			locus_tag	PJKHBDOM_00752
-			product	hypothetical protein
+			product	monovalent cation antiporter-3, MnhF_1
 760350	760787	gene
 			locus_tag	PJKHBDOM_00753
 760350	760787	mRNA
@@ -7375,25 +7374,27 @@
 			locus_tag	PJKHBDOM_00813
 823234	822368	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_00813
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 823425	824600	gene
 			locus_tag	PJKHBDOM_00814
 823425	824600	mRNA
 			locus_tag	PJKHBDOM_00814
 823425	824600	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744080.1
 			locus_tag	PJKHBDOM_00814
-			product	hypothetical protein
+			product	DASS family divalent anion:sodium (Na+) symporter
 824686	824979	gene
 			locus_tag	PJKHBDOM_00815
 824686	824979	mRNA
 			locus_tag	PJKHBDOM_00815
 824686	824979	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005738803.1
 			locus_tag	PJKHBDOM_00815
-			product	hypothetical protein
+			product	divalent anion symporter
 825065	826438	gene
 			locus_tag	PJKHBDOM_00816
 825065	826438	mRNA
@@ -7648,27 +7649,23 @@
 			locus_tag	PJKHBDOM_00843
 			product	ABC-F family ATP-binding cassette domain-containing protein [Staphylococcus aureus]
 855142	856584	gene
-			gene	recQ
 			locus_tag	PJKHBDOM_00844
 855142	856584	mRNA
-			gene	recQ
 			locus_tag	PJKHBDOM_00844
 855142	856584	CDS
-			EC_number	3.6.4.12
-			db_xref	COG:COG0514
-			gene	recQ
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P15043
+			inference	similar to AA sequence:RefSeq:YP_005744109.1
 			locus_tag	PJKHBDOM_00844
-			product	ATP-dependent DNA helicase RecQ
+			product	ATP-dependent DNA helicase
 856584	856922	gene
 			locus_tag	PJKHBDOM_00845
 856584	856922	mRNA
 			locus_tag	PJKHBDOM_00845
 856584	856922	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744109.1
 			locus_tag	PJKHBDOM_00845
-			product	hypothetical protein
+			product	ATP-dependent DNA helicase
 857144	858121	gene
 			locus_tag	PJKHBDOM_00846
 857144	858121	mRNA
@@ -8259,7 +8256,9 @@
 			locus_tag	PJKHBDOM_00911
 929848	929645	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744170.1
 			locus_tag	PJKHBDOM_00911
+			note	conserved cytoplasmic protein
 			product	hypothetical protein
 930768	930202	gene
 			locus_tag	PJKHBDOM_00912
@@ -8322,9 +8321,9 @@
 937862	938572	CDS
 			gene	ssp_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:A6QF98
+			inference	similar to AA sequence:RefSeq:YP_005744176.1
 			locus_tag	PJKHBDOM_00918
-			product	Extracellular matrix protein-binding protein emp
+			product	secretory extracellular matrix and plasma binding protein
 938560	938883	gene
 			gene	ssp_2
 			locus_tag	PJKHBDOM_00919
@@ -8334,9 +8333,9 @@
 938560	938883	CDS
 			gene	ssp_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:A6QF98
+			inference	similar to AA sequence:RefSeq:YP_005744176.1
 			locus_tag	PJKHBDOM_00919
-			product	Extracellular matrix protein-binding protein emp
+			product	secretory extracellular matrix and plasma binding protein
 939218	939688	gene
 			locus_tag	PJKHBDOM_00920
 939218	939688	mRNA
@@ -8589,13 +8588,17 @@
 			locus_tag	PJKHBDOM_00947
 			product	staphylococcal enterotoxin type K [Staphylococcus aureus]
 958641	958018	gene
+			gene	sem
 			locus_tag	PJKHBDOM_00948
 958641	958018	mRNA
+			gene	sem
 			locus_tag	PJKHBDOM_00948
 958641	958018	CDS
+			gene	sem
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744211.1
 			locus_tag	PJKHBDOM_00948
-			product	hypothetical protein
+			product	staphylococcal enterotoxin type I
 959193	958774	gene
 			locus_tag	PJKHBDOM_00949
 959193	958774	mRNA
@@ -9574,21 +9577,29 @@
 			locus_tag	PJKHBDOM_01056
 			product	adaptor protein MecA [Staphylococcus aureus]
 1062995	1063252	gene
+			gene	coiA_1
 			locus_tag	PJKHBDOM_01057
 1062995	1063252	mRNA
+			gene	coiA_1
 			locus_tag	PJKHBDOM_01057
 1062995	1063252	CDS
+			gene	coiA_1
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739013.1
 			locus_tag	PJKHBDOM_01057
-			product	hypothetical protein
+			product	competence protein CoiA
 1063279	1063980	gene
+			gene	coiA_2
 			locus_tag	PJKHBDOM_01058
 1063279	1063980	mRNA
+			gene	coiA_2
 			locus_tag	PJKHBDOM_01058
 1063279	1063980	CDS
+			gene	coiA_2
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739013.1
 			locus_tag	PJKHBDOM_01058
-			product	hypothetical protein
+			product	competence protein CoiA
 1064028	1065836	gene
 			locus_tag	PJKHBDOM_01059
 1064028	1065836	mRNA
@@ -10113,9 +10124,9 @@
 			locus_tag	PJKHBDOM_01117
 1125410	1126276	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01117
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 1126741	1127934	gene
 			locus_tag	PJKHBDOM_01118
 1126741	1127934	mRNA
@@ -10868,12 +10879,11 @@
 			gene	zapA
 			locus_tag	PJKHBDOM_01200
 1212695	1212961	CDS
-			db_xref	COG:COG3027
 			gene	zapA
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P94542
+			inference	similar to AA sequence:RefSeq:YP_005744455.1
 			locus_tag	PJKHBDOM_01200
-			product	Cell division protein ZapA
+			product	putative cell division protein, ZapA
 1212962	1213483	gene
 			locus_tag	PJKHBDOM_01201
 1212962	1213483	mRNA
@@ -11069,9 +11079,9 @@
 			locus_tag	PJKHBDOM_01222
 1233452	1234318	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01222
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 1235191	1235337	gene
 			locus_tag	PJKHBDOM_01223
 1235191	1235337	mRNA
@@ -11252,18 +11262,17 @@
 			locus_tag	PJKHBDOM_01242
 			product	cell division protein FtsL [Staphylococcus aureus]
 1251176	1253302	gene
-			gene	pbpB
+			gene	pbpA
 			locus_tag	PJKHBDOM_01243
 1251176	1253302	mRNA
-			gene	pbpB
+			gene	pbpA
 			locus_tag	PJKHBDOM_01243
 1251176	1253302	CDS
-			db_xref	COG:COG0768
-			gene	pbpB
+			gene	pbpA
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q07868
+			inference	similar to AA sequence:RefSeq:YP_005739189.1
 			locus_tag	PJKHBDOM_01243
-			product	Penicillin-binding protein 2B
+			product	penicillin-binding protein 1
 1253594	1254559	gene
 			locus_tag	PJKHBDOM_01244
 1253594	1254559	mRNA
@@ -11351,16 +11360,18 @@
 			locus_tag	PJKHBDOM_01253
 1262656	1263312	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744505.1
 			locus_tag	PJKHBDOM_01253
-			product	hypothetical protein
+			product	S4 RNA binding domain protein
 1263309	1263461	gene
 			locus_tag	PJKHBDOM_01254
 1263309	1263461	mRNA
 			locus_tag	PJKHBDOM_01254
 1263309	1263461	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744505.1
 			locus_tag	PJKHBDOM_01254
-			product	hypothetical protein
+			product	S4 RNA binding domain protein
 1263485	1264102	gene
 			locus_tag	PJKHBDOM_01255
 1263485	1264102	mRNA
@@ -11394,8 +11405,9 @@
 			locus_tag	PJKHBDOM_01258
 1268418	1268224	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745550.1
 			locus_tag	PJKHBDOM_01258
-			product	hypothetical protein
+			product	putative transposase for IS1272
 1268987	1269478	gene
 			locus_tag	PJKHBDOM_01259
 1268987	1269478	mRNA
@@ -11555,9 +11567,9 @@
 			locus_tag	PJKHBDOM_01276
 1289234	1290100	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01276
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 1290545	1291498	gene
 			locus_tag	PJKHBDOM_01277
 1290545	1291498	mRNA
@@ -11568,13 +11580,17 @@
 			locus_tag	PJKHBDOM_01277
 			product	hypothetical protein [Staphylococcus aureus]
 1291939	1291661	gene
+			gene	xynA
 			locus_tag	PJKHBDOM_01278
 1291939	1291661	mRNA
+			gene	xynA
 			locus_tag	PJKHBDOM_01278
 1291939	1291661	CDS
+			gene	xynA
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744528.1
 			locus_tag	PJKHBDOM_01278
-			product	hypothetical protein
+			product	TM2 domain containing membrane protein+B7201
 1292163	1292651	gene
 			locus_tag	PJKHBDOM_01279
 1292163	1292651	mRNA
@@ -12498,17 +12514,18 @@
 			locus_tag	PJKHBDOM_01381
 1407207	1407791	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744628.1
 			locus_tag	PJKHBDOM_01381
-			product	hypothetical protein
+			product	putative phage head morphogenesis protein
 1408000	1408866	gene
 			locus_tag	PJKHBDOM_01382
 1408000	1408866	mRNA
 			locus_tag	PJKHBDOM_01382
 1408000	1408866	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01382
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 1409243	1409491	gene
 			locus_tag	PJKHBDOM_01383
 1409243	1409491	mRNA
@@ -12549,8 +12566,9 @@
 			locus_tag	PJKHBDOM_01387
 1410371	1410505	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744628.1
 			locus_tag	PJKHBDOM_01387
-			product	hypothetical protein
+			product	putative phage head morphogenesis protein
 1410597	1410887	gene
 			locus_tag	PJKHBDOM_01388
 1410597	1410887	mRNA
@@ -12998,11 +13016,10 @@
 1465924	1465814	mRNA
 			locus_tag	PJKHBDOM_01437
 1465924	1465814	CDS
-			EC_number	5.3.2.-
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q6GH41
+			inference	similar to AA sequence:RefSeq:YP_005744685.1
 			locus_tag	PJKHBDOM_01437
-			product	putative tautomerase
+			product	4-oxalocrotonate tautomerase
 1466069	1467331	gene
 			locus_tag	PJKHBDOM_01438
 1466069	1467331	mRNA
@@ -13013,26 +13030,29 @@
 			locus_tag	PJKHBDOM_01438
 			product	Y-family DNA polymerase [Staphylococcus aureus]
 1467665	1467468	gene
+			gene	tyrA_1
 			locus_tag	PJKHBDOM_01439
 1467665	1467468	mRNA
+			gene	tyrA_1
 			locus_tag	PJKHBDOM_01439
 1467665	1467468	CDS
+			gene	tyrA_1
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739382.1
 			locus_tag	PJKHBDOM_01439
-			product	hypothetical protein
+			product	prephenate dehydrogenase
 1468548	1467649	gene
-			gene	tyrC
+			gene	tyrA_2
 			locus_tag	PJKHBDOM_01440
 1468548	1467649	mRNA
-			gene	tyrC
+			gene	tyrA_2
 			locus_tag	PJKHBDOM_01440
 1468548	1467649	CDS
-			EC_number	1.3.1.43
-			gene	tyrC
+			gene	tyrA_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q04983
+			inference	similar to AA sequence:RefSeq:YP_005744687.1
 			locus_tag	PJKHBDOM_01440
-			product	Cyclohexadienyl dehydrogenase
+			product	prephenate dehydrogenase
 1468713	1469744	gene
 			locus_tag	PJKHBDOM_01441
 1468713	1469744	mRNA
@@ -13246,9 +13266,9 @@
 			locus_tag	PJKHBDOM_01464
 1492684	1492980	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745550.1
 			locus_tag	PJKHBDOM_01464
-			product	IS1182 family transposase ISSau3
+			product	putative transposase for IS1272
 1494018	1493116	gene
 			locus_tag	PJKHBDOM_01465
 1494018	1493116	mRNA
@@ -13399,17 +13419,18 @@
 			locus_tag	PJKHBDOM_01481
 1508893	1508699	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745550.1
 			locus_tag	PJKHBDOM_01481
-			product	IS1182 family transposase ISSau3
+			product	putative transposase for IS1272
 1509303	1508911	gene
 			locus_tag	PJKHBDOM_01482
 1509303	1508911	mRNA
 			locus_tag	PJKHBDOM_01482
 1509303	1508911	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005744727.1
 			locus_tag	PJKHBDOM_01482
-			product	hypothetical protein
+			product	truncated transposase for IS1272
 1510999	1509656	gene
 			locus_tag	PJKHBDOM_01483
 1510999	1509656	mRNA
@@ -14070,9 +14091,9 @@
 1618191	1616884	CDS
 			gene	ebpS_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:A6QH29
+			inference	similar to AA sequence:RefSeq:YP_005744802.1
 			locus_tag	PJKHBDOM_01555
-			product	Elastin-binding protein EbpS
+			product	cell surface elastin binding protein
 1618345	1618163	gene
 			gene	ebpS_2
 			locus_tag	PJKHBDOM_01556
@@ -14082,9 +14103,9 @@
 1618345	1618163	CDS
 			gene	ebpS_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q53630
+			inference	similar to AA sequence:RefSeq:YP_005744802.1
 			locus_tag	PJKHBDOM_01556
-			product	Elastin-binding protein EbpS
+			product	cell surface elastin binding protein
 1619877	1618498	gene
 			locus_tag	PJKHBDOM_01557
 1619877	1618498	mRNA
@@ -14362,18 +14383,14 @@
 			locus_tag	PJKHBDOM_01586
 			product	phage major capsid protein [Staphylococcus aureus]
 1646862	1646110	gene
-			gene	clpP
 			locus_tag	PJKHBDOM_01587
 1646862	1646110	mRNA
-			gene	clpP
 			locus_tag	PJKHBDOM_01587
 1646862	1646110	CDS
-			EC_number	3.4.21.92
-			gene	clpP
 			inference	ab initio prediction:Prodigal:002006
-			inference	protein motif:HAMAP:MF_00444
+			inference	similar to AA sequence:RefSeq:YP_005739522.1
 			locus_tag	PJKHBDOM_01587
-			product	ATP-dependent Clp protease proteolytic subunit
+			product	caseinolytic phage protease
 1648084	1646846	gene
 			locus_tag	PJKHBDOM_01588
 1648084	1646846	mRNA
@@ -14425,7 +14442,9 @@
 			locus_tag	PJKHBDOM_01593
 1651961	1651125	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739528.1
 			locus_tag	PJKHBDOM_01593
+			note	SNF2 family N-terminal domain protein
 			product	hypothetical protein
 1652491	1651958	gene
 			locus_tag	PJKHBDOM_01594
@@ -14433,7 +14452,9 @@
 			locus_tag	PJKHBDOM_01594
 1652491	1651958	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739528.1
 			locus_tag	PJKHBDOM_01594
+			note	SNF2 family N-terminal domain protein
 			product	hypothetical protein
 1652762	1652472	gene
 			locus_tag	PJKHBDOM_01595
@@ -14578,8 +14599,9 @@
 			locus_tag	PJKHBDOM_01610
 1660145	1659867	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005739542.1
 			locus_tag	PJKHBDOM_01610
-			product	hypothetical protein
+			product	phiSLT PVL-like protein
 1660330	1660145	gene
 			locus_tag	PJKHBDOM_01611
 1660330	1660145	mRNA
@@ -15786,9 +15808,9 @@
 			locus_tag	PJKHBDOM_01744
 1777028	1776162	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01744
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 1778101	1777106	gene
 			locus_tag	PJKHBDOM_01745
 1778101	1777106	mRNA
@@ -15888,19 +15910,14 @@
 			locus_tag	PJKHBDOM_01755
 			product	peptidase U32 family protein [Staphylococcus aureus]
 1788240	1787803	gene
-			gene	trmR
 			locus_tag	PJKHBDOM_01756
 1788240	1787803	mRNA
-			gene	trmR
 			locus_tag	PJKHBDOM_01756
 1788240	1787803	CDS
-			EC_number	2.1.1.-
-			db_xref	COG:COG4122
-			gene	trmR
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:O32036
+			inference	similar to AA sequence:RefSeq:YP_005744934.1
 			locus_tag	PJKHBDOM_01756
-			product	tRNA 5-hydroxyuridine methyltransferase
+			product	caffeoyl-CoA O-methyltransferase
 1788833	1788525	gene
 			locus_tag	PJKHBDOM_01757
 1788833	1788525	mRNA
@@ -15975,18 +15992,17 @@
 			locus_tag	PJKHBDOM_01764
 			product	cysteine desulfurase family protein [Staphylococcus aureus]
 1798447	1798316	gene
-			gene	iscS
+			gene	nifS
 			locus_tag	PJKHBDOM_01765
 1798447	1798316	mRNA
-			gene	iscS
+			gene	nifS
 			locus_tag	PJKHBDOM_01765
 1798447	1798316	CDS
-			EC_number	2.8.1.7
-			gene	iscS
+			gene	nifS
 			inference	ab initio prediction:Prodigal:002006
-			inference	protein motif:HAMAP:MF_00331
+			inference	similar to AA sequence:RefSeq:YP_005744942.1
 			locus_tag	PJKHBDOM_01765
-			product	Cysteine desulfurase IscS
+			product	cysteine desulfurase, NifS
 1798759	1799772	gene
 			locus_tag	PJKHBDOM_01766
 1798759	1799772	mRNA
@@ -16310,10 +16326,9 @@
 			locus_tag	PJKHBDOM_01801
 1834434	1833895	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q02170
+			inference	similar to AA sequence:RefSeq:YP_005744978.1
 			locus_tag	PJKHBDOM_01801
-			note	UPF0758 protein YsxA
-			product	hypothetical protein
+			product	putative DNA repair protein, RadC
 1835153	1834446	gene
 			locus_tag	PJKHBDOM_01802
 1835153	1834446	mRNA
@@ -16626,18 +16641,18 @@
 			locus_tag	PJKHBDOM_01836
 1877532	1876705	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005738998.1
 			locus_tag	PJKHBDOM_01836
-			product	IS1182 family transposase ISSau3
+			product	ISSau3 transposase
 1878356	1877529	gene
 			locus_tag	PJKHBDOM_01837
 1878356	1877529	mRNA
 			locus_tag	PJKHBDOM_01837
 1878356	1877529	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745014.1
 			locus_tag	PJKHBDOM_01837
-			product	IS1182 family transposase ISSau3
+			product	putative transposase for IS1272
 1880754	1878997	gene
 			locus_tag	PJKHBDOM_01838
 1880754	1878997	mRNA
@@ -17155,21 +17170,29 @@
 			locus_tag	PJKHBDOM_01894
 			product	NAD(P)/FAD-dependent oxidoreductase [Staphylococcus aureus]
 1958360	1952337	gene
+			gene	sasC_1
 			locus_tag	PJKHBDOM_01895
 1958360	1952337	mRNA
+			gene	sasC_1
 			locus_tag	PJKHBDOM_01895
 1958360	1952337	CDS
+			gene	sasC_1
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745074.1
 			locus_tag	PJKHBDOM_01895
-			product	hypothetical protein
+			product	cell-wall-anchored protein SasC
 1958898	1958320	gene
+			gene	sasC_2
 			locus_tag	PJKHBDOM_01896
 1958898	1958320	mRNA
+			gene	sasC_2
 			locus_tag	PJKHBDOM_01896
 1958898	1958320	CDS
+			gene	sasC_2
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745074.1
 			locus_tag	PJKHBDOM_01896
-			product	hypothetical protein
+			product	cell-wall-anchored protein SasC
 1959535	1959224	gene
 			locus_tag	PJKHBDOM_01897
 1959535	1959224	mRNA
@@ -17246,9 +17269,9 @@
 			locus_tag	PJKHBDOM_01905
 1966819	1966328	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745082.1
 			locus_tag	PJKHBDOM_01905
-			product	IS1182 family transposase ISSau3
+			product	truncated transposase for IS1272
 1967993	1967166	gene
 			locus_tag	PJKHBDOM_01906
 1967993	1967166	mRNA
@@ -17452,18 +17475,18 @@
 			locus_tag	PJKHBDOM_01928
 1984702	1985526	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005740365.1
 			locus_tag	PJKHBDOM_01928
-			product	IS1182 family transposase ISSau3
+			product	ISSau3 transposase
 1985559	1986167	gene
 			locus_tag	PJKHBDOM_01929
 1985559	1986167	mRNA
 			locus_tag	PJKHBDOM_01929
 1985559	1986167	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745106.1
 			locus_tag	PJKHBDOM_01929
-			product	IS1182 family transposase ISSau3
+			product	truncated transposase for IS1272
 1987062	1986211	gene
 			locus_tag	PJKHBDOM_01930
 1987062	1986211	mRNA
@@ -17696,9 +17719,9 @@
 			locus_tag	PJKHBDOM_01955
 2007603	2006737	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_01955
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 2010556	2007689	gene
 			locus_tag	PJKHBDOM_01956
 2010556	2007689	mRNA
@@ -18260,9 +18283,9 @@
 			locus_tag	PJKHBDOM_02019
 2068149	2069510	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS1181
+			inference	similar to AA sequence:RefSeq:YP_005745160.1
 			locus_tag	PJKHBDOM_02019
-			product	ISL3 family transposase IS1181
+			product	IS1181 transposase
 2069686	2069603	gene
 			locus_tag	PJKHBDOM_02020
 2069686	2069603	mRNA
@@ -18888,12 +18911,11 @@
 			gene	gatB_1
 			locus_tag	PJKHBDOM_02092
 2116740	2115538	CDS
-			EC_number	6.3.5.-
 			gene	gatB_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P99169
+			inference	similar to AA sequence:RefSeq:YP_005739967.1
 			locus_tag	PJKHBDOM_02092
-			product	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+			product	Aspartyl/glutamyl-tRNA amidotransferase subunit B
 2116966	2116709	gene
 			gene	gatB_2
 			locus_tag	PJKHBDOM_02093
@@ -18901,12 +18923,11 @@
 			gene	gatB_2
 			locus_tag	PJKHBDOM_02093
 2116966	2116709	CDS
-			EC_number	6.3.5.-
 			gene	gatB_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P99169
+			inference	similar to AA sequence:RefSeq:YP_005739967.1
 			locus_tag	PJKHBDOM_02093
-			product	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+			product	Aspartyl/glutamyl-tRNA amidotransferase subunit B
 2118436	2116979	gene
 			locus_tag	PJKHBDOM_02094
 2118436	2116979	mRNA
@@ -19619,8 +19640,9 @@
 			locus_tag	PJKHBDOM_02172
 2189791	2189525	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005740050.1
 			locus_tag	PJKHBDOM_02172
-			product	hypothetical protein
+			product	PVL phage protein
 2190208	2189804	gene
 			locus_tag	PJKHBDOM_02173
 2190208	2189804	mRNA
@@ -19832,18 +19854,14 @@
 			locus_tag	PJKHBDOM_02195
 			product	tyrosine-type recombinase/integrase [Staphylococcus aureus]
 2202779	2203603	gene
-			gene	hlb
 			locus_tag	PJKHBDOM_02196
 2202779	2203603	mRNA
-			gene	hlb
 			locus_tag	PJKHBDOM_02196
 2202779	2203603	CDS
-			EC_number	3.1.4.3
-			gene	hlb
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P09978
+			inference	similar to AA sequence:RefSeq:YP_005745391.1
 			locus_tag	PJKHBDOM_02196
-			product	Phospholipase C
+			product	phospholipase C
 2204857	2203841	gene
 			locus_tag	PJKHBDOM_02197
 2204857	2203841	mRNA
@@ -19877,16 +19895,18 @@
 			locus_tag	PJKHBDOM_02200
 2208679	2208017	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745395.1
 			locus_tag	PJKHBDOM_02200
-			product	hypothetical protein
+			product	tetracenomycin polyketide synthesis O-methyltransferase, TcmP
 2208807	2208685	gene
 			locus_tag	PJKHBDOM_02201
 2208807	2208685	mRNA
 			locus_tag	PJKHBDOM_02201
 2208807	2208685	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745395.1
 			locus_tag	PJKHBDOM_02201
-			product	hypothetical protein
+			product	tetracenomycin polyketide synthesis O-methyltransferase, TcmP
 2209780	2208869	gene
 			locus_tag	PJKHBDOM_02202
 2209780	2208869	mRNA
@@ -19941,17 +19961,14 @@
 			locus_tag	PJKHBDOM_02207
 			product	pathogenicity island family protein [Staphylococcus aureus]
 2214544	2214810	gene
-			gene	xerC
 			locus_tag	PJKHBDOM_02208
 2214544	2214810	mRNA
-			gene	xerC
 			locus_tag	PJKHBDOM_02208
 2214544	2214810	CDS
-			gene	xerC
 			inference	ab initio prediction:Prodigal:002006
-			inference	protein motif:HAMAP:MF_01808
+			inference	similar to AA sequence:RefSeq:YP_005743732.1
 			locus_tag	PJKHBDOM_02208
-			product	Tyrosine recombinase XerC
+			product	pathogenicity island protein, integrase
 2216521	2214905	gene
 			locus_tag	PJKHBDOM_02209
 2216521	2214905	mRNA
@@ -20039,16 +20056,18 @@
 			locus_tag	PJKHBDOM_02218
 2222632	2223249	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005740088.1
 			locus_tag	PJKHBDOM_02218
-			product	hypothetical protein
+			product	accessory gene regulator protein C
 2223254	2223925	gene
 			locus_tag	PJKHBDOM_02219
 2223254	2223925	mRNA
 			locus_tag	PJKHBDOM_02219
 2223254	2223925	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745410.1
 			locus_tag	PJKHBDOM_02219
-			product	hypothetical protein
+			product	staphylococcal accessory gene regulator protein C
 2223944	2224660	gene
 			locus_tag	PJKHBDOM_02220
 2223944	2224660	mRNA
@@ -20477,9 +20496,9 @@
 			locus_tag	PJKHBDOM_02267
 2257813	2258679	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_02267
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 2260560	2259121	gene
 			locus_tag	PJKHBDOM_02268
 2260560	2259121	mRNA
@@ -20504,9 +20523,9 @@
 			locus_tag	PJKHBDOM_02270
 2262181	2261315	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_02270
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 2262463	2262278	gene
 			locus_tag	PJKHBDOM_02271
 2262463	2262278	mRNA
@@ -21063,9 +21082,9 @@
 			locus_tag	PJKHBDOM_02332
 2295979	2296845	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_02332
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 2297386	2297177	gene
 			locus_tag	PJKHBDOM_02333
 2297386	2297177	mRNA
@@ -22570,16 +22589,18 @@
 			locus_tag	PJKHBDOM_02500
 2481742	2480294	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005740204.1
 			locus_tag	PJKHBDOM_02500
-			product	hypothetical protein
+			product	methicillin resistance determinant FmtB protein
 2487725	2482083	gene
 			locus_tag	PJKHBDOM_02501
 2487725	2482083	mRNA
 			locus_tag	PJKHBDOM_02501
 2487725	2482083	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005740204.1
 			locus_tag	PJKHBDOM_02501
-			product	hypothetical protein
+			product	methicillin resistance determinant FmtB protein
 2489357	2488002	gene
 			locus_tag	PJKHBDOM_02502
 2489357	2488002	mRNA
@@ -22622,9 +22643,9 @@
 			locus_tag	PJKHBDOM_02506
 2492450	2493652	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS1181
+			inference	similar to AA sequence:RefSeq:YP_005745160.1
 			locus_tag	PJKHBDOM_02506
-			product	ISL3 family transposase IS1181
+			product	IS1181 transposase
 2493955	2493882	gene
 			locus_tag	PJKHBDOM_02507
 2493955	2493882	mRNA
@@ -22848,26 +22869,27 @@
 			locus_tag	PJKHBDOM_02532
 2519686	2520486	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745548.1
 			locus_tag	PJKHBDOM_02532
-			product	hypothetical protein
+			product	truncated transposase for IS1272
 2520483	2520803	gene
 			locus_tag	PJKHBDOM_02533
 2520483	2520803	mRNA
 			locus_tag	PJKHBDOM_02533
 2520483	2520803	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745549.1
 			locus_tag	PJKHBDOM_02533
-			product	IS1182 family transposase ISSau3
+			product	truncated transposase for IS1272
 2520966	2521310	gene
 			locus_tag	PJKHBDOM_02534
 2520966	2521310	mRNA
 			locus_tag	PJKHBDOM_02534
 2520966	2521310	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:ISSau3
+			inference	similar to AA sequence:RefSeq:YP_005745550.1
 			locus_tag	PJKHBDOM_02534
-			product	IS1182 family transposase ISSau3
+			product	putative transposase for IS1272
 2521855	2521346	gene
 			locus_tag	PJKHBDOM_02535
 2521855	2521346	mRNA
@@ -23027,9 +23049,9 @@
 			locus_tag	PJKHBDOM_02552
 2537600	2538466	CDS
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:ISfinder:IS256
+			inference	similar to AA sequence:RefSeq:YP_005743682.1
 			locus_tag	PJKHBDOM_02552
-			product	IS256 family transposase IS256
+			product	transposase for IS256
 2539108	2538755	gene
 			locus_tag	PJKHBDOM_02553
 2539108	2538755	mRNA
@@ -23853,9 +23875,9 @@
 2614325	2614065	CDS
 			gene	sarR
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A425
+			inference	similar to AA sequence:RefSeq:YP_005745658.1
 			locus_tag	PJKHBDOM_02643
-			product	HTH-type transcriptional regulator SarR
+			product	staphylococcal accessory regulator R, SarR
 2615167	2614841	gene
 			locus_tag	PJKHBDOM_02644
 2615167	2614841	mRNA
@@ -24447,8 +24469,9 @@
 			locus_tag	PJKHBDOM_02709
 2681905	2682261	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745721.1
 			locus_tag	PJKHBDOM_02709
-			product	hypothetical protein
+			product	truncated transposase for IS1272
 2683066	2682401	gene
 			locus_tag	PJKHBDOM_02710
 2683066	2682401	mRNA
@@ -24862,8 +24885,9 @@
 			locus_tag	PJKHBDOM_02755
 2731351	2730950	CDS
 			inference	ab initio prediction:Prodigal:002006
+			inference	similar to AA sequence:RefSeq:YP_005745767.1
 			locus_tag	PJKHBDOM_02755
-			product	hypothetical protein
+			product	Activator of Hsp90 ATPase 1 family protein
 2733154	2731604	gene
 			locus_tag	PJKHBDOM_02756
 2733154	2731604	mRNA
@@ -26418,21 +26442,19 @@
 2919847	2920128	mRNA
 			locus_tag	PJKHBDOM_02927
 2919847	2920128	CDS
-			EC_number	3.-.-.-
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A3C4
+			inference	similar to AA sequence:RefSeq:YP_005745931.1
 			locus_tag	PJKHBDOM_02927
-			product	putative hydrolase
+			product	putative hydrolase/acyltransferase
 2920076	2920678	gene
 			locus_tag	PJKHBDOM_02928
 2920076	2920678	mRNA
 			locus_tag	PJKHBDOM_02928
 2920076	2920678	CDS
-			EC_number	3.-.-.-
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q7A3C4
+			inference	similar to AA sequence:RefSeq:YP_005745931.1
 			locus_tag	PJKHBDOM_02928
-			product	putative hydrolase
+			product	putative hydrolase/acyltransferase
 2921715	2920825	gene
 			locus_tag	PJKHBDOM_02929
 2921715	2920825	mRNA
@@ -26894,18 +26916,14 @@
 			locus_tag	PJKHBDOM_02979
 			product	betaine-aldehyde dehydrogenase [Staphylococcus aureus]
 2972006	2972665	gene
-			gene	opcR
 			locus_tag	PJKHBDOM_02980
 2972006	2972665	mRNA
-			gene	opcR
 			locus_tag	PJKHBDOM_02980
 2972006	2972665	CDS
-			db_xref	COG:COG1510
-			gene	opcR
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:O34709
+			inference	similar to AA sequence:RefSeq:YP_005745980.1
 			locus_tag	PJKHBDOM_02980
-			product	HTH-type transcriptional repressor OpcR
+			product	transcriptional regulator-like protein
 2974383	2972761	gene
 			locus_tag	PJKHBDOM_02981
 2974383	2972761	mRNA
@@ -27137,12 +27155,11 @@
 			gene	aur_1
 			locus_tag	PJKHBDOM_03006
 3003529	3002276	CDS
-			EC_number	3.4.24.29
 			gene	aur_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P81177
+			inference	similar to AA sequence:RefSeq:YP_005746005.1
 			locus_tag	PJKHBDOM_03006
-			product	Zinc metalloproteinase aureolysin
+			product	zinc metalloproteinase aureolysin precursor
 3003806	3003516	gene
 			gene	aur_2
 			locus_tag	PJKHBDOM_03007
@@ -27150,12 +27167,11 @@
 			gene	aur_2
 			locus_tag	PJKHBDOM_03007
 3003806	3003516	CDS
-			EC_number	3.4.24.29
 			gene	aur_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:P81177
+			inference	similar to AA sequence:RefSeq:YP_005740656.1
 			locus_tag	PJKHBDOM_03007
-			product	Zinc metalloproteinase aureolysin
+			product	aureolysin, fungalysin/thermolysin metalloproteinase precursor
 3004747	3004220	gene
 			locus_tag	PJKHBDOM_03008
 3004747	3004220	mRNA
@@ -27450,40 +27466,35 @@
 			gene	icaC
 			locus_tag	PJKHBDOM_03040
 3046135	3047046	CDS
-			db_xref	COG:COG3936
 			gene	icaC
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q5HKP7
+			inference	similar to AA sequence:RefSeq:YP_005746035.1
 			locus_tag	PJKHBDOM_03040
-			product	putative poly-beta-1,6-N-acetyl-D-glucosamine export protein
+			product	intercellular adhesion protein icaC
 3048867	3047599	gene
-			gene	lipA_1
+			gene	lip_1
 			locus_tag	PJKHBDOM_03041
 3048867	3047599	mRNA
-			gene	lipA_1
+			gene	lip_1
 			locus_tag	PJKHBDOM_03041
 3048867	3047599	CDS
-			EC_number	3.1.1.3
-			db_xref	COG:COG1075
-			gene	lipA_1
+			gene	lip_1
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q2FUU5
+			inference	similar to AA sequence:RefSeq:YP_005746036.1
 			locus_tag	PJKHBDOM_03041
-			product	Lipase 1
+			product	triacylglycerol lipase
 3049630	3048830	gene
-			gene	lipA_2
+			gene	lip_2
 			locus_tag	PJKHBDOM_03042
 3049630	3048830	mRNA
-			gene	lipA_2
+			gene	lip_2
 			locus_tag	PJKHBDOM_03042
 3049630	3048830	CDS
-			EC_number	3.1.1.3
-			db_xref	COG:COG1075
-			gene	lipA_2
+			gene	lip_2
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q2FUU5
+			inference	similar to AA sequence:RefSeq:YP_005746036.1
 			locus_tag	PJKHBDOM_03042
-			product	Lipase 1
+			product	triacylglycerol lipase
 3050092	3050000	gene
 			locus_tag	PJKHBDOM_03043
 3050092	3050000	mRNA
@@ -27499,12 +27510,11 @@
 			gene	hisI
 			locus_tag	PJKHBDOM_03044
 3051350	3050718	CDS
-			EC_number	3.5.4.19
 			gene	hisI
 			inference	ab initio prediction:Prodigal:002006
-			inference	protein motif:HAMAP:MF_01019
+			inference	similar to AA sequence:RefSeq:YP_005746038.1
 			locus_tag	PJKHBDOM_03044
-			product	Histidine biosynthesis bifunctional protein HisIE
+			product	bifunctional phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP pyrophosphatase
 3052105	3051347	gene
 			gene	hisF
 			locus_tag	PJKHBDOM_03045
@@ -27512,13 +27522,11 @@
 			gene	hisF
 			locus_tag	PJKHBDOM_03045
 3052105	3051347	CDS
-			EC_number	4.3.2.10
-			db_xref	COG:COG0107
 			gene	hisF
 			inference	ab initio prediction:Prodigal:002006
-			inference	similar to AA sequence:UniProtKB:Q9X0C6
+			inference	similar to AA sequence:RefSeq:YP_005746039.1
 			locus_tag	PJKHBDOM_03045
-			product	Imidazole glycerol phosphate synthase subunit HisF
+			product	imidazole glycerol phosphate synthase subunit HisF
 3052806	3052102	gene
 			locus_tag	PJKHBDOM_03046
 3052806	3052102	mRNA

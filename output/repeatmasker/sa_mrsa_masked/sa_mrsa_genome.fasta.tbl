@@ -3,7 +3,7 @@ file name: sa_mrsa_genome.fasta
 sequences:             2
 total length:    3121265 bp  (3121265 bp excl N/X-runs)
 GC level:         32.78 %
-bases masked:      37093 bp ( 1.19 %)
+bases masked:      38327 bp ( 1.23 %)
 ==================================================
                number of      length   percentage
                elements*    occupied  of sequence
@@ -36,9 +36,9 @@ DNA transposons          0            0 bp    0.00 %
 
 Rolling-circles          0            0 bp    0.00 %
 
-Unclassified:          126        22312 bp    0.71 %
+Unclassified:          204        23546 bp    0.75 %
 
-Total interspersed repeats:       22312 bp    0.71 %
+Total interspersed repeats:       23546 bp    0.75 %
 
 
 Small RNA:               0            0 bp    0.00 %
@@ -54,6 +54,6 @@ Low complexity:         77         3541 bp    0.11 %
 
 RepeatMasker version 4.1.2-p1 , default mode
                                      
-run with rmblastn version 2.10.0+
+run with rmblastn version 2.14.1+
 The query was compared to classified sequences in ".../sa_mrsa_db-families.fa"
 FamDB: 

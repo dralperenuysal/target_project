@@ -117,3 +117,31 @@ plt.tight_layout()
 # Görseli kaydetme ve gösterme
 plt.savefig('output/plots/barrnap/rrna_locations.png')
 plt.show()
+
+
+# Başlangıç ve bitiş pozisyonlarına göre bir scatterplot oluşturun
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='start', y='end', hue='rRNA_type', style='organism', data=df)
+
+plt.title('rRNA Alt Birimlerinin Başlangıç ve Bitiş Pozisyonları')
+plt.xlabel('Başlangıç Pozisyonu')
+plt.ylabel('Bitiş Pozisyonu')
+plt.legend(title='rRNA Tipi / Organizma', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+# Grafiği göster
+plt.tight_layout()
+plt.show()
+
+# ------------------- S C A T T E R --------------------------------------------------------
+# Başlangıç ve bitiş pozisyonlarına göre bir scatterplot oluşturun
+plt.figure(figsize=(16, 10))
+sns.scatterplot(x='start', y='end', hue='rRNA_type', style='organism', data=concatenated_gff, sizes=(100, 200))
+
+plt.title('Start and End Points of rRNA Subunits')
+plt.xlabel('Start')
+plt.ylabel('End')
+plt.legend(title='rRNA Type/ Organism', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+# Grafiği göster
+plt.tight_layout()
+plt.show()

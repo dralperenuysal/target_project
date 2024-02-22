@@ -1,899 +1,914 @@
-[00:23:47] This is prokka 1.14.6
-[00:23:47] Written by Torsten Seemann <torsten.seemann@gmail.com>
-[00:23:47] Homepage is https://github.com/tseemann/prokka
-[00:23:47] Local time is Sat Feb 17 00:23:47 2024
-[00:23:47] You are alperen
-[00:23:47] Operating system is linux
-[00:23:47] You have BioPerl 1.7.8
-[00:23:47] System has 20 cores.
-[00:23:47] Will use maximum of 12 cores.
-[00:23:47] Annotating as >>> Bacteria <<<
-[00:23:47] Generating locus_tag from 'resource/genome/sa_mrsa_genome.fasta' contents.
-[00:23:47] Setting --locustag PJKHBDOM from MD5 9341bd861200d95fc4c6058f388c3f39
-[00:23:47] Re-using existing --outdir output/prokka_annotation/sa_mrsa_prokka
-[00:23:47] Using filename prefix: sa_mrsa.XXX
-[00:23:47] Setting HMMER_NCPU=1
-[00:23:47] Writing log to: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.log
-[00:23:47] Command: /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prokka --outdir output/prokka_annotation/sa_mrsa_prokka --force --cpus 12 --prefix sa_mrsa --genus Staphylococcus --species aureus --addgenes --addmrna --metagenome --proteins resource/protein/sa_mrsa_protein.fasta resource/genome/sa_mrsa_genome.fasta
-[00:23:47] Appending to PATH: /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin
-[00:23:47] Looking for 'aragorn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/aragorn
-[00:23:47] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
-[00:23:47] Looking for 'barrnap' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/barrnap
-[00:23:47] Determined barrnap version is 000009 from 'barrnap 0.9'
-[00:23:47] Looking for 'blastp' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/blastp
-[00:23:47] Determined blastp version is 002015 from 'blastp: 2.15.0+'
-[00:23:47] Looking for 'cmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/cmpress
-[00:23:47] Determined cmpress version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
-[00:23:47] Looking for 'cmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/cmscan
-[00:23:47] Determined cmscan version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
-[00:23:47] Looking for 'egrep' - found /usr/bin/egrep
-[00:23:47] Looking for 'find' - found /usr/bin/find
-[00:23:47] Looking for 'grep' - found /usr/bin/grep
-[00:23:47] Looking for 'hmmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/hmmpress
-[00:23:47] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
-[00:23:47] Looking for 'hmmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/hmmscan
-[00:23:47] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
-[00:23:47] Looking for 'java' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/java
-[00:23:47] Looking for 'makeblastdb' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/makeblastdb
-[00:23:48] Determined makeblastdb version is 002015 from 'makeblastdb: 2.15.0+'
-[00:23:48] Looking for 'minced' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/minced
-[00:23:48] Determined minced version is 004002 from 'minced 0.4.2'
-[00:23:48] Looking for 'parallel' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/parallel
-[00:23:48] Determined parallel version is 20240122 from 'GNU parallel 20240122'
-[00:23:48] Looking for 'prodigal' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prodigal
-[00:23:48] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
-[00:23:48] Looking for 'prokka-genbank_to_fasta_db' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prokka-genbank_to_fasta_db
-[00:23:48] Looking for 'sed' - found /usr/bin/sed
-[00:23:48] Looking for 'tbl2asn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/tbl2asn
-[00:23:48] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
-[00:23:48] Using genetic code table 11.
-[00:23:48] Loading and checking input file: resource/genome/sa_mrsa_genome.fasta
-[00:23:48] Wrote 2 contigs totalling 3121265 bp.
-[00:23:48] Predicting tRNAs and tmRNAs
-[00:23:48] Running: aragorn -l -gc11  -w output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fna
-[00:23:49] 1 tRNA-Glu [24143,24217] 34 (ttc)
-[00:23:49] 2 tRNA-Asp [24225,24297] 34 (gtc)
-[00:23:49] 3 tRNA-Ser [574398,574490] 37 (tga)
-[00:23:49] 4 tRNA-Val [627355,627430] 34 (tac)
-[00:23:49] 5 tRNA-Thr [627447,627522] 34 (tgt)
-[00:23:49] 6 tRNA-Lys [627528,627602] 35 (ttt)
-[00:23:49] 7 tRNA-Gly [627635,627709] 33 (gcc)
-[00:23:49] 8 tRNA-Leu [627717,627805] 35 (taa)
-[00:23:49] 9 tRNA-Arg [627811,627887] 35 (acg)
-[00:23:49] 10 tRNA-Pro [627908,627981] 35 (tgg)
-[00:23:49] 11 tRNA-Ala [628005,628080] 34 (tgc)
-[00:23:49] 12 tRNA-Ile [629850,629926] 35 (gat)
-[00:23:49] 13 tRNA-Arg c[912148,912220] 34 (ccg)
-[00:23:49] 14 tmRNA [928293,928651] 94,129 GKSNNNFAVAA*
-[00:23:49] 15 tRNA-Ser c[1093177,1093267] 37 (gct)
-[00:23:49] 16 tRNA-Asn c[1093269,1093343] 33 (gtt)
-[00:23:49] 17 tRNA-Arg c[1245208,1245283] 36 (tct)
-[00:23:49] 18 tRNA-Ser c[2035131,2035219] 36 (gga)
-[00:23:49] 19 tRNA-Glu c[2035273,2035346] 35 (ttc)
-[00:23:49] 20 tRNA-Asn c[2035347,2035421] 33 (gtt)
-[00:23:49] 21 tRNA-Gly c[2035436,2035509] 33 (tcc)
-[00:23:49] 22 tRNA-His c[2035525,2035600] 34 (gtg)
-[00:23:49] 23 tRNA-Phe c[2035614,2035686] 34 (gaa)
-[00:23:49] 24 tRNA-Asp c[2035703,2035778] 34 (gtc)
-[00:23:49] 25 tRNA-Met c[2035800,2035873] 35 (cat)
-[00:23:49] 26 tRNA-Leu c[2069603,2069686] 35 (caa)
-[00:23:49] 27 tRNA-Gly c[2069725,2069799] 34 (tcc)
-[00:23:49] 28 tRNA-Gly c[2069813,2069887] 34 (tcc)
-[00:23:49] 29 tRNA-Gly c[2069903,2069977] 34 (tcc)
-[00:23:49] 30 tRNA-Cys c[2069985,2070058] 33 (gca)
-[00:23:49] 31 tRNA-Gln c[2070064,2070135] 33 (ttg)
-[00:23:49] 32 tRNA-His c[2070146,2070219] 34 (gtg)
-[00:23:49] 33 tRNA-Trp c[2070222,2070295] 33 (cca)
-[00:23:49] 34 tRNA-Tyr c[2070310,2070392] 36 (gta)
-[00:23:49] 35 tRNA-Thr c[2070397,2070472] 34 (tgt)
-[00:23:49] 36 tRNA-Phe c[2070479,2070553] 35 (gaa)
-[00:23:49] 37 tRNA-Asp c[2070571,2070646] 34 (gtc)
-[00:23:49] 38 tRNA-Met c[2070655,2070730] 36 (cat)
-[00:23:49] 39 tRNA-Ser c[2070744,2070836] 37 (tga)
-[00:23:49] 40 tRNA-Asp c[2070875,2070950] 34 (gtc)
-[00:23:49] 41 tRNA-Met c[2070959,2071034] 36 (cat)
-[00:23:49] 42 tRNA-Ser c[2071049,2071140] 38 (tga)
-[00:23:49] 43 tRNA-Met c[2071149,2071222] 35 (cat)
-[00:23:49] 44 tRNA-Met c[2071250,2071324] 35 (cat)
-[00:23:49] 45 tRNA-Ala c[2071346,2071421] 34 (tgc)
-[00:23:49] 46 tRNA-Pro c[2071439,2071512] 35 (tgg)
-[00:23:49] 47 tRNA-Arg c[2071521,2071596] 36 (acg)
-[00:23:49] 48 tRNA-Leu c[2071614,2071702] 35 (taa)
-[00:23:49] 49 tRNA-Gly c[2071713,2071787] 33 (gcc)
-[00:23:49] 50 tRNA-Leu c[2071790,2071873] 36 (tag)
-[00:23:49] 51 tRNA-Lys c[2071876,2071951] 34 (ttt)
-[00:23:49] 52 tRNA-Thr c[2071957,2072032] 34 (tgt)
-[00:23:49] 53 tRNA-Val c[2072049,2072124] 34 (tac)
-[00:23:49] 54 tRNA-Ala c[2075459,2075534] 34 (tgc)
-[00:23:49] 55 tRNA-Ile c[2075553,2075629] 35 (gat)
-[00:23:49] 56 tRNA-Gly c[2383178,2383251] 33 (tcc)
-[00:23:49] 57 tRNA-Leu c[2383274,2383356] 34 (gag)
-[00:23:49] 58 tRNA-Lys c[2493882,2493955] 34 (ttt)
-[00:23:49] 59 tRNA-Gln c[2493959,2494033] 33 (ttg)
-[00:23:49] 60 tRNA-Tyr c[2494043,2494126] 35 (gta)
-[00:23:49] 61 tRNA-Val c[2494156,2494231] 34 (tac)
-[00:23:49] 62 tRNA-Glu c[2494238,2494311] 35 (ttc)
-[00:23:49] 63 tRNA-Asn c[2494312,2494386] 33 (gtt)
-[00:23:49] 64 tRNA-Gln c[2596921,2597013] 40 (ttg)
-[00:23:49] Found 64 tRNAs
-[00:23:49] Predicting Ribosomal RNAs
-[00:23:49] Running Barrnap with 12 threads
-[00:23:51] 1 CP127019.1 583641 16S ribosomal RNA
-[00:23:51] 2 CP127019.1 585559 23S ribosomal RNA
-[00:23:51] 3 CP127019.1 588554 5S ribosomal RNA (partial)
-[00:23:51] 4 CP127019.1 627230 5S ribosomal RNA (partial)
-[00:23:51] 5 CP127019.1 628206 16S ribosomal RNA
-[00:23:51] 6 CP127019.1 630096 23S ribosomal RNA
-[00:23:51] 7 CP127019.1 633091 5S ribosomal RNA (partial)
-[00:23:51] 8 CP127019.1 2072171 5S ribosomal RNA (partial)
-[00:23:51] 9 CP127019.1 2072325 23S ribosomal RNA
-[00:23:51] 10 CP127019.1 2075722 16S ribosomal RNA
-[00:23:51] 11 CP127019.1 2377881 5S ribosomal RNA (partial)
-[00:23:51] 12 CP127019.1 2378035 23S ribosomal RNA
-[00:23:51] 13 CP127019.1 2381505 16S ribosomal RNA
-[00:23:51] 14 CP127019.1 2494432 5S ribosomal RNA (partial)
-[00:23:51] 15 CP127019.1 2494586 23S ribosomal RNA
-[00:23:51] 16 CP127019.1 2498056 16S ribosomal RNA
-[00:23:51] Found 16 rRNAs
-[00:23:51] Skipping ncRNA search, enable with --rfam if desired.
-[00:23:51] Total of 79 tRNA + rRNA features
-[00:23:51] Searching for CRISPR repeats
-[00:23:52] CRISPR1 CP127019.1 2592289 with 4 spacers
-[00:23:52] Found 1 CRISPRs
-[00:23:52] Predicting coding sequences
-[00:23:52] Contigs total 3121265 bp, so using meta mode
-[00:23:52] Running: prodigal -i output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fna -c -m -g 11 -p meta -f sco -q
-[00:24:06] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:574451..574645 on - strand
-[00:24:07] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:2035037..2035168 on + strand
-[00:24:07] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:2596775..2597269 on + strand
-[00:24:08] Found 3042 CDS
-[00:24:08] Connecting features back to sequences
-[00:24:08] Not using genus-specific database. Try --usegenus to enable it.
-[00:24:08] Preparing user-supplied primary BLAST annotation source: resource/protein/sa_mrsa_protein.fasta
-[00:24:08] Guessed source was in fasta format.
-[00:24:08] Running: makeblastdb -dbtype prot -in resource\/protein\/sa_mrsa_protein\.fasta -out output\/prokka_annotation\/sa_mrsa_prokka\/proteins -logfile /dev/null
-[00:24:08] Using /inference source as 'sa_mrsa_protein.fasta'
-[00:24:08] Annotating CDS, please be patient.
-[00:24:08] Will use 12 CPUs for similarity searching.
-[00:24:08] There are still 3042 unannotated CDS left (started with 3042)
-[00:24:08] Will use blast to search against output/prokka_annotation/sa_mrsa_prokka/proteins with 12 CPUs
-[00:24:08] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.proteins\.tmp\.51542\.faa | parallel --gnu --plain -j 12 --block 37260 --recstart '>' --pipe blastp -query - -db output/prokka_annotation/sa_mrsa_prokka/proteins -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.proteins\.tmp\.51542\.blast 2> /dev/null
-[00:24:18] Modify product: hypothetical protein QQO11_01740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1108 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01795 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF3310 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01820 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01830 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1024 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01860 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: Rho termination factor N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF3168 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF2977 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF2951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02000 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1398 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF3169 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02230 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02285 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02295 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02335 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02340 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF3173 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02435 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF6037 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF2871 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF960 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF927 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00200 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00215 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00220 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF6038 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00230 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF5906 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF960 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00380 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00385 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00390 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00395 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00405 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00450 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF960 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF927 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1413 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_00515 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00540 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00575 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_00585 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1648 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_06820 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06870 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06935 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06950 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06970 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06995 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_07005 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_07025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_07065 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_07070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_03460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF5327 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF423 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1450 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1934 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_03695 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_03700 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF2922 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF1659 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02485 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02530 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02545 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1304 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02665 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02670 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02675 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02680 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF2294 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_02730 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_02785 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DNA polymerase III subunit delta' C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF488 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01245 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01305 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01435 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF5082 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5079 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5085 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5085 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5080 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01545 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF5083 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5084 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_01705 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_01710 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: UPF0223 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF5325 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_05905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF420 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_05960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF177 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_06120 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06140 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06155 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_10850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06160 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06180 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06215 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_06440 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF4887 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_04540 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04615 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04630 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04635 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04640 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04645 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04650 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04660 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_04755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF1474 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: primase alpha helix C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_04850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF368 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_04900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF72 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF3055 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: DUF86 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_05205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF3899 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_05330 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: hypothetical protein QQO11_05500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF5011 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:18] Modify product: hypothetical protein QQO11_05745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:18] Modify product: DUF697 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_07100 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF896 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_07360 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF6501 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_07535 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: NifU N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF1292 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF4930 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09085 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09210 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09285 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08115 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08125 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF3310 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF3113 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF2815 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF2800 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_08170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08190 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08195 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF2829 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_08205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08210 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08255 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF309 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_08315 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_08810 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_10940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_10960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_10980 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11005 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1514 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11040 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11050 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1024 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11075 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_01765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1108 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF771 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11125 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11130 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11145 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF739 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11165 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11350 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11360 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11390 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11405 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11415 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11425 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11430 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11445 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11455 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11475 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF3139 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11495 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11505 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11515 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11520 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11580 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11595 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11600 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11620 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11625 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11635 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11640 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11645 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11650 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11660 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11665 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11670 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11675 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11685 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11690 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11695 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11700 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11705 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11710 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11715 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11730 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11735 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11750 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11770 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DnaB-like helicase C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_11780 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11790 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11795 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11800 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11805 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11810 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11825 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11830 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11835 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11855 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11870 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11875 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11880 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11890 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11920 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11925 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11935 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11950 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11955 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11970 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11975 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11980 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11990 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_11995 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12020 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12030 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12040 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12055 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12060 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12075 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12265 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1146 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09550 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF948 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF4479 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF1444 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09685 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09770 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF4909 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF4352 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09855 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF3969 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_09865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09875 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09880 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_09885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF4888 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_10035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_00815 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_00930 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF4242 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF2294 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF4870 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13520 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF1641 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13560 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13575 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13580 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13585 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13600 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13625 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF805 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13735 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF3021 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13840 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF2871 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_15780 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_15785 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_15790 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: DUF536 domain-containing protein (plasmid) [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_15805 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_15825 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_15890 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
-[00:24:19] Modify product: DUF2529 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: DUF2750 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_12570 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12605 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_12815 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF2273 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:19] Modify product: hypothetical protein QQO11_13025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: hypothetical protein QQO11_13035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:19] Modify product: DUF6414 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF4889 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF3139 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14185 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1307 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14330 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14380 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14425 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF3427 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF3267 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF445 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_10205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF402 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_10465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1128 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_10550 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10565 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF3267 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF2179 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_10765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF4097 family beta strand repeat-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF1700 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_10785 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10825 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10840 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_10930 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF4889 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF1273 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_07720 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1405 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_07780 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_07800 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_07910 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_07925 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF2951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF2977 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_07965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_07985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_07990 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF3168 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_08010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_08015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1514 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_08090 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_15150 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15260 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15290 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15365 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15455 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: Wzz/FepE/Etk N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF3147 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF3147 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: nucleoside transporter C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_03885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_03890 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_03900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF47 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF402 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF456 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF1129 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_04010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_04015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_04035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_04070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF1361 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_04110 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_04175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF2188 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_14590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14680 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14750 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_14895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF896 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: DUF2316 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_15000 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF961 family protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_15055 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: DUF4176 domain-containing protein [Staphylococcus aureus] => hypothetical protein
-[00:24:20] Modify product: hypothetical protein QQO11_15065 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Modify product: hypothetical protein QQO11_15085 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
-[00:24:20] Cleaned 486 /product names
-[00:24:20] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.proteins.tmp.51542.faa
-[00:24:20] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.proteins.tmp.51542.blast
-[00:24:20] There are still 213 unannotated CDS left (started with 3042)
-[00:24:20] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/IS with 12 CPUs
-[00:24:20] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.IS\.tmp\.51542\.faa | parallel --gnu --plain -j 12 --block 1707 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.IS\.tmp\.51542\.blast 2> /dev/null
-[00:24:22] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.IS.tmp.51542.faa
-[00:24:22] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.IS.tmp.51542.blast
-[00:24:22] There are still 189 unannotated CDS left (started with 3042)
-[00:24:22] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/AMR with 12 CPUs
-[00:24:22] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.AMR\.tmp\.51542\.faa | parallel --gnu --plain -j 12 --block 1444 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/AMR -evalue 1e-300 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.AMR\.tmp\.51542\.blast 2> /dev/null
-[00:24:23] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.AMR.tmp.51542.faa
-[00:24:23] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.AMR.tmp.51542.blast
-[00:24:23] There are still 188 unannotated CDS left (started with 3042)
-[00:24:23] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/sprot with 12 CPUs
-[00:24:23] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.sprot\.tmp\.51542\.faa | parallel --gnu --plain -j 12 --block 1418 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.sprot\.tmp\.51542\.blast 2> /dev/null
-[00:24:26] Modify product: UPF0758 protein YsxA => hypothetical protein
-[00:24:26] Modify product: UPF0394 inner membrane protein YeeE => hypothetical protein
-[00:24:26] Modify product: UPF0394 inner membrane protein YeeE => hypothetical protein
-[00:24:26] Modify product: Probable poly-beta-1,6-N-acetyl-D-glucosamine export protein => putative poly-beta-1,6-N-acetyl-D-glucosamine export protein
-[00:24:26] Modify product: Probable tautomerase SAR1376 => putative tautomerase
-[00:24:26] Modify product: Probable iron uptake system component EfeM => putative iron uptake system component EfeM
-[00:24:26] Modify product: Uncharacterized hydrolase SA2367 => putative hydrolase
-[00:24:26] Modify product: Uncharacterized hydrolase SA2367 => putative hydrolase
-[00:24:26] Modify product: Uncharacterized protein SA2420.1 => putative protein.1
-[00:24:26] Cleaned 9 /product names
-[00:24:26] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sprot.tmp.51542.faa
-[00:24:26] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sprot.tmp.51542.blast
-[00:24:26] There are still 147 unannotated CDS left (started with 3042)
-[00:24:26] Will use hmmer3 to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/hmm/HAMAP.hmm with 12 CPUs
-[00:24:26] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.HAMAP\.hmm\.tmp\.51542\.faa | parallel --gnu --plain -j 12 --block 996 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/hmm/HAMAP.hmm /dev/stdin > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.HAMAP\.hmm\.tmp\.51542\.hmmer3 2> /dev/null
-[00:24:28] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.HAMAP.hmm.tmp.51542.faa
-[00:24:28] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.HAMAP.hmm.tmp.51542.hmmer3
-[00:24:28] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.psq
-[00:24:28] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.phr
-[00:24:28] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.pin
-[00:24:28] Labelling remaining 141 proteins as 'hypothetical protein'
-[00:24:28] Possible /pseudo 'recombinase family protein [Staphylococcus aureus]' at CP127019.1 position 41271
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 48809
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 52574
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 82478
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 82932
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 83410
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 84072
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 84576
-[00:24:28] Possible /pseudo 'recombinase family protein [Staphylococcus aureus]' at CP127019.1 position 95704
-[00:24:28] Possible /pseudo 'phosphonate ABC transporter, permease protein PhnE [Staphylococcus aureus]' at CP127019.1 position 165537
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 239165
-[00:24:28] Possible /pseudo 'Gfo/Idh/MocA family oxidoreductase [Staphylococcus aureus]' at CP127019.1 position 252269
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 329126
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 348842
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 349353
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 352694
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 352815
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 353326
-[00:24:28] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 353725
-[00:24:28] Possible /pseudo 'Lipase 2' at CP127019.1 position 374947
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 377807
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 392054
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 479201
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 506744
-[00:24:28] Possible /pseudo 'YdcP family protein [Staphylococcus aureus]' at CP127019.1 position 511003
-[00:24:28] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 540251
-[00:24:28] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 540840
-[00:24:28] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 541104
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 544214
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 544556
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 545160
-[00:24:28] Possible /pseudo 'YibE/F family protein [Staphylococcus aureus]' at CP127019.1 position 565851
-[00:24:28] Possible /pseudo 'Bifunctional protein GlmU' at CP127019.1 position 605011
-[00:24:28] Possible /pseudo 'HTH-type transcriptional regulatory protein GabR' at CP127019.1 position 634414
-[00:24:28] Possible /pseudo 'deoxynucleoside kinase [Staphylococcus aureus]' at CP127019.1 position 679638
-[00:24:28] Possible /pseudo 'glycosyltransferase [Staphylococcus aureus]' at CP127019.1 position 696890
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 749398
-[00:24:28] Possible /pseudo 'iron ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 782517
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 786785
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 811459
-[00:24:28] Possible /pseudo 'Extracellular matrix protein-binding protein emp' at CP127019.1 position 938560
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 942049
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 942421
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 943178
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 943395
-[00:24:28] Possible /pseudo 'helix-turn-helix transcriptional regulator [Staphylococcus aureus]' at CP127019.1 position 959657
-[00:24:28] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 960293
-[00:24:28] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 963895
-[00:24:28] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 964176
-[00:24:28] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 965266
-[00:24:28] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 965619
-[00:24:28] Possible /pseudo 'signal peptidase I [Staphylococcus aureus]' at CP127019.1 position 1022192
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1049494
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1059182
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1172196
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1231106
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1231518
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1235321
-[00:24:28] Possible /pseudo 'beta-class phenol-soluble modulin [Staphylococcus aureus]' at CP127019.1 position 1245837
-[00:24:28] Possible /pseudo 'FemA/FemB family glycyltransferase FmhA [Staphylococcus aureus]' at CP127019.1 position 1329729
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1403914
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1404029
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1404535
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1405980
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1406677
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1406910
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1421027
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1483787
-[00:24:28] Possible /pseudo 'Elastin-binding protein EbpS' at CP127019.1 position 1618163
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1631104
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1632679
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1641799
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1644224
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1665620
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1666454
-[00:24:28] Possible /pseudo 'helix-turn-helix transcriptional regulator [Staphylococcus aureus]' at CP127019.1 position 1667804
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1669445
-[00:24:28] Possible /pseudo 'IS1182 family transposase ISSau3' at CP127019.1 position 1877529
-[00:24:28] Possible /pseudo 'IS1182 family transposase ISSau3' at CP127019.1 position 1985559
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2002027
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2002214
-[00:24:28] Possible /pseudo 'Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B' at CP127019.1 position 2116709
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2165975
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2166308
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2188464
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2188746
-[00:24:28] Possible /pseudo 'AAA family ATPase [Staphylococcus aureus]' at CP127019.1 position 2194771
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2197218
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2197389
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2200841
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2242293
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244247
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244491
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244676
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2247739
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248013
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248299
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248579
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248856
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2251376
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2251869
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2256692
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2268264
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2268517
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2270982
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272258
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272427
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272984
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2273734
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2273904
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2274097
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2274963
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275195
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275451
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275673
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2276453
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2277743
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2278117
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2279006
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2279214
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2288580
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2289278
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2289782
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2290189
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2295025
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2295546
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2298219
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2299930
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2300265
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2301262
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2303214
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2305336
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2318104
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2319511
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2319991
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2321044
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2321637
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2322061
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2322382
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2323037
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2323564
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2324475
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2325350
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2325907
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2346149
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2346515
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2349883
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2352459
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2355615
-[00:24:28] Possible /pseudo 'PH domain-containing protein [Staphylococcus aureus]' at CP127019.1 position 2392725
-[00:24:28] Possible /pseudo 'IS1182 family transposase ISSau3' at CP127019.1 position 2520966
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2550500
-[00:24:28] Possible /pseudo 'helicase [Staphylococcus aureus]' at CP127019.1 position 2554267
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2640347
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2640628
-[00:24:28] Possible /pseudo 'bi-component gamma-hemolysin HlgAB subunit A [Staphylococcus aureus]' at CP127019.1 position 2746994
-[00:24:28] Possible /pseudo 'ABC transporter ATP-binding protein [Staphylococcus aureus]' at CP127019.1 position 2756486
-[00:24:28] Possible /pseudo 'ABC transporter ATP-binding protein [Staphylococcus aureus]' at CP127019.1 position 2796497
-[00:24:28] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 2798175
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2811510
-[00:24:28] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 2813168
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2820537
-[00:24:28] Possible /pseudo 'Surface protein G' at CP127019.1 position 2825297
-[00:24:28] Possible /pseudo 'fibronectin-binding protein FnbA [Staphylococcus aureus]' at CP127019.1 position 2832167
-[00:24:28] Possible /pseudo 'putative hydrolase' at CP127019.1 position 2920076
-[00:24:28] Possible /pseudo 'Zinc metalloproteinase aureolysin' at CP127019.1 position 3003516
-[00:24:28] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 3037632
-[00:24:28] Possible /pseudo 'Lipase 1' at CP127019.1 position 3048830
-[00:24:28] Possible /pseudo 'CadD family cadmium resistance transporter [Staphylococcus aureus]' at CP127020.1 position 5795
-[00:24:28] Possible /pseudo 'hypothetical protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 7246
-[00:24:28] Possible /pseudo 'hypothetical protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 7397
-[00:24:28] Possible /pseudo 'recombinase family protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 14883
-[00:24:28] Found 32 unique /gene codes.
-[00:24:28] Fixed 2 duplicate /gene - ssp_1 ssp_2
-[00:24:28] Fixed 2 duplicate /gene - gatB_1 gatB_2
-[00:24:28] Fixed 2 duplicate /gene - glmU_1 glmU_2
-[00:24:28] Fixed 2 duplicate /gene - gabR_1 gabR_2
-[00:24:28] Fixed 2 duplicate /gene - ebpS_1 ebpS_2
-[00:24:28] Fixed 2 duplicate /gene - lipA_1 lipA_2
-[00:24:28] Fixed 2 duplicate /gene - sasG_1 sasG_2
-[00:24:28] Fixed 2 duplicate /gene - aur_1 aur_2
-[00:24:28] Fixed 2 duplicate /gene - lip2_1 lip2_2
-[00:24:28] Fixed 9 colliding /gene names.
-[00:24:28] Adding /locus_tag identifiers
-[00:24:28] Assigned 3122 locus_tags to CDS and RNA features.
-[00:24:28] Writing outputs to output/prokka_annotation/sa_mrsa_prokka/
-[00:24:30] Generating annotation statistics file
-[00:24:30] Generating Genbank and Sequin files
-[00:24:30] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.err -i output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fsa 2> /dev/null
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/errorsummary.val
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.dr
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fixedproducts
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.ecn
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.val
-[00:24:35] Repairing broken .GBK output that tbl2asn produces...
-[00:24:35] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.gbf > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.gbk
-[00:24:35] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gbf
-[00:24:35] Output files:
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.tbl
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gbk
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.ffn
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.faa
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.txt
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gff
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.log
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sqn
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.err
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fsa
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fna
-[00:24:35] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.tsv
-[00:24:35] Annotation finished successfully.
-[00:24:35] Walltime used: 0.80 minutes
-[00:24:35] If you use this result please cite the Prokka paper:
-[00:24:35] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
-[00:24:35] Type 'prokka --citation' for more details.
-[00:24:35] Thank you, come again.
+[21:09:52] This is prokka 1.14.6
+[21:09:52] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[21:09:52] Homepage is https://github.com/tseemann/prokka
+[21:09:52] Local time is Thu Feb 22 21:09:52 2024
+[21:09:52] You are alperen
+[21:09:52] Operating system is linux
+[21:09:52] You have BioPerl 1.7.8
+[21:09:52] System has 20 cores.
+[21:09:52] Will use maximum of 12 cores.
+[21:09:52] Annotating as >>> Bacteria <<<
+[21:09:52] Generating locus_tag from 'resource/genome/sa_mrsa_genome.fasta' contents.
+[21:09:52] Setting --locustag PJKHBDOM from MD5 9341bd861200d95fc4c6058f388c3f39
+[21:09:52] Re-using existing --outdir output/prokka_annotation/sa_mrsa_prokka
+[21:09:52] Using filename prefix: sa_mrsa.XXX
+[21:09:52] Setting HMMER_NCPU=1
+[21:09:52] Writing log to: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.log
+[21:09:52] Command: /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prokka --outdir output/prokka_annotation/sa_mrsa_prokka --force --cpus 12 --prefix sa_mrsa --usegenus --genus Staphylococcus --species aureus --addgenes --addmrna --metagenome --proteins resource/protein/sa_mrsa_protein.fasta resource/genome/sa_mrsa_genome.fasta
+[21:09:52] Appending to PATH: /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin
+[21:09:52] Looking for 'aragorn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/aragorn
+[21:09:52] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
+[21:09:52] Looking for 'barrnap' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/barrnap
+[21:09:53] Determined barrnap version is 000009 from 'barrnap 0.9'
+[21:09:53] Looking for 'blastp' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/blastp
+[21:09:53] Determined blastp version is 002015 from 'blastp: 2.15.0+'
+[21:09:53] Looking for 'cmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/cmpress
+[21:09:53] Determined cmpress version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[21:09:53] Looking for 'cmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/cmscan
+[21:09:53] Determined cmscan version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[21:09:53] Looking for 'egrep' - found /usr/bin/egrep
+[21:09:53] Looking for 'find' - found /usr/bin/find
+[21:09:53] Looking for 'grep' - found /usr/bin/grep
+[21:09:53] Looking for 'hmmpress' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/hmmpress
+[21:09:53] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[21:09:53] Looking for 'hmmscan' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/hmmscan
+[21:09:53] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[21:09:53] Looking for 'java' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/java
+[21:09:53] Looking for 'makeblastdb' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/makeblastdb
+[21:09:53] Determined makeblastdb version is 002015 from 'makeblastdb: 2.15.0+'
+[21:09:53] Looking for 'minced' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/minced
+[21:09:53] Determined minced version is 004002 from 'minced 0.4.2'
+[21:09:53] Looking for 'parallel' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/parallel
+[21:09:53] Determined parallel version is 20240122 from 'GNU parallel 20240122'
+[21:09:53] Looking for 'prodigal' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prodigal
+[21:09:53] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[21:09:53] Looking for 'prokka-genbank_to_fasta_db' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/prokka-genbank_to_fasta_db
+[21:09:53] Looking for 'sed' - found /usr/bin/sed
+[21:09:53] Looking for 'tbl2asn' - found /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/bin/tbl2asn
+[21:09:53] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
+[21:09:53] Using genetic code table 11.
+[21:09:53] Loading and checking input file: resource/genome/sa_mrsa_genome.fasta
+[21:09:53] Wrote 2 contigs totalling 3121265 bp.
+[21:09:53] Predicting tRNAs and tmRNAs
+[21:09:53] Running: aragorn -l -gc11  -w output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fna
+[21:09:53] 1 tRNA-Glu [24143,24217] 34 (ttc)
+[21:09:53] 2 tRNA-Asp [24225,24297] 34 (gtc)
+[21:09:53] 3 tRNA-Ser [574398,574490] 37 (tga)
+[21:09:53] 4 tRNA-Val [627355,627430] 34 (tac)
+[21:09:53] 5 tRNA-Thr [627447,627522] 34 (tgt)
+[21:09:53] 6 tRNA-Lys [627528,627602] 35 (ttt)
+[21:09:53] 7 tRNA-Gly [627635,627709] 33 (gcc)
+[21:09:53] 8 tRNA-Leu [627717,627805] 35 (taa)
+[21:09:53] 9 tRNA-Arg [627811,627887] 35 (acg)
+[21:09:53] 10 tRNA-Pro [627908,627981] 35 (tgg)
+[21:09:53] 11 tRNA-Ala [628005,628080] 34 (tgc)
+[21:09:53] 12 tRNA-Ile [629850,629926] 35 (gat)
+[21:09:53] 13 tRNA-Arg c[912148,912220] 34 (ccg)
+[21:09:53] 14 tmRNA [928293,928651] 94,129 GKSNNNFAVAA*
+[21:09:53] 15 tRNA-Ser c[1093177,1093267] 37 (gct)
+[21:09:53] 16 tRNA-Asn c[1093269,1093343] 33 (gtt)
+[21:09:53] 17 tRNA-Arg c[1245208,1245283] 36 (tct)
+[21:09:53] 18 tRNA-Ser c[2035131,2035219] 36 (gga)
+[21:09:53] 19 tRNA-Glu c[2035273,2035346] 35 (ttc)
+[21:09:53] 20 tRNA-Asn c[2035347,2035421] 33 (gtt)
+[21:09:53] 21 tRNA-Gly c[2035436,2035509] 33 (tcc)
+[21:09:53] 22 tRNA-His c[2035525,2035600] 34 (gtg)
+[21:09:53] 23 tRNA-Phe c[2035614,2035686] 34 (gaa)
+[21:09:53] 24 tRNA-Asp c[2035703,2035778] 34 (gtc)
+[21:09:53] 25 tRNA-Met c[2035800,2035873] 35 (cat)
+[21:09:53] 26 tRNA-Leu c[2069603,2069686] 35 (caa)
+[21:09:53] 27 tRNA-Gly c[2069725,2069799] 34 (tcc)
+[21:09:53] 28 tRNA-Gly c[2069813,2069887] 34 (tcc)
+[21:09:53] 29 tRNA-Gly c[2069903,2069977] 34 (tcc)
+[21:09:53] 30 tRNA-Cys c[2069985,2070058] 33 (gca)
+[21:09:53] 31 tRNA-Gln c[2070064,2070135] 33 (ttg)
+[21:09:53] 32 tRNA-His c[2070146,2070219] 34 (gtg)
+[21:09:53] 33 tRNA-Trp c[2070222,2070295] 33 (cca)
+[21:09:53] 34 tRNA-Tyr c[2070310,2070392] 36 (gta)
+[21:09:53] 35 tRNA-Thr c[2070397,2070472] 34 (tgt)
+[21:09:53] 36 tRNA-Phe c[2070479,2070553] 35 (gaa)
+[21:09:53] 37 tRNA-Asp c[2070571,2070646] 34 (gtc)
+[21:09:53] 38 tRNA-Met c[2070655,2070730] 36 (cat)
+[21:09:53] 39 tRNA-Ser c[2070744,2070836] 37 (tga)
+[21:09:53] 40 tRNA-Asp c[2070875,2070950] 34 (gtc)
+[21:09:53] 41 tRNA-Met c[2070959,2071034] 36 (cat)
+[21:09:53] 42 tRNA-Ser c[2071049,2071140] 38 (tga)
+[21:09:53] 43 tRNA-Met c[2071149,2071222] 35 (cat)
+[21:09:53] 44 tRNA-Met c[2071250,2071324] 35 (cat)
+[21:09:53] 45 tRNA-Ala c[2071346,2071421] 34 (tgc)
+[21:09:53] 46 tRNA-Pro c[2071439,2071512] 35 (tgg)
+[21:09:53] 47 tRNA-Arg c[2071521,2071596] 36 (acg)
+[21:09:53] 48 tRNA-Leu c[2071614,2071702] 35 (taa)
+[21:09:53] 49 tRNA-Gly c[2071713,2071787] 33 (gcc)
+[21:09:53] 50 tRNA-Leu c[2071790,2071873] 36 (tag)
+[21:09:53] 51 tRNA-Lys c[2071876,2071951] 34 (ttt)
+[21:09:53] 52 tRNA-Thr c[2071957,2072032] 34 (tgt)
+[21:09:53] 53 tRNA-Val c[2072049,2072124] 34 (tac)
+[21:09:53] 54 tRNA-Ala c[2075459,2075534] 34 (tgc)
+[21:09:53] 55 tRNA-Ile c[2075553,2075629] 35 (gat)
+[21:09:53] 56 tRNA-Gly c[2383178,2383251] 33 (tcc)
+[21:09:53] 57 tRNA-Leu c[2383274,2383356] 34 (gag)
+[21:09:53] 58 tRNA-Lys c[2493882,2493955] 34 (ttt)
+[21:09:53] 59 tRNA-Gln c[2493959,2494033] 33 (ttg)
+[21:09:53] 60 tRNA-Tyr c[2494043,2494126] 35 (gta)
+[21:09:53] 61 tRNA-Val c[2494156,2494231] 34 (tac)
+[21:09:53] 62 tRNA-Glu c[2494238,2494311] 35 (ttc)
+[21:09:53] 63 tRNA-Asn c[2494312,2494386] 33 (gtt)
+[21:09:53] 64 tRNA-Gln c[2596921,2597013] 40 (ttg)
+[21:09:53] Found 64 tRNAs
+[21:09:53] Predicting Ribosomal RNAs
+[21:09:53] Running Barrnap with 12 threads
+[21:09:54] 1 CP127019.1 583641 16S ribosomal RNA
+[21:09:54] 2 CP127019.1 585559 23S ribosomal RNA
+[21:09:54] 3 CP127019.1 588554 5S ribosomal RNA (partial)
+[21:09:54] 4 CP127019.1 627230 5S ribosomal RNA (partial)
+[21:09:54] 5 CP127019.1 628206 16S ribosomal RNA
+[21:09:54] 6 CP127019.1 630096 23S ribosomal RNA
+[21:09:54] 7 CP127019.1 633091 5S ribosomal RNA (partial)
+[21:09:54] 8 CP127019.1 2072171 5S ribosomal RNA (partial)
+[21:09:54] 9 CP127019.1 2072325 23S ribosomal RNA
+[21:09:54] 10 CP127019.1 2075722 16S ribosomal RNA
+[21:09:54] 11 CP127019.1 2377881 5S ribosomal RNA (partial)
+[21:09:54] 12 CP127019.1 2378035 23S ribosomal RNA
+[21:09:54] 13 CP127019.1 2381505 16S ribosomal RNA
+[21:09:54] 14 CP127019.1 2494432 5S ribosomal RNA (partial)
+[21:09:54] 15 CP127019.1 2494586 23S ribosomal RNA
+[21:09:54] 16 CP127019.1 2498056 16S ribosomal RNA
+[21:09:54] Found 16 rRNAs
+[21:09:54] Skipping ncRNA search, enable with --rfam if desired.
+[21:09:54] Total of 79 tRNA + rRNA features
+[21:09:54] Searching for CRISPR repeats
+[21:09:54] CRISPR1 CP127019.1 2592289 with 4 spacers
+[21:09:55] Found 1 CRISPRs
+[21:09:55] Predicting coding sequences
+[21:09:55] Contigs total 3121265 bp, so using meta mode
+[21:09:55] Running: prodigal -i output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fna -c -m -g 11 -p meta -f sco -q
+[21:10:01] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:574451..574645 on - strand
+[21:10:02] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:2035037..2035168 on + strand
+[21:10:02] Excluding CDS which overlaps existing RNA (tRNA) at CP127019.1:2596775..2597269 on + strand
+[21:10:02] Found 3042 CDS
+[21:10:02] Connecting features back to sequences
+[21:10:02] Using custom Staphylococcus database for annotation
+[21:10:02] Preparing user-supplied primary BLAST annotation source: resource/protein/sa_mrsa_protein.fasta
+[21:10:02] Guessed source was in fasta format.
+[21:10:02] Running: makeblastdb -dbtype prot -in resource\/protein\/sa_mrsa_protein\.fasta -out output\/prokka_annotation\/sa_mrsa_prokka\/proteins -logfile /dev/null
+[21:10:02] Using /inference source as 'sa_mrsa_protein.fasta'
+[21:10:02] Annotating CDS, please be patient.
+[21:10:02] Will use 12 CPUs for similarity searching.
+[21:10:03] There are still 3042 unannotated CDS left (started with 3042)
+[21:10:03] Will use blast to search against output/prokka_annotation/sa_mrsa_prokka/proteins with 12 CPUs
+[21:10:03] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.proteins\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 37260 --recstart '>' --pipe blastp -query - -db output/prokka_annotation/sa_mrsa_prokka/proteins -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.proteins\.tmp\.60314\.blast 2> /dev/null
+[21:10:09] Modify product: hypothetical protein QQO11_07100 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF896 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07360 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF6501 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07535 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: NifU N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_02465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02485 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02530 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02545 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1304 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_02665 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02670 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02675 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02680 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF2294 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_02730 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_02785 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DNA polymerase III subunit delta' C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: UPF0223 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF5325 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_05905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF420 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_05960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF177 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_06120 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06140 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06155 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_10850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06160 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06180 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06215 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06440 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00815 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00930 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF4242 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF2294 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_03460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF5327 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF423 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1450 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF443 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1934 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_03695 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_03700 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF2922 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1659 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: nucleoside transporter C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_03885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_03890 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_03900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF47 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF402 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF456 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1129 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_04010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_04015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_04035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_04070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1361 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_04110 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_04175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF2871 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF960 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF927 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00200 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00215 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00220 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF6038 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00230 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF5906 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF960 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00380 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00385 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00390 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00395 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00405 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00450 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1643 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF960 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF927 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1413 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_00515 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00540 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00575 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_00585 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1648 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_06820 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06870 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06935 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06950 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06970 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_06995 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07005 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07065 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1292 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_09070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF4930 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_09085 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF6262 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_09210 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_09285 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF4889 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1273 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07720 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1405 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07780 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07800 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07910 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_07925 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: DUF2951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: DUF2977 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:09] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:09] Modify product: hypothetical protein QQO11_07965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_07985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_07990 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3168 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1514 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08090 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08115 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08125 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3310 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3113 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2815 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2800 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08190 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08195 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2829 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08210 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08255 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1672 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF309 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_08315 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_08810 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09550 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF948 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4479 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF1444 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_09685 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09770 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF4909 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4352 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_09855 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3969 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_09865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09875 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09880 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_09885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4888 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11870 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11875 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11880 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11885 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11890 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11920 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11925 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11935 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11950 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11955 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11970 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11975 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11980 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11985 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11990 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11995 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12020 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12030 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12040 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12055 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12060 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12070 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12075 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12265 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1146 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3267 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF445 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF402 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1128 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10550 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10565 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3267 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2179 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF4097 family beta strand repeat-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF1700 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_10785 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10825 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10840 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10905 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10930 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2529 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2750 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_12570 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12605 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_12815 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2273 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13025 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13035 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF6414 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13235 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF4870 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13520 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1641 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13560 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13575 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13580 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13585 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13600 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13625 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF805 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13735 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_13745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3021 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_13840 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2871 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4889 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3139 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14015 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14185 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1307 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14330 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14380 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF1433 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14425 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3427 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15780 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15785 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15790 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: DUF536 domain-containing protein (plasmid) [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_15805 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15825 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15890 (plasmid) [Staphylococcus aureus] => hypothetical protein (plasmid) [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15150 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15260 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15290 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15365 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15455 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: Wzz/FepE/Etk N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3147 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3147 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_05205 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3899 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_05330 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_05500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF5011 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_05745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF697 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4887 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_04540 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04615 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04630 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04635 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04640 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04645 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04650 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04660 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_04755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1474 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: primase alpha helix C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_04850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF368 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_04900 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF72 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3055 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF86 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01175 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF488 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01245 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01305 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01435 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF5082 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF5079 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF5085 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF5085 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF5080 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01545 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF5083 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF5084 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4467 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF4064 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01705 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01710 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2188 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_14590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14680 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14750 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_14895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF896 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2316 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_15000 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15010 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF961 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_15055 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF4176 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_15065 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_15085 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10940 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10960 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_10980 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11005 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1514 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11040 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11045 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11050 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1024 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11075 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1108 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF771 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11125 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11130 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11135 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11145 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF739 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11165 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11170 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11350 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11360 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11390 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11400 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11405 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11415 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11425 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11430 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11445 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11455 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11460 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11465 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11470 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11475 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11480 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3139 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11495 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11500 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11505 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11515 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11520 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11580 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11590 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11595 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11600 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11620 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11625 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11635 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11640 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11645 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11650 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11660 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11665 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11670 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11675 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11685 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11690 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11695 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11700 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11705 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11710 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11715 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11730 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11735 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11745 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11750 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11755 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11770 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DnaB-like helicase C-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_11780 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11790 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11795 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11800 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11805 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11810 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11825 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11830 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11835 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11855 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_11865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01740 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1108 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01765 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01795 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF3310 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01820 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01830 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1024 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF1381 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01850 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01860 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01865 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01895 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: Rho termination factor N-terminal domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3168 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_01945 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: hypothetical protein QQO11_01965 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF2977 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF2951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: hypothetical protein QQO11_02000 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:10] Modify product: DUF1398 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:10] Modify product: DUF3169 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:11] Modify product: DUF951 domain-containing protein [Staphylococcus aureus] => hypothetical protein
+[21:10:11] Modify product: hypothetical protein QQO11_02230 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: hypothetical protein QQO11_02285 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: hypothetical protein QQO11_02295 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: hypothetical protein QQO11_02335 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: hypothetical protein QQO11_02340 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: DUF3173 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:11] Modify product: hypothetical protein QQO11_02420 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: hypothetical protein QQO11_02435 [Staphylococcus aureus] => hypothetical protein [Staphylococcus aureus]
+[21:10:11] Modify product: DUF6037 family protein [Staphylococcus aureus] => hypothetical protein
+[21:10:11] Cleaned 486 /product names
+[21:10:11] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.proteins.tmp.60314.faa
+[21:10:11] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.proteins.tmp.60314.blast
+[21:10:11] There are still 213 unannotated CDS left (started with 3042)
+[21:10:11] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/genus/Staphylococcus with 12 CPUs
+[21:10:11] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.Staphylococcus\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 1707 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/genus/Staphylococcus -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.Staphylococcus\.tmp\.60314\.blast 2> /dev/null
+[21:10:12] Modify product: conserved cytoplasmic protein => hypothetical protein
+[21:10:12] Modify product: SNF2 family N-terminal domain protein => hypothetical protein
+[21:10:12] Modify product: SNF2 family N-terminal domain protein => hypothetical protein
+[21:10:12] Cleaned 3 /product names
+[21:10:12] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.Staphylococcus.tmp.60314.faa
+[21:10:12] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.Staphylococcus.tmp.60314.blast
+[21:10:12] There are still 104 unannotated CDS left (started with 3042)
+[21:10:12] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/IS with 12 CPUs
+[21:10:12] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.IS\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 547 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.IS\.tmp\.60314\.blast 2> /dev/null
+[21:10:12] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.IS.tmp.60314.faa
+[21:10:12] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.IS.tmp.60314.blast
+[21:10:12] There are still 104 unannotated CDS left (started with 3042)
+[21:10:12] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/AMR with 12 CPUs
+[21:10:12] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.AMR\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 547 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/AMR -evalue 1e-300 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.AMR\.tmp\.60314\.blast 2> /dev/null
+[21:10:13] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.AMR.tmp.60314.faa
+[21:10:13] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.AMR.tmp.60314.blast
+[21:10:13] There are still 104 unannotated CDS left (started with 3042)
+[21:10:13] Will use blast to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/sprot with 12 CPUs
+[21:10:13] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.sprot\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 547 --recstart '>' --pipe blastp -query - -db /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.sprot\.tmp\.60314\.blast 2> /dev/null
+[21:10:14] Modify product: UPF0394 inner membrane protein YeeE => hypothetical protein
+[21:10:14] Modify product: UPF0394 inner membrane protein YeeE => hypothetical protein
+[21:10:14] Modify product: Uncharacterized protein SA2420.1 => putative protein.1
+[21:10:14] Cleaned 3 /product names
+[21:10:14] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sprot.tmp.60314.faa
+[21:10:14] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sprot.tmp.60314.blast
+[21:10:14] There are still 98 unannotated CDS left (started with 3042)
+[21:10:14] Will use hmmer3 to search against /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/hmm/HAMAP.hmm with 12 CPUs
+[21:10:14] Running: cat output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.HAMAP\.hmm\.tmp\.60314\.faa | parallel --gnu --plain -j 12 --block 479 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /home/alperen/PycharmProjects/target_project/.snakemake/conda/d5bf7043001d7f476f61e3f08045be38_/db/hmm/HAMAP.hmm /dev/stdin > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.HAMAP\.hmm\.tmp\.60314\.hmmer3 2> /dev/null
+[21:10:15] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.HAMAP.hmm.tmp.60314.faa
+[21:10:15] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.HAMAP.hmm.tmp.60314.hmmer3
+[21:10:15] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.psq
+[21:10:15] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.phr
+[21:10:15] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/proteins.pin
+[21:10:15] Labelling remaining 97 proteins as 'hypothetical protein'
+[21:10:15] Possible /pseudo 'recombinase family protein [Staphylococcus aureus]' at CP127019.1 position 41271
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 48809
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 52574
+[21:10:15] Possible /pseudo 'penicillin-binding protein 2 prime' at CP127019.1 position 75634
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 82478
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 82932
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 83410
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 84072
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 84576
+[21:10:15] Possible /pseudo 'recombinase family protein [Staphylococcus aureus]' at CP127019.1 position 95704
+[21:10:15] Possible /pseudo 'phosphonate ABC transporter, permease protein PhnE [Staphylococcus aureus]' at CP127019.1 position 165537
+[21:10:15] Possible /pseudo 'phosphate/phosphonate ABC transporter periplasmic protein' at CP127019.1 position 167936
+[21:10:15] Possible /pseudo 'binding-protein-dependent transport system inner membrane protein' at CP127019.1 position 201572
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 239165
+[21:10:15] Possible /pseudo 'Gfo/Idh/MocA family oxidoreductase [Staphylococcus aureus]' at CP127019.1 position 252269
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 329126
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 348842
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 349353
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 352694
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 352815
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 353326
+[21:10:15] Possible /pseudo 'TIGR01741 family protein [Staphylococcus aureus]' at CP127019.1 position 353725
+[21:10:15] Possible /pseudo 'lipase precursor' at CP127019.1 position 374947
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 377807
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 392054
+[21:10:15] Possible /pseudo 'imelysin' at CP127019.1 position 441183
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 479201
+[21:10:15] Possible /pseudo 'integrase-like protein' at CP127019.1 position 486256
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 506744
+[21:10:15] Possible /pseudo 'YdcP family protein [Staphylococcus aureus]' at CP127019.1 position 511003
+[21:10:15] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 540251
+[21:10:15] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 540840
+[21:10:15] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 541104
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 544214
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 544556
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 545160
+[21:10:15] Possible /pseudo 'YibE/F family protein [Staphylococcus aureus]' at CP127019.1 position 565851
+[21:10:15] Possible /pseudo 'putative UDP-N-acetylglucosamine pyrophosphorylase' at CP127019.1 position 605011
+[21:10:15] Possible /pseudo 'putative GntR family transcriptional regulator' at CP127019.1 position 634414
+[21:10:15] Possible /pseudo 'deoxynucleoside kinase [Staphylococcus aureus]' at CP127019.1 position 679638
+[21:10:15] Possible /pseudo 'glycosyltransferase [Staphylococcus aureus]' at CP127019.1 position 696890
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 749398
+[21:10:15] Possible /pseudo 'iron ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 782517
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 786785
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 811459
+[21:10:15] Possible /pseudo 'ATP-dependent DNA helicase' at CP127019.1 position 856584
+[21:10:15] Possible /pseudo 'secretory extracellular matrix and plasma binding protein' at CP127019.1 position 938560
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 942049
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 942421
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 943178
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 943395
+[21:10:15] Possible /pseudo 'helix-turn-helix transcriptional regulator [Staphylococcus aureus]' at CP127019.1 position 959657
+[21:10:15] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 960293
+[21:10:15] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 963895
+[21:10:15] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 964176
+[21:10:15] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 965266
+[21:10:15] Possible /pseudo 'pathogenicity island protein [Staphylococcus aureus]' at CP127019.1 position 965619
+[21:10:15] Possible /pseudo 'signal peptidase I [Staphylococcus aureus]' at CP127019.1 position 1022192
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1049494
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1059182
+[21:10:15] Possible /pseudo 'competence protein CoiA' at CP127019.1 position 1063279
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1172196
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1231106
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1231518
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1235321
+[21:10:15] Possible /pseudo 'beta-class phenol-soluble modulin [Staphylococcus aureus]' at CP127019.1 position 1245837
+[21:10:15] Possible /pseudo 'S4 RNA binding domain protein' at CP127019.1 position 1263309
+[21:10:15] Possible /pseudo 'FemA/FemB family glycyltransferase FmhA [Staphylococcus aureus]' at CP127019.1 position 1329729
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1403914
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1404029
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1404535
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1405980
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1406677
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1406910
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1421027
+[21:10:15] Possible /pseudo 'prephenate dehydrogenase' at CP127019.1 position 1467649
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 1483787
+[21:10:15] Possible /pseudo 'cell surface elastin binding protein' at CP127019.1 position 1618163
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1631104
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1632679
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1641799
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1644224
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1665620
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1666454
+[21:10:15] Possible /pseudo 'helix-turn-helix transcriptional regulator [Staphylococcus aureus]' at CP127019.1 position 1667804
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 1669445
+[21:10:15] Possible /pseudo 'cell-wall-anchored protein SasC' at CP127019.1 position 1958320
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2002027
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2002214
+[21:10:15] Possible /pseudo 'Aspartyl/glutamyl-tRNA amidotransferase subunit B' at CP127019.1 position 2116709
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2165975
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2166308
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2188464
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2188746
+[21:10:15] Possible /pseudo 'AAA family ATPase [Staphylococcus aureus]' at CP127019.1 position 2194771
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2197218
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2197389
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2200841
+[21:10:15] Possible /pseudo 'tetracenomycin polyketide synthesis O-methyltransferase, TcmP' at CP127019.1 position 2208685
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2242293
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244247
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244491
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2244676
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2247739
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248013
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248299
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248579
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2248856
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2251376
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2251869
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2256692
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2268264
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2268517
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2270982
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272258
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272427
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2272984
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2273734
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2273904
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2274097
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2274963
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275195
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275451
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2275673
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2276453
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2277743
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2278117
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2279006
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2279214
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2288580
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2289278
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2289782
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2290189
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2295025
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2295546
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2298219
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2299930
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2300265
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2301262
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2303214
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2305336
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2318104
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2319511
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2319991
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2321044
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2321637
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2322061
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2322382
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2323037
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2323564
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2324475
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2325350
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2325907
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2346149
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2346515
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2349883
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2352459
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2355615
+[21:10:15] Possible /pseudo 'PH domain-containing protein [Staphylococcus aureus]' at CP127019.1 position 2392725
+[21:10:15] Possible /pseudo 'methicillin resistance determinant FmtB protein' at CP127019.1 position 2482083
+[21:10:15] Possible /pseudo 'truncated transposase for IS1272' at CP127019.1 position 2520483
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2550500
+[21:10:15] Possible /pseudo 'helicase [Staphylococcus aureus]' at CP127019.1 position 2554267
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2640347
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2640628
+[21:10:15] Possible /pseudo 'bi-component gamma-hemolysin HlgAB subunit A [Staphylococcus aureus]' at CP127019.1 position 2746994
+[21:10:15] Possible /pseudo 'ABC transporter ATP-binding protein [Staphylococcus aureus]' at CP127019.1 position 2756486
+[21:10:15] Possible /pseudo 'ABC transporter ATP-binding protein [Staphylococcus aureus]' at CP127019.1 position 2796497
+[21:10:15] Possible /pseudo 'ABC transporter permease [Staphylococcus aureus]' at CP127019.1 position 2798175
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2811510
+[21:10:15] Possible /pseudo 'tandem-type lipoprotein [Staphylococcus aureus]' at CP127019.1 position 2813168
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 2820537
+[21:10:15] Possible /pseudo 'Surface protein G' at CP127019.1 position 2825297
+[21:10:15] Possible /pseudo 'fibronectin-binding protein FnbA [Staphylococcus aureus]' at CP127019.1 position 2832167
+[21:10:15] Possible /pseudo 'putative hydrolase/acyltransferase' at CP127019.1 position 2920076
+[21:10:15] Possible /pseudo 'hypothetical protein [Staphylococcus aureus]' at CP127019.1 position 3037632
+[21:10:15] Possible /pseudo 'triacylglycerol lipase' at CP127019.1 position 3048830
+[21:10:15] Possible /pseudo 'CadD family cadmium resistance transporter [Staphylococcus aureus]' at CP127020.1 position 5795
+[21:10:15] Possible /pseudo 'hypothetical protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 7246
+[21:10:15] Possible /pseudo 'hypothetical protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 7397
+[21:10:15] Possible /pseudo 'recombinase family protein (plasmid) [Staphylococcus aureus]' at CP127020.1 position 14883
+[21:10:15] Found 28 unique /gene codes.
+[21:10:15] Fixed 2 duplicate /gene - aur_1 aur_2
+[21:10:15] Fixed 2 duplicate /gene - lip_1 lip_2
+[21:10:15] Fixed 2 duplicate /gene - phnD_1 phnD_2
+[21:10:15] Fixed 2 duplicate /gene - tyrA_1 tyrA_2
+[21:10:15] Fixed 2 duplicate /gene - sasG_1 sasG_2
+[21:10:15] Fixed 2 duplicate /gene - coiA_1 coiA_2
+[21:10:15] Fixed 2 duplicate /gene - gatB_1 gatB_2
+[21:10:15] Fixed 2 duplicate /gene - ssp_1 ssp_2
+[21:10:15] Fixed 2 duplicate /gene - sasC_1 sasC_2
+[21:10:15] Fixed 2 duplicate /gene - gcaD_1 gcaD_2
+[21:10:15] Fixed 2 duplicate /gene - ebpS_1 ebpS_2
+[21:10:15] Fixed 2 duplicate /gene - mecA_1 mecA_2
+[21:10:15] Fixed 12 colliding /gene names.
+[21:10:15] Adding /locus_tag identifiers
+[21:10:15] Assigned 3122 locus_tags to CDS and RNA features.
+[21:10:15] Writing outputs to output/prokka_annotation/sa_mrsa_prokka/
+[21:10:16] Generating annotation statistics file
+[21:10:16] Generating Genbank and Sequin files
+[21:10:16] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.err -i output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.fsa 2> /dev/null
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/errorsummary.val
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.dr
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fixedproducts
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.ecn
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.val
+[21:10:21] Repairing broken .GBK output that tbl2asn produces...
+[21:10:21] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.gbf > output\/prokka_annotation\/sa_mrsa_prokka\/sa_mrsa\.gbk
+[21:10:21] Deleting unwanted file: output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gbf
+[21:10:21] Output files:
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.tbl
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gbk
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.ffn
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.faa
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.txt
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.gff
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.log
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.sqn
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.err
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fsa
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.fna
+[21:10:21] output/prokka_annotation/sa_mrsa_prokka/sa_mrsa.tsv
+[21:10:21] Annotation finished successfully.
+[21:10:21] Walltime used: 0.48 minutes
+[21:10:21] If you use this result please cite the Prokka paper:
+[21:10:21] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[21:10:21] Type 'prokka --citation' for more details.
+[21:10:21] Share and enjoy!

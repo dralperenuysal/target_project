@@ -42,7 +42,7 @@ rule all:
         "output/orthofinder",
 
         # AntiSmash outputs
-        expand("output/antismash/{genome}_antismash", genome = genomes)
+        #expand("output/antismash/{genome}_antismash", genome = genomes)
 
 rule barrnap:
     input:
@@ -83,7 +83,7 @@ rule repeatmodeler:
     shell:
         """
         cd {params.path}
-        RepeatModeler -database {params.db} -engine ncbi -pa 20
+        RepeatModeler -database {params.db} -engine ncbi -pa 8
         """
 
 rule repeatmasker:
@@ -155,15 +155,14 @@ rule orthofinder:
     script:
         "scripts/orthofinder.py"
 
-rule antismash:
-    input: rules.genome_annotation.output.gbk,
-    output: directory("output/antismash/{genome}_antismash"),
-    threads: 8,
-    params:
-        taxon = "bacteria",
-        genome = lambda wildcards: f"{wildcards.genome}",
-    conda: env,
-    log: "logs/antismash/{genome}_antismash.log",
-    script:
-        "scripts/antismash.py"
-
+#rule antismash:
+#    input: rules.genome_annotation.output.gbk,
+#    output: directory("output/antismash/{genome}_antismash"),
+#    threads: 8,
+#    params:
+#        taxon = "bacteria",
+#        genome = lambda wildcards: f"{wildcards.genome}",
+#    conda: env,
+#    log: "logs/antismash/{genome}_antismash.log",
+#    script:
+#        "scripts/antismash.py"

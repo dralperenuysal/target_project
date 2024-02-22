@@ -113,9 +113,9 @@ PJKHBDOM_00037	CDS	1362				recombinase family protein [Staphylococcus aureus]
 PJKHBDOM_00038	gene	615				
 PJKHBDOM_00038	mRNA	615				
 PJKHBDOM_00038	CDS	615				hypothetical protein
-PJKHBDOM_00039	gene	144				
-PJKHBDOM_00039	mRNA	144				
-PJKHBDOM_00039	CDS	144				hypothetical protein
+PJKHBDOM_00039	gene	144	ccrB			
+PJKHBDOM_00039	mRNA	144	ccrB			
+PJKHBDOM_00039	CDS	144	ccrB			cassette chromosome recombinase B
 PJKHBDOM_00040	gene	360				
 PJKHBDOM_00040	mRNA	360				
 PJKHBDOM_00040	CDS	360				hypothetical protein [Staphylococcus aureus]
@@ -200,15 +200,15 @@ PJKHBDOM_00066	CDS	261				persulfide-sensing transcriptional repressor CstR [Sta
 PJKHBDOM_00067	gene	1065				
 PJKHBDOM_00067	mRNA	1065				
 PJKHBDOM_00067	CDS	1065				DsrE/DsrF/DrsH-like family protein [Staphylococcus aureus]
-PJKHBDOM_00068	gene	939	gloB			
-PJKHBDOM_00068	mRNA	939	gloB			
-PJKHBDOM_00068	CDS	939	gloB	3.1.2.6		Hydroxyacylglutathione hydrolase
+PJKHBDOM_00068	gene	939				
+PJKHBDOM_00068	mRNA	939				
+PJKHBDOM_00068	CDS	939				metallo-beta-lactamase family protein
 PJKHBDOM_00069	gene	261				
 PJKHBDOM_00069	mRNA	261				
 PJKHBDOM_00069	CDS	261				rhodanese-like domain-containing protein [Staphylococcus aureus]
-PJKHBDOM_00070	gene	1032	nagC			
-PJKHBDOM_00070	mRNA	1032	nagC			
-PJKHBDOM_00070	CDS	1032	nagC		COG1940	N-acetylglucosamine repressor
+PJKHBDOM_00070	gene	1032	xylR			
+PJKHBDOM_00070	mRNA	1032	xylR			
+PJKHBDOM_00070	CDS	1032	xylR			xylose operon repressor
 PJKHBDOM_00071	gene	204				
 PJKHBDOM_00071	mRNA	204				
 PJKHBDOM_00071	CDS	204				penicillinase repressor BlaI [Staphylococcus aureus]
@@ -217,13 +217,13 @@ PJKHBDOM_00072	mRNA	1326
 PJKHBDOM_00072	CDS	1326				beta-lactam sensor/signal transducer BlaR1 [Staphylococcus aureus]
 PJKHBDOM_00073	gene	495	mecR1			
 PJKHBDOM_00073	mRNA	495	mecR1			
-PJKHBDOM_00073	CDS	495	mecR1			Methicillin resistance mecR1 protein
-PJKHBDOM_00074	gene	1881	mecA			
-PJKHBDOM_00074	mRNA	1881	mecA			
-PJKHBDOM_00074	CDS	1881	mecA			PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA
-PJKHBDOM_00075	gene	129	pbp			
-PJKHBDOM_00075	mRNA	129	pbp			
-PJKHBDOM_00075	CDS	129	pbp		COG0768	Beta-lactam-inducible penicillin-binding protein
+PJKHBDOM_00073	CDS	495	mecR1			methicillin-resistance regulatory protein MecR1
+PJKHBDOM_00074	gene	1881	mecA_1			
+PJKHBDOM_00074	mRNA	1881	mecA_1			
+PJKHBDOM_00074	CDS	1881	mecA_1			penicillin-binding protein 2 prime
+PJKHBDOM_00075	gene	129	mecA_2			
+PJKHBDOM_00075	mRNA	129	mecA_2			
+PJKHBDOM_00075	CDS	129	mecA_2			penicillin-binding protein 2 prime
 PJKHBDOM_00076	gene	429				
 PJKHBDOM_00076	mRNA	429				
 PJKHBDOM_00076	CDS	429				MaoC family dehydratase [Staphylococcus aureus]
@@ -241,7 +241,7 @@ PJKHBDOM_00080	mRNA	675
 PJKHBDOM_00080	CDS	675				IS6-like element IS257 family transposase [Staphylococcus aureus]
 PJKHBDOM_00081	gene	2190				
 PJKHBDOM_00081	mRNA	2190				
-PJKHBDOM_00081	CDS	2190				hypothetical protein
+PJKHBDOM_00081	CDS	2190				type I site-specific deoxyribonuclease restriction subunit
 PJKHBDOM_00082	gene	567				
 PJKHBDOM_00082	mRNA	567				
 PJKHBDOM_00082	CDS	567				PepSY domain-containing protein [Staphylococcus aureus]
@@ -458,9 +458,9 @@ PJKHBDOM_00152	CDS	1431				lipopolysaccharide biosynthesis protein [Staphylococc
 PJKHBDOM_00153	gene	600				
 PJKHBDOM_00153	mRNA	600				
 PJKHBDOM_00153	CDS	600				superoxide dismutase [Staphylococcus aureus]
-PJKHBDOM_00154	gene	666				
-PJKHBDOM_00154	mRNA	666				
-PJKHBDOM_00154	CDS	666				hypothetical protein
+PJKHBDOM_00154	gene	666	sasD			
+PJKHBDOM_00154	mRNA	666	sasD			
+PJKHBDOM_00154	CDS	666	sasD			cell wall surface anchor family protein
 PJKHBDOM_00155	gene	756				
 PJKHBDOM_00155	mRNA	756				
 PJKHBDOM_00155	CDS	756				GntR family transcriptional regulator [Staphylococcus aureus]
@@ -485,12 +485,12 @@ PJKHBDOM_00161	CDS	801				phosphonate ABC transporter, permease protein PhnE [St
 PJKHBDOM_00162	gene	774				
 PJKHBDOM_00162	mRNA	774				
 PJKHBDOM_00162	CDS	774				phosphonate ABC transporter ATP-binding protein [Staphylococcus aureus]
-PJKHBDOM_00163	gene	654				
-PJKHBDOM_00163	mRNA	654				
-PJKHBDOM_00163	CDS	654				hypothetical protein
-PJKHBDOM_00164	gene	348				
-PJKHBDOM_00164	mRNA	348				
-PJKHBDOM_00164	CDS	348				hypothetical protein
+PJKHBDOM_00163	gene	654	phnD_1			
+PJKHBDOM_00163	mRNA	654	phnD_1			
+PJKHBDOM_00163	CDS	654	phnD_1			phosphate/phosphonate ABC transporter periplasmic protein
+PJKHBDOM_00164	gene	348	phnD_2			
+PJKHBDOM_00164	mRNA	348	phnD_2			
+PJKHBDOM_00164	CDS	348	phnD_2			phosphate/phosphonate ABC transporter periplasmic protein
 PJKHBDOM_00165	gene	1545				
 PJKHBDOM_00165	mRNA	1545				
 PJKHBDOM_00165	CDS	1545				DNA-binding protein [Staphylococcus aureus]
@@ -583,10 +583,10 @@ PJKHBDOM_00194	mRNA	975
 PJKHBDOM_00194	CDS	975				ABC transporter substrate-binding protein [Staphylococcus aureus]
 PJKHBDOM_00195	gene	459				
 PJKHBDOM_00195	mRNA	459				
-PJKHBDOM_00195	CDS	459				hypothetical protein
-PJKHBDOM_00196	gene	351	ssuC			
-PJKHBDOM_00196	mRNA	351	ssuC			
-PJKHBDOM_00196	CDS	351	ssuC		COG0600	Putative aliphatic sulfonates transport permease protein SsuC
+PJKHBDOM_00195	CDS	459				binding-protein-dependent transport system inner membrane protein
+PJKHBDOM_00196	gene	351				
+PJKHBDOM_00196	mRNA	351				
+PJKHBDOM_00196	CDS	351				binding-protein-dependent transport system inner membrane protein
 PJKHBDOM_00197	gene	1032				
 PJKHBDOM_00197	mRNA	1032				
 PJKHBDOM_00197	CDS	1032				acyl-CoA/acyl-ACP dehydrogenase [Staphylococcus aureus]
@@ -1025,12 +1025,12 @@ PJKHBDOM_00341	CDS	669				N-acetylmannosamine-6-phosphate 2-epimerase [Staphyloc
 PJKHBDOM_00342	gene	1362				
 PJKHBDOM_00342	mRNA	1362				
 PJKHBDOM_00342	CDS	1362				YjiH family protein [Staphylococcus aureus]
-PJKHBDOM_00343	gene	1308	lip2_1			
-PJKHBDOM_00343	mRNA	1308	lip2_1			
-PJKHBDOM_00343	CDS	1308	lip2_1	3.1.1.3		Lipase 2
-PJKHBDOM_00344	gene	576	lip2_2			
-PJKHBDOM_00344	mRNA	576	lip2_2			
-PJKHBDOM_00344	CDS	576	lip2_2	3.1.1.3		Lipase 2
+PJKHBDOM_00343	gene	1308				
+PJKHBDOM_00343	mRNA	1308				
+PJKHBDOM_00343	CDS	1308				lipase precursor
+PJKHBDOM_00344	gene	576				
+PJKHBDOM_00344	mRNA	576				
+PJKHBDOM_00344	CDS	576				lipase precursor
 PJKHBDOM_00345	gene	1206				
 PJKHBDOM_00345	mRNA	1206				
 PJKHBDOM_00345	CDS	1206				tyrosine-type recombinase/integrase [Staphylococcus aureus]
@@ -1096,7 +1096,7 @@ PJKHBDOM_00365	mRNA	405
 PJKHBDOM_00365	CDS	405				RusA family crossover junction endodeoxyribonuclease [Staphylococcus aureus]
 PJKHBDOM_00366	gene	291				
 PJKHBDOM_00366	mRNA	291				
-PJKHBDOM_00366	CDS	291				hypothetical protein
+PJKHBDOM_00366	CDS	291				PVL phage protein
 PJKHBDOM_00367	gene	258				
 PJKHBDOM_00367	mRNA	258				
 PJKHBDOM_00367	CDS	258				hypothetical protein
@@ -1195,7 +1195,7 @@ PJKHBDOM_00398	mRNA	1899
 PJKHBDOM_00398	CDS	1899				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_00399	gene	1452				
 PJKHBDOM_00399	mRNA	1452				
-PJKHBDOM_00399	CDS	1452				hypothetical protein
+PJKHBDOM_00399	CDS	1452				phage protein
 PJKHBDOM_00400	gene	333				
 PJKHBDOM_00400	mRNA	333				
 PJKHBDOM_00400	CDS	333				BppU family phage baseplate upper protein [Staphylococcus aureus]
@@ -1292,12 +1292,12 @@ PJKHBDOM_00430	CDS	342				hypothetical protein
 PJKHBDOM_00431	gene	546				
 PJKHBDOM_00431	mRNA	546				
 PJKHBDOM_00431	CDS	546				GNAT family protein [Staphylococcus aureus]
-PJKHBDOM_00432	gene	657	efeM			
-PJKHBDOM_00432	mRNA	657	efeM			
-PJKHBDOM_00432	CDS	657	efeM		COG2822	putative iron uptake system component EfeM
+PJKHBDOM_00432	gene	657				
+PJKHBDOM_00432	mRNA	657				
+PJKHBDOM_00432	CDS	657				imelysin
 PJKHBDOM_00433	gene	162				
 PJKHBDOM_00433	mRNA	162				
-PJKHBDOM_00433	CDS	162				hypothetical protein
+PJKHBDOM_00433	CDS	162				imelysin
 PJKHBDOM_00434	gene	1230				
 PJKHBDOM_00434	mRNA	1230				
 PJKHBDOM_00434	CDS	1230				iron uptake transporter deferrochelatase/peroxidase subunit [Staphylococcus aureus]
@@ -1381,7 +1381,7 @@ PJKHBDOM_00460	mRNA	312	xerD
 PJKHBDOM_00460	CDS	312	xerD			Tyrosine recombinase XerD
 PJKHBDOM_00461	gene	159				
 PJKHBDOM_00461	mRNA	159				
-PJKHBDOM_00461	CDS	159				hypothetical protein
+PJKHBDOM_00461	CDS	159				integrase
 PJKHBDOM_00462	gene	612				
 PJKHBDOM_00462	mRNA	612				
 PJKHBDOM_00462	CDS	612				staphylococcal enterotoxin-like toxin X [Staphylococcus aureus]
@@ -1450,10 +1450,10 @@ PJKHBDOM_00483	mRNA	1542
 PJKHBDOM_00483	CDS	1542				glutamine-hydrolyzing GMP synthase [Staphylococcus aureus]
 PJKHBDOM_00484	gene	225				
 PJKHBDOM_00484	mRNA	225				
-PJKHBDOM_00484	CDS	225				hypothetical protein
+PJKHBDOM_00484	CDS	225				integrase-like protein
 PJKHBDOM_00485	gene	741				
 PJKHBDOM_00485	mRNA	741				
-PJKHBDOM_00485	CDS	741				hypothetical protein
+PJKHBDOM_00485	CDS	741				integrase-like protein
 PJKHBDOM_00486	gene	201				
 PJKHBDOM_00486	mRNA	201				
 PJKHBDOM_00486	CDS	201				hypothetical protein
@@ -1462,7 +1462,7 @@ PJKHBDOM_00487	mRNA	231
 PJKHBDOM_00487	CDS	231				helix-turn-helix domain-containing protein [Staphylococcus aureus]
 PJKHBDOM_00488	gene	567				
 PJKHBDOM_00488	mRNA	567				
-PJKHBDOM_00488	CDS	567				hypothetical protein
+PJKHBDOM_00488	CDS	567				Sigma-70 Region 4 protein
 PJKHBDOM_00489	gene	354				
 PJKHBDOM_00489	mRNA	354				
 PJKHBDOM_00489	CDS	354				helix-turn-helix domain-containing protein [Staphylococcus aureus]
@@ -1540,7 +1540,7 @@ PJKHBDOM_00513	mRNA	2190
 PJKHBDOM_00513	CDS	2190				AAA family ATPase [Staphylococcus aureus]
 PJKHBDOM_00514	gene	852				
 PJKHBDOM_00514	mRNA	852				
-PJKHBDOM_00514	CDS	852				IS256 family transposase ISLgar5
+PJKHBDOM_00514	CDS	852				transposase
 PJKHBDOM_00515	gene	372				
 PJKHBDOM_00515	mRNA	372				
 PJKHBDOM_00515	CDS	372				hypothetical protein
@@ -1793,12 +1793,12 @@ PJKHBDOM_00597	CDS	381				RidA family protein [Staphylococcus aureus]
 PJKHBDOM_00598	gene	303				
 PJKHBDOM_00598	mRNA	303				
 PJKHBDOM_00598	CDS	303				septation regulator SpoVG [Staphylococcus aureus]
-PJKHBDOM_00599	gene	306	glmU_1			
-PJKHBDOM_00599	mRNA	306	glmU_1			
-PJKHBDOM_00599	CDS	306	glmU_1			Bifunctional protein GlmU
-PJKHBDOM_00600	gene	1014	glmU_2			
-PJKHBDOM_00600	mRNA	1014	glmU_2			
-PJKHBDOM_00600	CDS	1014	glmU_2			Bifunctional protein GlmU
+PJKHBDOM_00599	gene	306	gcaD_1			
+PJKHBDOM_00599	mRNA	306	gcaD_1			
+PJKHBDOM_00599	CDS	306	gcaD_1			putative UDP-N-acetylglucosamine pyrophosphorylase
+PJKHBDOM_00600	gene	1014	gcaD_2			
+PJKHBDOM_00600	mRNA	1014	gcaD_2			
+PJKHBDOM_00600	CDS	1014	gcaD_2			putative UDP-N-acetylglucosamine pyrophosphorylase
 PJKHBDOM_00601	gene	966				
 PJKHBDOM_00601	mRNA	966				
 PJKHBDOM_00601	CDS	966				ribose-phosphate diphosphokinase [Staphylococcus aureus]
@@ -1892,12 +1892,12 @@ PJKHBDOM_00630	rRNA	2919				23S ribosomal RNA
 PJKHBDOM_00631	gene	78				
 PJKHBDOM_00631	mRNA	78				
 PJKHBDOM_00631	rRNA	78				5S ribosomal RNA (partial)
-PJKHBDOM_00632	gene	645	gabR_1			
-PJKHBDOM_00632	mRNA	645	gabR_1			
-PJKHBDOM_00632	CDS	645	gabR_1		COG1167	HTH-type transcriptional regulatory protein GabR
-PJKHBDOM_00633	gene	696	gabR_2			
-PJKHBDOM_00633	mRNA	696	gabR_2			
-PJKHBDOM_00633	CDS	696	gabR_2		COG1167	HTH-type transcriptional regulatory protein GabR
+PJKHBDOM_00632	gene	645				
+PJKHBDOM_00632	mRNA	645				
+PJKHBDOM_00632	CDS	645				putative GntR family transcriptional regulator
+PJKHBDOM_00633	gene	696				
+PJKHBDOM_00633	mRNA	696				
+PJKHBDOM_00633	CDS	696				putative GntR family transcriptional regulator
 PJKHBDOM_00634	gene	888				
 PJKHBDOM_00634	mRNA	888				
 PJKHBDOM_00634	CDS	888				pyridoxal 5'-phosphate synthase lyase subunit PdxS [Staphylococcus aureus]
@@ -2038,7 +2038,7 @@ PJKHBDOM_00679	mRNA	4074
 PJKHBDOM_00679	CDS	4074				MSCRAMM family adhesin SdrD [Staphylococcus aureus]
 PJKHBDOM_00680	gene	867				
 PJKHBDOM_00680	mRNA	867				
-PJKHBDOM_00680	CDS	867				IS256 family transposase IS256
+PJKHBDOM_00680	CDS	867				transposase for IS256
 PJKHBDOM_00681	gene	3414				
 PJKHBDOM_00681	mRNA	3414				
 PJKHBDOM_00681	CDS	3414				MSCRAMM family adhesin SdrE [Staphylococcus aureus]
@@ -2252,9 +2252,9 @@ PJKHBDOM_00750	CDS	1500				Na+/H+ antiporter Mnh2 subunit D [Staphylococcus aure
 PJKHBDOM_00751	gene	483				
 PJKHBDOM_00751	mRNA	483				
 PJKHBDOM_00751	CDS	483				Na+/H+ antiporter Mnh2 subunit E [Staphylococcus aureus]
-PJKHBDOM_00752	gene	279				
-PJKHBDOM_00752	mRNA	279				
-PJKHBDOM_00752	CDS	279				hypothetical protein
+PJKHBDOM_00752	gene	279	mnhF_1			
+PJKHBDOM_00752	mRNA	279	mnhF_1			
+PJKHBDOM_00752	CDS	279	mnhF_1			monovalent cation antiporter-3, MnhF_1
 PJKHBDOM_00753	gene	438				
 PJKHBDOM_00753	mRNA	438				
 PJKHBDOM_00753	CDS	438				Na+/H+ antiporter Mnh2 subunit G [Staphylococcus aureus]
@@ -2437,13 +2437,13 @@ PJKHBDOM_00812	mRNA	288
 PJKHBDOM_00812	CDS	288				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_00813	gene	867				
 PJKHBDOM_00813	mRNA	867				
-PJKHBDOM_00813	CDS	867				IS256 family transposase IS256
+PJKHBDOM_00813	CDS	867				transposase for IS256
 PJKHBDOM_00814	gene	1176				
 PJKHBDOM_00814	mRNA	1176				
-PJKHBDOM_00814	CDS	1176				hypothetical protein
+PJKHBDOM_00814	CDS	1176				DASS family divalent anion:sodium (Na+) symporter
 PJKHBDOM_00815	gene	294				
 PJKHBDOM_00815	mRNA	294				
-PJKHBDOM_00815	CDS	294				hypothetical protein
+PJKHBDOM_00815	CDS	294				divalent anion symporter
 PJKHBDOM_00816	gene	1374				
 PJKHBDOM_00816	mRNA	1374				
 PJKHBDOM_00816	CDS	1374				deoxyribodipyrimidine photo-lyase [Staphylococcus aureus]
@@ -2528,12 +2528,12 @@ PJKHBDOM_00842	CDS	1941				polyglycerol-phosphate lipoteichoic acid synthase Lta
 PJKHBDOM_00843	gene	1878				
 PJKHBDOM_00843	mRNA	1878				
 PJKHBDOM_00843	CDS	1878				ABC-F family ATP-binding cassette domain-containing protein [Staphylococcus aureus]
-PJKHBDOM_00844	gene	1443	recQ			
-PJKHBDOM_00844	mRNA	1443	recQ			
-PJKHBDOM_00844	CDS	1443	recQ	3.6.4.12	COG0514	ATP-dependent DNA helicase RecQ
+PJKHBDOM_00844	gene	1443				
+PJKHBDOM_00844	mRNA	1443				
+PJKHBDOM_00844	CDS	1443				ATP-dependent DNA helicase
 PJKHBDOM_00845	gene	339				
 PJKHBDOM_00845	mRNA	339				
-PJKHBDOM_00845	CDS	339				hypothetical protein
+PJKHBDOM_00845	CDS	339				ATP-dependent DNA helicase
 PJKHBDOM_00846	gene	978				
 PJKHBDOM_00846	mRNA	978				
 PJKHBDOM_00846	CDS	978				ABC transporter ATP-binding protein [Staphylococcus aureus]
@@ -2752,10 +2752,10 @@ PJKHBDOM_00917	mRNA	1527
 PJKHBDOM_00917	CDS	1527				von Willebrand factor binding protein Vwb [Staphylococcus aureus]
 PJKHBDOM_00918	gene	711	ssp_1			
 PJKHBDOM_00918	mRNA	711	ssp_1			
-PJKHBDOM_00918	CDS	711	ssp_1			Extracellular matrix protein-binding protein emp
+PJKHBDOM_00918	CDS	711	ssp_1			secretory extracellular matrix and plasma binding protein
 PJKHBDOM_00919	gene	324	ssp_2			
 PJKHBDOM_00919	mRNA	324	ssp_2			
-PJKHBDOM_00919	CDS	324	ssp_2			Extracellular matrix protein-binding protein emp
+PJKHBDOM_00919	CDS	324	ssp_2			secretory extracellular matrix and plasma binding protein
 PJKHBDOM_00920	gene	471				
 PJKHBDOM_00920	mRNA	471				
 PJKHBDOM_00920	CDS	471				hypothetical protein [Staphylococcus aureus]
@@ -2840,9 +2840,9 @@ PJKHBDOM_00946	CDS	1221				site-specific integrase [Staphylococcus aureus]
 PJKHBDOM_00947	gene	729				
 PJKHBDOM_00947	mRNA	729				
 PJKHBDOM_00947	CDS	729				staphylococcal enterotoxin type K [Staphylococcus aureus]
-PJKHBDOM_00948	gene	624				
-PJKHBDOM_00948	mRNA	624				
-PJKHBDOM_00948	CDS	624				hypothetical protein
+PJKHBDOM_00948	gene	624	sem			
+PJKHBDOM_00948	mRNA	624	sem			
+PJKHBDOM_00948	CDS	624	sem			staphylococcal enterotoxin type I
 PJKHBDOM_00949	gene	420				
 PJKHBDOM_00949	mRNA	420				
 PJKHBDOM_00949	CDS	420				hypothetical protein [Staphylococcus aureus]
@@ -3167,12 +3167,12 @@ PJKHBDOM_01055	CDS	396				transcriptional regulator SpxA [Staphylococcus aureus]
 PJKHBDOM_01056	gene	720				
 PJKHBDOM_01056	mRNA	720				
 PJKHBDOM_01056	CDS	720				adaptor protein MecA [Staphylococcus aureus]
-PJKHBDOM_01057	gene	258				
-PJKHBDOM_01057	mRNA	258				
-PJKHBDOM_01057	CDS	258				hypothetical protein
-PJKHBDOM_01058	gene	702				
-PJKHBDOM_01058	mRNA	702				
-PJKHBDOM_01058	CDS	702				hypothetical protein
+PJKHBDOM_01057	gene	258	coiA_1			
+PJKHBDOM_01057	mRNA	258	coiA_1			
+PJKHBDOM_01057	CDS	258	coiA_1			competence protein CoiA
+PJKHBDOM_01058	gene	702	coiA_2			
+PJKHBDOM_01058	mRNA	702	coiA_2			
+PJKHBDOM_01058	CDS	702	coiA_2			competence protein CoiA
 PJKHBDOM_01059	gene	1809				
 PJKHBDOM_01059	mRNA	1809				
 PJKHBDOM_01059	CDS	1809				oligoendopeptidase F [Staphylococcus aureus]
@@ -3349,7 +3349,7 @@ PJKHBDOM_01116	mRNA	1218
 PJKHBDOM_01116	CDS	1218				polyisoprenyl-teichoic acid--peptidoglycan teichoic acid transferase [Staphylococcus aureus]
 PJKHBDOM_01117	gene	867				
 PJKHBDOM_01117	mRNA	867				
-PJKHBDOM_01117	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01117	CDS	867				transposase for IS256
 PJKHBDOM_01118	gene	1194				
 PJKHBDOM_01118	mRNA	1194				
 PJKHBDOM_01118	CDS	1194				teichoic acid D-Ala esterase FmtA [Staphylococcus aureus]
@@ -3598,7 +3598,7 @@ PJKHBDOM_01199	mRNA	195
 PJKHBDOM_01199	CDS	195				hypothetical protein
 PJKHBDOM_01200	gene	267	zapA			
 PJKHBDOM_01200	mRNA	267	zapA			
-PJKHBDOM_01200	CDS	267	zapA		COG3027	Cell division protein ZapA
+PJKHBDOM_01200	CDS	267	zapA			putative cell division protein, ZapA
 PJKHBDOM_01201	gene	522				
 PJKHBDOM_01201	mRNA	522				
 PJKHBDOM_01201	CDS	522				CvpA family protein [Staphylococcus aureus]
@@ -3664,7 +3664,7 @@ PJKHBDOM_01221	mRNA	960
 PJKHBDOM_01221	CDS	960				alpha-hemolysin [Staphylococcus aureus]
 PJKHBDOM_01222	gene	867				
 PJKHBDOM_01222	mRNA	867				
-PJKHBDOM_01222	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01222	CDS	867				transposase for IS256
 PJKHBDOM_01223	gene	147				
 PJKHBDOM_01223	mRNA	147				
 PJKHBDOM_01223	CDS	147				hypothetical protein [Staphylococcus aureus]
@@ -3725,9 +3725,9 @@ PJKHBDOM_01241	CDS	936				16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH 
 PJKHBDOM_01242	gene	402				
 PJKHBDOM_01242	mRNA	402				
 PJKHBDOM_01242	CDS	402				cell division protein FtsL [Staphylococcus aureus]
-PJKHBDOM_01243	gene	2127	pbpB			
-PJKHBDOM_01243	mRNA	2127	pbpB			
-PJKHBDOM_01243	CDS	2127	pbpB		COG0768	Penicillin-binding protein 2B
+PJKHBDOM_01243	gene	2127	pbpA			
+PJKHBDOM_01243	mRNA	2127	pbpA			
+PJKHBDOM_01243	CDS	2127	pbpA			penicillin-binding protein 1
 PJKHBDOM_01244	gene	966				
 PJKHBDOM_01244	mRNA	966				
 PJKHBDOM_01244	CDS	966				phospho-N-acetylmuramoyl-pentapeptide-transferase [Staphylococcus aureus]
@@ -3757,10 +3757,10 @@ PJKHBDOM_01252	mRNA	291
 PJKHBDOM_01252	CDS	291				YggT family protein [Staphylococcus aureus]
 PJKHBDOM_01253	gene	657				
 PJKHBDOM_01253	mRNA	657				
-PJKHBDOM_01253	CDS	657				hypothetical protein
+PJKHBDOM_01253	CDS	657				S4 RNA binding domain protein
 PJKHBDOM_01254	gene	153				
 PJKHBDOM_01254	mRNA	153				
-PJKHBDOM_01254	CDS	153				hypothetical protein
+PJKHBDOM_01254	CDS	153				S4 RNA binding domain protein
 PJKHBDOM_01255	gene	618				
 PJKHBDOM_01255	mRNA	618				
 PJKHBDOM_01255	CDS	618				DivIVA domain-containing protein [Staphylococcus aureus]
@@ -3772,7 +3772,7 @@ PJKHBDOM_01257	mRNA	798
 PJKHBDOM_01257	CDS	798				VOC family protein [Staphylococcus aureus]
 PJKHBDOM_01258	gene	195				
 PJKHBDOM_01258	mRNA	195				
-PJKHBDOM_01258	CDS	195				hypothetical protein
+PJKHBDOM_01258	CDS	195				putative transposase for IS1272
 PJKHBDOM_01259	gene	492				
 PJKHBDOM_01259	mRNA	492				
 PJKHBDOM_01259	CDS	492				signal peptidase II [Staphylococcus aureus]
@@ -3826,13 +3826,13 @@ PJKHBDOM_01275	mRNA	2409
 PJKHBDOM_01275	CDS	2409				primosomal protein N' [Staphylococcus aureus]
 PJKHBDOM_01276	gene	867				
 PJKHBDOM_01276	mRNA	867				
-PJKHBDOM_01276	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01276	CDS	867				transposase for IS256
 PJKHBDOM_01277	gene	954				
 PJKHBDOM_01277	mRNA	954				
 PJKHBDOM_01277	CDS	954				hypothetical protein [Staphylococcus aureus]
-PJKHBDOM_01278	gene	279				
-PJKHBDOM_01278	mRNA	279				
-PJKHBDOM_01278	CDS	279				hypothetical protein
+PJKHBDOM_01278	gene	279	xynA			
+PJKHBDOM_01278	mRNA	279	xynA			
+PJKHBDOM_01278	CDS	279	xynA			TM2 domain containing membrane protein+B7201
 PJKHBDOM_01279	gene	489				
 PJKHBDOM_01279	mRNA	489				
 PJKHBDOM_01279	CDS	489				peptide deformylase [Staphylococcus aureus]
@@ -4141,10 +4141,10 @@ PJKHBDOM_01380	mRNA	252
 PJKHBDOM_01380	CDS	252				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_01381	gene	585				
 PJKHBDOM_01381	mRNA	585				
-PJKHBDOM_01381	CDS	585				hypothetical protein
+PJKHBDOM_01381	CDS	585				putative phage head morphogenesis protein
 PJKHBDOM_01382	gene	867				
 PJKHBDOM_01382	mRNA	867				
-PJKHBDOM_01382	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01382	CDS	867				transposase for IS256
 PJKHBDOM_01383	gene	249				
 PJKHBDOM_01383	mRNA	249				
 PJKHBDOM_01383	CDS	249				hypothetical protein [Staphylococcus aureus]
@@ -4159,7 +4159,7 @@ PJKHBDOM_01386	mRNA	138
 PJKHBDOM_01386	CDS	138				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_01387	gene	135				
 PJKHBDOM_01387	mRNA	135				
-PJKHBDOM_01387	CDS	135				hypothetical protein
+PJKHBDOM_01387	CDS	135				putative phage head morphogenesis protein
 PJKHBDOM_01388	gene	291				
 PJKHBDOM_01388	mRNA	291				
 PJKHBDOM_01388	CDS	291				polymorphic toxin type 50 domain-containing protein [Staphylococcus aureus]
@@ -4309,16 +4309,16 @@ PJKHBDOM_01436	mRNA	984
 PJKHBDOM_01436	CDS	984				LCP family protein [Staphylococcus aureus]
 PJKHBDOM_01437	gene	111				
 PJKHBDOM_01437	mRNA	111				
-PJKHBDOM_01437	CDS	111		5.3.2.-		putative tautomerase
+PJKHBDOM_01437	CDS	111				4-oxalocrotonate tautomerase
 PJKHBDOM_01438	gene	1263				
 PJKHBDOM_01438	mRNA	1263				
 PJKHBDOM_01438	CDS	1263				Y-family DNA polymerase [Staphylococcus aureus]
-PJKHBDOM_01439	gene	198				
-PJKHBDOM_01439	mRNA	198				
-PJKHBDOM_01439	CDS	198				hypothetical protein
-PJKHBDOM_01440	gene	900	tyrC			
-PJKHBDOM_01440	mRNA	900	tyrC			
-PJKHBDOM_01440	CDS	900	tyrC	1.3.1.43		Cyclohexadienyl dehydrogenase
+PJKHBDOM_01439	gene	198	tyrA_1			
+PJKHBDOM_01439	mRNA	198	tyrA_1			
+PJKHBDOM_01439	CDS	198	tyrA_1			prephenate dehydrogenase
+PJKHBDOM_01440	gene	900	tyrA_2			
+PJKHBDOM_01440	mRNA	900	tyrA_2			
+PJKHBDOM_01440	CDS	900	tyrA_2			prephenate dehydrogenase
 PJKHBDOM_01441	gene	1032				
 PJKHBDOM_01441	mRNA	1032				
 PJKHBDOM_01441	CDS	1032				M42 family metallopeptidase [Staphylococcus aureus]
@@ -4390,7 +4390,7 @@ PJKHBDOM_01463	mRNA	984
 PJKHBDOM_01463	CDS	984				phosphate ABC transporter substrate-binding protein PstS [Staphylococcus aureus]
 PJKHBDOM_01464	gene	297				
 PJKHBDOM_01464	mRNA	297				
-PJKHBDOM_01464	CDS	297				IS1182 family transposase ISSau3
+PJKHBDOM_01464	CDS	297				putative transposase for IS1272
 PJKHBDOM_01465	gene	903				
 PJKHBDOM_01465	mRNA	903				
 PJKHBDOM_01465	CDS	903				RNA-binding virulence regulatory protein CvfB [Staphylococcus aureus]
@@ -4441,10 +4441,10 @@ PJKHBDOM_01480	mRNA	1137
 PJKHBDOM_01480	CDS	1137				toxic anion resistance protein [Staphylococcus aureus]
 PJKHBDOM_01481	gene	195				
 PJKHBDOM_01481	mRNA	195				
-PJKHBDOM_01481	CDS	195				IS1182 family transposase ISSau3
+PJKHBDOM_01481	CDS	195				putative transposase for IS1272
 PJKHBDOM_01482	gene	393				
 PJKHBDOM_01482	mRNA	393				
-PJKHBDOM_01482	CDS	393				hypothetical protein
+PJKHBDOM_01482	CDS	393				truncated transposase for IS1272
 PJKHBDOM_01483	gene	1344				
 PJKHBDOM_01483	mRNA	1344				
 PJKHBDOM_01483	CDS	1344				branched-chain amino acid transport system II carrier protein [Staphylococcus aureus]
@@ -4663,10 +4663,10 @@ PJKHBDOM_01554	mRNA	162
 PJKHBDOM_01554	CDS	162				hypothetical protein
 PJKHBDOM_01555	gene	1308	ebpS_1			
 PJKHBDOM_01555	mRNA	1308	ebpS_1			
-PJKHBDOM_01555	CDS	1308	ebpS_1			Elastin-binding protein EbpS
+PJKHBDOM_01555	CDS	1308	ebpS_1			cell surface elastin binding protein
 PJKHBDOM_01556	gene	183	ebpS_2			
 PJKHBDOM_01556	mRNA	183	ebpS_2			
-PJKHBDOM_01556	CDS	183	ebpS_2			Elastin-binding protein EbpS
+PJKHBDOM_01556	CDS	183	ebpS_2			cell surface elastin binding protein
 PJKHBDOM_01557	gene	1380				
 PJKHBDOM_01557	mRNA	1380				
 PJKHBDOM_01557	CDS	1380				ATP-dependent DNA helicase RecQ [Staphylococcus aureus]
@@ -4757,9 +4757,9 @@ PJKHBDOM_01585	CDS	279				head-tail connector protein [Staphylococcus aureus]
 PJKHBDOM_01586	gene	1209				
 PJKHBDOM_01586	mRNA	1209				
 PJKHBDOM_01586	CDS	1209				phage major capsid protein [Staphylococcus aureus]
-PJKHBDOM_01587	gene	753	clpP			
-PJKHBDOM_01587	mRNA	753	clpP			
-PJKHBDOM_01587	CDS	753	clpP	3.4.21.92		ATP-dependent Clp protease proteolytic subunit
+PJKHBDOM_01587	gene	753				
+PJKHBDOM_01587	mRNA	753				
+PJKHBDOM_01587	CDS	753				caseinolytic phage protease
 PJKHBDOM_01588	gene	1239				
 PJKHBDOM_01588	mRNA	1239				
 PJKHBDOM_01588	CDS	1239				phage portal protein [Staphylococcus aureus]
@@ -4828,7 +4828,7 @@ PJKHBDOM_01609	mRNA	258
 PJKHBDOM_01609	CDS	258				hypothetical protein
 PJKHBDOM_01610	gene	279				
 PJKHBDOM_01610	mRNA	279				
-PJKHBDOM_01610	CDS	279				hypothetical protein
+PJKHBDOM_01610	CDS	279				phiSLT PVL-like protein
 PJKHBDOM_01611	gene	186				
 PJKHBDOM_01611	mRNA	186				
 PJKHBDOM_01611	CDS	186				hypothetical protein
@@ -5230,7 +5230,7 @@ PJKHBDOM_01743	mRNA	186
 PJKHBDOM_01743	CDS	186				hypothetical protein
 PJKHBDOM_01744	gene	867				
 PJKHBDOM_01744	mRNA	867				
-PJKHBDOM_01744	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01744	CDS	867				transposase for IS256
 PJKHBDOM_01745	gene	996				
 PJKHBDOM_01745	mRNA	996				
 PJKHBDOM_01745	CDS	996				hypothetical protein
@@ -5264,9 +5264,9 @@ PJKHBDOM_01754	CDS	1269				U32 family peptidase [Staphylococcus aureus]
 PJKHBDOM_01755	gene	924				
 PJKHBDOM_01755	mRNA	924				
 PJKHBDOM_01755	CDS	924				peptidase U32 family protein [Staphylococcus aureus]
-PJKHBDOM_01756	gene	438	trmR			
-PJKHBDOM_01756	mRNA	438	trmR			
-PJKHBDOM_01756	CDS	438	trmR	2.1.1.-	COG4122	tRNA 5-hydroxyuridine methyltransferase
+PJKHBDOM_01756	gene	438				
+PJKHBDOM_01756	mRNA	438				
+PJKHBDOM_01756	CDS	438				caffeoyl-CoA O-methyltransferase
 PJKHBDOM_01757	gene	309				
 PJKHBDOM_01757	mRNA	309				
 PJKHBDOM_01757	CDS	309				hypothetical protein
@@ -5291,9 +5291,9 @@ PJKHBDOM_01763	CDS	1119				tRNA 2-thiouridine(34) synthase MnmA [Staphylococcus 
 PJKHBDOM_01764	gene	1059				
 PJKHBDOM_01764	mRNA	1059				
 PJKHBDOM_01764	CDS	1059				cysteine desulfurase family protein [Staphylococcus aureus]
-PJKHBDOM_01765	gene	132	iscS			
-PJKHBDOM_01765	mRNA	132	iscS			
-PJKHBDOM_01765	CDS	132	iscS	2.8.1.7		Cysteine desulfurase IscS
+PJKHBDOM_01765	gene	132	nifS			
+PJKHBDOM_01765	mRNA	132	nifS			
+PJKHBDOM_01765	CDS	132	nifS			cysteine desulfurase, NifS
 PJKHBDOM_01766	gene	1014				
 PJKHBDOM_01766	mRNA	1014				
 PJKHBDOM_01766	CDS	1014				LLM class flavin-dependent oxidoreductase [Staphylococcus aureus]
@@ -5401,7 +5401,7 @@ PJKHBDOM_01800	mRNA	1086
 PJKHBDOM_01800	CDS	1086				tyrosine-type recombinase/integrase [Staphylococcus aureus]
 PJKHBDOM_01801	gene	540				
 PJKHBDOM_01801	mRNA	540				
-PJKHBDOM_01801	CDS	540				hypothetical protein
+PJKHBDOM_01801	CDS	540				putative DNA repair protein, RadC
 PJKHBDOM_01802	gene	708				
 PJKHBDOM_01802	mRNA	708				
 PJKHBDOM_01802	CDS	708				prepilin peptidase [Staphylococcus aureus]
@@ -5506,10 +5506,10 @@ PJKHBDOM_01835	mRNA	1362
 PJKHBDOM_01835	CDS	1362				amino acid permease [Staphylococcus aureus]
 PJKHBDOM_01836	gene	828				
 PJKHBDOM_01836	mRNA	828				
-PJKHBDOM_01836	CDS	828				IS1182 family transposase ISSau3
+PJKHBDOM_01836	CDS	828				ISSau3 transposase
 PJKHBDOM_01837	gene	828				
 PJKHBDOM_01837	mRNA	828				
-PJKHBDOM_01837	CDS	828				IS1182 family transposase ISSau3
+PJKHBDOM_01837	CDS	828				putative transposase for IS1272
 PJKHBDOM_01838	gene	1758				
 PJKHBDOM_01838	mRNA	1758				
 PJKHBDOM_01838	CDS	1758				pyruvate kinase [Staphylococcus aureus]
@@ -5681,12 +5681,12 @@ PJKHBDOM_01893	CDS	1662				polysaccharide biosynthesis protein [Staphylococcus a
 PJKHBDOM_01894	gene	1269				
 PJKHBDOM_01894	mRNA	1269				
 PJKHBDOM_01894	CDS	1269				NAD(P)/FAD-dependent oxidoreductase [Staphylococcus aureus]
-PJKHBDOM_01895	gene	6024				
-PJKHBDOM_01895	mRNA	6024				
-PJKHBDOM_01895	CDS	6024				hypothetical protein
-PJKHBDOM_01896	gene	579				
-PJKHBDOM_01896	mRNA	579				
-PJKHBDOM_01896	CDS	579				hypothetical protein
+PJKHBDOM_01895	gene	6024	sasC_1			
+PJKHBDOM_01895	mRNA	6024	sasC_1			
+PJKHBDOM_01895	CDS	6024	sasC_1			cell-wall-anchored protein SasC
+PJKHBDOM_01896	gene	579	sasC_2			
+PJKHBDOM_01896	mRNA	579	sasC_2			
+PJKHBDOM_01896	CDS	579	sasC_2			cell-wall-anchored protein SasC
 PJKHBDOM_01897	gene	312				
 PJKHBDOM_01897	mRNA	312				
 PJKHBDOM_01897	CDS	312				rhodanese-like domain-containing protein [Staphylococcus aureus]
@@ -5713,7 +5713,7 @@ PJKHBDOM_01904	mRNA	225
 PJKHBDOM_01904	CDS	225				hypothetical protein
 PJKHBDOM_01905	gene	492				
 PJKHBDOM_01905	mRNA	492				
-PJKHBDOM_01905	CDS	492				IS1182 family transposase ISSau3
+PJKHBDOM_01905	CDS	492				truncated transposase for IS1272
 PJKHBDOM_01906	gene	828				
 PJKHBDOM_01906	mRNA	828				
 PJKHBDOM_01906	CDS	828				alpha/beta hydrolase [Staphylococcus aureus]
@@ -5782,10 +5782,10 @@ PJKHBDOM_01927	mRNA	354
 PJKHBDOM_01927	CDS	354				CrcB family protein [Staphylococcus aureus]
 PJKHBDOM_01928	gene	825				
 PJKHBDOM_01928	mRNA	825				
-PJKHBDOM_01928	CDS	825				IS1182 family transposase ISSau3
+PJKHBDOM_01928	CDS	825				ISSau3 transposase
 PJKHBDOM_01929	gene	609				
 PJKHBDOM_01929	mRNA	609				
-PJKHBDOM_01929	CDS	609				IS1182 family transposase ISSau3
+PJKHBDOM_01929	CDS	609				truncated transposase for IS1272
 PJKHBDOM_01930	gene	852				
 PJKHBDOM_01930	mRNA	852				
 PJKHBDOM_01930	CDS	852				aldo/keto reductase [Staphylococcus aureus]
@@ -5863,7 +5863,7 @@ PJKHBDOM_01954	mRNA	1134
 PJKHBDOM_01954	CDS	1134				hypothetical protein
 PJKHBDOM_01955	gene	867				
 PJKHBDOM_01955	mRNA	867				
-PJKHBDOM_01955	CDS	867				IS256 family transposase IS256
+PJKHBDOM_01955	CDS	867				transposase for IS256
 PJKHBDOM_01956	gene	2868				
 PJKHBDOM_01956	mRNA	2868				
 PJKHBDOM_01956	CDS	2868				hypothetical protein
@@ -6055,7 +6055,7 @@ PJKHBDOM_02018	mRNA	1062
 PJKHBDOM_02018	CDS	1062				PTS transporter subunit IIC [Staphylococcus aureus]
 PJKHBDOM_02019	gene	1362				
 PJKHBDOM_02019	mRNA	1362				
-PJKHBDOM_02019	CDS	1362				ISL3 family transposase IS1181
+PJKHBDOM_02019	CDS	1362				IS1181 transposase
 PJKHBDOM_02020	gene	84				
 PJKHBDOM_02020	mRNA	84				
 PJKHBDOM_02020	tRNA	84				tRNA-Leu(caa)
@@ -6274,10 +6274,10 @@ PJKHBDOM_02091	mRNA	948
 PJKHBDOM_02091	CDS	948				diacylglycerol kinase [Staphylococcus aureus]
 PJKHBDOM_02092	gene	1203	gatB_1			
 PJKHBDOM_02092	mRNA	1203	gatB_1			
-PJKHBDOM_02092	CDS	1203	gatB_1	6.3.5.-		Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+PJKHBDOM_02092	CDS	1203	gatB_1			Aspartyl/glutamyl-tRNA amidotransferase subunit B
 PJKHBDOM_02093	gene	258	gatB_2			
 PJKHBDOM_02093	mRNA	258	gatB_2			
-PJKHBDOM_02093	CDS	258	gatB_2	6.3.5.-		Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+PJKHBDOM_02093	CDS	258	gatB_2			Aspartyl/glutamyl-tRNA amidotransferase subunit B
 PJKHBDOM_02094	gene	1458				
 PJKHBDOM_02094	mRNA	1458				
 PJKHBDOM_02094	CDS	1458				Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatA [Staphylococcus aureus]
@@ -6514,7 +6514,7 @@ PJKHBDOM_02171	mRNA	243
 PJKHBDOM_02171	CDS	243				phi PVL orf 51-like protein [Staphylococcus aureus]
 PJKHBDOM_02172	gene	267				
 PJKHBDOM_02172	mRNA	267				
-PJKHBDOM_02172	CDS	267				hypothetical protein
+PJKHBDOM_02172	CDS	267				PVL phage protein
 PJKHBDOM_02173	gene	405				
 PJKHBDOM_02173	mRNA	405				
 PJKHBDOM_02173	CDS	405				RusA family crossover junction endodeoxyribonuclease [Staphylococcus aureus]
@@ -6584,9 +6584,9 @@ PJKHBDOM_02194	CDS	615				ATPase [Staphylococcus aureus]
 PJKHBDOM_02195	gene	1038				
 PJKHBDOM_02195	mRNA	1038				
 PJKHBDOM_02195	CDS	1038				tyrosine-type recombinase/integrase [Staphylococcus aureus]
-PJKHBDOM_02196	gene	825	hlb			
-PJKHBDOM_02196	mRNA	825	hlb			
-PJKHBDOM_02196	CDS	825	hlb	3.1.4.3		Phospholipase C
+PJKHBDOM_02196	gene	825				
+PJKHBDOM_02196	mRNA	825				
+PJKHBDOM_02196	CDS	825				phospholipase C
 PJKHBDOM_02197	gene	1017				
 PJKHBDOM_02197	mRNA	1017				
 PJKHBDOM_02197	CDS	1017				bi-component leukocidin LukGH subunit G [Staphylococcus aureus]
@@ -6598,10 +6598,10 @@ PJKHBDOM_02199	mRNA	1287
 PJKHBDOM_02199	CDS	1287				ArgE/DapE family deacylase [Staphylococcus aureus]
 PJKHBDOM_02200	gene	663				
 PJKHBDOM_02200	mRNA	663				
-PJKHBDOM_02200	CDS	663				hypothetical protein
+PJKHBDOM_02200	CDS	663				tetracenomycin polyketide synthesis O-methyltransferase, TcmP
 PJKHBDOM_02201	gene	123				
 PJKHBDOM_02201	mRNA	123				
-PJKHBDOM_02201	CDS	123				hypothetical protein
+PJKHBDOM_02201	CDS	123				tetracenomycin polyketide synthesis O-methyltransferase, TcmP
 PJKHBDOM_02202	gene	912				
 PJKHBDOM_02202	mRNA	912				
 PJKHBDOM_02202	CDS	912				iron-hydroxamate ABC transporter substrate-binding protein [Staphylococcus aureus]
@@ -6620,9 +6620,9 @@ PJKHBDOM_02206	CDS	591				terminase small subunit [Staphylococcus aureus]
 PJKHBDOM_02207	gene	213				
 PJKHBDOM_02207	mRNA	213				
 PJKHBDOM_02207	CDS	213				pathogenicity island family protein [Staphylococcus aureus]
-PJKHBDOM_02208	gene	267	xerC			
-PJKHBDOM_02208	mRNA	267	xerC			
-PJKHBDOM_02208	CDS	267	xerC			Tyrosine recombinase XerC
+PJKHBDOM_02208	gene	267				
+PJKHBDOM_02208	mRNA	267				
+PJKHBDOM_02208	CDS	267				pathogenicity island protein, integrase
 PJKHBDOM_02209	gene	1617				
 PJKHBDOM_02209	mRNA	1617				
 PJKHBDOM_02209	CDS	1617				chaperonin GroEL [Staphylococcus aureus]
@@ -6652,10 +6652,10 @@ PJKHBDOM_02217	mRNA	141
 PJKHBDOM_02217	CDS	141				cyclic lactone autoinducer peptide [Staphylococcus aureus]
 PJKHBDOM_02218	gene	618				
 PJKHBDOM_02218	mRNA	618				
-PJKHBDOM_02218	CDS	618				hypothetical protein
+PJKHBDOM_02218	CDS	618				accessory gene regulator protein C
 PJKHBDOM_02219	gene	672				
 PJKHBDOM_02219	mRNA	672				
-PJKHBDOM_02219	CDS	672				hypothetical protein
+PJKHBDOM_02219	CDS	672				staphylococcal accessory gene regulator protein C
 PJKHBDOM_02220	gene	717				
 PJKHBDOM_02220	mRNA	717				
 PJKHBDOM_02220	CDS	717				LytTR family DNA-binding domain-containing protein [Staphylococcus aureus]
@@ -6799,7 +6799,7 @@ PJKHBDOM_02266	mRNA	570
 PJKHBDOM_02266	CDS	570				hypothetical protein
 PJKHBDOM_02267	gene	867				
 PJKHBDOM_02267	mRNA	867				
-PJKHBDOM_02267	CDS	867				IS256 family transposase IS256
+PJKHBDOM_02267	CDS	867				transposase for IS256
 PJKHBDOM_02268	gene	1440				
 PJKHBDOM_02268	mRNA	1440				
 PJKHBDOM_02268	CDS	1440				bifunctional aminoglycoside N-acetyltransferase AAC(6')-Ie/aminoglycoside O-phosphotransferase APH(2'')-Ia [Staphylococcus aureus]
@@ -6808,7 +6808,7 @@ PJKHBDOM_02269	mRNA	447
 PJKHBDOM_02269	CDS	447				GNAT family N-acetyltransferase [Staphylococcus aureus]
 PJKHBDOM_02270	gene	867				
 PJKHBDOM_02270	mRNA	867				
-PJKHBDOM_02270	CDS	867				IS256 family transposase IS256
+PJKHBDOM_02270	CDS	867				transposase for IS256
 PJKHBDOM_02271	gene	186				
 PJKHBDOM_02271	mRNA	186				
 PJKHBDOM_02271	CDS	186				hypothetical protein
@@ -6994,7 +6994,7 @@ PJKHBDOM_02331	mRNA	264
 PJKHBDOM_02331	CDS	264				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_02332	gene	867				
 PJKHBDOM_02332	mRNA	867				
-PJKHBDOM_02332	CDS	867				IS256 family transposase IS256
+PJKHBDOM_02332	CDS	867				transposase for IS256
 PJKHBDOM_02333	gene	210				
 PJKHBDOM_02333	mRNA	210				
 PJKHBDOM_02333	CDS	210				hypothetical protein
@@ -7498,10 +7498,10 @@ PJKHBDOM_02499	mRNA	1107
 PJKHBDOM_02499	CDS	1107				mannitol-1-phosphate 5-dehydrogenase [Staphylococcus aureus]
 PJKHBDOM_02500	gene	1449				
 PJKHBDOM_02500	mRNA	1449				
-PJKHBDOM_02500	CDS	1449				hypothetical protein
+PJKHBDOM_02500	CDS	1449				methicillin resistance determinant FmtB protein
 PJKHBDOM_02501	gene	5643				
 PJKHBDOM_02501	mRNA	5643				
-PJKHBDOM_02501	CDS	5643				hypothetical protein
+PJKHBDOM_02501	CDS	5643				methicillin resistance determinant FmtB protein
 PJKHBDOM_02502	gene	1356				
 PJKHBDOM_02502	mRNA	1356				
 PJKHBDOM_02502	CDS	1356				phosphoglucosamine mutase [Staphylococcus aureus]
@@ -7516,7 +7516,7 @@ PJKHBDOM_02505	mRNA	909
 PJKHBDOM_02505	CDS	909				arginase [Staphylococcus aureus]
 PJKHBDOM_02506	gene	1203				
 PJKHBDOM_02506	mRNA	1203				
-PJKHBDOM_02506	CDS	1203				ISL3 family transposase IS1181
+PJKHBDOM_02506	CDS	1203				IS1181 transposase
 PJKHBDOM_02507	gene	74				
 PJKHBDOM_02507	mRNA	74				
 PJKHBDOM_02507	tRNA	74				tRNA-Lys(ttt)
@@ -7594,13 +7594,13 @@ PJKHBDOM_02531	mRNA	1977
 PJKHBDOM_02531	CDS	1977				D-ornithine--citrate ligase SfaD [Staphylococcus aureus]
 PJKHBDOM_02532	gene	801				
 PJKHBDOM_02532	mRNA	801				
-PJKHBDOM_02532	CDS	801				hypothetical protein
+PJKHBDOM_02532	CDS	801				truncated transposase for IS1272
 PJKHBDOM_02533	gene	321				
 PJKHBDOM_02533	mRNA	321				
-PJKHBDOM_02533	CDS	321				IS1182 family transposase ISSau3
+PJKHBDOM_02533	CDS	321				truncated transposase for IS1272
 PJKHBDOM_02534	gene	345				
 PJKHBDOM_02534	mRNA	345				
-PJKHBDOM_02534	CDS	345				IS1182 family transposase ISSau3
+PJKHBDOM_02534	CDS	345				putative transposase for IS1272
 PJKHBDOM_02535	gene	510				
 PJKHBDOM_02535	mRNA	510				
 PJKHBDOM_02535	CDS	510				Asp23/Gls24 family envelope stress response protein [Staphylococcus aureus]
@@ -7654,7 +7654,7 @@ PJKHBDOM_02551	mRNA	369
 PJKHBDOM_02551	CDS	369				hypothetical protein
 PJKHBDOM_02552	gene	867				
 PJKHBDOM_02552	mRNA	867				
-PJKHBDOM_02552	CDS	867				IS256 family transposase IS256
+PJKHBDOM_02552	CDS	867				transposase for IS256
 PJKHBDOM_02553	gene	354				
 PJKHBDOM_02553	mRNA	354				
 PJKHBDOM_02553	CDS	354				hypothetical protein
@@ -7928,7 +7928,7 @@ PJKHBDOM_02642	mRNA	837
 PJKHBDOM_02642	CDS	837				urease accessory protein UreD [Staphylococcus aureus]
 PJKHBDOM_02643	gene	261	sarR			
 PJKHBDOM_02643	mRNA	261	sarR			
-PJKHBDOM_02643	CDS	261	sarR			HTH-type transcriptional regulator SarR
+PJKHBDOM_02643	CDS	261	sarR			staphylococcal accessory regulator R, SarR
 PJKHBDOM_02644	gene	327				
 PJKHBDOM_02644	mRNA	327				
 PJKHBDOM_02644	CDS	327				PH domain-containing protein [Staphylococcus aureus]
@@ -8126,7 +8126,7 @@ PJKHBDOM_02708	mRNA	516
 PJKHBDOM_02708	CDS	516				hypothetical protein
 PJKHBDOM_02709	gene	357				
 PJKHBDOM_02709	mRNA	357				
-PJKHBDOM_02709	CDS	357				hypothetical protein
+PJKHBDOM_02709	CDS	357				truncated transposase for IS1272
 PJKHBDOM_02710	gene	666				
 PJKHBDOM_02710	mRNA	666				
 PJKHBDOM_02710	CDS	666				ABC transporter ATP-binding protein [Staphylococcus aureus]
@@ -8264,7 +8264,7 @@ PJKHBDOM_02754	mRNA	183
 PJKHBDOM_02754	CDS	183				hypothetical protein [Staphylococcus aureus]
 PJKHBDOM_02755	gene	402				
 PJKHBDOM_02755	mRNA	402				
-PJKHBDOM_02755	CDS	402				hypothetical protein
+PJKHBDOM_02755	CDS	402				Activator of Hsp90 ATPase 1 family protein
 PJKHBDOM_02756	gene	1551				
 PJKHBDOM_02756	mRNA	1551				
 PJKHBDOM_02756	CDS	1551				zinc ABC transporter substrate-binding lipoprotein AdcA [Staphylococcus aureus]
@@ -8780,10 +8780,10 @@ PJKHBDOM_02926	mRNA	1011
 PJKHBDOM_02926	CDS	1011				amidohydrolase family protein [Staphylococcus aureus]
 PJKHBDOM_02927	gene	282				
 PJKHBDOM_02927	mRNA	282				
-PJKHBDOM_02927	CDS	282		3.-.-.-		putative hydrolase
+PJKHBDOM_02927	CDS	282				putative hydrolase/acyltransferase
 PJKHBDOM_02928	gene	603				
 PJKHBDOM_02928	mRNA	603				
-PJKHBDOM_02928	CDS	603		3.-.-.-		putative hydrolase
+PJKHBDOM_02928	CDS	603				putative hydrolase/acyltransferase
 PJKHBDOM_02929	gene	891				
 PJKHBDOM_02929	mRNA	891				
 PJKHBDOM_02929	CDS	891				GTP-binding protein [Staphylococcus aureus]
@@ -8937,9 +8937,9 @@ PJKHBDOM_02978	CDS	1818				choline dehydrogenase [Staphylococcus aureus]
 PJKHBDOM_02979	gene	1491				
 PJKHBDOM_02979	mRNA	1491				
 PJKHBDOM_02979	CDS	1491				betaine-aldehyde dehydrogenase [Staphylococcus aureus]
-PJKHBDOM_02980	gene	660	opcR			
-PJKHBDOM_02980	mRNA	660	opcR			
-PJKHBDOM_02980	CDS	660	opcR		COG1510	HTH-type transcriptional repressor OpcR
+PJKHBDOM_02980	gene	660				
+PJKHBDOM_02980	mRNA	660				
+PJKHBDOM_02980	CDS	660				transcriptional regulator-like protein
 PJKHBDOM_02981	gene	1623				
 PJKHBDOM_02981	mRNA	1623				
 PJKHBDOM_02981	CDS	1623				BCCT family transporter [Staphylococcus aureus]
@@ -9017,10 +9017,10 @@ PJKHBDOM_03005	mRNA	450
 PJKHBDOM_03005	CDS	450				arginine repressor [Staphylococcus aureus]
 PJKHBDOM_03006	gene	1254	aur_1			
 PJKHBDOM_03006	mRNA	1254	aur_1			
-PJKHBDOM_03006	CDS	1254	aur_1	3.4.24.29		Zinc metalloproteinase aureolysin
+PJKHBDOM_03006	CDS	1254	aur_1			zinc metalloproteinase aureolysin precursor
 PJKHBDOM_03007	gene	291	aur_2			
 PJKHBDOM_03007	mRNA	291	aur_2			
-PJKHBDOM_03007	CDS	291	aur_2	3.4.24.29		Zinc metalloproteinase aureolysin
+PJKHBDOM_03007	CDS	291	aur_2			aureolysin, fungalysin/thermolysin metalloproteinase precursor
 PJKHBDOM_03008	gene	528				
 PJKHBDOM_03008	mRNA	528				
 PJKHBDOM_03008	CDS	528				immunodominant staphylococcal antigen IsaB [Staphylococcus aureus]
@@ -9119,22 +9119,22 @@ PJKHBDOM_03039	mRNA	894
 PJKHBDOM_03039	CDS	894				intercellular adhesin biosynthesis polysaccharide N-deacetylase [Staphylococcus aureus]
 PJKHBDOM_03040	gene	912	icaC			
 PJKHBDOM_03040	mRNA	912	icaC			
-PJKHBDOM_03040	CDS	912	icaC		COG3936	putative poly-beta-1,6-N-acetyl-D-glucosamine export protein
-PJKHBDOM_03041	gene	1269	lipA_1			
-PJKHBDOM_03041	mRNA	1269	lipA_1			
-PJKHBDOM_03041	CDS	1269	lipA_1	3.1.1.3	COG1075	Lipase 1
-PJKHBDOM_03042	gene	801	lipA_2			
-PJKHBDOM_03042	mRNA	801	lipA_2			
-PJKHBDOM_03042	CDS	801	lipA_2	3.1.1.3	COG1075	Lipase 1
+PJKHBDOM_03040	CDS	912	icaC			intercellular adhesion protein icaC
+PJKHBDOM_03041	gene	1269	lip_1			
+PJKHBDOM_03041	mRNA	1269	lip_1			
+PJKHBDOM_03041	CDS	1269	lip_1			triacylglycerol lipase
+PJKHBDOM_03042	gene	801	lip_2			
+PJKHBDOM_03042	mRNA	801	lip_2			
+PJKHBDOM_03042	CDS	801	lip_2			triacylglycerol lipase
 PJKHBDOM_03043	gene	93				
 PJKHBDOM_03043	mRNA	93				
 PJKHBDOM_03043	CDS	93				hypothetical protein
 PJKHBDOM_03044	gene	633	hisI			
 PJKHBDOM_03044	mRNA	633	hisI			
-PJKHBDOM_03044	CDS	633	hisI	3.5.4.19		Histidine biosynthesis bifunctional protein HisIE
+PJKHBDOM_03044	CDS	633	hisI			bifunctional phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP pyrophosphatase
 PJKHBDOM_03045	gene	759	hisF			
 PJKHBDOM_03045	mRNA	759	hisF			
-PJKHBDOM_03045	CDS	759	hisF	4.3.2.10	COG0107	Imidazole glycerol phosphate synthase subunit HisF
+PJKHBDOM_03045	CDS	759	hisF			imidazole glycerol phosphate synthase subunit HisF
 PJKHBDOM_03046	gene	705				
 PJKHBDOM_03046	mRNA	705				
 PJKHBDOM_03046	CDS	705				1-(5-phosphoribosyl)-5-((5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide isomerase [Staphylococcus aureus]

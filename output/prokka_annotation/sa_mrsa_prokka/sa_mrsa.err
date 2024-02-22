@@ -13,16 +13,19 @@ DISC_FEATURE_COUNT:repeat_region: 1 present
 DISC_FEATURE_COUNT:tmRNA: 1 present
 DISC_COUNT_NUCLEOTIDES:2 nucleotide Bioseqs are present
 OVERLAPPING_GENES:824 genes overlap another gene on the same strand.
-OVERLAPPING_CDS:32 coding regions overlap another coding region with a similar or identical name.
-SUSPECT_PRODUCT_NAMES:14 product_names contain suspect phrase or characters
+OVERLAPPING_CDS:42 coding regions overlap another coding region with a similar or identical name.
+SUSPECT_PRODUCT_NAMES:27 product_names contain suspect phrase or characters
 	Putative Typo
 		6 features starts with 'hypothetical protein' but not equals 'hypothetical protein'
 	Suspicious phrase; should this be nonfunctional?
-		1 features contains 'truncat'
+		7 features contains 'truncat'
+	May contain database identifier more appropriate in note; remove from product name
+		1 features contains three or more numbers together that may be identifiers more appropriate in note
+		1 features Contains underscore
 	FATAL: Remove organism from product name
-		6 features contains 'staphylococcal'
+		9 features contains 'staphylococcal'
 	use protein instead of gene as appropriate
-		1 features contains 'gene'
+		3 features contains 'gene'
 FIND_BADLEN_TRNAS:1 tRNAs are too long
 DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
 FATAL: DISC_SUSPECT_RRNA_PRODUCTS:6 rRNA product names contain suspect phrase
@@ -3123,8 +3126,8 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00062	CP127019.1:6
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00071	CP127019.1:c71899-71696	PJKHBDOM_00071
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00072	CP127019.1:c73224-71899	PJKHBDOM_00072
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecR1	CP127019.1:c73657-73163	PJKHBDOM_00073
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecA	CP127019.1:73757-75637	PJKHBDOM_00074
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	pbp	CP127019.1:75634-75762	PJKHBDOM_00075
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecA_1	CP127019.1:73757-75637	PJKHBDOM_00074
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mecA_2	CP127019.1:75634-75762	PJKHBDOM_00075
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00095	CP127019.1:c92098-91775	PJKHBDOM_00095
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00096	CP127019.1:c92297-92091	PJKHBDOM_00096
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00099	CP127019.1:c93242-93153	PJKHBDOM_00099
@@ -3150,8 +3153,8 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00151	CP127019.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00152	CP127019.1:156156-157586	PJKHBDOM_00152
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00160	CP127019.1:c165540-164725	PJKHBDOM_00160
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00161	CP127019.1:c166337-165537	PJKHBDOM_00161
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00163	CP127019.1:c167979-167326	PJKHBDOM_00163
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00164	CP127019.1:c168283-167936	PJKHBDOM_00164
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	phnD_1	CP127019.1:c167979-167326	PJKHBDOM_00163
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	phnD_2	CP127019.1:c168283-167936	PJKHBDOM_00164
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00173	CP127019.1:179244-181067	PJKHBDOM_00173
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00174	CP127019.1:181057-182085	PJKHBDOM_00174
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00177	CP127019.1:184338-185417	PJKHBDOM_00177
@@ -3161,7 +3164,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00182	CP127019.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00183	CP127019.1:190412-191299	PJKHBDOM_00183
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00194	CP127019.1:200191-201165	PJKHBDOM_00194
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00195	CP127019.1:201162-201620	PJKHBDOM_00195
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	ssuC	CP127019.1:201572-201922	PJKHBDOM_00196
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00196	CP127019.1:201572-201922	PJKHBDOM_00196
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00204	CP127019.1:c215749-215546	PJKHBDOM_00204
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00205	CP127019.1:c216516-215746	PJKHBDOM_00205
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00214	CP127019.1:227107-228147	PJKHBDOM_00214
@@ -3300,7 +3303,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00748	CP127019.1:7
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00749	CP127019.1:757762-758106	PJKHBDOM_00749
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00750	CP127019.1:758093-759592	PJKHBDOM_00750
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00751	CP127019.1:759593-760075	PJKHBDOM_00751
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00752	CP127019.1:760072-760350	PJKHBDOM_00752
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	mnhF_1	CP127019.1:760072-760350	PJKHBDOM_00752
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00753	CP127019.1:760350-760787	PJKHBDOM_00753
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00755	CP127019.1:c764992-764063	PJKHBDOM_00755
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00756	CP127019.1:c765825-764989	PJKHBDOM_00756
@@ -3331,7 +3334,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00838	CP127019.1:8
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00839	CP127019.1:847896-848504	PJKHBDOM_00839
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00840	CP127019.1:848864-849574	PJKHBDOM_00840
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00841	CP127019.1:849558-850562	PJKHBDOM_00841
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	recQ	CP127019.1:855142-856584	PJKHBDOM_00844
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00844	CP127019.1:855142-856584	PJKHBDOM_00844
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00845	CP127019.1:856584-856922	PJKHBDOM_00845
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00846	CP127019.1:857144-858121	PJKHBDOM_00846
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_00847	CP127019.1:858114-859628	PJKHBDOM_00847
@@ -3489,8 +3492,8 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01397	CP127019.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01398	CP127019.1:1418124-1418726	PJKHBDOM_01398
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01429	CP127019.1:1452015-1454006	PJKHBDOM_01429
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01430	CP127019.1:1454006-1456408	PJKHBDOM_01430
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01439	CP127019.1:c1467665-1467468	PJKHBDOM_01439
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tyrC	CP127019.1:c1468548-1467649	PJKHBDOM_01440
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tyrA_1	CP127019.1:c1467665-1467468	PJKHBDOM_01439
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	tyrA_2	CP127019.1:c1468548-1467649	PJKHBDOM_01440
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01442	CP127019.1:1470236-1471642	PJKHBDOM_01442
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01443	CP127019.1:1471639-1472205	PJKHBDOM_01443
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01445	CP127019.1:1473211-1473993	PJKHBDOM_01445
@@ -3540,7 +3543,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01577	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01583	CP127019.1:c1644227-1643826	PJKHBDOM_01583
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01584	CP127019.1:c1644556-1644224	PJKHBDOM_01584
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01586	CP127019.1:c1646123-1644915	PJKHBDOM_01586
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	clpP	CP127019.1:c1646862-1646110	PJKHBDOM_01587
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01587	CP127019.1:c1646862-1646110	PJKHBDOM_01587
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01588	CP127019.1:c1648084-1646846	PJKHBDOM_01588
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01589	CP127019.1:c1649780-1648089	PJKHBDOM_01589
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01590	CP127019.1:c1650075-1649770	PJKHBDOM_01590
@@ -3595,7 +3598,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01751	CP127019.1:c
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01753	CP127019.1:c1785397-1784774	PJKHBDOM_01753
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01754	CP127019.1:c1786665-1785397	PJKHBDOM_01754
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01764	CP127019.1:c1798362-1797304	PJKHBDOM_01764
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	iscS	CP127019.1:c1798447-1798316	PJKHBDOM_01765
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	nifS	CP127019.1:c1798447-1798316	PJKHBDOM_01765
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01774	CP127019.1:c1808033-1807158	PJKHBDOM_01774
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01775	CP127019.1:c1808482-1808030	PJKHBDOM_01775
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01782	CP127019.1:c1819164-1818121	PJKHBDOM_01782
@@ -3616,8 +3619,8 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01862	CP127019.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01863	CP127019.1:1908956-1910560	PJKHBDOM_01863
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01892	CP127019.1:c1948887-1948192	PJKHBDOM_01892
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01893	CP127019.1:c1950545-1948884	PJKHBDOM_01893
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01895	CP127019.1:c1958360-1952337	PJKHBDOM_01895
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01896	CP127019.1:c1958898-1958320	PJKHBDOM_01896
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sasC_1	CP127019.1:c1958360-1952337	PJKHBDOM_01895
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	sasC_2	CP127019.1:c1958898-1958320	PJKHBDOM_01896
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01900	CP127019.1:1963553-1964506	PJKHBDOM_01900
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01901	CP127019.1:1964503-1965066	PJKHBDOM_01901
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_01904	CP127019.1:c1966331-1966107	PJKHBDOM_01904
@@ -3904,8 +3907,8 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03037	CP127019.1:3
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03038	CP127019.1:3044974-3045279	PJKHBDOM_03038
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03039	CP127019.1:3045255-3046148	PJKHBDOM_03039
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	icaC	CP127019.1:3046135-3047046	PJKHBDOM_03040
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_1	CP127019.1:c3048867-3047599	PJKHBDOM_03041
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lipA_2	CP127019.1:c3049630-3048830	PJKHBDOM_03042
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lip_1	CP127019.1:c3048867-3047599	PJKHBDOM_03041
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	lip_2	CP127019.1:c3049630-3048830	PJKHBDOM_03042
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisI	CP127019.1:c3051350-3050718	PJKHBDOM_03044
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	hisF	CP127019.1:c3052105-3051347	PJKHBDOM_03045
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03046	CP127019.1:c3052806-3052102	PJKHBDOM_03046
@@ -3925,42 +3928,52 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03111	CP127020.1:1
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03115	CP127020.1:20809-21294	PJKHBDOM_03115
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:Gene	PJKHBDOM_03116	CP127020.1:21291-21971	PJKHBDOM_03116
 
-DiscRep_ALL:OVERLAPPING_CDS::32 coding regions overlap another coding region with a similar or identical name.
-DiscRep_SUB:OVERLAPPING_CDS::32 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
+DiscRep_ALL:OVERLAPPING_CDS::42 coding regions overlap another coding region with a similar or identical name.
+DiscRep_SUB:OVERLAPPING_CDS::42 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	recombinase family protein	CP127019.1:c41274-39646	PJKHBDOM_00036
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	recombinase family protein	CP127019.1:c42632-41271	PJKHBDOM_00037
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	tyrosine-type recombinase/integrase	CP127019.1:59041-60126	PJKHBDOM_00058
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	site-specific integrase	CP127019.1:60123-62015	PJKHBDOM_00059
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	penicillin-binding protein 2 prime	CP127019.1:73757-75637	PJKHBDOM_00074
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	penicillin-binding protein 2 prime	CP127019.1:75634-75762	PJKHBDOM_00075
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	binding-protein-dependent transport system inner membrane protein	CP127019.1:201162-201620	PJKHBDOM_00195
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	binding-protein-dependent transport system inner membrane protein	CP127019.1:201572-201922	PJKHBDOM_00196
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	YibE/F family protein	CP127019.1:c565854-565072	PJKHBDOM_00565
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	YibE/F family protein	CP127019.1:c566963-565851	PJKHBDOM_00566
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	deoxynucleoside kinase	CP127019.1:c679645-678983	PJKHBDOM_00673
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	deoxynucleoside kinase	CP127019.1:c680300-679638	PJKHBDOM_00674
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Extracellular matrix protein-binding protein emp	CP127019.1:937862-938572	PJKHBDOM_00918
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Extracellular matrix protein-binding protein emp	CP127019.1:938560-938883	PJKHBDOM_00919
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	ATP-dependent DNA helicase	CP127019.1:855142-856584	PJKHBDOM_00844
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	ATP-dependent DNA helicase	CP127019.1:856584-856922	PJKHBDOM_00845
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	secretory extracellular matrix and plasma binding protein	CP127019.1:937862-938572	PJKHBDOM_00918
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	secretory extracellular matrix and plasma binding protein	CP127019.1:938560-938883	PJKHBDOM_00919
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:960133-960300	PJKHBDOM_00953
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:960293-960502	PJKHBDOM_00954
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:963895-964179	PJKHBDOM_00959
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	pathogenicity island protein	CP127019.1:964176-964817	PJKHBDOM_00960
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Elastin-binding protein EbpS	CP127019.1:c1618191-1616884	PJKHBDOM_01555
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Elastin-binding protein EbpS	CP127019.1:c1618345-1618163	PJKHBDOM_01556
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	S4 RNA binding domain protein	CP127019.1:1262656-1263312	PJKHBDOM_01253
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	S4 RNA binding domain protein	CP127019.1:1263309-1263461	PJKHBDOM_01254
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	prephenate dehydrogenase	CP127019.1:c1467665-1467468	PJKHBDOM_01439
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	prephenate dehydrogenase	CP127019.1:c1468548-1467649	PJKHBDOM_01440
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	cell surface elastin binding protein	CP127019.1:c1618191-1616884	PJKHBDOM_01555
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	cell surface elastin binding protein	CP127019.1:c1618345-1618163	PJKHBDOM_01556
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	site-specific integrase	CP127019.1:c1832694-1830802	PJKHBDOM_01799
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	tyrosine-type recombinase/integrase	CP127019.1:c1833776-1832691	PJKHBDOM_01800
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	CP127019.1:c2116740-2115538	PJKHBDOM_02092
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	CP127019.1:c2116966-2116709	PJKHBDOM_02093
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	cell-wall-anchored protein SasC	CP127019.1:c1958360-1952337	PJKHBDOM_01895
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	cell-wall-anchored protein SasC	CP127019.1:c1958898-1958320	PJKHBDOM_01896
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA amidotransferase subunit B	CP127019.1:c2116740-2115538	PJKHBDOM_02092
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Aspartyl/glutamyl-tRNA amidotransferase subunit B	CP127019.1:c2116966-2116709	PJKHBDOM_02093
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	AAA family ATPase	CP127019.1:c2194823-2193456	PJKHBDOM_02179
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	AAA family ATPase	CP127019.1:c2195400-2194771	PJKHBDOM_02180
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	PH domain-containing protein	CP127019.1:c2392741-2392247	PJKHBDOM_02416
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	PH domain-containing protein	CP127019.1:c2394308-2392725	PJKHBDOM_02417
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	helicase	CP127019.1:c2554270-2553977	PJKHBDOM_02566
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	helicase	CP127019.1:c2555364-2554267	PJKHBDOM_02567
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase	CP127019.1:2919847-2920128	PJKHBDOM_02927
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase	CP127019.1:2920076-2920678	PJKHBDOM_02928
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Zinc metalloproteinase aureolysin	CP127019.1:c3003529-3002276	PJKHBDOM_03006
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Zinc metalloproteinase aureolysin	CP127019.1:c3003806-3003516	PJKHBDOM_03007
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Lipase 1	CP127019.1:c3048867-3047599	PJKHBDOM_03041
-output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	Lipase 1	CP127019.1:c3049630-3048830	PJKHBDOM_03042
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase/acyltransferase	CP127019.1:2919847-2920128	PJKHBDOM_02927
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	putative hydrolase/acyltransferase	CP127019.1:2920076-2920678	PJKHBDOM_02928
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	triacylglycerol lipase	CP127019.1:c3048867-3047599	PJKHBDOM_03041
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	triacylglycerol lipase	CP127019.1:c3049630-3048830	PJKHBDOM_03042
 
-DiscRep_ALL:SUSPECT_PRODUCT_NAMES::14 product_names contain suspect phrase or characters
+DiscRep_ALL:SUSPECT_PRODUCT_NAMES::27 product_names contain suspect phrase or characters
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Putative Typo
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::6 features starts with 'hypothetical protein' but not equals 'hypothetical protein'
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c6651-6478	PJKHBDOM_03097
@@ -3971,21 +3984,39 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmi
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	hypothetical protein (plasmid)	CP127020.1:c25621-25073	PJKHBDOM_03120
 
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Suspicious phrase; should this be nonfunctional?
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'truncat'
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::7 features contains 'truncat'
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated hemoglobin YjbI	CP127019.1:c1067489-1067124	PJKHBDOM_01061
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:c1509303-1508911	PJKHBDOM_01482
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:c1966819-1966328	PJKHBDOM_01905
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:1985559-1986167	PJKHBDOM_01929
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:2519686-2520486	PJKHBDOM_02532
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:2520483-2520803	PJKHBDOM_02533
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	truncated transposase for IS1272	CP127019.1:2681905-2682261	PJKHBDOM_02709
+
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::May contain database identifier more appropriate in note; remove from product name
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains three or more numbers together that may be identifiers more appropriate in note
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	TM2 domain containing membrane protein+B7201	CP127019.1:c1291939-1291661	PJKHBDOM_01278
+
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features Contains underscore
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	monovalent cation antiporter-3, MnhF_1	CP127019.1:760072-760350	PJKHBDOM_00752
 
 FATAL: DiscRep_SUB:SUSPECT_PRODUCT_NAMES::Remove organism from product name
-DiscRep_SUB:DISC_PRODUCT_NAME_QUICKFIX::6 features contains 'staphylococcal'
+DiscRep_SUB:DISC_PRODUCT_NAME_QUICKFIX::9 features contains 'staphylococcal'
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal protein A	CP127019.1:c133843-132527	PJKHBDOM_00132
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin-like toxin X	CP127019.1:466503-467114	PJKHBDOM_00462
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type K	CP127019.1:c957848-957120	PJKHBDOM_00947
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type I	CP127019.1:c958641-958018	PJKHBDOM_00948
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type 26	CP127019.1:c1775136-1774384	PJKHBDOM_01741
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal enterotoxin type A	CP127019.1:c2165172-2164399	PJKHBDOM_02139
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal accessory gene regulator protein C	CP127019.1:2223254-2223925	PJKHBDOM_02219
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal accessory regulator R, SarR	CP127019.1:c2614325-2614065	PJKHBDOM_02643
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	immunodominant staphylococcal antigen IsaB	CP127019.1:c3004747-3004220	PJKHBDOM_03008
 
 DiscRep_SUB:SUSPECT_PRODUCT_NAMES::use protein instead of gene as appropriate
-DiscRep_SUB:SUSPECT_PRODUCT_NAMES::1 features contains 'gene'
+DiscRep_SUB:SUSPECT_PRODUCT_NAMES::3 features contains 'gene'
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	accessory gene regulator AgrB	CP127019.1:2221847-2222470	PJKHBDOM_02216
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	accessory gene regulator protein C	CP127019.1:2222632-2223249	PJKHBDOM_02218
+output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CDS	staphylococcal accessory gene regulator protein C	CP127019.1:2223254-2223925	PJKHBDOM_02219
 
 DiscRep_ALL:FIND_BADLEN_TRNAS::1 tRNAs are too long
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:tRNA	Gln	CP127019.1:c2597013-2596921	PJKHBDOM_02623
@@ -7153,7 +7184,7 @@ output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_32 (length 182)
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_33 (length 224)
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:CP127020.1_34 (length 41)
 
-FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::6 rRNA prames are not stanot standard. Correct the names to the standard format, eg "16S ribosomal RNA"
+FATAL: DiscRep_ALL:RRNA_NAME_CONFLICTS::6 rRNA product names are not standard. Correct the names to the standard format, eg "16S ribosomal RNA"
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:588554-588631	PJKHBDOM_00580
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:627230-627307	PJKHBDOM_00619
 output/prokka_annotation/sa_mrsa_prokka/sa_mrsa:rRNA	5S ribosomal RNA (partial)	CP127019.1:633091-633168	PJKHBDOM_00631
