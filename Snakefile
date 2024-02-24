@@ -36,7 +36,7 @@ rule all:
         expand("output/prokka_annotation/{genome}_prokka/{genome}.gbk", genome = genomes),
 
         # Pan-genome analysis using roary
-        "output/pangenome",
+        "output/pangenome", # Due to env activation issues roary analysis was done manually.
 
         # Eggnog-Mapper analysis was done with .sh file due to excessive database size.
         # directory("output/eggnog/")
@@ -47,7 +47,7 @@ rule all:
         "output/orthofinder",
 
         # AntiSmash outputs
-        #expand("output/antismash/{genome}_antismash", genome = genomes)
+        expand("output/antismash/{genome}_antismash", genome = genomes)
 
 rule barrnap:
     input:
@@ -180,15 +180,15 @@ rule orthofinder:
     script:
         "scripts/orthofinder.py"
 
-#rule antismash:
+rule antismash:
     # AntiSMASH was used to analyze seconday metabolites.
-#    input: rules.genome_annotation.output.gbk, # Prokka annotation file is the inpput of AntiSMASH.
-#    output: directory("output/antismash/{genome}_antismash"),
-#    threads: 8,
-#    params:
-#        taxon = "bacteria",
-#        genome = lambda wildcards: f"{wildcards.genome}",
-#    conda: env,
-#    log: "logs/antismash/{genome}_antismash.log",
-#    script:
-#        "scripts/antismash.py"
+    input: rules.genome_annotation.output.gbk, # Prokka annotation file is the inpput of AntiSMASH.
+    output: directory("output/antismash/{genome}_antismash"),
+    threads: 8,
+    params:
+        taxon = "bacteria",
+        genome = lambda wildcards: f"{wildcards.genome}",
+    conda: env,
+    log: "logs/antismash/{genome}_antismash.log",
+    script:
+        "scripts/antismash.py"

@@ -33,7 +33,7 @@ def rRNA_pie(gff_df, save_path, organism = "organism"):
     plt.savefig(save_path)
     plt.close()
 
-# Liste the *.gff files with glob and assign the variables
+# List the *.gff files with glob and assign the variables
 gff_files = glob("output/barrnap/*")
 save_dir = "output/plots/barrnap/"
 save = [f"{save_dir}hi_barrnap_chart.png", f"{save_dir}pa_barrnap_chart.png", f"{save_dir}sa_mrsa_barrnap_chart.png"]
@@ -90,53 +90,40 @@ plt.savefig("output/plots/barrnap/rrNA_status.png")
 
 # ------------------- L I N E  P L O T ------------------- #
 
-# Renk paleti oluşturma
+# Color pallet creation
 colors = {'23S': 'red', '16S': 'green', '5S': 'blue'}
 
-# Yatay çizgileri çizme
+# Drawing the x-axis
 fig, ax = plt.subplots(figsize=(16, 9))
 
-# Organizmalar için y pozisyonları oluşturma
+# Drawing the y-axis for the organisms
 org_positions = {org: i for i, org in enumerate(concatenated_gff['organism'].unique(), 1)}
 
 for _, row in concatenated_gff.iterrows():
-    # Organizmanın y pozisyonunu al
+    # Get the y position of the organism
     y = org_positions[row['organism']]
-    # rRNA tipine göre renk seç
-    color = colors.get(row['rRNA_type'], 'black')  # rRNA tipi renk paletinde yoksa siyah kullan
-    # Yatay çizgi çiz
+    # Choose the color according to the rRNA type
+    color = colors.get(row['rRNA_type'], 'black')  # if rRNA type is unknown, use black.
+    # Draw a line
     ax.hlines(y, row['start'], row['end'], colors=color, lw=15)
 
-# Y-ekseni etiketlerini ayarlama
+# Y-axis labels
 ax.set_yticks(list(org_positions.values()))
 ax.set_yticklabels(list(org_positions.keys()))
 
-# Görselleştirme ayarları
+# Visualization settings
 plt.xlabel('Genome Position')
 plt.title('rRNA Locations in Organisms')
 ax.set_xlim(0, concatenated_gff['end'].max() + 10000)  # X-ekseni limitlerini ayarlama
 plt.tight_layout()
 
-# Görseli kaydetme ve gösterme
+# Save the figure
 plt.savefig('output/plots/barrnap/rrna_locations.png')
 plt.show()
 
 
-# Başlangıç ve bitiş pozisyonlarına göre bir scatterplot oluşturun
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='start', y='end', hue='rRNA_type', style='organism', data=df)
-
-plt.title('rRNA Alt Birimlerinin Başlangıç ve Bitiş Pozisyonları')
-plt.xlabel('Başlangıç Pozisyonu')
-plt.ylabel('Bitiş Pozisyonu')
-plt.legend(title='rRNA Tipi / Organizma', bbox_to_anchor=(1.05, 1), loc='upper left')
-
-# Grafiği göster
-plt.tight_layout()
-plt.show()
-
 # ------------------- S C A T T E R --------------------------------------------------------
-# Başlangıç ve bitiş pozisyonlarına göre bir scatterplot oluşturun
+# Drawing a scatterplot based on the start and end position
 plt.figure(figsize=(16, 10))
 sns.scatterplot(x='start', y='end', hue='rRNA_type', style='organism', data=concatenated_gff, sizes=(100, 200))
 
@@ -145,7 +132,7 @@ plt.xlabel('Start')
 plt.ylabel('End')
 plt.legend(title='rRNA Type/ Organism', bbox_to_anchor=(1.05, 1), loc='upper left')
 
-# Grafiği göster
+# Show the plot
 plt.tight_layout()
 plt.show()
 plt.savefig("output/plots/barrnap/barrnap_scatterplot.png")

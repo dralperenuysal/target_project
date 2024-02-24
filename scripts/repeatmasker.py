@@ -9,6 +9,6 @@ genome = snakemake.input.fasta
 shell(
     f"""
     mkdir -p {dir}
-    RepeatMasker -pa 8 -lib {lib} {genome} -dir {dir}
+    RepeatMasker -engine ncbi -s -pa 8 -lib {lib} {genome} -dir {dir}
     """
 )
