@@ -18,3 +18,4 @@ resource: The raw genome and proteome data for the pathogens under study are pla
 scripts: Contains the scripts utilized for analyses via Snakemake. These scripts embody the computational logic for each step of the analysis pipeline, from preprocessing data to invoking bioinformatics tools and processing their outputs.
 
 This project harnesses the power of bioinformatics to offer insights into the molecular machinery of pathogens, spotlighting potential vulnerabilities that could be exploited for therapeutic intervention. Through a meticulously designed pipeline and organized project structure, it lays the groundwork for advancing our understanding of pathogenic mechanisms and accelerating the discovery of novel drug targets.
+[dag.pdf](output%2Fplots%2Fdag.pdf)
