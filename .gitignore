@@ -4,4 +4,6 @@
 /StainedGlass/
 output/*
 !output/plots/
+logs
+
 
